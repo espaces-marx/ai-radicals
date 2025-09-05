@@ -102,11 +102,11 @@ Précisez le style : « Parle directement à la caméra, comme si tu t’adressa
 
 En résumé :
 
-| Tâche         | Utilité de l'IA           | Ce qu'il faut en plus         | Vigilence           |
-| :------------ | :------------------------ | :---------------------------- | :------------------ |
-| Tutoriel      | Structurer, simplifier    | Relecture, visuels            | Adapter au contexte |
-| Tract         | Résumer, mobiliser        | Mise en page, infos locales   | Vérifier les faits  |
-| Script vidéo  | Adapter à l'oral, rythmer | Matériel audio/vidéo, montage | Tester à voix haute |
+| Tâche             | Utilité de l'IA           | Ce qu'il faut en plus         | Vigilence           |
+| :---------------- | :------------------------ | :---------------------------- | :------------------ |
+| **Tutoriel**      | Structurer, simplifier    | Relecture, visuels            | Adapter au contexte |
+| **Tract**         | Résumer, mobiliser        | Mise en page, infos locales   | Vérifier les faits  |
+| **Script vidéo**  | Adapter à l'oral, rythmer | Matériel audio/vidéo, montage | Tester à voix haute |
 
 
 ## Annexe 1 : Exemple de tract généré pour le 10 septembre
