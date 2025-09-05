@@ -5,13 +5,15 @@
 ## Par où commencer ? Choisir son outil
 
 Il existe des dizaines d’outils d’IA, mais tous ne se valent pas. Voici quelques options courantes :
-- **Mistral AI (Le Chat)** : Open source, développé en Europe, respectueux des données personnelles, accessible gratuitement. Moins connu que les géants américains, interface parfois moins intuitive.
-- **ChatGPT (OpenAI)** : Très populaire, interface simple.Propriétaire, contrôlé par Microsoft, collecte massive de données.
-- **Bing AI / Copilot** : Intégré à Microsoft, bon pour les recherches web. Lié à Microsoft, moins transparent sur l’utilisation des données.
-- **Hugging Chat** : Basé sur des modèles open source. Moins performant pour les tâches complexes.
 
-## Pourquoi recommandons-nous Mistral ?
+| Outil | Avantages | Inconvénients |
+| :---- | :-------- | :------------ |
+| **Mistral AI (Le Chat)** | Open source, développé en Europe, respectueux des données personnelles, accessible gratuitement. | Moins connu que les géants américains, interface parfois moins intuitive. |
+| **ChatGPT (OpenAI)** | Très populaire, interface simple. | Propriétaire, contrôlé par Microsoft, collecte massive de données. |
+| **Bing AI / Copilot** | Intégré à Microsoft, bon pour les recherches web. | Lié à Microsoft, moins transparent sur l’utilisation des données. |
+| **Hugging Chat** | Basé sur des modèles open source. | Moins performant pour les tâches complexes. |
 
+*Pourquoi recommandons-nous Mistral ?*
 - **Indépendance** : Mistral est une entreprise européenne, moins liée aux géants américains que ChatGPT ou Google.
 - **Éthique** : Engagement pour une IA plus transparente et moins centralisée.
 - **Gratuité** : Une version gratuite existe, sans obligation de payer pour des fonctionnalités de base.
