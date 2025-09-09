@@ -23,7 +23,7 @@ La limite haute de la quantité de données utilisées pour l'entraînement des 
 
 Pour atteindre leurs objectifs d'entraînement, les entreprises développant de nouveaux modèles d'IA ont donc recours à des centres de données, qui regroupent en un même lieu des ordinateurs en réseau avec une grande puissance de calcul et une capacité importante de stockage (utile pour la quantité de données servant à l'entraînement d'une IA). 
 
->[!info] **Les centres de données : le "_Cloud_" au sol**
+>[!NOTE] **Les centres de données : le "_Cloud_" au sol**
 L'utilisation des centres de données n'est ni nouvelle, ni une invention due à l'intelligence artificielle. Ils sont la forme matérielle derrière le concept de "_Cloud (computing)_". 
 Concrètement, un centre de données permet un gain d'efficacité par rapport à une situation ou ne seraient exploités que le stockage et les puissances de calcul individuelles de nos ordinateurs personnels, ou de quelques serveurs isolés dans chaque entreprise. 
 
@@ -41,7 +41,7 @@ On peut notamment l'observer à travers l'évolution de leur consommation d'éle
 
 **Pourquoi une telle évolution ?** D'après le Département de l'Énergie américain, la moitié de l'électricité utilisée par des centres de données en 2024 était déjà lié à l'intelligence artificielle. L'essentiel de cette contribution de l'IA est due à un groupe réduit de serveurs (moins de 10% en 2024) équipés de processeurs optimisés pour l'IA, les processeurs graphiques ou GPU (Graphics Processing Unit). 
 
->[!info] Des jeux vidéos à l'IA
+>[!NOTE] Des jeux vidéos à l'IA
 >**Graphics Processing Unit**. Comme son nom l'indique, cette technologie servait auparavant à calculer l'affichage de pixels pour des graphismes, principalement de jeux vidéos, souvent considérés parmi les programmes les plus complexes et intensifs en ressources. 
 >**Les GPUs permettent de traiter en parallèle de très nombreux calculs**, et ainsi dans le domaine de l'IA, d'accélérer considérablement la durée de l'entraînement d'un modèle.  
 >
@@ -60,5 +60,22 @@ En combinant ces deux sources de consommation d'eau, on estime que l'entraîneme
 
 À l'échelle de l'ensemble des consommations américaines, les quantités d'électricité et encore plus d'eau utilisées peuvent sembler peu importantes. La vitesse de leur croissance pourrait cependant poser problème dans un avenir proche, si en 2023 les centres de données pesaient 4% dans la consommation électrique nationale, ils pourraient atteindre 12% en 2028 ([ref](https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers)), soit un niveau proche de celui consommé actuellement pour le résidentiel (15%([ref](https://www.eia.gov/energyexplained/us-energy-facts/images/consumption-by-source-and-sector.pdf))). 
 
->[!info] En Europe, la dynamique inquiétante de l'Irlande
+>[!NOTE] En Europe, la dynamique inquiétante de l'Irlande
 >Ce problème existe déjà en Irlande, qui - _après avoir mis en place une politique favorable à l'investissement des géants du numérique_ - consomme aujourd'hui 20% de son électricité pour les centres de données, avec des projections à 30% pour 2028, ce qui en ferait la première source de consommation d'électricité nationale ([ref](https://theshiftproject.org/app/uploads/2025/04/2025_03_06-TSP-Rapport-intermediaire-IA-quelles-infra-num-monde-decarbone.pdf)).
+
+
+-------------
+
+### Refs
+
+[^1]: À intégrer, ref web: https://companiesmarketcap.com/nvidia/marketcap/ 
+[^2]: Epoch AI, ‘Data on AI Models’. Published online at epoch.ai. 
+[^3]: The Shift Project, Mars 2021, "Impact environnemental du numérique: tendances à 5 ans et gouvernance de la 5G"
+[^4]: Calcul à partir de[ ces données](https://ourworldindata.org/grapher/carbon-intensity-electricity#sources-and-processing). 44g de CO2 / KwH en France,  384g de CO2 / KwH aux Etats-Unis.
+[^5]: Pour la même année, c'est un peu plus que la contribution à l'empreinte carbone française du secteur des déchets (2%) d'après l'ADEME.
+[^6]: Efficacité mesurée en PUE (Power Usage Effectiveness), c'est à dire le ratio entre la quantité d'électricité effectivement utilisée par les ordinateurs et la quantité d'électricité totale consommée par un centre de donnée (qui comprend aussi l'électricité utilisée pour le refroidissement des équipements, le contrôle de l'humidité, ...)
+[^7]: Ref à intégrer de [l'article arXiv](https://arxiv.org/abs/1706.03762v1)
+[^8]: Les transformers comprennent eux-même différents types d'intelligence artificielle, spécialisés selon leur tâche. ChatGPT est au fur et à mesure de ses versions un outil de plus en plus généraliste, mais à l'origine il est spécialisé dans la génération de texte semblable au langage humain. 
+[^9]: Concept d'économie, défini tel que "_l’augmentation de consommation liée à la réduction des limites à l’utilisation d’une technologie [...]_" par François Schneider, dans "ECO-INFO-SOCIETY: Strategies for an Ecological Information Society"
+[^10]:175 milliards de paramètres, soit un modèle de grande taille, mais bien plus réduit que de nombreux modèles plus récents, dont très probablement ChatGPT-4 et 5.
+[^11]: Chiffres officiels du USGS (US Geological Survey) pour 2015.
