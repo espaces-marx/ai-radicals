@@ -1,12 +1,16 @@
+// Intro générale environnement & IA
+
 ## Quel impact global de l'IA ?
 
 _**Comment poser une question à ChatGPT en France peut produire des émissions de CO2 et une consommation d'eau potable aux Etats-Unis ?**_ 
-Pour bien répondre à cette question et mieux mesurer comment maîtriser nos usages individuels et collectifs, il est utile de comprendre comment fonctionne l'IA générative.
+Pour bien répondre à cette question et mieux mesurer comment maîtriser l'impact de nos usages individuels et collectifs, il est utile de comprendre comment fonctionne l'IA générative. 
+
+### Complexité croissante des modèles
 
 **Pour générer un message, l'intelligence artificielle fait une prédiction statistique à partir de sa compréhension de notre langue.** Pour un outil comme ChatGPT cette connaissance est issue d'un entraînement intensif, où le programme doit deviner mot par mot le contenu d'un texte dont seul le premier mot n'est pas masqué.
 
 À ce stade, la future IA générative est une forme bien plus évoluée -_mais pas entièrement différente_- de l'outil d'auto-complétion que l'on retrouve dans nos smartphones lorsque l'on écrit un message ; ce dernier nous propose ce qui lui paraît être le prochain mot le plus probable.
-Ces algorithmes plus primitifs mémorisent nos choix de mots à partir des messages que nous écrivons, et ils gagnent une efficacité -_relative_- au fur et à mesure que la quantité de nos messages écrits augmente. Cependant ils ont une représentation très pauvre de notre langue, qui se limite à enregistrer combien de fois le mot "Je", par exemple, a été immédiatement suivi de "suis". 
+Ces algorithmes plus primitifs mémorisent nos choix de mots à partir des messages que nous écrivons, et ils gagnent une efficacité -_relative_- au fur et à mesure que la quantité de leurs données - _nos écrits_ - augmente. Cependant ils ont une représentation très pauvre de notre langue, qui se limite à enregistrer combien de fois le mot "Je", par exemple, a été immédiatement suivi de "suis". 
 
 **La compréhension des relations entre les mots est bien plus complexe dans un modèle du même type que ChatGPT, dit _Transformer_[^8].** L'idée derrière le fonctionnement d'un Transformer est formalisée en 2017, dans un article de recherche historique dans le domaine de l'apprentissage automatique, "_Attention is all you need_"[^7] ("_L'attention est tout ce dont vous avez besoin_") produit par une équipe de chercheurs de Google. 
 **Comment fonctionnent ces modèles ?** Au lieu de se concentrer uniquement sur la fréquence à laquelle un mot en suit un autre, **les Transformers s'appuient sur des techniques développées à l'origine pour des outils de traduction**. Chaque langue ayant des règles différentes pour l'ordre d'une phrase ou la conjugaison des mots, les outils de traduction ont besoin de pouvoir **porter leur attention sur différentes parties d'une phrase** en langue d'origine -_pas uniquement le mot précédant celui à traduire_-, pour en produire une version traduite dans la langue ciblée. Par exemple pour traduire en français le mot anglais "_this_" (ce / cette, en français), il faut pouvoir identifier dans l'ensemble d'une phrase quel est le sujet et déterminer si celui-ci est masculin ou féminin ("_ce tabouret_" ou "_cette table_"). 
@@ -17,15 +21,14 @@ L'entraînement lui-même est fait sur un corpus de textes bien plus important q
 Pour les modèles de moyenne à grande taille (de plusieurs dizaines à plusieurs centaines de milliards de paramètres)  cela pourrait aller de l'équivalent de **l'ensemble des documents textuels de la Bibliothèque Nationale de France** (40 millions de documents et 15 millions de livres) s'ils étaient tous numérisés, à **10 fois l'ensemble des articles de Wikipédia**, toutes langues confondues. 
 La limite haute de la quantité de données utilisées pour l'entraînement des plus grands modèles d'IA augmente considérablement chaque année, tant qu'elle pourrait croiser entre 2026 et 2032 la courbe de la quantité de textes exploitables disponibles : c'est à dire de l'ensemble des textes numériques, d'une qualité suffisante pour être exploités, et publiquement accessibles ([ref](https://epoch.ai/blog/will-we-run-out-of-data-limits-of-llm-scaling-based-on-human-generated-data)). L'entraînement des modèles ne serait alors plus limité par des facteurs techniques, mais par une quantité insuffisante de textes -_numérisés_- produits par l'humanité dans son ensemble.
 
-### Intelligence artificielle et centres de données
+### L'IA et la transformation des centres de données
 
 **Entraîner un modèle d'IA sur autant de données sans y dédier des années demande une capacité de calcul phénoménale**, bien au delà de celle qui peut être atteinte par nos ordinateurs personnels. Comme pour la quantité de textes utilisée, la puissance de calcul mobilisée pour l'entraînement des plus grands modèles connaît une croissance explosive; au point qu'on estime qu'elle double tous les 6 mois ([ref](https://epoch.ai/data/ai-models)). 
 
 Pour atteindre leurs objectifs d'entraînement, les entreprises développant de nouveaux modèles d'IA ont donc recours à des centres de données, qui regroupent en un même lieu des ordinateurs en réseau avec une grande puissance de calcul et une capacité importante de stockage (utile pour la quantité de données servant à l'entraînement d'une IA). 
 
->[!NOTE] **Les centres de données : le "_Cloud_" au sol**
->
->L'utilisation des centres de données n'est ni nouvelle, ni une invention due à l'intelligence artificielle. Ils sont la forme matérielle derrière le concept de "_Cloud (computing)_". 
+>[!info] **Les centres de données : le "_Cloud_" au sol**
+L'utilisation des centres de données n'est ni nouvelle, ni une invention due à l'intelligence artificielle. Ils sont la forme matérielle derrière le concept de "_Cloud (computing)_". 
 Concrètement, un centre de données permet un gain d'efficacité par rapport à une situation ou ne seraient exploités que le stockage et les puissances de calcul individuelles de nos ordinateurs personnels, ou de quelques serveurs isolés dans chaque entreprise. 
 
 La plupart d'entre nous utilisons au quotidien un ou des services qui emploient des centres de données :  recherches et suite Google (Docs, Drive, Gmail, ...), réseaux sociaux, Netflix et ses concurrents, Spotify; sans parler des simples sites avec un hébergement partagé. Une certaine mesure de l'efficacité de ce système est qu'entre 2010 et 2017, malgré l'augmentation continue de ce type de services (développement des réseaux sociaux, streaming), la dépense en électricité liée aux centres de données est restée globalement stable aux Etats-Unis, en dessous de 2% de l'électricité consommée à l'échelle du pays ([ref](https://escholarship.org/uc/item/32d6m0d1)).
@@ -42,8 +45,7 @@ On peut notamment l'observer à travers l'évolution de leur consommation d'éle
 
 **Pourquoi une telle évolution ?** D'après le Département de l'Énergie américain, la moitié de l'électricité utilisée par des centres de données en 2024 était déjà lié à l'intelligence artificielle. L'essentiel de cette contribution de l'IA est due à un groupe réduit de serveurs (moins de 10% en 2024) équipés de processeurs optimisés pour l'IA, les processeurs graphiques ou GPU (Graphics Processing Unit). 
 
->[!NOTE] Des jeux vidéos à l'IA
->
+>[!info] Des jeux vidéos à l'IA
 >**Graphics Processing Unit**. Comme son nom l'indique, cette technologie servait auparavant à calculer l'affichage de pixels pour des graphismes, principalement de jeux vidéos, souvent considérés parmi les programmes les plus complexes et intensifs en ressources. 
 >**Les GPUs permettent de traiter en parallèle de très nombreux calculs**, et ainsi dans le domaine de l'IA, d'accélérer considérablement la durée de l'entraînement d'un modèle.  
 >
@@ -58,13 +60,18 @@ Du fait de leur dimensionnement et de la construction récente d'une large propo
 
 L'impact de l'IA dans les centres de données a également pour effet d'augmenter leur **consommation d'eau douce, souvent potable**, notamment pour refroidir les GPUs à travers différentes solutions techniques. Les centres de données à hyper et large échelle concentrent à eux seuls 84% de la consommation directe d'eau de l'ensemble des centres en 2023, qui atteint la même année 66 milliards de litres ([ref](https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers)). Ce chiffre est impressionnant, mais cette consommation _annuelle_ représente seulement 6% de la consommation totale d'eau douce américaine en un seul jour[^11].
 **La principale cause de consommation d'eau douce par les centres de données se trouve en réalité dans leurs sources d'électricité**. Si on ajoute aux quantités précédentes - _directement consommées par les centres_ -, l'eau consommée par les différentes formes de centrales thermiques pour les alimenter, on atteint pour l'ensemble de l'année 2023 environ 860 milliards de litres d'eau consommés, soit 80% de la consommation totale d'eau douce américaine en un seul jour.
-En combinant ces deux sources de consommation d'eau, on estime que l'entraînement d'un modèle de la taille de ChatGPT-3[^10]  consomme environ 5,5 millions de litres d'eau.
+En combinant ces deux sources de consommation d'eau, on estime que l'entraînement d'un modèle de la taille de ChatGPT-3[^10]  consomme environ 5,5 millions de litres d'eau ([ref](https://arxiv.org/pdf/2304.03271)).
 
 À l'échelle de l'ensemble des consommations américaines, les quantités d'électricité et encore plus d'eau utilisées peuvent sembler peu importantes. La vitesse de leur croissance pourrait cependant poser problème dans un avenir proche, si en 2023 les centres de données pesaient 4% dans la consommation électrique nationale, ils pourraient atteindre 12% en 2028 ([ref](https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers)), soit un niveau proche de celui consommé actuellement pour le résidentiel (15%([ref](https://www.eia.gov/energyexplained/us-energy-facts/images/consumption-by-source-and-sector.pdf))). 
 
->[!NOTE] En Europe, la dynamique inquiétante de l'Irlande
->
+>[!info] En Europe, la dynamique inquiétante de l'Irlande
 >Ce problème existe déjà en Irlande, qui - _après avoir mis en place une politique favorable à l'investissement des géants du numérique_ - consomme aujourd'hui 20% de son électricité pour les centres de données, avec des projections à 30% pour 2028, ce qui en ferait la première source de consommation d'électricité nationale ([ref](https://theshiftproject.org/app/uploads/2025/04/2025_03_06-TSP-Rapport-intermediaire-IA-quelles-infra-num-monde-decarbone.pdf)).
+
+
+### Impact de la génération
+// Part de l'impact du à l'entrainement VS part des usages concrets (inférences)
+// Différenciation des impacts par type de génération
+// Propositions, ici ou transition prochaine sous-partie.
 
 
 -------------
