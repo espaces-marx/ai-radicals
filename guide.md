@@ -8,16 +8,14 @@ Il existe des dizaines d’outils d’IA, mais tous ne se valent pas. Voici quel
 
 | Outil | Avantages | Inconvénients |
 | :---- | :-------- | :------------ |
-| **Mistral AI (Le Chat)** | Open source, développé en Europe, respectueux des données personnelles, accessible gratuitement. | Moins connu que les géants américains, interface parfois moins intuitive. |
+| **Mistral AI (Le Chat)** | Partiellement open source, soumis au droit européen qui est plus protecteur des données personnelles. | Moins connu que les géants américains, interface parfois moins intuitive. |
 | **ChatGPT (OpenAI)** | Très populaire, interface simple. | Propriétaire, contrôlé par Microsoft, collecte massive de données. |
-| **Bing AI / Copilot** | Intégré à Microsoft, bon pour les recherches web. | Lié à Microsoft, moins transparent sur l’utilisation des données. |
-| **Hugging Chat** | Basé sur des modèles open source. | Moins performant pour les tâches complexes. |
+| **Deepseek** | Gratuit, Open source, Performant, modifiable et exécutable localement. | Sécurité et gestion des données encore peu documentées, jeune projet, moins stable que les géants établis, nécessite parfois des compétences techniques pour une utilisation locale. |
 
 *Pourquoi recommandons-nous Mistral ?*
-- **Indépendance** : Mistral est une entreprise européenne, moins liée aux géants américains que ChatGPT ou Google.
-- **Éthique** : Engagement pour une IA plus transparente et moins centralisée.
-- **Gratuité** : Une version gratuite existe, sans obligation de payer pour des fonctionnalités de base.
-- **Respect des données** : Moins de risques que vos échanges soient utilisés à des fins commerciales.
+- **Plus fiable** : Mistral est une entreprise européenne, moins liée aux géants américains que ChatGPT ou Google.
+- **Gratuite** : Une version gratuite existe, sans obligation de payer pour des fonctionnalités de base.
+- **Plus respectueuse des données** : Moins de risques que vos échanges soient utilisés à des fins commerciales.
 
 ## Comment y accéder ?
 
@@ -57,6 +55,15 @@ Une fois que vous êtes à l’aise :
 - Utilisez-la pour traduire des documents militants (anglais → français, etc.).
 - Demandez-lui de générer des idées pour des slogans, des affiches, ou des stratégies d’action.
 Exemple : « J’organise un atelier sur les féministes ouvrières des années 70. Propose-moi 3 activités pour animer la discussion. »
+
+## Explorer les options avancées
+
+- **Projets** : Permet d’organiser et de regrouper vos conversations, documents et ressources par thème ou objectif pour un suivi structuré et collaboratif.
+> Par exemple, il est possible de créer un espace dédié à la préparation d’une campagne contre la précarité étudiante, où sont centralisés tous les tracts, comptes-rendus de réunion, liens utiles et échanges avec les membres du collectif.
+- **Agents** : Automatise des tâches complexes (recherche, analyse, rédaction) en créant des assistants spécialisés, capables d’agir de manière autonome selon vos consignes.
+> Par exemple, il est possible de configurer un agent pour surveiller en temps réel les actualités locales sur les fermetures d’hôpitaux, résumer les infos clés et alerter le collectif dès qu’un nouveau cas est repéré.
+- **Intelligence** : Offre des réponses avancées, contextualisées et adaptées à des besoins précis, en exploitant les dernières innovations en IA pour une assistance plus pertinente et puissante.
+> Par exemple, il est possible de demander une analyse critique et synthétique des derniers discours gouvernementaux sur la réforme des retraites, avec des arguments clés pour alimenter un débat public ou un communiqué.
 
 ## Précautions militantes
 
