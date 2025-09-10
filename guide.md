@@ -26,9 +26,10 @@ Votre collectif veut former ses membres à une nouvelle compétence (ex. : organ
 
 ### Ce qu’il faut en plus de l’IA :
 
-- **Relire et tester** le tutoriel avec des camarades pour vérifier qu’il est compréhensible.
+- **Relire et tester** le tutoriel avec des camarades pour vérifier qu’il est compréhensible, que ça fonctionne et que les informations données ne sont pas erronnées.
+- **Rédiger** ce qui peut l'être, ajouter des formules... bref : s'investir dans le texte et se l'approprier.
 - **Ajouter** des visuels (schémas, captures d’écran) si nécessaire.
-
+  
 ### Vigilance :
 
 L’IA peut omettre des détails importants ou proposer des méthodes inadaptées à votre contexte. Adaptez toujours le résultat à votre réalité locale.
@@ -36,11 +37,14 @@ L’IA peut omettre des détails importants ou proposer des méthodes inadaptée
 
 ## Rédiger un tract court et mobilisateur
 
+*Voir l’exemple complet en annexe 1.*
+
 ### Situation :
 
 Une manifestation ou une grève est prévue (ex. : le 10 septembre 2025, journée de mobilisation générale). Il faut un tract percutant, rapide à distribuer, qui donne envie d’agir.
 
 *Pourquoi utiliser l’IA ?*
+- Elle permet de sauter l'étape de la feuille blanche : on peut s'appuyer sur de premiers éléments obtenus rapidement pour travailler.
 - Elle résume les enjeux à partir d’un article ou d’un communiqué.
 - Elle propose des formulations mobilisatrices (slogans, appels à l’action).
 - Elle adapte le ton (urgent, combatif, pédagogique).
@@ -59,11 +63,11 @@ Une manifestation ou une grève est prévue (ex. : le 10 septembre 2025, journé
 
 - **Vérifiez** les dates, lieux et revendications : l’IA peut inventer ou déformer des infos.
 - **Personnalisez** avec des éléments locaux (lieu de rassemblement, contacts).
-
-*Voir l’exemple complet en annexe 1.*
-
+  
 
 ## Transformer un article en script pour une vidéo courte
+
+*Voir l’exemple complet en annexe 2.*
 
 ### Situation :
 
@@ -91,8 +95,6 @@ Précisez le style : « Parle directement à la caméra, comme si tu t’adressa
 - **Testez** le script à voix haute : certaines phrases peuvent sembler naturelles à l’écrit mais lourdes à l’oral.
 - **Ajoutez** des images ou des sous-titres pour rendre la vidéo plus dynamique.
 
-*Voir l’exemple complet en annexe 2.*
-
 
 ## Quand l’IA n’est pas adaptée ?
 
@@ -111,7 +113,7 @@ En résumé :
 
 ## Annexe 1 : Exemple de tract généré pour le 10 septembre
 
-(À partir du Parti-pris de Nos Révélations)
+(À partir du Parti-pris de Nos Révolutions)
 
 10 SEPTEMBRE : TOUS DANS LA RUE POUR LA VICTOIRE !
 Pourquoi le 10 septembre ?
