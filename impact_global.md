@@ -68,16 +68,101 @@ Si en 2023 les centres de données pesaient pour 4% dans la consommation électr
 Aujourd'hui à une échelle plus locale, un certain nombre de questions se posent sur la mobilisation de ressources par les centres de données. C'est particulièrement le cas dans les zones arides de l'eau, qui est moins facilement transportable que l'électricité. Ces impacts locaux sont plus difficiles à déterminer, les géants du numérique étant peu transparents sur l'utilisation des centres à hyper-échelle. 
 
 
->[!info] En Europe, la dynamique inquiétante de l'Irlande
+>[!info] **En Europe, la dynamique inquiétante de l'Irlande**
 > 
 > En Irlande, la question du niveau d'utilisation des ressources nationales pour les centres de données se pose déjà.  
 > Après avoir mis en place une politique fiscale favorable à l'investissement des géants du numérique, l'Irlande est aujourd'hui de loin le pays dans le monde dédiant la plus grande part de son électricité (20%) aux centres de données, avec des projections à 30% pour 2028, ce qui en ferait la première source de consommation d'électricité nationale ([ref](https://theshiftproject.org/app/uploads/2025/04/2025_03_06-TSP-Rapport-intermediaire-IA-quelles-infra-num-monde-decarbone.pdf)).
 
 
 ### Impact de la génération
-// Part de l'impact du à l'entrainement VS part des usages concrets (inférences)
-// Différenciation des impacts par type de génération
-// Propositions, ici ou transition prochaine sous-partie.
+
+**_Et les utilisateurs dans tout ça ?_**
+
+L'entraînement d'un modèle d'intelligence artificielle est du fait de sa complexité et des volumes de données impliqués, très probablement la tâche la plus intensive en ressources actuellement accomplie dans un centre de données. 
+Au fur et à mesure des gains d'efficacité permis par les centres de grande échelle et de leur équipement en générations successives de GPUs spécialisées dans l'IA, une quantité croissante de modèles peut être entraînée chaque année. On estime par exemple qu'il existe déjà en 2025 plus de 30 modèles d'IA entraînés à un niveau au moins égal (en intensité de calculs) à celui de ChatGPT-4 sorti en mars 2023[^20] malgré le coût d'une telle opération, estimé à plusieurs dizaines de millions de dollars[^21].
+
+**Pourtant, la part de l'entraînement des modèles dans l'impact environnemental de l'IA devient de plus en plus minoritaire**, au fur et à mesure que se développent les usages de cette technologie. D'après certains chercheurs, **la part des inférences (nos générations de textes) serait maintenant écrasante et pourrait représenter 80 à 90% de la puissance de calcul utilisée pour l'IA**[^22]. Quantifier de façon exacte la dépense énergétique liée aux inférences est difficile, tant la plupart des grandes entreprises du secteur communiquent peu à ce sujet; la recherche sur les impacts de l'IA a également eu tendance à se concentrer jusqu'à récemment sur la phase d'entraînement[^23].
+
+Cette prise de conscience progressive rappelle aussi que **les modèles d'IA avant fin 2022 et le lancement de ChatGPT étaient majoritairement des outils de la recherche scientifique** dans des domaines spécifiques (notamment en machine learning ) où les coûts d’entraînement étaient effectivement très majoritaires, les utilisateurs étant peu nombreux. 
+On a tendance à oublier cet ancien usage restreint tant l'adoption massive de cet outil a été rapide. Après l'ouverture du service de ChatGPT en novembre 2022, OpenAI a atteint en 2 mois 100 millions d'utilisateurs actifs[^24], une étape de développement atteinte seulement en 9 mois pour TikTok et en 2 ans et demi pour Instagram[^25]. 
+
+#### Étude de cas : ChatGPT-4o
+
+Pour se donner une bonne représentation de l'impact de nos générations de texte, il est utile de s'intéresser aux modèles les plus populaires et aux données les plus récentes, tant le secteur évolue rapidement. 
+Par exemple au moment de l'écriture de ce texte, seulement un mois s'est écoulé depuis la sortie du nouveau modèle de référence d'OpenAI, ChatGPT-5. Peu d'études sont disponibles à son sujet, mais une projection de l'impact qu'aurait pu avoir l'utilisation de son prédécesseur (ChatGPT-4o) en 2025 existe, centrée sur le rôle des inférences[^26]. 
+
+À partir d'une estimation du type de matériel utilisé[^27] par OpenAI pour ce modèle, cette étude calcule une **consommation de 0.42 watt-heure pour la génération d'une réponse à un message court (moins de 100 tokens), soit seulement 40% de plus qu'une simple recherche Google** (0.30 watt-heure). 
+
+>[!info] **Les tokens, l'unité d'échange de l'IA**
+>
+>Un token - *jeton en français* - est l'unité d'usage pour mesurer la quantité de texte que l'on écrit dans les messages que l'on envoie à l'IA mais aussi ceux qu'elle génère, cette phrase dans son ensemble fait par exemple 61 tokens pour GPT-4o. C'est aussi généralement l'unité de référence utilisée pour acheter des services d'IA payants.
+>
+>Chaque token correspond environ à un mot, même si certains sont divisés en plusieurs (par exemple le mot "_décomposer_" peut prendre deux tokens "_dé_" et "_composer_"), les signes de ponctuation et d'autres symboles occupent généralement chacun un token.
+>
+>OpenAI indique dans sa documentation[^28] qu'un token équivaut généralement à 4 lettres ou les 3/4 d'un mot; il y est également précisé que les messages qui ne sont pas en anglais produisent souvent davantage de tokens sur leurs modèles.
+
+**À l'échelle d'une journée l'utilisateur moyen de ChatGPT ferait environ 8 générations de textes.** Si ces messages font tous moins de 100 tokens la consommation d'énergie reste limitée (3,37 watt-heure), mais si il s'agit de messages plus longs (autour de 1000 tokens), 8 générations équivaudront au chargement complet de deux smartphones (environ 10 watt-heure).
+À ce stade, les consommations individuelles sont moins remarquables dans leurs impacts que les chiffres liés à l'entraînement des IA, mais elles sont bien plus nombreuses.  En se basant sur certaines informations d'usage rendues publiques par OpenAI,  cette étude estime qu'**il est probable que 772 milliards de requêtes auraient pu être adressées à ChatGPT-4o en 2025,** soit l'équivalent de 15% du nombre de recherches Google en 2024. Quel impact pour un tel nombre de générations, avec ce modèle ?
+
+- **Électricité** : 391 000 MWH (mégawattheure), soit **la consommation annuelle de 35 000 foyers américains**
+- **Eau [^29]** : 1,3 milliard de litres, soit l'équivalent de **l'eau potable bue en un an par 1,2 millions de personnes**
+- **CO2** : 138 000 tonnes, soit **autant d'émissions que 30 000 voitures thermiques en un an**
+
+En conclusion de leur étude, les auteurs soulignent ce qui leur semble être un cas du paradoxe de Jevons[^30] : l'intelligence artificielle permettrait (en comparaison avec le travail humain) une dépense réduite d'énergie dans l'accomplissement d'un certain nombre de tâches, mais conduirait finalement à une augmentation de la consommation d'énergie totale, du fait de l'augmentation de la demande. 
+On peut se représenter par exemple les consommations énergétiques du travail humain pour générer un texte de 250 mots[^31], c'est à dire l'utilisation probable d'un ordinateur pour taper le texte, d'un chauffage (ou de la climatisation), des coûts énergétiques indirects liés à la production au transport et à la transformation de notre alimentation, etc.  Peu de chances dans ce cadre même pour les plus efficaces d'entre nous d'atteindre une utilisation moyenne de moins d'un demi watt-heure, sans parler de la différence de durée pour accomplir la tâche. 
+Ce gain d'efficacité génère lui-même une demande importante, qui finit par augmenter la quantité d'énergie consommée. Autrement dit, même si la dépense d'électricité par génération (courte) de texte continue de diminuer, la quantité d'utilisateurs et d'utilisations variées de l'IA entraîne une dépense énergétique bien plus importante que les économies réalisées.
+
+>[!info] **Bientôt tous remplacés par l'IA?**
+>
+>La comparaison de l'efficacité du travail humain à celle de l'IA sur certaines tâches peut paraître assez hostile. Nous consommons tous plus d'eau et d'électricité que l'IA dans nos propres "générations" de texte. **Et alors ?**
+>
+>Comme nous l'avons vu, l'intelligence artificielle procède de façon statistique dans ses générations. En dehors de cette dimension, elle n'a pas de compréhension des textes qu'elle traite ou génère. Elle n'a pas non plus de conscience, de libre-arbitre ou de réelle capacité à prendre des décisions autonomes. En d'autres mots, elle ne fonctionne pas sans une intervention humaine qui va lui fixer des objectifs et orienter sa génération en fonction de ses besoins.
+>
+>Cette comparaison est donc celle d'un individu à un outil, dont l'intelligence est encore bien loin d'atteindre celle d'un chat[^32]. Dans ce cadre, l'horizon du remplacement massif du travail humain par l'IA semble encore lointain. 
+
+
+#### Quelles sont les tâches avec le plus fort impact ?
+Jusqu'ici nous nous sommes concentrés sur l'usage de la génération de texte à l'aide d'intelligence artificielle. Or, de nombreux autres usages se développent, dont les plus connus sont peut-être la génération d'images ou de vidéos. De façon générale, ces utilisations demandent plus de calculs pour être réalisés, et donc une plus grande utilisation d'électricité. 
+
+**Pourquoi ?** L'élément le plus évident est que pour un texte, l'unité de la génération est le token, soit essentiellement des mots; alors que pour une image il s'agit de pixels. La génération de texte typique produit entre 300 et 400 mots, alors qu'une image est souvent générée à un format de 1024x1024 pixels, soit plus d'1 million de pixels au total.  
+
+L'information de couleur d'un pixel peut sembler moins complexe que le sens d'un mot, mais elle peut prendre de nombreuses valeurs (code couleur, luminosité) et dans le cadre de la création d'une image par un outil d'IA elle est calculée en lien avec non seulement les pixels qui l'entoure, mais également avec le contexte de l'ensemble de l'image. Plus la qualité d'image demandée est importante, plus le modèle va ajouter des étapes à la création de l'image dont chacune ajustera la valeur de chaque pixel.
+
+Les images ont donc une unité plus fine que les textes, calculée plusieurs fois pour une seule image statique. On se représente mieux la difficulté pour l'IA générative de produire des vidéos avec un nombre élevé d'images par seconde.
+
+
+>[!info] **Comment l'IA génère-t-elle des images ?**
+>
+>**Les modèles spécialisés dans la création d'image sont d'une nature hybride:** 
+>ils répondent à notre demande exprimée avec un texte, par une image. Pour atteindre ce résultat, un modèle d'IA dit _intermédiaire_ est entraîné sur de nombreuses paires images-texte pour en produire des représentations mathématiques. Il va traduire de cette façon notre demande, qu'il communiquera à un autre modèle spécialisé dans la reconstitution d'images. 
+>
+Ce deuxième modèle est entraîné à reconstituer des images plus ou moins déformées (notamment par l'ajout de "bruit"). Lors d'une génération d'image, il sera guidé par l'information de la représentation mathématique (de notre texte) pour **créer une image étape par étape**. On peut se représenter ce processus comme le fait de faire apparaître progressivement sur un écran entièrement brouillé, une image de plus en plus claire, ressemblant à la description donnée par l'utilisateur.
+>
+>Ces modèles sont dits de "_diffusion_" car ils s'inspirent de la recherche en physique sur la diffusion des particules; ils sont capables de calculer le passage d'un état diffus (comme une goutte d'encre dans de l'eau), à la reconstitution d'une image claire (la goutte d'encre avant le mélange avec l'eau). 
+
+
+À partir de plusieurs modèles d'IA open-source, la revue technologique du MIT[^22] estime les consommations de différentes utilisations :
+
+- **Génération de texte** - En moyenne, seulement 114 joules (soit un dixième de seconde de micro-onde) pour une réponse d'un petit modèle (Llama 3.1, 8B), mais jusqu'à 6706 joules (8 secondes de micro-onde) pour la version "large" du même modèle, avec plusieurs centaines de milliards de paramètres (Llama 3.1 405B)
+
+- **Images** -  Pour une image de qualité et de taille standard (1024x1024px) avec Stable Diffusion 3 Medium, on atteint l'équivalent de 2282 joules (soit 2 minutes et demi de micro-onde). En augmentant la qualité de l'image (50 étapes), on double cette consommation, pour atteindre l'équivalent de 5 secondes de micro-onde (4,402 joules)
+
+- **Vidéos** - Le modèle open-source le plus avancé dans ce domaine (CogVideoX, développé par une startup chinoise) utilise **3.4 million de joules pour créer une vidéo de 5 secondes de basse qualité, soit un micro-onde qui tourne pendant plus d'une heure**. 
+  Les autres modèles - _propriétaires_ - utilisent probablement bien plus d'énergie (ils sont capables de rendus de haute qualité, jusqu'à 30 secondes)
+
+**Les vidéos sont donc de loin les générations les plus énergivores de l'IA.** 
+Dans la plupart des cas, générer du texte reste bien moins coûteux en énergie qu'une génération d'image. Cependant une demande complexe, faite à un grand modèle texte (plusieurs centaines de milliards de paramètres), peut excéder la consommation d'une génération d'image standard. 
+
+La même source propose un scénario de consommation totale pour l'organisation d'un événement - _un marathon, pour une oeuvre de charité_ - que l'on pourrait facilement transposer dans un contexte militant, en modifiant quelques détails : 
+
+- Texte: 15 questions posées liées à l’événement, par exemple sur son financement,  des modalités d'organisation, des axes de campagnes de communication, etc.
+- Images: 10 essais de générations différentes avant de trouver un visuel convaincant pour communiquer. 
+- Vidéos: 3 essais de vidéos de 5 secondes, avant d'en trouver une qui servira sur les réseaux sociaux. 
+
+Dans ce scénario, la consommation totale des usages de l'IA pour l'organisation de l’événement se porterait à ***2,9 Kilo-Watt-Heure, soit l'équivalent de 16 kilomètres en voiture électrique, ou de faire tourner un micro-onde pendant 3,5 heures***.
+
+### Faut-il utiliser l'IA ?
+// À suivre!
 
 
 -------------
@@ -97,3 +182,19 @@ Aujourd'hui à une échelle plus locale, un certain nombre de questions se posen
 [^11]: Consommation d'eau résidentielle (intérieur et extérieur) estimée en 2015 à 83 gallons US (314 litres) par jour par personne, ne prend pas en compte l'eau utilisé pour la production des produits consommés. Source :  US Geological Survey.
 [^12]: Pourquoi pas de l'eau de mer ? L'utilisation d'eau douce servirait à limiter l'encombrement des tuyaux (des systèmes de refroidissement) que pourrait provoquer le sel, elle est également traitée pour éviter le développement de microbes.
 [^13]: Cette quantité porte sur l'eau consommée par les sources d'énergie mentionnées. Contrairement aux prélèvements d'eau, l'eau consommée n'est pas restituée. 
+
+----------------
+
+[^20]: Le nombre de paramètres de ce modèle n'a pas été rendu public par OpenAI, mais il est probable qu'à sa sortie il était le plus grand modèle d'IA générative existant. GPT-3 avait après tout 100 fois plus de paramètres que son prédécesseur, GPT-2.
+[^21]: Robi Rahman et al. (2025), "Over 30 AI models have been trained at the scale of GPT-4". Publié en ligne, sur epoch.ai. 
+[^22]: James O'Donnell et Casey Crownhart (2025), "We did the math on AI’s energy footprint. Here’s the story you haven’t heard." - MIT Technology Review. Publié en ligne, sur technologyreview.com ([ref](https://www.technologyreview.com/2025/05/20/1116327/ai-energy-usage-climate-footprint-big-tech/))
+[^23]: R. Verdecchia, J. Sallou, L. Cruz: "_A systematic review of Green AI_" 2023 - Considèrent 98 articles écrits sur l'IA entre 2015 et 2023, dont 49 se concentrent sur la phase d'entraînement, contre 17 pour la phase d'inférence.
+[^24]: Utilisateurs actifs mensuels.
+[^25]: Dylan Patel et Afzal Ahmad (2023), "The Inference Cost Of Search Disruption – Large Language Model Cost Analysis". Publié en ligne, sur semianalysis.com ([ref](https://semianalysis.com/2023/02/09/the-inference-cost-of-search-disruption/))
+[^26]: "How Hungry is AI? Benchmarking Energy, Water, and Carbon Footprint of LLM Inference" ([ref](https://arxiv.org/pdf/2505.09598v1))
+[^27]: Les auteurs de l'étude supposent le type de matériel utilisé à partir d'informations publiques sur les entreprises (par exemple achat massif de certains types de GPU), qu'ils confrontent ensuite à des tests de performance pour ajuster leurs hypothèses initiales.
+[^28]: Article "_What are tokens and how to count them?_" de la plateforme d'aide d'OpenAI: _help.openai.com_
+[^29]: Eau consommée, c'est à dire évaporée. Cela comprend l'eau consommée par les centres directement, ainsi que l'eau utilisée par leurs sources d'alimentation en électricité (centrales thermiques). 
+[^30]: Économiste britannique du XIXe siècle. Il observe que les gains d'efficacité des machines à vapeur (moins de charbon pour plus d'énergie), créent une demande additionnelle qui augmente la quantité totale de la ressource utilisée plutôt que de la réduire.
+[^31]: Taille générale de la réponse de l'IA à un message court.
+[^32]: Comme le souligne régulièrement le franco-américain Yann le Cun, responsable scientifique en intelligence artificielle pour Meta (Facebook), dans plusieurs déclarations.
