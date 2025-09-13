@@ -145,7 +145,7 @@ Ce deuxième modèle est entraîné à reconstituer des images plus ou moins dé
 
 - **Génération de texte** - En moyenne, seulement 114 joules (soit un dixième de seconde de micro-onde) pour une réponse d'un petit modèle (Llama 3.1, 8B), mais jusqu'à 6706 joules (8 secondes de micro-onde) pour la version "large" du même modèle, avec plusieurs centaines de milliards de paramètres (Llama 3.1 405B)
 
-- **Images** -  Pour une image de qualité et de taille standard (1024x1024px) avec Stable Diffusion 3 Medium, on atteint l'équivalent de 2282 joules (soit 2 minutes et demi de micro-onde). En augmentant la qualité de l'image (50 étapes), on double cette consommation, pour atteindre l'équivalent de 5 secondes de micro-onde (4,402 joules)
+- **Images** -  Pour une image de qualité et de taille standard (1024x1024px) avec Stable Diffusion 3 Medium, on atteint l'équivalent de 2282 joules (soit 2 secondes de micro-onde). En augmentant la qualité de l'image (50 étapes), on double cette consommation, pour atteindre l'équivalent de 5 secondes et demi de micro-onde (4,402 joules)
 
 - **Vidéos** - Le modèle open-source le plus avancé dans ce domaine (CogVideoX, développé par une startup chinoise) utilise **3.4 million de joules pour créer une vidéo de 5 secondes de basse qualité, soit un micro-onde qui tourne pendant plus d'une heure**. 
   Les autres modèles - _propriétaires_ - utilisent probablement bien plus d'énergie (ils sont capables de rendus de haute qualité, jusqu'à 30 secondes)
