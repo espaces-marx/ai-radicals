@@ -93,24 +93,24 @@ La méthode Chain Of Thought, ou "_fil de pensée_" en français, propose comme 
 **C'est une méthode bien adaptée aux tâches complexes**, comme le travail d'analyse qui peut passer par de nombreux chemins différents, elle permet de garder une certaine maîtrise sur ceux qui seront finalement empruntés. 
 Mais encore ? Un exemple : 
 
->" _Propose une stratégie de campagne pour obtenir la gratuité des transports en commun dans une métropole.
+>" _Propose une stratégie de campagne pour obtenir la gratuité des transports en commun dans une métropole._
 >
->1. Analyse d’abord les arguments économiques (coût social de la voiture individuelle, subventions publiques existantes) et écologiques (réduction des émissions).
->2. Identifie les acteurs à mobiliser (usagers, syndicats, associations) et les leviers politiques (référendums, pression sur les élus).
->3. Propose un calendrier d’actions (manifestations, pétitions, occupations symboliques) en t’inspirant de campagnes similaires en Europe._ "
+>1. _Analyse d’abord les arguments économiques (coût social de la voiture individuelle, subventions publiques existantes) et écologiques (réduction des émissions)._
+>2. _Identifie les acteurs à mobiliser (usagers, syndicats, associations) et les leviers politiques (référendums, pression sur les élus)._
+>3. _Propose un calendrier d’actions (manifestations, pétitions, occupations symboliques) en t’inspirant de campagnes similaires en Europe._ "
 
 Ici les parenthèses sont utilisées pour inclure pas mal de détails sur ce à quoi chaque point peut correspondre (l'écologie dans le point 1 est ciblée sur les émissions par exemple). Il y a un équilibre à trouver selon les tâches entre ce que vous souhaitez laissez libre pour la génération, et ce qui doit être en partie prédéterminé et plus prévisible. 
 
 Il est également possible de combiner cette méthode à la précédente. En reprenant notre exemple sur la précarité étudiante et en rendant plus visible ses différents éléments, on pourrait atteindre ce type de prompt:
 
->"_Rôle: Tu es un militant communiste spécialisé dans la vulgarisation du marxisme et des enjeux sociaux contemporains. 
+>"_Rôle: Tu es un militant communiste spécialisé dans la vulgarisation du marxisme et des enjeux sociaux contemporains._ 
 >
->Tâche: Propose une ébauche d'un court appel à manifester contre la précarité étudiante en 2025. Ton texte doit comprendre :
-> 1. Une explication simple des causes structurelles de la précarité étudiante (ex de causes) 
-> 2. Un rappel des mobilisations récentes sur ce sujet (ex d'événements)
-> 3. Des propositions politiques concrètes (propositions ici)
+>_Tâche: Propose une ébauche d'un court appel à manifester contre la précarité étudiante en 2025. Ton texte doit comprendre :_
+> 1. _Une explication simple des causes structurelles de la précarité étudiante (ex de causes)_
+> 2. _Un rappel des mobilisations récentes sur ce sujet (ex d'événements)_
+> 3. _Des propositions politiques concrètes (propositions ici)_
 >
->Format: Ton texte doit utiliser un ton accessible mais radical, structuré en paragraphes courts avec des intertitres._"
+>_Format: Ton texte doit utiliser un ton accessible mais radical, structuré en paragraphes courts avec des intertitres._"
 
 ### Few-Shot prompting
 Ou, dans une traduction approximative : prompt en quelques essais. L'idée de cette technique est de "_nourrir_" l'IA avec plusieurs exemples du type de résultats que vous souhaitez obtenir. 
@@ -179,7 +179,7 @@ Méfiez-vous particulièrement des tableaux qui récapitulent et mélangent les 
 **Paradoxalement, si vous êtes fâchés avec les mathématiques, l'IA peut être un très bon professeur** et vous expliquer de façon aussi accessible que nécessaire les éléments qui vous posent problème. C'est une bonne attitude à adopter en général : ne soyez pas dépendants des réponses de l'IA, mais utilisez-là pour apprendre les connaissances qui vous manquent pour pouvoir juger ses réponses, même celles que vous pensez hors de votre portée.
 
 **La langue**
-Les grands modèles d'IA "_parlent_" très bien les principales langues internationales, dont le français. Ils sont cependant toujours conçus d'abord à majorité à partir de textes anglais, on peut donc être attentifs à quelques anglicismes inventés ou à la sur-représentation de tournures de phrases peu communes en français. Les erreurs sont cependant assez rares.
+Les grands modèles d'IA "_parlent_" très bien les principales langues internationales, dont le français. Ils sont cependant toujours conçus d'abord en majorité à partir de textes anglais, on peut donc être attentifs à quelques anglicismes inventés ou à la sur-représentation de tournures de phrases peu communes en français. Les erreurs sont cependant assez rares.
 
 Exemples rencontrés récemment avec GPT-5 :  
 - Militance au lieu de militantisme, à partir de l'anglais _militancy_
