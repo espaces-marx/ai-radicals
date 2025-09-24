@@ -7,27 +7,27 @@
 # 'Prompter' comme un prompter
 
 **Qu'est-ce qu'un prompt ?**
-_Prompt_ est à l'origine un verbe anglais qui veut dire "_causer_" ou "_faire arriver_" quelque-chose, c'est maintenant le mot qui désigne toute instruction que vous adressez à une IA. 
-Même un message simple comme "_Bonjour!_" est un prompt, sans que l'on ait besoin de formuler une demande, l'IA nous retournera probablement la politesse.
+_Prompt_ est à l'origine un verbe anglais qui veut dire "_causer_" ou "_faire arriver_" quelque-chose. C'est maintenant le mot qui désigne toute instruction que vous adressez à une IA. Un bon équivalent français serait "_requête_".
+Même un message simple comme "_Bonjour!_" est un prompt. Sans que l'on ait besoin de formuler une demande, l'IA nous retournera probablement la politesse.
 
-Chaque mot, chaque virgule de nos prompts influence le calcul effectué par l’IA et la réponse qu’elle générera en retour sera celle qu'elle estimera être la plus probable. Ils sont les ingrédients qui détermineront la soupe qui vous sera servie; alors autant bien les choisir. C'est notamment l'objet du "_Prompt Engineering_" (ou ingénierie de prompt), la recherche sur les techniques qui améliorent l'efficacité des prompts. 
+Chaque mot, chaque virgule de vos prompts influence le calcul effectué par l’IA et la réponse qu’elle générera en retour sera celle qu'elle estimera être la plus probable. Ces mots font partie des ingrédients qui détermineront la soupe qui vous sera servie; alors autant bien les choisir. C'est notamment l'objet du "_Prompt Engineering_" (ou ingénierie de prompt): la recherche sur les techniques qui améliorent l'efficacité des prompts. 
 
 **Pourquoi apprendre des techniques pour vos prompts ?**
-Les outils d'intelligence artificielle peuvent nous permettre d'effectuer rapidement des tâches répétitives, de passer moins de temps à chercher des informations ou à organiser nos idées;  en somme de libérer du temps pour du travail qualitatif, pour militer, ou même --_pourquoi pas_-- se reposer. 
-Mais parfois le résultat atteint apparaît trop générique ou éloigné des objectifs de départ. Utiliser les bons mots pour formuler la demande faite à l'outil d'IA est une tâche à ne pas négliger pour aboutir à des générations de texte utiles. Apprendre de nouvelles techniques peut vous permettre d'avoir une influence plus décisive sur le texte qui sera généré, ou même d'imaginer de nouvelles façons d'utiliser l'IA, plus adaptées à vos besoins. 
+Les outils d'intelligence artificielle peuvent vous aider à effectuer rapidement des tâches répétitives, à passer moins de temps à chercher des informations, à organiser vos idées ; en somme, à libérer du temps pour du travail plus qualitatif, pour militer, ou même --_pourquoi pas_-- se reposer. 
+Mais parfois le résultat obtenu est trop générique ou éloigné des objectifs de départ. Pour obtenir des générations de texte utiles, il est nécessaire de formuler la demande faite à l'IA en choisissant bien ses mots. Apprendre de nouvelles techniques permet d'avoir une influence plus décisive sur le texte qui sera généré, ou même d'imaginer de nouvelles façons d'utiliser l'IA, plus adaptées à vos besoins.
 
-**L'idée de ce texte est de rendre votre travail avec l'IA plus prévisible :** savoir quelles informations à rassembler avant de commencer et quelles questions se poser, quelle forme de prompt utiliser pour quel objectif, et comment évaluer le résultat obtenu. 
+**L'idée de ce texte est de rendre votre travail avec l'IA plus prévisible :** en déterminant quelles informations rassembler, quelles questions se poser en amont, quelle forme de prompt utiliser, pour quel objectif, et comment évaluer le résultat obtenu.
 
 ## Préparer le travail
 
 **Pourquoi se préparer ?**
 Même pour une tâche simple comme "_Propose une recette simple et rapide de pâtes_", un prompt mal formulé peut vous mener à des résultats peu utiles : une recette de spaghettis alors que vous n'avez plus que des farfalles, une sauce pesto alors que vous détestez l'ail, ou encore des ingrédients manquants. 
-Ces petits soucis montrent qu'une préparation minimale aurait été utile : en précisant le type de pâtes, les ingrédients disponibles et quelques préférences personnelles, plus de problèmes et pas de courses imprévues. 
+Ces petits soucis montrent qu'une préparation minimale aurait été utile. Il suffit de préciser le type de pâtes, les ingrédients disponibles et quelques préférences personnelles : plus de problèmes ni de courses imprévues !
 
-C'est d'autant plus important dans le cadre d'une utilisation militante : elle peut comprendre quelques tâches aussi simples que de préparer des pâtes, mais aussi des projets ambitieux avec des implications qui dépassent la tâche elle-même. Or il est souvent plus simple de réussir à obtenir la bonne recette de pâtes, que le bon angle idéologique. Alors, autant se faire une bonne idée du plat visé et des ingrédients qu'il nous faut, avant de laisser l'IA cuisiner. 
+C'est d'autant plus important dans le cadre d'une utilisation militante : elle peut comprendre quelques tâches aussi simples que de préparer des pâtes, mais aussi des projets ambitieux avec des implications qui dépassent la tâche elle-même. Or, il est vraisemblablement plus simple de réussir à obtenir une bonne recette de pâtes qu'un bon argumentaire politique. Alors, autant se faire une bonne idée du plat visé et des ingrédients qu'il vous faut, avant de laisser l'IA cuisiner. 
 
 **Par quoi commencer ?** 
-Avant d'écrire directement notre prompt, prenons le temps de réfléchir au travail que l'on va chercher à faire avec l'IA, en prenant si besoin quelques notes. Plusieurs questions se posent rapidement à nous :
+Avant d'écrire directement votre prompt, prenez le temps de réfléchir au travail que vous allez chercher à faire avec l'IA, en prenant si besoin quelques notes. Plusieurs questions se posent rapidement :
 
 **1. Quel est l'objectif général de la tâche à accomplir ?** 
 À quel problème allez vous répondre ?  Par exemple, dans le cadre d'une formation, quelles compétences particulières doivent-être visées et à quels besoins correspondent-elles ? Pour une communication, quel est le but de la campagne, quelles sont les conséquences souhaitées ?
@@ -36,30 +36,30 @@ Avant d'écrire directement notre prompt, prenons le temps de réfléchir au tra
 Le contexte peut par exemple concerner l'échelle (campagne nationale, action locale), le type d'événement (formation interne, mobilisation sociale), l'organisateur (parti, collectif, citoyens), le type de lieu (université, centre-ville, sortie d'entreprise), etc.
 
 Lorsque c'est possible, veillez à expliquer le contexte de façon accessible à un acteur extérieur. Il vaut mieux par exemple éviter l'utilisation d'éléments d'une nature très interne à une organisation, ou encore trop récents. Sur ce dernier point, si le contexte discuté est suffisamment connu, et que l'IA utilisée a accès a internet (c'est maintenant souvent le cas), il est possible de lui demander explicitement de chercher des informations en ligne. 
-Ex: "_Suite à la mise en place du gouvernement Lecornu (fait une recherche à ce sujet), [...]_"
+Ex: "_Suite à la mise en place du gouvernement Lecornu (fais une recherche à ce sujet), [...]_"
 
-Si le sujet est sensible (par exemple, une action de blocage), il peut-être utile de ne pas renseigner directement dans le prompt des éléments précis de dates, de lieux, ou de personnes. Diverses promesses sont faites sur l'anonymat des données, mais à partir du moment où l'on utilise pas une IA en local, aucune garantie réelle n'est possible. 
+Si le sujet est sensible (par exemple, une action de blocage), il est plus prudent de ne pas utiliser l'intelligence artificielle. Diverses promesses sont faites sur l'anonymat des données, mais à partir du moment où l'on n'utilise pas une IA en local, aucune garantie réelle n'est possible. Les entreprises qui distribuent les applications d'IA peuvent être mises en demeure par les États de partager leurs données ; même sans cela, elles sont dirigées par des capitalistes, qui ont eux-mêmes des intérêts politiques ; et il peut aussi tout simplement y avoir une fuite de données, dans le cadre d'un piratage ou d'un accident.
 
 **3. À quel public le texte produit doit-il s'adresser; et quelle est la meilleure manière de l'atteindre?**
 S'agit-il de militants, ou à l'inverse d'un public éloigné des organisations politiques ? Un groupe de personnes qui travaillent dans le même milieu, ou différents groupes ?
 
 À ce stade il est utile de ne pas faire trop d'économies de mots pour définir le public ciblé, quitte à devoir le réduire par la suite. 
-Par exemple, si le seul terme utilisé est "_jeune_" l'IA peut parfois tomber dans les mêmes pièges que le type de communication qui cible spécifiquement un public jeune : des références maladroites aux jeux-vidéos ou aux youtubers. 
+Par exemple, si le seul terme utilisé est "_jeune_" l'IA peut parfois tomber dans les mêmes pièges que le type de communication qui cible spécifiquement un public jeune : des références maladroites aux jeux vidéos ou aux youtubers. 
 
-Nous sommes tous définis par plus de dimensions que seulement celle de l'âge, il est donc utile d'en combiner plusieurs ou de cibler les plus pertinentes en lien avec le contenu de votre texte et le futur lieu de sa diffusion. Quelques exemples: "étudiants en école d'ingénieur à Lyon", "jeunes parents urbains",  "utilisateurs d'Instagram de 18 à 30 ans", "franciliens qui se rendent au travail en RER", etc. 
-Si le résultat tombe dans l'excès inverse et devient un peu trop spécifique, on peut retirer une partie des détails, ou les reformuler.
+Nous sommes tous définis par plus de dimensions que seulement celle de l'âge, il est donc utile d'en combiner plusieurs ou de cibler les plus pertinentes en lien avec le contenu de votre texte et le futur lieu de sa diffusion. Quelques exemples: "étudiants en école d'ingénieur à Lyon", "caristes dans un entrepôt Amazon à Montélimar", "jeunes parents urbains",  "utilisateurs d'Instagram de 18 à 30 ans", "agents de production dans une usine Pasquier" "franciliens qui se rendent au travail en RER", etc. 
+Si le résultat tombe dans l'excès inverse et devient un peu trop spécifique, on peut retirer une partie des détails, ou les reformuler. Comme en cuisine, c'est un dosage subtil des ingrédients qu'il faut trouver.
 
-**4. Quel angle politique ou idéologique ?**
+**4. Quel angle politique ?**
 Par défaut, votre interlocuteur IA est souvent le plus consensuel possible. Poser une question sans préciser d'angle politique revient souvent à recevoir à peu près la même réponse que vous ferait un journaliste de grand média généraliste, ou de média public : les torts sont partagés, il y a des bonnes solutions dans chaque camp, etc. 
 
-Si vous cherchez à générer du texte qui doit avoir une certaine approche  idéologique, il faut dont l'indiquer dans votre prompt. Cette indication peut être explicite (par exemple en demandant à l'IA de générer "_à partir d'un point de vue marxiste_") ou plus indirecte. Certains mots, ou expressions vont orienter la génération vers un angle particulier : "camarade", "nationalisation", ou "collectifs autogérés" sont tous des exemples qui portent leur propre dimension politique, et vont pointer plus ou moins discrètement la direction dans laquelle vous souhaitez aller. 
+Si vous cherchez à générer du texte qui doit avoir une certaine approche politique ou philosophique, il faut donc l'indiquer dans votre prompt. Cette indication peut être explicite (par exemple en demandant à l'IA de générer "_à partir d'un point de vue marxiste_") ou plus indirecte. Certains mots, ou expressions vont orienter la génération vers un angle particulier : "camarade", "nationalisation", ou "collectifs autogérés" sont tous des exemples qui portent leur propre dimension politique, et vont pointer plus ou moins discrètement la direction dans laquelle vous souhaitez aller. 
 Comme la qualification du public, c'est un domaine à manipuler avec précaution; sans quoi l'on risque de se retrouver avec un bingo de tous les mots-clés attendus du marxisme, sur tous les sujets. Pour contrer ce type de problème, on peut contraster le point de vue ou l'angle des idées du texte, avec le ton de leur expression.
 
 **5. Quelle forme le texte produit devrait-il-prendre ?**
 À partir des autres éléments (objectifs, publics ciblés) vous avez peut-être déjà une bonne idée du format que vous souhaitez générer. 
 Quelques idées des informations qu'on peut y inclure: texte écrit ou "_parlé_" (pour discours, formations, etc.), à destination d'une plateforme en particulier (tweet, publication Facebook, etc.), quantité à générer ("_3 courts paragraphes_", "_moins de 300 mots_"),  mentions d'éléments particuliers ("_punchlines claires_", slogans), ...
 
-À travers ce travail de préparation, on a déjà commencé à écrire une bonne partie du contenu du futur prompt. Maintenant, il faut lui choisir une forme.
+À travers ce travail de préparation, vous avez déjà commencé à écrire une bonne partie du contenu du futur prompt. Maintenant, il faut lui choisir une forme!
 
 ## Techniques de prompt
 Les techniques ci-dessous ne sont que quelques-unes des nombreuses possibilités d'approches dans nos communications avec l'IA, accompagnées d'exemples de scénarios d'utilisation militante. 
@@ -69,10 +69,10 @@ Aucune ne demande de connaissances en programmation, car elles utilisent toutes 
 Il est donc normal que certaines vous paraissent familières, et tout à fait possible que vous puissiez inventer vos propres variantes. C'est même souhaitable. 
 
 ### Prompt RTF (Rôle Tâche Format) ou CTF (Contexte Tâche Format)
-Derrière ces deux sigles un peu barbares se cache une technique simple, qui va nous pousser à utiliser les différents éléments que l'on a préparé avant la génération : le contexte, la définition de la tâche, le format de sortie.
+Derrière ces deux sigles un peu barbares se cache une technique simple, qui va vous pousser à utiliser les différents éléments que vous avez préparé avant la génération : le contexte, la définition de la tâche, le format de sortie.
 
 **RTF ou CTF ?**
-Même technique, deux approches : il est possible de définir soit le rôle qui sera assumé par l'IA pour générer le texte (celui d'un militant, d'un formateur, d'un chercheur), ou le contexte lié à la tâche (organisation d'une formation, d'un événement, etc.). Pourquoi pas même décider de mêler les deux, selon ce qui parait le plus naturel pour la tâche que vous souhaitez accomplir. 
+Même technique, deux approches : il est possible de définir soit le rôle qui sera assumé par l'IA pour générer le texte (celui d'un militant, d'un formateur, d'un chercheur), ou le contexte lié à la tâche (organisation d'une formation, d'un événement, etc.). Vous pouvez même décider de mêler les deux, selon ce qui parait le plus naturel pour la tâche que vous souhaitez accomplir. 
 
 **Concrètement, comment ça fonctionne ?**
 Selon la complexité du prompt (sa longueur notamment), on va être plus ou moins formel dans l'utilisation de cette technique. Pour un prompt qui peut être énoncé en trois phrases simples, on peut juste écrire une phrase pour chaque aspect, comme par exemple :
@@ -82,7 +82,7 @@ Selon la complexité du prompt (sa longueur notamment), on va être plus ou moin
 _Réponse de Mistral Medium 3.1 et GPT-4o mini en annexes 3 et 4._
 
 Ici chaque phrase correspond à l'une des dimensions du prompt: la première assigne un rôle à "_jouer_" pour l'IA dans sa génération (militant communiste), la deuxième précise quelle est la tâche à accomplir (produire un appel à manifester), enfin la dernière ajoute des informations de format (ton, structure). 
-Les indications entre crochets servent de repères à notre lecture, elles ne sont pas nécessaire pour un prompt aussi court et clair (chaque partie est déjà délimitée par une phrase). 
+Les indications entre crochets servent de repères à votre lecture, elles ne sont pas nécessaire pour un prompt aussi court et clair (chaque partie est déjà délimitée par une phrase). 
 
 **Ce premier prompt reste encore très général et laisse une grande liberté de création à l'IA**, qui s'appuiera sur ses propres éléments pour démontrer la précarité étudiante, voire proposera ses propres revendications ! 
 Les uns comme les autres seront non pas le fruit de réflexions politiques originales de l'outil, mais de ce qu'il calcule comme étant l'imitation la plus proche de ce type de texte. C'est donc bien un éventuel point de départ sur la forme (si elle comprend des éléments pertinents, du point de vue de vos objectifs), mais jamais un texte fini qui sera généré de cette façon.
@@ -99,7 +99,7 @@ Mais encore ? Un exemple :
 >2. _Identifie les acteurs à mobiliser (usagers, syndicats, associations) et les leviers politiques (référendums, pression sur les élus)._
 >3. _Propose un calendrier d’actions (manifestations, pétitions, occupations symboliques) en t’inspirant de campagnes similaires en Europe._ "
 
-Ici les parenthèses sont utilisées pour inclure pas mal de détails sur ce à quoi chaque point peut correspondre (l'écologie dans le point 1 est ciblée sur les émissions par exemple). Il y a un équilibre à trouver selon les tâches entre ce que vous souhaitez laissez libre pour la génération, et ce qui doit être en partie prédéterminé et plus prévisible. 
+Ici les parenthèses sont utilisées pour inclure pas mal de détails sur ce à quoi chaque point peut correspondre (l'écologie dans le point 1 est ciblée sur les émissions par exemple). Il y a un équilibre à trouver selon les tâches entre ce que vous souhaitez laisser libre pour la génération, et ce qui doit être en partie prédéterminé et plus prévisible. 
 
 Il est également possible de combiner cette méthode à la précédente. En reprenant notre exemple sur la précarité étudiante et en rendant plus visible ses différents éléments, on pourrait atteindre ce type de prompt:
 
@@ -129,7 +129,7 @@ Par exemple, pour l'organisation d'une série de conférences marxistes sur un c
 - **Logistique** : gestion des salles, matériel nécessaire, déplacements et accueil des intervenants non-locaux, aspect financier
 - **Communication** : quelle campagne sur le campus, les réseaux sociaux ? Partenaires potentiels. Valorisation des contenus créés après les conférences.
 
-On peut détailler dans chacun de ces domaines les questions qui sont pour l'instant sans réponses et qui pourraient faire l'objet d'un prompt. 
+Vous pouvez détailler dans chacun de ces domaines les questions qui sont pour l'instant sans réponses et qui pourraient faire l'objet d'un prompt. 
 On aboutit au final à une sorte de plan d'organisation, dont chaque sous-partie comprend si nécessaire des prompts. Après avoir effectué et conservé les générations de textes pour chaque partie, l'idée est d'obtenir une somme "_d'expertises_" spécialisées, qui dépasserait les informations que l'on peut tirer à partir d'un seul prompt général.
 
 #### Self-Reflection prompt
@@ -144,39 +144,39 @@ Cette méthode s'appuie sur la capacité de l'IA à traiter l'information des te
 ## Et après ?
 
 **Évaluation critique**
-Après la génération de texte, c'est le moment de reprendre nos questions de préparation, pour les utiliser comme outils critiques. Le texte vous permet-il de répondre à l'objectif défini ? Est-ce qu'il paraît être la bonne façon de s'adresser à sa cible, ou comprend des maladresses ? Les idées défendues sont-elles les bonnes ?
+Après la génération de texte, c'est le moment de reprendre vos questions de préparation, pour les utiliser comme outils critiques. Le texte vous permet-il de répondre à l'objectif défini ? Est-ce qu'il paraît être la bonne façon de s'adresser à sa cible, ou comprend des maladresses ? Les idées défendues sont-elles les bonnes ?
 
 Ré-examinez votre prompt, vis à vis du résultat: est-ce que certains de vos mots ont eu une influence trop forte ? 
 
 **Quand est-ce qu'on s'arrête ?**
 Si le résultat est très éloigné des attentes, il est possible de revoir la composition du prompt avec d'autres mots, ou d'essayer une nouvelle technique pour aboutir à un meilleur résultat. 
-En revanche, s'il ne comprend que quelques erreurs ou problèmes mineurs après plusieurs essais, on peut le considérer comme une version de départ valide, que l'on va maintenant modifier et améliorer. L'intérêt de passer par des outils d'IA est notamment de pouvoir se concentrer sur la structure et les idées d'un document, mais il est improbable que cela supprime entièrement le travail d'écriture lui-même. 
+En revanche, s'il ne comprend que quelques erreurs ou problèmes mineurs après plusieurs essais, vous pouvez le considérer comme une version de départ valide, que vous allez maintenant modifier et améliorer. L'intérêt de passer par des outils d'IA est notamment de pouvoir se concentrer sur la structure et les idées d'un document, mais il est improbable que cela supprime entièrement le travail d'écriture lui-même. 
 
 **Conservation des prompts**
-Si votre génération de texte répond à vos attentes, il est utile de garder une copie du prompt, associé à une information sur le type d'IA utilisé (et si possible, sa version), et pourquoi pas le texte généré lui-même. Si la tâche à laquelle ce prompt répond est commune à d'autre militants, pourquoi ne pas le partager ?
+Si votre génération de texte répond à vos attentes, il est utile de garder une copie du prompt, associée à une information sur le type d'IA utilisé (et si possible, sa version), et pourquoi pas le texte généré lui-même. Si la tâche à laquelle ce prompt répond est commune à d'autre militants, pourquoi ne pas le partager ?
 
 **Faits, chiffres et statistiques**
 Ne faites confiance à aucun élément d'information généré par l'IA sans le vérifier. 
 Même les éléments vraisemblables peuvent être légèrement ou entièrement faux, c'est dans la nature de cet outil de proposer des informations qui paraissent probables, avec une certaine assurance.
 
-Utiliser l'intelligence artificielle dans vos domaines d'expertise peut permettre d'aller très rapidement, car on repère facilement dans ces situations les incohérences; dans les autres soyez méfiants. Quelques techniques à adopter :
+Utiliser l'intelligence artificielle dans vos domaines d'expertise peut permettre d'aller très vite, car on repère facilement dans ces situations les incohérences; dans les autres soyez méfiants. Quelques techniques à adopter :
 
 1. **Demander des sources**
    Si une IA a accès à internet, il est possible de lui demander de lier ses affirmations à des sources, il ne faut pas hésiter à le faire dans le prompt quand c'est pertinent. Soyez spécifiques dans vos demandes, quel type de sources correspond à vos besoins ? (portails de recherches scientifiques, certains types de médias en ligne, auteurs particuliers, etc.) 
 2. **Tester les liens**
-   Lorsqu'un lien est fourni en source, il arrive qu'il ne mène nul part. Cela peut être un indice qu'il a été "_inventé_" et que le chiffre ou fait associé est peut-être faux. Ne prenez pas la présence de lien pour une garantie suffisante : _visitez-les_.
+   Lorsqu'un lien est fourni en source, il arrive qu'il ne mène nulle part. Cela peut être un indice qu'il a été "_inventé_" et que le chiffre ou fait associé est peut-être faux. Ne prenez pas la présence de lien pour une garantie suffisante : _visitez-les_.
 3. **Parcourir les liens réels**
    Lorsque le lien fonctionne, lire l'ensemble d'une page pour vérifier une information défait en partie l'idée de gagner du temps.  Mais tout n'est pas perdu ! Si vous êtes à la recherche d'un chiffre, d'une date ou d'un nom propre (ce qui comprend la plupart des cas), il est possible de faire une recherche rapide sur la page web ou le document PDF pour retrouver le ou les extraits correspondants (raccourci touches `ctrl` et `F` sur la plupart des navigateurs).
 4. **Poser des questions de suivi**
    Parfois, il n'est pas possible d'obtenir une preuve sous forme de lien. Par exemple, parce que l'IA a eu accès à des contenus protégés par le droit d'auteur et qu'une partie de son code la pousse à ne pas communiquer à ce sujet, ou tout simplement parce que vous utilisez un service qui ne peut pas accéder à internet.
-   Dans ces cas là, on peut poser des questions qui nous permettent de nous faire une meilleure idée, par exemple: _" Peut-on trouver des exemples concrets ou des cas pratiques qui illustrent cette affirmation ? "_, "_Existe-t-il des contradictions ou des débats autour de cette information ?_", "_Propose moi une façon de vérifier ton affirmation._"
+   Dans ces cas là, vous pouvez poser des questions qui vous permettent de vous faire une meilleure idée, par exemple: _" Peut-on trouver des exemples concrets ou des cas pratiques qui illustrent cette affirmation ? "_, "_Existe-t-il des contradictions ou des débats autour de cette information ?_", "_Propose moi une façon de vérifier ton affirmation._"
 5. **Croiser les sources**
    En cas de doute persistant, il est également possible de vérifier certaines informations via des sources qui font autorité dans le domaine concerné. Les mots-clés utilisés par l'IA dans sa réponse peuvent parfois être les mêmes que ceux qui vous serviront à faire vos propres recherches. 
 
 **Calculs: Préférez une bonne vieille calculatrice**
 Pour les calculs, malheureusement l'efficacité dépend du contexte, du prompt, du modèle d'IA, et il est sans doute plus prudent de ne pas faire confiance au résultat d'un calcul que l'on ne peut pas vérifier. ***Cela vaut notamment pour toutes les statistiques calculées dans une génération à partir de sources extérieures, même si ces dernières sont sûres***. 
 Méfiez-vous particulièrement des tableaux qui récapitulent et mélangent les chiffres de différentes unités et sources pour en tirer des enseignements. Pour les conversions d'une unité vers une autre, beaucoup de services en ligne sont plus efficaces et pour le reste, la calculatrice reste un outil plus sûr. 
-**Paradoxalement, si vous êtes fâchés avec les mathématiques, l'IA peut être un très bon professeur** et vous expliquer de façon aussi accessible que nécessaire les éléments qui vous posent problème. C'est une bonne attitude à adopter en général : ne soyez pas dépendants des réponses de l'IA, mais utilisez-là pour apprendre les connaissances qui vous manquent pour pouvoir juger ses réponses, même celles que vous pensez hors de votre portée.
+**Paradoxalement, si vous êtes fâchés avec les mathématiques, l'IA peut être un très bon professeur** et vous expliquer de façon aussi accessible que nécessaire les éléments qui vous posent problème. On peut par exemple l'utiliser pour apprendre une méthode simple pour calculer un pourcentage ou une proportion, faire un produit en croix, ou des usages plus avancés comme calculer une corrélation statistique, expliquer des notions d'algèbre, etc. C'est une bonne attitude à adopter en général : ne soyez pas dépendants des réponses de l'IA, mais utilisez-là pour apprendre les connaissances qui vous manquent pour pouvoir juger ses réponses, même celles que vous pensez hors de votre portée.
 
 **La langue**
 Les grands modèles d'IA "_parlent_" très bien les principales langues internationales, dont le français. Ils sont cependant toujours conçus d'abord en majorité à partir de textes anglais, on peut donc être attentifs à quelques anglicismes inventés ou à la sur-représentation de tournures de phrases peu communes en français. Les erreurs sont cependant assez rares.
@@ -191,9 +191,9 @@ Sur Mistral-Medium 3.1 :
 
 **L'IA est parfois un collègue un poil trop sympa**
 Si vous sollicitez un avis de l'intelligence artificielle sur le ton de la conversation, les chances sont élevées que le résultat soit au moins partiellement positif. 
-Parfois la simple mention du fait que le texte que vous utilisez dans le prompt est de votre main, entraîne la génération d'une part d'éloges. Vos questions, vos remarques, seront toujours pertinentes ou excellentes, même quand elles peuvent comprendre des erreurs de compréhension dans leur formulation. C'est normal : si vous parlez à l'IA sur un ton poli plutôt que comme à une machine, tout la pousse à générer une réponse dans le même esprit. Ça fait plaisir, mais on a parfois besoin d'avoir un retour un peu plus critique.
+Parfois la simple mention du fait que le texte que vous utilisez dans le prompt est de votre main, entraîne la génération d'une part d'éloges. Vos questions, vos remarques, seront toujours pertinentes ou excellentes, même quand elles peuvent comprendre des erreurs de compréhension dans leur formulation. C'est normal : si vous parlez à l'IA sur un ton poli plutôt que comme à une machine, tout la pousse à générer une réponse dans le même esprit. Ça fait plaisir, mais on a parfois besoin d'avoir un retour un peu plus critique!
 
-Si vous souhaitez recevoir un avis plus nuancé, il faut donc influencer positivement la génération en ce sens, avec par exemple des formules comme : 
+Lorsque vous souhaitez recevoir un avis plus nuancé, il faut donc influencer positivement la génération en ce sens, avec par exemple des formules comme : 
 "_Si tu relèves des erreurs (logiques, de compréhension) ou des fautes dans mon texte, mentionne-les et justifie ta sélection._"
 
 **Au final c'est vous qui évaluez l'IA, pas l'inverse**
