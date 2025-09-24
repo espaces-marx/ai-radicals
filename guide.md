@@ -121,7 +121,7 @@ L’IA n’est pas là pour remplacer l’intelligence collective ou le travail 
 
 ## Rédiger un tract court et mobilisateur
 
-*Voir l’exemple complet en annexe 1.*
+Voir l’exemple complet [en annexe](#exemple-de-tract).
 
 ### Situation :
 
@@ -152,7 +152,7 @@ Une manifestation ou une grève est prévue (ex. : contre la politique du gouver
 
 ## Transformer un article en script pour une vidéo courte
 
-*Voir l’exemple complet en annexe 2.*
+Voir l’exemple complet [en annexe](#exemple-de-script).
 
 ### Situation :
 
@@ -235,8 +235,13 @@ En résumé :
 | **Script vidéo**  | Adapter à l'oral, rythmer | Matériel audio/vidéo, montage | Tester à voix haute |
 | **Tutoriel**      | Structurer, simplifier    | Relecture, visuels            | Adapter au contexte |
 
+# 'Prompter' comme un prompter
 
-## Annexe 1 : Exemple de tract généré pour une manifestation contre le gouvernement
+# Conclusion
+
+# Annexes
+
+## Exemple de tract
 
 (À partir du communiqué)
 
@@ -256,8 +261,7 @@ Manifs partout en France (renseignez-vous localement)
 
 [À personnaliser avec votre logo et vos contacts]
 
-
-## Annexe 2 : Exemple de script vidéo
+## Exemple de script
 
 (À partir de l’édito « 10 septembre : la révolution à l’ordre du jour »)
 
@@ -275,9 +279,3 @@ Mais cette fois, il ne s’agit pas juste de reculer une réforme. Il s’agit d
 Le 10 septembre, la révolution est à l’ordre du jour. Et elle commence par toi. »
 
 [À adapter avec des images de manifs, des sous-titres, et une musique engagée.]
-
-# 'Prompter' comme un prompter
-
-# Conclusion
-
-# Annexes
