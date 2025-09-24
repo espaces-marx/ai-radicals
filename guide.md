@@ -10,7 +10,7 @@ Il existe des dizaines d’outils d’IA, mais tous ne se valent pas. Voici quel
 | :---- | :-------- | :------------ |
 | **Mistral AI (Le Chat)** | Partiellement open source, soumis au droit européen qui est plus protecteur des données personnelles. | Moins connu que les géants américains, interface parfois moins intuitive. Entreprise capitaliste proche du gouvernement français. |
 | **ChatGPT (OpenAI)** | Très populaire, interface simple. | Propriétaire, contrôlé par les capitalistes de la Silicon Valley, collecte massive de données. |
-| **Deepseek** | Gratuit, partiellement Open source, performant, modifiable. | Sécurité et gestion des données encore peu documentées, contrôlé d'assez près par le gouvernement chinois, parfois lent car le serveur rencontre des surcharges. |
+| **Deepseek** | Gratuit, partiellement Open source, performant. | Sécurité et gestion des données encore peu documentées, contrôlé d'assez près par le gouvernement chinois, parfois lent car le serveur rencontre des surcharges. |
 
 *Pourquoi recommandons-nous Mistral ?*
 - **Plus fiable** : Mistral est une entreprise européenne, moins liée aux géants américains que ChatGPT ou Google.
@@ -62,7 +62,7 @@ Le résultat ne sera pas satisfaisant tout de suite, mais il vous mettre peut-ê
 
 ## Explorer les options avancées
 
-Celles-ci se trouve dans la colonne de gauche de l'interface de Mistral.
+Celles-ci se trouvent dans la colonne de gauche de l'interface de Mistral.
 
 - **Projets** : Permet d’organiser et de regrouper vos conversations, documents et ressources par thème ou objectif pour un suivi structuré et collaboratif.
 > Par exemple, il est possible de créer un espace dédié à la préparation d’une campagne contre la précarité étudiante, où sont centralisés tous les tracts, comptes-rendus de réunion, liens utiles et échanges avec les membres du collectif.
