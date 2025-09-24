@@ -90,7 +90,7 @@ Celles-ci se trouvent dans la colonne de gauche de l'interface de Mistral.
 
 - **Projets** : Permet d’organiser et de regrouper vos conversations, documents et ressources par thème ou objectif pour un suivi structuré et collaboratif.
 > Par exemple, il est possible de créer un espace dédié à la préparation d’une campagne contre la précarité étudiante, où sont centralisés tous les tracts, comptes-rendus de réunion, liens utiles et échanges avec les membres du collectif.
-- **Agents** : Permet de concevoir facilement des assistants spécialisés pour un type de tâche particulier[^1] (recherche, analyse, rédaction).
+- **Agents** : Permet de concevoir facilement des assistants spécialisés pour un type de tâche particulier[^5] (recherche, analyse, rédaction).
 > Par exemple, il est possible de configurer un agent pour aider à la rédaction d'articles, en alimentant l'agent avec les précédents articles que vous avez écrits en guise d'exemple, pour améliorer la syntaxe et la structure des textes générés selon vos attentes.
 - **Intelligence** : Alimente l'IA de données persistantes, que ce soit des souvenirs, des informations personnelles, des connecteurs vers d'autres plateformes (comme Gmail pour mes mails) ou des bibliothèses de documents, de manière à ce que le résultat bénéficie de ces informations supplémentaires.
 > Par exemple, il est possible de demander une analyse critique et synthétique des derniers discours gouvernementaux sur la réforme des retraites, avec des arguments clés pour alimenter un débat public ou un communiqué.
@@ -99,7 +99,7 @@ Il peut être tentant de transmettre des informations personnelles sensibles : s
 
 Comme pour l'IA en général, ces options avancées ne sont pas encore en capacité de répondre à toutes les demandes, et peuvent fournir des résultats insatisfaisants. Cette fois encore, essayez de voir de quelle manière ces outils, à leur état actuel d'avancement, peuvent vous aider à aller plus vite -- sans vous attendre à ce qu'ils fassent tout à votre place !
 
-[^1]: Mistral utilise le mot "agent" pour ce type de fonctionnalité, mais en général, un _agent IA_ désigne quelque chose de plus général : une IA qui interagit avec d'autres logiciels (éventuellement d'autres IA) pour accomplir des tâches de manière autonome ou semi-autonome, comme répondre aux mails.
+[^5]: Mistral utilise le mot "agent" pour ce type de fonctionnalité, mais en général, un _agent IA_ désigne quelque chose de plus général : une IA qui interagit avec d'autres logiciels (éventuellement d'autres IA) pour accomplir des tâches de manière autonome ou semi-autonome, comme répondre aux mails.
 
 ## Précautions militantes
 
