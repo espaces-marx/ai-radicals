@@ -7,41 +7,13 @@
 L’IA n’est pas là pour remplacer l’intelligence collective ou le travail militant, mais pour gagner du temps, simplifier des tâches techniques et amplifier la portée de nos actions. Voici trois situations concrètes où elle peut être un atout, avec des exemples tirés de l’actualité militante.
 
 
-## Générer un tutoriel pour les militants
-
-### Situation :
-
-Votre collectif veut former ses membres à une nouvelle compétence (ex. : organiser une assemblée générale, utiliser un outil de chiffrement, monter une action coup de poing). Rédiger un tutoriel clair et pédagogique prend du temps, surtout si le sujet est technique ou peu familier.
-
-*Pourquoi utiliser l’IA ?*
-- Elle peut structurer l’information à partir de notes ou de ressources existantes.
-- Elle adapte le langage pour le rendre accessible à tous.
-- Elle génère des exemples ou des étapes détaillées.
-
-### Comment faire ?
-
-- **Donnez-lui une base** : collez des notes, un article, ou une liste d’idées.
-- **Précisez le public** : « Écris un tutoriel pour des militants débutants, avec des étapes simples et des exemples concrets. »
-- **Demandez un format adapté** : « Fais-moi une fiche de 2 pages, avec des encadrés pour les points clés. »
-
-### Ce qu’il faut en plus de l’IA :
-
-- **Relire et tester** le tutoriel avec des camarades pour vérifier qu’il est compréhensible, que ça fonctionne et que les informations données ne sont pas erronnées.
-- **Rédiger** ce qui peut l'être, ajouter des formules... bref : s'investir dans le texte et se l'approprier.
-- **Ajouter** des visuels (schémas, captures d’écran) si nécessaire.
-  
-### Vigilance :
-
-L’IA peut omettre des détails importants ou proposer des méthodes inadaptées à votre contexte. Adaptez toujours le résultat à votre réalité locale.
-
-
 ## Rédiger un tract court et mobilisateur
 
 *Voir l’exemple complet en annexe 1.*
 
 ### Situation :
 
-Une manifestation ou une grève est prévue (ex. : le 10 septembre 2025, journée de mobilisation générale). Il faut un tract percutant, rapide à distribuer, qui donne envie d’agir.
+Une manifestation ou une grève est prévue (ex. : contre la politique du gouvernement, journée de mobilisation générale). Il faut un tract percutant, rapide à distribuer, qui donne envie d’agir. Un communiqué a déjà été publié pour réagir aux annonces du gouvernement.
 
 *Pourquoi utiliser l’IA ?*
 - Elle permet de sauter l'étape de la feuille blanche : on peut s'appuyer sur de premiers éléments obtenus rapidement pour travailler.
@@ -51,13 +23,14 @@ Une manifestation ou une grève est prévue (ex. : le 10 septembre 2025, journé
 
 ### Exemple concret :
 
-À partir de *tel article* mis en pièce-jointe, demandez :
-« Rédige un tract d’une page pour le 10 septembre, en t’appuyant sur cet article. Utilise un ton combatif, avec 3 arguments clés et un appel à rejoindre la manif. Ajoute un slogan accrocheur. »
+À partir de *tel communiqué* mis en pièce-jointe, demandez :
+« Rédige un tract avec un texte de 500 caractères, pour une manifestation contre la politique du gouvernement, en t’appuyant sur ce communiqué. Utilise un ton combatif, en résumant les 3 arguments clés du communiqué et l'appel à rejoindre la manif. Réutilise le titre du communiqué et ajoute un slogan accrocheur. »
 
 ### Ce qu’il faut en plus de l’IA :
 
 - **Un logiciel de mise en page** (Canva, LibreOffice) pour ajouter des couleurs, des logos, ou des images.
 - **Une relecture collective** pour s’assurer que le message correspond à la ligne politique du collectif.
+- **Le plus possible d'éléments de contenu élaborés collectivement** : les meilleurs slogans et mots d'ordre sont ceux que les militant·es inventent eux-même à partir de leur compréhension de l'état d'esprit de ceux à qui elles et ils s'adressent.
 
 ### Vigilance :
 
@@ -96,6 +69,46 @@ Précisez le style : « Parle directement à la caméra, comme si tu t’adressa
 - **Ajoutez** des images ou des sous-titres pour rendre la vidéo plus dynamique.
 
 
+## Créer un tutoriel pour les militants
+
+Un tutoriel est un guide qui détaille étape par étape comment acquérir une nouvelle compétence.
+> Par exemple, un tutoriel pour apprendre à faire fonctionner une bouilloire expliquera toutes ces étapes :
+> - Il faut d'abord la brancher
+> - Mettre de l'eau dedans (en choisissant si possible une eau filtrée pour éviter les dépots de calcaire)
+> - Appuyer sur le bouton qui permet de chauffer (s'il s'agit d'un modèle plus récent, le tutoriel détaillera comment sélectionner la bonne température)
+> - Attendre que la bouilloire sonne, ce qui indique que l'eau a atteint la température souhaitée (ou 100°c par défaut)
+> - Choisir un récipient adapté à la quantité d'eau chaude souhaitée, à l'usage (casserolle pour cuire des pâtes, tasse pour faire un thé...) et à la chaleur (éviter les gobelets en plastique)
+> - Faire attention à ne pas se brûler en versant l'eau bouillante, en attrapant le récipient ou en buvant l'eau
+> - Veiller à ce que la bouilloire soit éteinte
+> - Entretenir régulièrement la bouilloire (en détaillant les étapes de nettoyage)
+> Cet exemple sert à montrer que même si ça semble trop détaillé, chaque étape est importante à détailler : ce qui est évident pour les uns peut échapper aux autres et les bloquer dans leur compréhension !
+
+### Situation :
+
+Votre collectif veut former ses membres à une nouvelle compétence (ex. : organiser une assemblée générale, utiliser un outil de chiffrement, monter une action coup de poing). Rédiger un tutoriel clair et pédagogique prend du temps, surtout si le sujet est technique ou peu familier.
+
+*Pourquoi utiliser l’IA ?*
+- Elle peut structurer l’information à partir de notes ou de ressources existantes.
+- Elle adapte le langage pour le rendre accessible à tous.
+- Elle génère des exemples ou des étapes détaillées.
+
+### Comment faire ?
+
+- **Donnez-lui une base** : collez des notes, un article, ou une liste d’idées.
+- **Précisez le public** : « Écris un tutoriel pour des militants débutants, avec des étapes simples et des exemples concrets. »
+- **Demandez un format adapté** : « Fais-moi une fiche de 2 pages, avec des encadrés pour les points clés. »
+
+### Ce qu’il faut en plus de l’IA :
+
+- **Relire et tester** le tutoriel avec des camarades pour vérifier qu’il est compréhensible, que ça fonctionne et que les informations données ne sont pas erronnées.
+- **Rédiger** ce qui peut l'être, ajouter des formules... bref : s'investir dans le texte et se l'approprier.
+- **Ajouter** des visuels (schémas, captures d’écran) si nécessaire.
+  
+### Vigilance :
+
+L’IA peut omettre des détails importants ou proposer des méthodes inadaptées à votre contexte. Adaptez toujours le résultat à votre réalité locale.
+
+
 ## Quand l’IA n’est pas adaptée ?
 
 - **Pour les prises de position politiques complexes** : l’IA ne remplace pas un débat collectif.
@@ -106,20 +119,20 @@ En résumé :
 
 | Tâche             | Utilité de l'IA           | Ce qu'il faut en plus         | Vigilence           |
 | :---------------- | :------------------------ | :---------------------------- | :------------------ |
-| **Tutoriel**      | Structurer, simplifier    | Relecture, visuels            | Adapter au contexte |
 | **Tract**         | Résumer, mobiliser        | Mise en page, infos locales   | Vérifier les faits  |
 | **Script vidéo**  | Adapter à l'oral, rythmer | Matériel audio/vidéo, montage | Tester à voix haute |
+| **Tutoriel**      | Structurer, simplifier    | Relecture, visuels            | Adapter au contexte |
 
 
-## Annexe 1 : Exemple de tract généré pour le 10 septembre
+## Annexe 1 : Exemple de tract généré pour une manifestation contre le gouvernement
 
-(À partir du Parti-pris de Nos Révolutions)
+(À partir du communiqué)
 
-10 SEPTEMBRE : TOUS DANS LA RUE POUR LA VICTOIRE !
-Pourquoi le 10 septembre ?
+MACRON DEHORS, POUVOIR AU PEUPLE !
+Pourquoi aller manifester le 10 septembre ?
 Le gouvernement veut nous faire payer la crise : retraites reculées, salaires gelés, services publics démantelés. Mais la colère monte, et cette journée peut tout changer.
 3 raisons d’être dans la rue :
-✊ Un rapport de force à inverser : Après les grèves de 2023, le pouvoir recule quand on est unis.
+✊ Un rapport de force à inverser : les Gilets jaunes l'ont montré, le pouvoir recule quand on est unis.
 💰 Nos vies valent plus que leurs profits : Les milliardaires se gavant pendant que nos retraites fondent, ça suffit !
 🌍 Une autre société est possible : Le 10 septembre, c’est l’occasion de montrer que la révolution sociale est à l’ordre du jour.
 Rendez-vous :
