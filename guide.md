@@ -8,20 +8,20 @@ Il existe des dizaines d’outils d’IA, mais tous ne se valent pas. Voici quel
 
 | Outil | Avantages | Inconvénients |
 | :---- | :-------- | :------------ |
-| **Mistral AI (Le Chat)** | Partiellement open source, soumis au droit européen qui est plus protecteur des données personnelles. | Moins connu que les géants américains, interface parfois moins intuitive. |
-| **ChatGPT (OpenAI)** | Très populaire, interface simple. | Propriétaire, contrôlé par Microsoft, collecte massive de données. |
-| **Deepseek** | Gratuit, Open source, Performant, modifiable et exécutable localement. | Sécurité et gestion des données encore peu documentées, jeune projet, moins stable que les géants établis, nécessite parfois des compétences techniques pour une utilisation locale. |
+| **Mistral AI (Le Chat)** | Partiellement open source, soumis au droit européen qui est plus protecteur des données personnelles. | Moins connu que les géants américains, interface parfois moins intuitive. Entreprise capitaliste proche du gouvernement français. |
+| **ChatGPT (OpenAI)** | Très populaire, interface simple. | Propriétaire, contrôlé par les capitalistes de la Silicon Valley, collecte massive de données. |
+| **Deepseek** | Gratuit, partiellement Open source, performant, modifiable. | Sécurité et gestion des données encore peu documentées, contrôlé d'assez près par le gouvernement chinois, parfois lent car le serveur rencontre des surcharges. |
 
 *Pourquoi recommandons-nous Mistral ?*
 - **Plus fiable** : Mistral est une entreprise européenne, moins liée aux géants américains que ChatGPT ou Google.
 - **Gratuite** : Une version gratuite existe, sans obligation de payer pour des fonctionnalités de base.
-- **Plus respectueuse des données** : Moins de risques que vos échanges soient utilisés à des fins commerciales.
+- **Plus respectueuse des données** : Moins de risques que vos échanges soient utilisés à des fins commerciales ou policières.
 
 ## Comment y accéder ?
 
 Rien de plus simple :
-- Ouvrez un navigateur (Firefox, Chrome, etc.).
-- Allez sur mistral.ai ou lechat.mistral.ai.
+- Ouvrez un navigateur internet (Firefox, Chrome, etc.).
+- Allez sur lechat.mistral.ai.
 - Créez un compte (avec une adresse mail, pas besoin de numéro de téléphone).
 - Vous arrivez sur une page avec une zone de texte : c’est là que vous allez discuter avec l’IA.
 
@@ -31,6 +31,8 @@ L’IA fonctionne comme une conversation. Pour commencer, posez-lui une question
 - « Peux-tu m’expliquer simplement ce qu’est l’inflation ? »
 - « Aide-moi à rédiger un tract pour une manifestation contre les licenciements. »
 - « Quels sont les arguments contre la réforme des retraites ? »
+
+Après avoir obtenu une réponse, vous pouvez réagir sur son contenu en répondant à votre tour : il s'agit d'un échange interactif.
 
 ### Quelques conseils :
 - Soyez concret : plus votre demande est précise, meilleure sera la réponse.
@@ -56,14 +58,22 @@ Une fois que vous êtes à l’aise :
 - Demandez-lui de générer des idées pour des slogans, des affiches, ou des stratégies d’action.
 Exemple : « J’organise un atelier sur les féministes ouvrières des années 70. Propose-moi 3 activités pour animer la discussion. »
 
+Le résultat ne sera pas satisfaisant tout de suite, mais il vous mettre peut-être sur la bonne piste.
+
 ## Explorer les options avancées
+
+Celles-ci se trouve dans la colonne de gauche de l'interface de Mistral.
 
 - **Projets** : Permet d’organiser et de regrouper vos conversations, documents et ressources par thème ou objectif pour un suivi structuré et collaboratif.
 > Par exemple, il est possible de créer un espace dédié à la préparation d’une campagne contre la précarité étudiante, où sont centralisés tous les tracts, comptes-rendus de réunion, liens utiles et échanges avec les membres du collectif.
 - **Agents** : Automatise des tâches complexes (recherche, analyse, rédaction) en créant des assistants spécialisés, capables d’agir de manière autonome selon vos consignes.
-> Par exemple, il est possible de configurer un agent pour surveiller en temps réel les actualités locales sur les fermetures d’hôpitaux, résumer les infos clés et alerter le collectif dès qu’un nouveau cas est repéré.
-- **Intelligence** : Offre des réponses avancées, contextualisées et adaptées à des besoins précis, en exploitant les dernières innovations en IA pour une assistance plus pertinente et puissante.
+> Par exemple, il est possible de configurer un agent pour aider à la rédaction d'articles, en alimentant l'agent avec les précédents articles que vous avez écrits en guise d'exemple, pour améliorer la syntaxe et la structure des textes générés selon vos attentes.
+- **Intelligence** : Alimente l'IA de données persistantes, que ce soit des souvenirs, des informations personnelles, des connecteurs vers d'autres plateformes (comme Gmail pour mes mails) ou des bibliothèses de documents, de manière à ce que le résultat bénéficie de ces informations supplémentaires.
 > Par exemple, il est possible de demander une analyse critique et synthétique des derniers discours gouvernementaux sur la réforme des retraites, avec des arguments clés pour alimenter un débat public ou un communiqué.
+
+Il peut être tentant de transmettre des informations personnelles sensibles : si vous tenez à le faire, veillez à les sélectionner scrupuleusement.
+
+Comme pour l'IA en général, ces options avancées ne sont pas encore en capacité de répondre à toutes les demandes, et peuvent fournir des résultats insatisfaisants. Cette fois encore, essayez de voir de quelle manière ces outils, à leur état actuel d'avancement, peuvent vous aider à aller plus vite -- sans vous attendre à ce qu'ils fassent tout à votre place !
 
 ## Précautions militantes
 
