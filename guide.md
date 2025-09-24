@@ -193,7 +193,8 @@ Un tutoriel est un guide qui détaille étape par étape comment acquérir une n
 > - Faire attention à ne pas se brûler en versant l'eau bouillante, en attrapant le récipient ou en buvant l'eau
 > - Veiller à ce que la bouilloire soit éteinte
 > - Entretenir régulièrement la bouilloire (en détaillant les étapes de nettoyage)
-> Cet exemple sert à montrer que même si ça semble trop détaillé, chaque étape est importante à détailler : ce qui est évident pour les uns peut échapper aux autres et les bloquer dans leur compréhension !
+
+Cet exemple sert à montrer que même si ça semble trop détaillé, chaque étape est importante à détailler : ce qui est évident pour les uns peut échapper aux autres et les bloquer dans leur compréhension !
 
 ### Situation :
 
