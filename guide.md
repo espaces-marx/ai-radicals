@@ -6,7 +6,7 @@
 
 **Qu'est-ce qu'une IA locale ?**
 Les services d'IA que nous utilisons sont des logiciels comme les autres, tout comme la suite Office ils peuvent être utilisés en ligne, mais aussi localement. Lorque l'on utilise un logiciel en ligne, il est sur le "_cloud_", c'est à dire qu'il est executé depuis des serveurs qui peuvent être à l'autre bout de la planète, dans des centres de données. Ces centres sont des lieux où de nombreux ordinateurs avec d'importantes capacités de stockage et de calcul sont réunis, pour des gains d'efficacité et d'énergie. 
-**Par opposition une IA "_en local_" est donc --_comme son nom l'indique_-- stockée et exécutée localement, c'est à dire depuis votre ordinateur.** Utiliser l'IA sous cette forme vous permet d'accèder à de nombreux modèles différents créés par des communautés en ligne, dont certaines versions non-censurées des modèles de grandes entreprises.
+**Par opposition une IA "_en local_" est donc --_comme son nom l'indique_-- stockée et exécutée localement, c'est à dire depuis votre ordinateur.** Utiliser l'IA sous cette forme vous permet d'accèder, en plus des modèles distribués par les entreprises, à de nombreux modèles créés par des communautés en ligne, dont certaines versions non-censurées des modèles corporate.
 
 ### Pourquoi installer une IA localement ?
 
