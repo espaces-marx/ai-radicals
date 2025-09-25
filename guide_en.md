@@ -2,7 +2,7 @@
 
 # How to use AI ?
 
-# Is AI useful for activists ?
+# How Can AI Be Useful in Activist Life?
 
 AI is not here to replace collective intelligence or militant work, but to save time, simplify technical tasks, and amplify the impact of our actions. Here are three concrete situations where it can be an asset, with examples drawn from militant current events.
 
