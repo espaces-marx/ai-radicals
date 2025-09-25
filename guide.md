@@ -435,6 +435,23 @@ Vous êtes donc bien plus légitimes à juger son travail, que l'inverse. Il peu
 
 # Conclusion
 
+Vous arrivez à  la fin de cette petite brochure (exception faite des annexes). Nous espérons que la lecture vous a plu, ou en tous cas, qu'elle vous a rendu service. Si c'est le cas, nous avons, nous aussi, un service à vous demander. Comme dit dans l'introduction, la version du guide que vous tenez entre les mains est très préliminaire. Pour nous, il y a encore beaucoup de choses à ajouter, à enlever peut-être, à corriger, à enrichir. Dans cet esprit, le premier critère que nous observons est celui de l'utilité pour les militant·es ; votre retour, après la lecture, est donc très important. Vous pouvez nous écrire à contact@espaces-marx.eu pour toute remarque, critique, proposition.
+
+Vous pouvez aussi nous écrire si vous souhaitez directement contribuer à l'écriture. Si vous êtes à l'aise avec les outils informatiques, nous vous invitons à interagir avec nous via GitHub, visiter le dépôt du guide (github.com/espaces-marx/ai-radicals), le forker, et nous envoyer une Pull Request. Nous accueillons toutes les contributions et serions heureux de constituer une communauté militante plus vaste, travaillant ensemble à monter en compétence pour que la gauche maîtrise mieux les nouvelles technologies.
+
+Pour l'heure, notre intention concernant la prochaine version du guide est de :
+- Donner des exemples concrets et des explications approfondies sur les outils d'IA "avancés" (agents, connecteurs, bibliothèques...).
+- Détailler d'autres outils ; pour le moment, nous nous sommes concentrés sur Mistral, même si beaucoup de nos conseils s'appliquent sans problème à d'autres IA.
+- Donner des conseils plus précis sur la synthèse de données par IA (résumer un texte de loi, etc.).
+- Donner des techniques de création graphique assistée par IA ; pas seulement écrire un _prompt_ trivial et s'émerveiller du résultat, mais articuler l'IA
+avec d'autres techniques pour créer une affiche, un sticker, un visuel Instagram, etc.
+
+À plus long terme, nous aimerions expliquer (aussi clairement que possible) comment réentraîner un modèle d'IA chez soi pour changer son utilisation. Mais c'est un objectif plus _geek_, pour l'instant nous pensons qu'il y a d'autres urgences.
+
+Si vous souhaitez commenter ces objectifs ou en proposer d'autres, vous avez notre adresse mail.
+
+_Arrivederci !_
+
 # Annexes
 
 ## Exemple de tract
