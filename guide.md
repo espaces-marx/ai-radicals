@@ -90,7 +90,7 @@ Celles-ci se trouvent dans la colonne de gauche de l'interface de Mistral.
 
 - **Projets** : Permet d’organiser et de regrouper vos conversations, documents et ressources par thème ou objectif pour un suivi structuré et collaboratif.
 > Par exemple, il est possible de créer un espace dédié à la préparation d’une campagne contre la précarité étudiante, où sont centralisés tous les tracts, comptes-rendus de réunion, liens utiles et échanges avec les membres du collectif.
-- **Agents** : Permet de concevoir facilement des assistants spécialisés pour un type de tâche particulier[^1] (recherche, analyse, rédaction).
+- **Agents** : Permet de concevoir facilement des assistants spécialisés pour un type de tâche particulier[^5] (recherche, analyse, rédaction).
 > Par exemple, il est possible de configurer un agent pour aider à la rédaction d'articles, en alimentant l'agent avec les précédents articles que vous avez écrits en guise d'exemple, pour améliorer la syntaxe et la structure des textes générés selon vos attentes.
 - **Intelligence** : Alimente l'IA de données persistantes, que ce soit des souvenirs, des informations personnelles, des connecteurs vers d'autres plateformes (comme Gmail pour mes mails) ou des bibliothèses de documents, de manière à ce que le résultat bénéficie de ces informations supplémentaires.
 > Par exemple, il est possible de demander une analyse critique et synthétique des derniers discours gouvernementaux sur la réforme des retraites, avec des arguments clés pour alimenter un débat public ou un communiqué.
@@ -99,7 +99,7 @@ Il peut être tentant de transmettre des informations personnelles sensibles : s
 
 Comme pour l'IA en général, ces options avancées ne sont pas encore en capacité de répondre à toutes les demandes, et peuvent fournir des résultats insatisfaisants. Cette fois encore, essayez de voir de quelle manière ces outils, à leur état actuel d'avancement, peuvent vous aider à aller plus vite -- sans vous attendre à ce qu'ils fassent tout à votre place !
 
-[^1]: Mistral utilise le mot "agent" pour ce type de fonctionnalité, mais en général, un _agent IA_ désigne quelque chose de plus général : une IA qui interagit avec d'autres logiciels (éventuellement d'autres IA) pour accomplir des tâches de manière autonome ou semi-autonome, comme répondre aux mails.
+[^5]: Mistral utilise le mot "agent" pour ce type de fonctionnalité, mais en général, un _agent IA_ désigne quelque chose de plus général : une IA qui interagit avec d'autres logiciels (éventuellement d'autres IA) pour accomplir des tâches de manière autonome ou semi-autonome, comme répondre aux mails.
 
 ## Précautions militantes
 
@@ -121,7 +121,7 @@ L’IA n’est pas là pour remplacer l’intelligence collective ou le travail 
 
 ## Rédiger un tract court et mobilisateur
 
-*Voir l’exemple complet en annexe 1.*
+Voir l’exemple complet [en annexe](#exemple-de-tract).
 
 ### Situation :
 
@@ -152,7 +152,7 @@ Une manifestation ou une grève est prévue (ex. : contre la politique du gouver
 
 ## Transformer un article en script pour une vidéo courte
 
-*Voir l’exemple complet en annexe 2.*
+Voir l’exemple complet [en annexe](#exemple-de-script).
 
 ### Situation :
 
@@ -193,6 +193,7 @@ Un tutoriel est un guide qui détaille étape par étape comment acquérir une n
 > - Faire attention à ne pas se brûler en versant l'eau bouillante, en attrapant le récipient ou en buvant l'eau
 > - Veiller à ce que la bouilloire soit éteinte
 > - Entretenir régulièrement la bouilloire (en détaillant les étapes de nettoyage)
+
 > Cet exemple sert à montrer que même si ça semble trop détaillé, chaque étape est importante à détailler : ce qui est évident pour les uns peut échapper aux autres et les bloquer dans leur compréhension !
 
 ### Situation :
@@ -235,8 +236,13 @@ En résumé :
 | **Script vidéo**  | Adapter à l'oral, rythmer | Matériel audio/vidéo, montage | Tester à voix haute |
 | **Tutoriel**      | Structurer, simplifier    | Relecture, visuels            | Adapter au contexte |
 
+# 'Prompter' comme un prompter
 
-## Annexe 1 : Exemple de tract généré pour une manifestation contre le gouvernement
+# Conclusion
+
+# Annexes
+
+## Exemple de tract
 
 (À partir du communiqué)
 
@@ -256,8 +262,7 @@ Manifs partout en France (renseignez-vous localement)
 
 [À personnaliser avec votre logo et vos contacts]
 
-
-## Annexe 2 : Exemple de script vidéo
+## Exemple de script
 
 (À partir de l’édito « 10 septembre : la révolution à l’ordre du jour »)
 
@@ -275,9 +280,3 @@ Mais cette fois, il ne s’agit pas juste de reculer une réforme. Il s’agit d
 Le 10 septembre, la révolution est à l’ordre du jour. Et elle commence par toi. »
 
 [À adapter avec des images de manifs, des sous-titres, et une musique engagée.]
-
-# 'Prompter' comme un prompter
-
-# Conclusion
-
-# Annexes
