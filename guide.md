@@ -49,6 +49,11 @@ Pour les modèles open-source, c'est très simple: c'est dans leur nom. Il compr
 Sur Windows, vous pouvez consulter vos paramètres, puis la section "_Système_" et "_À propos de_" pour trouver le détail de votre matériel. Une carte graphique (GPU) devrait y être mentionnée si elle est présente. 
 Si votre ordinateur n'a pas de carte graphique, il est malheureusement probable que vous ne puissiez pas accomplir beaucoup de choses en local. Il vous sera quand même possible d'essayer des modèles de toute petite taille, mais il faut vous attendre à une génération ente et des tâches peu complexes.
 
+**Faire rentrer l'IA sur votre PC: la quantisation**
+Comment permettre à un programme comme l'IA générative --_qui a au minimum plusieurs milliards de paramètres_-- de fonctionner sur nos machines ? La quantisation est une technique qui réduit plus ou moins drastiquement la longueur des chiffres traités par l'IA pour calculer ses réponses, ce qui lui permet de tourner en utilisant moins de mémoire (RAM / VRAM) et de prendre moins d'espace sur un disque dur. 
+Des modèles d'IA quantisés et donc optimisés, peuvent être sélectionnés directement depuis ceux proposés par LM Studio, ou sur la plateforme HuggingFace. Vous les reconnaîtrez à la présence de la lettre "Q" immédiatement suivie d'un chiffre dans leur nom. Par exemple: "_gemma-3-12b-it-qat-**q4**_" est l'une des versions quantisées (ici," _q4_") de Gemma, la famille de modèles "_ouverts_" de Google (son équivalent propriétaire est Gemini). 
+**Important** : Utiliser un modèle quantisé comporte un risque plus important d'hallucinations de l'IA. Il reste assez réduit, tant que vous n'utilisez pas une quantisation inférieure à 4 bits (par exemple, "_Q3_" ou "_Q2_").  
+
 Voilà une estimation très imparfaite (les paramètres sont nombreux et changeants) de ce que vous pourrez faire, en fonction de votre matériel :
 
 | Taille du modèle (paramètres) | Matériel requis (approximatif)                                                   | Types de tâches réalisables en local                                                                                                                                                                        |
