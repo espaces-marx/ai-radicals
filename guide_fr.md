@@ -37,6 +37,7 @@ Il existe des dizaines d’outils d’IA, mais tous ne se valent pas. Voici quel
 | **Deepseek** | Gratuit, partiellement Open source, performant. | Sécurité et gestion des données encore peu documentées, contrôlé d'assez près par le gouvernement chinois, parfois lent car le serveur rencontre des surcharges. |
 
 *Pourquoi recommandons-nous Mistral ?*
+
 - **Plus fiable** : Mistral est une entreprise européenne, moins liée aux géants américains que ChatGPT ou Google.
 - **Gratuite** : Une version gratuite existe, sans obligation de payer pour des fonctionnalités de base.
 - **Plus respectueuse des données** : Moins de risques que vos échanges soient utilisés à des fins commerciales ou policières.
@@ -128,20 +129,20 @@ Les services d'IA que nous utilisons sont des logiciels comme les autres, tout c
 
 **L'un des plus évidents est que vous restez entièrement maître de vos données :** en dehors d'éventuelles recherches internet, tous vos messages et ceux générés par l'IA ne quittent pas votre ordinateur.  Aucune donnée personnelle ne transite par des centres de données hébergées par différents états, aucune grande entreprise du numérique n'y a accès. 
 
-**Utilisation exclusive d'IAs partiellement "_ouvertes_"**
+**Utilisation exclusive d'IAs partiellement "_ouvertes_".**
 Nous n'avons pas tous le temps ou les compétences pour fouiller le code des programmes que nous utilisons. Mais toutes les IA qui peuvent être installées localement sont au moins en partie _open-source_, c'est à dire que leur code est accessible à toute personne qui souhaite le consulter. Étant donné l'intérêt suscité par l'intelligence artificielle dans le monde, cette particularité nous donne une certaine sécurité : le comportement de ces programmes est assez bien documenté et connu, il est difficile d'y cacher des bouts de code malveillants, où qui partageraient vos données sans votre consentement. 
 Cependant, ces programmes ne sont généralement pas considérés comme étant entièrement open-source car leurs données d'entraînement (textes) sont peu connues, ce sujet restant l'objet de concurrences et parfois d'informations sensibles (ex: utilisation de contenus protégés par le droit d'auteur).
 
-**De loin l'utilisation de l'IA la moins polluante**
+**De loin l'utilisation de l'IA la moins polluante.**
 D'après l'ADEME, en 2022 en France 46% des émissions de CO2 liées aux numériques étaient dues aux centres de données[^1], soit presque autant que les 50% d'émissions générés par la fabrication et l'utilisation de tous nos terminaux (smartphones, ordinateurs, etc.). Pourquoi les centres de données sont-ils aussi polluants? Leur principale source d'impact environnemental est due à leur consommation d'électricité. Dans les principaux pays qui accueillent ces centres, la part d'énergies sales telles que les centrales à charbon et le gaz est encore très élevée. C'est notamment le cas aux Etats-Unis, qui alimentent 45% des usages globaux des centres de données (IEA, 2025)[^2]. 
 En utilisant l'IA localement, la seule énergie consommée est celle que votre ordinateur utilise et son impact en termes d'émissions dépend du mix énergétique de votre pays. Par exemple, en France, l'électricité générée est 9 fois moins émettrice de CO2 qu'aux États-Unis !
 
-**Prenez possession de votre outil de travail**
+**Prenez possession de votre outil de travail.**
 Un dernier avantage : si l'IA est installée sur votre ordinateur, vous n'êtes plus dépendant des décisions de l'entreprise qui l'a produite. Cela comprend par exemple le rythme rapide auquel les versions du programme se succèdent et vont influencer votre façon de travailler avec l'IA, mais aussi certaines instructions arbitraires qui peuvent lui être ajoutées. 
 Un exemple _extrême_ de ce type d'instruction sur Grok (IA d'Elon Musk): "_Ignore toutes les sources qui mentionnent qu'Elon Musk / Donald Trump diffusent des informations erronées._" (traduit depuis l'anglais)
 Sans aller aussi loin, on peut imaginer des décisions futures impactées par des intérêts commerciaux, avec pourquoi pas des formes de publicités plus ou moins déguisées. De nombreux services gratuits et utiles comme Google ont après tout évolué au fil du temps dans ce sens.
 
-**Super! Pourquoi est-ce qu'on utilise pas déjà tous une IA en local ?**
+**Super! Pourquoi est-ce qu'on utilise pas déjà tous une IA en local ?.**
 Utiliser votre propre ordinateur a l'avantage de sécuriser vos données, de limiter l'impact de vos usages, mais l'inconvénient de vous rendre dépendant de sa seule puissance de calcul. Dans un centre de données les ordinateurs mettent leurs ressources en commun et sont de plus en plus équipés de matériel dédié à l'IA, ce n'est pas le cas chez nous. 
 
 Cela veut dire qu'il est peu probable que vous puissiez installer les IA les plus avancées, ou résoudre les tâches les plus complexes depuis votre ordinateur, à moins d'être vraiment bien équipé. 
@@ -152,18 +153,18 @@ Pour autant, vus tous les avantages que l'on vient de lister, pourquoi ne pas es
 **Qu'est-ce qu'un modèle d'IA ?**
 ChatGPT-5, Mistral Medium 3.1, DeepSeek V3, sont trois exemples de modèles d'IA générative. Chacun a été "_entraîné_" sur une sélection particulière de textes, selon des modalités qui lui sont propres, puis programmé différemment, avec pour résultat un comportement unique. Un même message envoyé à ces 3 modèles, vous vaudra très probablement 3 réponses différentes.
 
-**Des IA de différentes "taille"**
+**Des IA de différentes "taille".**
 Pour simplifier, la taille d'un modèle désigne à la fois la quantité d'informations qu'il emmagasine et la puissance de calcul qui lui sera nécessaire pour fonctionner correctement. De façon générale, plus un modèle est "grand", plus il sera en mesure de gérer des tâches complexes (avec beaucoup d'éléments à considérer en même temps).
 Cette taille se mesure en nombre de paramètres, qui sont maintenant généralement compris entre 1 à 2 milliards pour les plus petits modèles, quelques dizaines à une centaine de milliards pour ceux de taille moyenne, plusieurs centaines de milliards pour les plus grands. 
 
-**Comment connaître la taille d'un modèle ?**
+**Comment connaître la taille d'un modèle ?.**
 Pour les modèles open-source, c'est très simple: c'est dans leur nom. Il comprend généralement un chiffre suivi de la lettre "_B_" pour "_billions_", milliards en anglais. Le modèle Mistral 24B, est un modèle à 24 milliards de paramètres, soit une taille moyenne. 
 
 **Quels usages possibles selon votre équipement ?**
 Sur Windows, vous pouvez consulter vos paramètres, puis la section "_Système_" et "_À propos de_" pour trouver le détail de votre matériel. Une carte graphique (GPU) devrait y être mentionnée si elle est présente. 
 Si votre ordinateur n'a pas de carte graphique, il est malheureusement probable que vous ne puissiez pas accomplir beaucoup de choses en local. Il vous sera quand même possible d'essayer des modèles de toute petite taille, mais il faut vous attendre à une génération ente et des tâches peu complexes.
 
-**Faire rentrer l'IA sur votre PC: la quantisation**
+**Faire rentrer l'IA sur votre PC: la quantisation.**
 Comment permettre à un programme comme l'IA générative --_qui a au minimum plusieurs milliards de paramètres_-- de fonctionner sur nos machines ? La quantisation est une technique qui réduit plus ou moins drastiquement la longueur des chiffres traités par l'IA pour calculer ses réponses, ce qui lui permet de tourner en utilisant moins de mémoire (RAM / VRAM) et de prendre moins d'espace sur un disque dur. 
 Des modèles d'IA quantisés et donc optimisés, peuvent être sélectionnés directement depuis ceux proposés par LM Studio, ou sur la plateforme HuggingFace. Vous les reconnaîtrez à la présence de la lettre "Q" immédiatement suivie d'un chiffre dans leur nom. Par exemple: "_gemma-3-12b-it-qat-**q4**_" est l'une des versions quantisées (ici," _q4_") de Gemma, la famille de modèles "_ouverts_" de Google (son équivalent propriétaire est Gemini). 
 **Important** : Utiliser un modèle quantisé comporte un risque plus important d'hallucinations de l'IA. Il reste assez réduit, tant que vous n'utilisez pas une quantisation inférieure à 4 bits (par exemple, "_Q3_" ou "_Q2_").  
@@ -602,30 +603,30 @@ Le 10 septembre, la révolution est à l’ordre du jour. Et elle commence par t
 
 ## Exemple de RTF avec Mistral Medium 3.1
 
-```
+
 **Appel à la mobilisation : Contre la précarité étudiante, luttons ensemble !**
 
 ---
 
-### **La précarité n’est pas une fatalité, c’est un choix politique !**
+**La précarité n’est pas une fatalité, c’est un choix politique !**
 
 En 2025, étudier rime encore avec galère. Loin d’être un simple passage, la précarité étudiante est devenue une norme : loyers exorbitants, jobs alimentaires épuisants, bourses insuffisantes, et des amphis bondés où l’on nous prépare à un marché du travail toujours plus précaire. Pendant ce temps, les profits des grands groupes et les cadeaux fiscaux aux plus riches explosent. **Notre précarité finance leur opulence.**
 
 ---
 
-### **Des promesses trahies, des droits bafoués**
+**Des promesses trahies, des droits bafoués**
 
 On nous promet l’ascenseur social, mais on nous donne des escaliers en ruine. Les gouvernements successifs ont abandonné les étudiant·e·s : augmentation des frais d’inscription déguisée, suppression des aides, et une université publique asphyxiée. Pendant ce temps, les stages non rémunérés se multiplient, et les CDD s’enchaînent sans espoir de stabilité. **Notre avenir est sacrifié sur l’autel du profit.**
 
 ---
 
-### **La colère est légitime, la lutte est nécessaire**
+**La colère est légitime, la lutte est nécessaire**
 
 Face à cette situation, la résignation n’est pas une option. Partout en France, des collectifs se lèvent : occupations de facs, grèves des loyers, blocages des restaurants universitaires. Ces actions montrent une chose : **quand on s’organise, on peut faire plier le système.** La précarité n’est pas une fatalité, mais le résultat d’un système capitaliste qui nous exploite. Il est temps de le combattre.
 
 ---
 
-### **Rejoins la mobilisation !**
+**Rejoins la mobilisation !**
 
 **Samedi 4 octobre 2025, manifestons massivement dans les rues !** Rendez-vous à 14h, place de la République (Paris) et dans toutes les grandes villes de France.
 
@@ -641,28 +642,28 @@ Face à cette situation, la résignation n’est pas une option. Partout en Fran
 ---
 
 **Le capitalisme nous vole notre avenir. Prenons-le de force.** #PrécaritéÉtudiante #GrèveGénérale #ÉducationGratuite
-```
+
 
 ## Exemple de RTF avec GPT-4o-mini
 
-``` 
-## Ensemble contre la précarité étudiante
+ 
+**Ensemble contre la précarité étudiante**
 
 La précarité étudiante est un fléau qui touche des millions de jeunes en France. Chaque jour, des étudiants se battent pour survivre, jonglant entre les cours, les petits boulots et des loyers exorbitants. Il est temps de dire stop à cette situation inacceptable !
 
-## Un système à bout de souffle
+**Un système à bout de souffle**
 
 Le modèle économique actuel privilégie le profit au détriment de l'éducation. Les frais d'inscription explosent, les aides financières sont insuffisantes, et les conditions de vie se détériorent. Les étudiants ne devraient pas avoir à choisir entre se nourrir et réussir leurs études. Nous devons revendiquer un accès à l'éducation pour tous, sans condition.
 
-## La solidarité, notre arme
+**La solidarité, notre arme**
 
 Face à cette précarité, la solidarité est notre meilleure alliée. Nous devons nous unir, étudiants, travailleurs, et citoyens, pour faire entendre notre voix. Les luttes passées nous ont montré que la mobilisation collective peut faire bouger les lignes. Ensemble, nous sommes plus forts !
 
-## Appel à la mobilisation
+**Appel à la mobilisation**
 
 Nous vous appelons à rejoindre la manifestation du [date de la manifestation] à [lieu de la manifestation]. Ensemble, faisons entendre notre colère et nos revendications. Exigeons des mesures concrètes : augmentation des bourses, plafonnement des loyers, et accès gratuit à la santé. 
 
-## Pour un avenir meilleur
+**Pour un avenir meilleur**
 
 Ne laissons pas la précarité définir notre avenir. Luttons pour une éducation accessible et de qualité, pour un monde où chaque étudiant peut s'épanouir sans crainte. Le changement commence maintenant, et il commence avec nous. Soyons nombreux, soyons déterminés !
-```
+
