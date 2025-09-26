@@ -1,5 +1,7 @@
 # Introduction
 
+> *Par Hugo Pompougnac*
+
 Pour le militant révolutionnaire, l'IA[^1] se présente d'abord comme un fait d'économie politique. L'officialité médiatique et politique qui chante ses louanges entend chanter, par là, celles du capitalisme néo-libéral, de l'entrepreunariat débridé qui règne dans la Silicon Valley, de l'industrie des données, de l'individualisation de la vie sociale, de la domination du travail par le capital, de la surexploitation des ressources[^2]. La parole militante se place donc spontanément sur le même plan : on dénonce la propagande de Sam Altman et de ses amis[^3], dont l'utopie techno-capitaliste est de moins en moins crédible. On s'indigne des souffrances que le patronat fait subir aux travailleuses et aux travailleurs au prétexte de l'innovation. On interroge l'impact des usages émergents sur notre commune humanité, par exemple en se demandant si demain, les gens sauront réfléchir par eux-mêmes.
 
 Il reste évidemment une dimension essentielle du problème à affronter. L'IA est une technologie de traitement de l'information[^4], d'usage général, comme peut l'être le livre imprimé, la photographie, le film. Or, l'activité militante, par définition, emploie largement ce genre de technologie. Par conséquent, les groupes militants s'en emparent, peut-être timidement, avec plus ou moins de recul, mais ils s'en emparent. Ici, en France, les réseaux sociaux ont par exemple vu défiler tout l'été des carictaures de François Bayrou (l'ancien premier ministre) générées par IA. Au-delà de l'image, il n'est pas rare de croiser un camarade qui se simplifie la lecture d'un rapport parlementaire ou la traduction d'un texte en s'appuyant sur une IA.
@@ -27,6 +29,8 @@ Et d'ici là... Bonne lecture !
 # Comment commencer à utiliser l'IA ?
 
 ## Par où commencer ? Choisir son outil
+
+> *Par Anaïs Fley*
 
 Il existe des dizaines d’outils d’IA, mais tous ne se valent pas. Voici quelques options courantes :
 
@@ -118,6 +122,8 @@ Comme pour l'IA en général, ces options avancées ne sont pas encore en capaci
 -----
 
 ## Utiliser l'IA en local
+
+> *Par Antoni Bourdel*
 
 **Qu'est-ce qu'une IA locale ?**
 Les services d'IA que nous utilisons sont des logiciels comme les autres, tout comme la suite Office ils peuvent être utilisés en ligne, mais aussi localement. Lorque l'on utilise un logiciel en ligne, il est sur le "_cloud_", c'est à dire qu'il est executé depuis des serveurs qui peuvent être à l'autre bout de la planète, dans des centres de données. Ces centres sont des lieux où de nombreux ordinateurs avec d'importantes capacités de stockage et de calcul sont réunis, pour des gains d'efficacité et d'énergie. 
@@ -223,6 +229,8 @@ Il est aussi possible de nous contacter pour nous aider dans nos projets!
 
 
 # À quoi l'IA est-elle utile dans la vie militante ?
+
+> *Par Anaïs Fley*
 
 L’IA n’est pas là pour remplacer l’intelligence collective ou le travail militant, mais pour gagner du temps, simplifier des tâches techniques et amplifier la portée de nos actions. Voici trois situations concrètes où elle peut être un atout, avec des exemples tirés de l’actualité militante.
 
@@ -345,6 +353,8 @@ En résumé :
 | **Tutoriel**      | Structurer, simplifier    | Relecture, visuels            | Adapter au contexte |
 
 # 'Prompter' comme un prompter
+
+> *Par Antoni Bourdel*
 
 **Qu'est-ce qu'un prompt ?**
 _Prompt_ est à l'origine un verbe anglais qui veut dire "_causer_" ou "_faire arriver_" quelque-chose. C'est maintenant le mot qui désigne toute instruction que vous adressez à une IA. Un bon équivalent français serait "_requête_".
@@ -542,6 +552,8 @@ Peut-être que l'IA fait moins de fautes d'orthographe ou utilise des tournures 
 Vous êtes donc bien plus légitimes à juger son travail, que l'inverse. Il peut-être utile de demander des corrections, ou des versions modifiées d'un texte à l'IA, mais les décisions concernant l'organisation de votre travail et les validations finales devraient toujours rester les vôtres.
 
 # Conclusion
+
+> Par Hugo Pompougnac
 
 Vous arrivez à  la fin de cette petite brochure (exception faite des annexes). Nous espérons que la lecture vous a plu, ou en tous cas, qu'elle vous a rendu service. Si c'est le cas, nous avons, nous aussi, un service à vous demander. Comme dit dans l'introduction, la version du guide que vous tenez entre les mains est très préliminaire. Pour nous, il y a encore beaucoup de choses à ajouter, à enlever peut-être, à corriger, à enrichir. Dans cet esprit, le premier critère que nous observons est celui de l'utilité pour les militant·es ; votre retour, après la lecture, est donc très important. Vous pouvez nous écrire à contact@espaces-marx.eu pour toute remarque, critique, proposition.
 
