@@ -164,7 +164,7 @@ Les services d'IA que nous utilisons sont des logiciels comme les autres, tout c
 
 *L'utilisation d'une IA locale a de nombreux avantages.*
 
-- **Restez maîtres de vos données :** 
+- **Restez maîtres de vos données** 
 
 En dehors d'éventuelles recherches internet, tous vos messages et ceux générés par l'IA ne quittent pas votre ordinateur. Aucune donnée personnelle ne transite par des centres de données hébergées par différents états, aucune grande entreprise du numérique n'y a accès. 
 
