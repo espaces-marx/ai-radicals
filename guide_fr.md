@@ -161,7 +161,7 @@ Cependant, ces programmes ne sont généralement pas considérés comme étant e
 
 - **De loin l'utilisation de l'IA la moins polluante**
 
-D'après l'ADEME, en 2022 en France 46% des émissions de CO2 liées aux numériques étaient dues aux centres de données[^1], soit presque autant que les 50% d'émissions générés par la fabrication et l'utilisation de tous nos terminaux (smartphones, ordinateurs, etc.). Pourquoi les centres de données sont-ils aussi polluants? Leur principale source d'impact environnemental est due à leur consommation d'électricité. Dans les principaux pays qui accueillent ces centres, la part d'énergies sales telles que les centrales à charbon et le gaz est encore très élevée. C'est notamment le cas aux Etats-Unis, qui alimentent 45% des usages globaux des centres de données (IEA, 2025)[^2]. 
+D'après l'ADEME, en 2022 en France 46% des émissions de CO2 liées aux numériques étaient dues aux centres de données[^6], soit presque autant que les 50% d'émissions générés par la fabrication et l'utilisation de tous nos terminaux (smartphones, ordinateurs, etc.). Pourquoi les centres de données sont-ils aussi polluants? Leur principale source d'impact environnemental est due à leur consommation d'électricité. Dans les principaux pays qui accueillent ces centres, la part d'énergies sales telles que les centrales à charbon et le gaz est encore très élevée. C'est notamment le cas aux Etats-Unis, qui alimentent 45% des usages globaux des centres de données (IEA, 2025)[^7]. 
 
 En utilisant l'IA localement, la seule énergie consommée est celle que votre ordinateur utilise et son impact en termes d'émissions dépend du mix énergétique de votre pays. Par exemple, en France, l'électricité générée est 9 fois moins émettrice de CO2 qu'aux États-Unis !
 
@@ -265,8 +265,8 @@ Il est aussi possible de nous contacter pour nous aider dans nos projets!
 
 -------
 
-[^1]: Étude ADEME ARCEP 2025
-[^2]: IEA (2025), Energy and AI, IEA, Paris
+[^6]: Étude ADEME ARCEP 2025
+[^7]: IEA (2025), Energy and AI, IEA, Paris
 
 
 # À quoi l'IA est-elle utile dans la vie militante ?
