@@ -36,6 +36,7 @@ Et d'ici là... Bonne lecture !
 
 ***Par Anaïs Fley et Antoni Bourdel***
 
+
 ## Par où commencer ? Choisir son outil
 
 Il existe des dizaines d’outils d’IA, mais tous ne se valent pas. Voici quelques options courantes :
