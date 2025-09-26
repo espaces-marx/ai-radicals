@@ -22,11 +22,11 @@ Et d'ici là... Bonne lecture !
 
 [^1]: Le terme d'IA, pour "Intelligence Artificielle", est clairement trompeur et appartient davantage au domaine de la science-fiction qu'à celui de la description technique. De fait, l'intelligence est un phénomène complexe, que ces logiciels sont très loin de parvenir à imiter. Cependant, il s'est imposé dans le débat public, et nous avons donc décidé de l'utiliser pour faciliter l'accès à ce guide, ou en tous cas, éviter d'ajouter des obstacles à la lecture en utilisant des formules moins répandues. Les logiciels que nous désignons lorsque nous parlons d'IA sont donc essentiellement des grands modèles de langage basés sur l'architecture Transformer que les utilisateurs manipulent au travers d'une interface de type 'chat'.
 
-[^2]: Voir The Shift Project, _Intelligence artificielle, données calcul : quelles infrastructures dans un monde décarboné ?_, 2025
+[^2]: Voir The Shift Project, *Intelligence artificielle, données calcul : quelles infrastructures dans un monde décarboné ?*, 2025
 
-[^3]: Voir Sam Altmann, _The Intelligence Age_, 2024
+[^3]: Voir Sam Altmann, *The Intelligence Age*, 2024
 
-[^4]: Voir Fondation Copernic, _Que faire de l'IA ? Entre risque et opportunité pour la transformation sociale et écologique_, 2025_
+[^4]: Voir Fondation Copernic, *Que faire de l'IA ? Entre risque et opportunité pour la transformation sociale et écologique*, 2025*
 
 # Comment commencer à utiliser l'IA ?
 
@@ -118,7 +118,7 @@ Il peut être tentant de transmettre des informations personnelles sensibles : s
 
 Comme pour l'IA en général, ces options avancées ne sont pas encore en capacité de répondre à toutes les demandes, et peuvent fournir des résultats insatisfaisants. Cette fois encore, essayez de voir de quelle manière ces outils, à leur état actuel d'avancement, peuvent vous aider à aller plus vite -- sans vous attendre à ce qu'ils fassent tout à votre place !
 
-[^5]: Mistral utilise le mot "agent" pour ce type de fonctionnalité, mais en général, un _agent IA_ désigne quelque chose de plus général : une IA qui interagit avec d'autres logiciels (éventuellement d'autres IA) pour accomplir des tâches de manière autonome ou semi-autonome, comme répondre aux mails.
+[^5]: Mistral utilise le mot "agent" pour ce type de fonctionnalité, mais en général, un *agent IA* désigne quelque chose de plus général : une IA qui interagit avec d'autres logiciels (éventuellement d'autres IA) pour accomplir des tâches de manière autonome ou semi-autonome, comme répondre aux mails.
 
 ## Précautions militantes
 
@@ -141,9 +141,9 @@ Comme pour l'IA en général, ces options avancées ne sont pas encore en capaci
 
 **Qu'est-ce qu'une IA locale ?**
 
-Les services d'IA que nous utilisons sont des logiciels comme les autres, tout comme la suite Office ils peuvent être utilisés en ligne, mais aussi localement. Lorque l'on utilise un logiciel en ligne, il est sur le "_cloud_", c'est à dire qu'il est executé depuis des serveurs qui peuvent être à l'autre bout de la planète, dans des centres de données. Ces centres sont des lieux où de nombreux ordinateurs avec d'importantes capacités de stockage et de calcul sont réunis, pour des gains d'efficacité et d'énergie. 
+Les services d'IA que nous utilisons sont des logiciels comme les autres, tout comme la suite Office ils peuvent être utilisés en ligne, mais aussi localement. Lorque l'on utilise un logiciel en ligne, il est sur le "*cloud*", c'est à dire qu'il est executé depuis des serveurs qui peuvent être à l'autre bout de la planète, dans des centres de données. Ces centres sont des lieux où de nombreux ordinateurs avec d'importantes capacités de stockage et de calcul sont réunis, pour des gains d'efficacité et d'énergie. 
 
-**Par opposition une IA "_en local_" est donc -- _comme son nom l'indique_ -- stockée et exécutée localement, c'est à dire depuis votre ordinateur.** Utiliser l'IA sous cette forme vous permet d'accèder, en plus des modèles distribués par les entreprises, à de nombreux modèles créés par des communautés en ligne, dont certaines versions non-censurées des modèles corporate.
+**Par opposition une IA "*en local*" est donc -- *comme son nom l'indique* -- stockée et exécutée localement, c'est à dire depuis votre ordinateur.** Utiliser l'IA sous cette forme vous permet d'accèder, en plus des modèles distribués par les entreprises, à de nombreux modèles créés par des communautés en ligne, dont certaines versions non-censurées des modèles corporate.
 
 ### Pourquoi installer une IA localement ?
 
@@ -151,9 +151,9 @@ Les services d'IA que nous utilisons sont des logiciels comme les autres, tout c
 
 **L'un des plus évidents est que vous restez entièrement maître de vos données :** en dehors d'éventuelles recherches internet, tous vos messages et ceux générés par l'IA ne quittent pas votre ordinateur.  Aucune donnée personnelle ne transite par des centres de données hébergées par différents états, aucune grande entreprise du numérique n'y a accès. 
 
-- **Utilisation exclusive d'IAs partiellement "_ouvertes_"**
+- **Utilisation exclusive d'IAs partiellement "*ouvertes*"**
 
-Nous n'avons pas tous le temps ou les compétences pour fouiller le code des programmes que nous utilisons. Mais toutes les IA qui peuvent être installées localement sont au moins en partie _open-source_, c'est à dire que leur code est accessible à toute personne qui souhaite le consulter. Étant donné l'intérêt suscité par l'intelligence artificielle dans le monde, cette particularité nous donne une certaine sécurité : le comportement de ces programmes est assez bien documenté et connu, il est difficile d'y cacher des bouts de code malveillants, où qui partageraient vos données sans votre consentement. 
+Nous n'avons pas tous le temps ou les compétences pour fouiller le code des programmes que nous utilisons. Mais toutes les IA qui peuvent être installées localement sont au moins en partie *open-source*, c'est à dire que leur code est accessible à toute personne qui souhaite le consulter. Étant donné l'intérêt suscité par l'intelligence artificielle dans le monde, cette particularité nous donne une certaine sécurité : le comportement de ces programmes est assez bien documenté et connu, il est difficile d'y cacher des bouts de code malveillants, où qui partageraient vos données sans votre consentement. 
 
 Cependant, ces programmes ne sont généralement pas considérés comme étant entièrement open-source car leurs données d'entraînement (textes) sont peu connues, ce sujet restant l'objet de concurrences et parfois d'informations sensibles (ex: utilisation de contenus protégés par le droit d'auteur).
 
@@ -167,7 +167,7 @@ En utilisant l'IA localement, la seule énergie consommée est celle que votre o
 
 Un dernier avantage : si l'IA est installée sur votre ordinateur, vous n'êtes plus dépendant des décisions de l'entreprise qui l'a produite. Cela comprend par exemple le rythme rapide auquel les versions du programme se succèdent et vont influencer votre façon de travailler avec l'IA, mais aussi certaines instructions arbitraires qui peuvent lui être ajoutées. 
 
-Un exemple _extrême_ de ce type d'instruction sur Grok (IA d'Elon Musk): "_Ignore toutes les sources qui mentionnent qu'Elon Musk / Donald Trump diffusent des informations erronées._" (traduit depuis l'anglais)
+Un exemple *extrême* de ce type d'instruction sur Grok (IA d'Elon Musk): "*Ignore toutes les sources qui mentionnent qu'Elon Musk / Donald Trump diffusent des informations erronées.*" (traduit depuis l'anglais)
 
 Sans aller aussi loin, on peut imaginer des décisions futures impactées par des intérêts commerciaux, avec pourquoi pas des formes de publicités plus ou moins déguisées. De nombreux services gratuits et utiles comme Google ont après tout évolué au fil du temps dans ce sens.
 
@@ -183,7 +183,7 @@ Pour autant, vus tous les avantages que l'on vient de lister, pourquoi ne pas es
 
 - **Qu'est-ce qu'un modèle d'IA ?**
 
-ChatGPT-5, Mistral Medium 3.1, DeepSeek V3, sont trois exemples de modèles d'IA générative. Chacun a été "_entraîné_" sur une sélection particulière de textes, selon des modalités qui lui sont propres, puis programmé différemment, avec pour résultat un comportement unique. Un même message envoyé à ces 3 modèles, vous vaudra très probablement 3 réponses différentes.
+ChatGPT-5, Mistral Medium 3.1, DeepSeek V3, sont trois exemples de modèles d'IA générative. Chacun a été "*entraîné*" sur une sélection particulière de textes, selon des modalités qui lui sont propres, puis programmé différemment, avec pour résultat un comportement unique. Un même message envoyé à ces 3 modèles, vous vaudra très probablement 3 réponses différentes.
 
 - **Des IA de différentes "taille"**
 
@@ -193,21 +193,21 @@ Cette taille se mesure en nombre de paramètres, qui sont maintenant généralem
 
 - **Comment connaître la taille d'un modèle ?**
 
-Pour les modèles open-source, c'est très simple: c'est dans leur nom. Il comprend généralement un chiffre suivi de la lettre "_B_" pour "_billions_", milliards en anglais. Le modèle Mistral 24B, est un modèle à 24 milliards de paramètres, soit une taille moyenne. 
+Pour les modèles open-source, c'est très simple: c'est dans leur nom. Il comprend généralement un chiffre suivi de la lettre "*B*" pour "*billions*", milliards en anglais. Le modèle Mistral 24B, est un modèle à 24 milliards de paramètres, soit une taille moyenne. 
 
 - **Quels usages possibles selon votre équipement ?**
 
-Sur Windows, vous pouvez consulter vos paramètres, puis la section "_Système_" et "_À propos de_" pour trouver le détail de votre matériel. Une carte graphique (GPU) devrait y être mentionnée si elle est présente. 
+Sur Windows, vous pouvez consulter vos paramètres, puis la section "*Système*" et "*À propos de*" pour trouver le détail de votre matériel. Une carte graphique (GPU) devrait y être mentionnée si elle est présente. 
 
 Si votre ordinateur n'a pas de carte graphique, il est malheureusement probable que vous ne puissiez pas accomplir beaucoup de choses en local. Il vous sera quand même possible d'essayer des modèles de toute petite taille, mais il faut vous attendre à une génération ente et des tâches peu complexes.
 
 - **Faire rentrer l'IA sur votre PC: la quantisation**
 
-Comment permettre à un programme comme l'IA générative -- _qui a au minimum plusieurs milliards de paramètres_ -- de fonctionner sur nos machines ? La quantisation est une technique qui réduit plus ou moins drastiquement la longueur des chiffres traités par l'IA pour calculer ses réponses, ce qui lui permet de tourner en utilisant moins de mémoire (RAM / VRAM) et de prendre moins d'espace sur un disque dur. 
+Comment permettre à un programme comme l'IA générative -- *qui a au minimum plusieurs milliards de paramètres* -- de fonctionner sur nos machines ? La quantisation est une technique qui réduit plus ou moins drastiquement la longueur des chiffres traités par l'IA pour calculer ses réponses, ce qui lui permet de tourner en utilisant moins de mémoire (RAM / VRAM) et de prendre moins d'espace sur un disque dur. 
 
-Des modèles d'IA quantisés et donc optimisés, peuvent être sélectionnés directement depuis ceux proposés par LM Studio, ou sur la plateforme HuggingFace. Vous les reconnaîtrez à la présence de la lettre "Q" immédiatement suivie d'un chiffre dans leur nom. Par exemple: "_gemma-3-12b-it-qat-**q4**_" est l'une des versions quantisées (ici," _q4_") de Gemma, la famille de modèles "_ouverts_" de Google (son équivalent propriétaire est Gemini). 
+Des modèles d'IA quantisés et donc optimisés, peuvent être sélectionnés directement depuis ceux proposés par LM Studio, ou sur la plateforme HuggingFace. Vous les reconnaîtrez à la présence de la lettre "Q" immédiatement suivie d'un chiffre dans leur nom. Par exemple: "*gemma-3-12b-it-qat-**q4**"* est l'une des versions quantisées (ici," *q4*") de Gemma, la famille de modèles "*ouverts*" de Google (son équivalent propriétaire est Gemini). 
 
-**Important** : Utiliser un modèle quantisé comporte un risque plus important d'hallucinations de l'IA. Il reste assez réduit, tant que vous n'utilisez pas une quantisation inférieure à 4 bits (par exemple, "_Q3_" ou "_Q2_").  
+**Important** : Utiliser un modèle quantisé comporte un risque plus important d'hallucinations de l'IA. Il reste assez réduit, tant que vous n'utilisez pas une quantisation inférieure à 4 bits (par exemple, "*Q3*" ou "*Q2*").  
 
 Voilà une estimation très imparfaite (les paramètres sont nombreux et changeants) de ce que vous pourrez faire, en fonction de votre matériel :
 
@@ -412,15 +412,15 @@ En résumé :
 
 - **Qu'est-ce qu'un prompt ?**
 
-_Prompt_ est à l'origine un verbe anglais qui veut dire "_causer_" ou "_faire arriver_" quelque-chose. C'est maintenant le mot qui désigne toute instruction que vous adressez à une IA. Un bon équivalent français serait "_requête_".
+*Prompt* est à l'origine un verbe anglais qui veut dire "*causer*" ou "*faire arriver*" quelque-chose. C'est maintenant le mot qui désigne toute instruction que vous adressez à une IA. Un bon équivalent français serait "*requête*".
 
-Même un message simple comme "_Bonjour!_" est un prompt. Sans que l'on ait besoin de formuler une demande, l'IA nous retournera probablement la politesse.
+Même un message simple comme "*Bonjour!*" est un prompt. Sans que l'on ait besoin de formuler une demande, l'IA nous retournera probablement la politesse.
 
-Chaque mot, chaque virgule de vos prompts influence le calcul effectué par l’IA et la réponse qu’elle générera en retour sera celle qu'elle estimera être la plus probable. Ces mots font partie des ingrédients qui détermineront la soupe qui vous sera servie; alors autant bien les choisir. C'est notamment l'objet du "_Prompt Engineering_" (ou ingénierie de prompt): la recherche sur les techniques qui améliorent l'efficacité des prompts. 
+Chaque mot, chaque virgule de vos prompts influence le calcul effectué par l’IA et la réponse qu’elle générera en retour sera celle qu'elle estimera être la plus probable. Ces mots font partie des ingrédients qui détermineront la soupe qui vous sera servie; alors autant bien les choisir. C'est notamment l'objet du "*Prompt Engineering*" (ou ingénierie de prompt): la recherche sur les techniques qui améliorent l'efficacité des prompts. 
 
 - **Pourquoi apprendre des techniques pour vos prompts ?**
 
-Les outils d'intelligence artificielle peuvent vous aider à effectuer rapidement des tâches répétitives, à passer moins de temps à chercher des informations, à organiser vos idées ; en somme, à libérer du temps pour du travail plus qualitatif, pour militer, ou même -- _pourquoi pas_ -- se reposer. 
+Les outils d'intelligence artificielle peuvent vous aider à effectuer rapidement des tâches répétitives, à passer moins de temps à chercher des informations, à organiser vos idées ; en somme, à libérer du temps pour du travail plus qualitatif, pour militer, ou même -- *pourquoi pas* -- se reposer. 
 
 Mais parfois le résultat obtenu est trop générique ou éloigné des objectifs de départ. Pour obtenir des générations de texte utiles, il est nécessaire de formuler la demande faite à l'IA en choisissant bien ses mots. Apprendre de nouvelles techniques permet d'avoir une influence plus décisive sur le texte qui sera généré, ou même d'imaginer de nouvelles façons d'utiliser l'IA, plus adaptées à vos besoins.
 
@@ -430,7 +430,7 @@ Mais parfois le résultat obtenu est trop générique ou éloigné des objectifs
 
 - **Pourquoi se préparer ?**
 
-Même pour une tâche simple comme "_Propose une recette simple et rapide de pâtes_", un prompt mal formulé peut vous mener à des résultats peu utiles : une recette de spaghettis alors que vous n'avez plus que des farfalles, une sauce pesto alors que vous détestez l'ail, ou encore des ingrédients manquants. 
+Même pour une tâche simple comme "*Propose une recette simple et rapide de pâtes*", un prompt mal formulé peut vous mener à des résultats peu utiles : une recette de spaghettis alors que vous n'avez plus que des farfalles, une sauce pesto alors que vous détestez l'ail, ou encore des ingrédients manquants. 
 
 Ces petits soucis montrent qu'une préparation minimale aurait été utile. Il suffit de préciser le type de pâtes, les ingrédients disponibles et quelques préférences personnelles : plus de problèmes ni de courses imprévues !
 
@@ -450,7 +450,7 @@ Le contexte peut par exemple concerner l'échelle (campagne nationale, action lo
 
 Lorsque c'est possible, veillez à expliquer le contexte de façon accessible à un acteur extérieur. Il vaut mieux par exemple éviter l'utilisation d'éléments d'une nature très interne à une organisation, ou encore trop récents. Sur ce dernier point, si le contexte discuté est suffisamment connu, et que l'IA utilisée a accès a internet (c'est maintenant souvent le cas), il est possible de lui demander explicitement de chercher des informations en ligne. 
 
-Ex: "_Suite à la mise en place du gouvernement Lecornu (fais une recherche à ce sujet), [...]_"
+Ex: "*Suite à la mise en place du gouvernement Lecornu (fais une recherche à ce sujet), [...]*"
 
 Si le sujet est sensible (par exemple, une action de blocage), il est plus prudent de ne pas utiliser l'intelligence artificielle en ligne. Diverses promesses sont faites sur l'anonymat des données, mais à partir du moment où l'on n'utilise pas une IA en local, aucune garantie réelle n'est possible. Les entreprises qui distribuent les applications d'IA peuvent être mises en demeure par les États de partager leurs données ; même sans cela, elles sont dirigées par des capitalistes, qui ont eux-mêmes des intérêts politiques ; et il peut aussi tout simplement y avoir une fuite de données, dans le cadre d'un piratage ou d'un accident.
 
@@ -459,7 +459,7 @@ Si le sujet est sensible (par exemple, une action de blocage), il est plus prude
 S'agit-il de militants, ou à l'inverse d'un public éloigné des organisations politiques ? Un groupe de personnes qui travaillent dans le même milieu, ou différents groupes ?
 
 À ce stade il est utile de ne pas faire trop d'économies de mots pour définir le public ciblé, quitte à devoir le réduire par la suite. 
-Par exemple, si le seul terme utilisé est "_jeune_" l'IA peut parfois tomber dans les mêmes pièges que le type de communication qui cible spécifiquement un public jeune : des références maladroites aux jeux vidéos ou aux youtubers. 
+Par exemple, si le seul terme utilisé est "*jeune*" l'IA peut parfois tomber dans les mêmes pièges que le type de communication qui cible spécifiquement un public jeune : des références maladroites aux jeux vidéos ou aux youtubers. 
 
 Nous sommes tous définis par plus de dimensions que seulement celle de l'âge, il est donc utile d'en combiner plusieurs ou de cibler les plus pertinentes en lien avec le contenu de votre texte et le futur lieu de sa diffusion. Quelques exemples: "étudiants en école d'ingénieur à Lyon", "caristes dans un entrepôt Amazon à Montélimar", "jeunes parents urbains",  "utilisateurs d'Instagram de 18 à 30 ans", "agents de production dans une usine Pasquier" "franciliens qui se rendent au travail en RER", etc. 
 
@@ -469,9 +469,9 @@ Si le résultat tombe dans l'excès inverse et devient un peu trop spécifique, 
 
 Par défaut, votre interlocuteur IA est souvent le plus consensuel possible. Poser une question sans préciser d'angle politique revient souvent à recevoir à peu près la même réponse que vous ferait un journaliste de grand média généraliste, ou de média public : les torts sont partagés, il y a des bonnes solutions dans chaque camp, etc. 
 
-Si vous cherchez à générer du texte qui doit avoir une certaine approche politique ou philosophique, il faut donc l'indiquer dans votre prompt. Cette indication peut être explicite (par exemple en demandant à l'IA de générer "_à partir d'un point de vue marxiste_") ou plus indirecte. Certains mots, ou expressions vont orienter la génération vers un angle particulier : "camarade", "nationalisation", ou "collectifs autogérés" sont tous des exemples qui portent leur propre dimension politique, et vont pointer plus ou moins discrètement la direction dans laquelle vous souhaitez aller. 
+Si vous cherchez à générer du texte qui doit avoir une certaine approche politique ou philosophique, il faut donc l'indiquer dans votre prompt. Cette indication peut être explicite (par exemple en demandant à l'IA de générer "*à partir d'un point de vue marxiste*") ou plus indirecte. Certains mots, ou expressions vont orienter la génération vers un angle particulier : "camarade", "nationalisation", ou "collectifs autogérés" sont tous des exemples qui portent leur propre dimension politique, et vont pointer plus ou moins discrètement la direction dans laquelle vous souhaitez aller. 
 
-Comme la qualification du public, c'est un domaine à manipuler avec précaution; sans quoi l'on risque de se retrouver avec un bingo de tous les mots-clés attendus du marxisme, sur tous les sujets. Pour éviter cette situation il est possible d'insister sur le ton du texte à générer, avec par exemple des phrases comme: "_Utilise un langage accessible pour un public large, éloigné du militantisme._"
+Comme la qualification du public, c'est un domaine à manipuler avec précaution; sans quoi l'on risque de se retrouver avec un bingo de tous les mots-clés attendus du marxisme, sur tous les sujets. Pour éviter cette situation il est possible d'insister sur le ton du texte à générer, avec par exemple des phrases comme: "*Utilise un langage accessible pour un public large, éloigné du militantisme.*"
 
 Un autre problème qui peut-être rencontré lorsque l'on mentionne "communisme" ou "marxisme" dans le prompt, est que certaines IA peuvent parfois utiliser un langage ou des exemples venant directement du contexte de Marx (locomotives à vapeur, insistance sur le charbon, etc.), ou de Lénine. Si ce n'est pas ce que vous souhaitez, soyez inventifs pour insister sur notre époque: "marxisme de 2025", "pour un public contemporain", "communisme du XXIe siècle", etc.
 
@@ -479,7 +479,7 @@ Un autre problème qui peut-être rencontré lorsque l'on mentionne "communisme"
 
 À partir des autres éléments (objectifs, publics ciblés) vous avez peut-être déjà une bonne idée du format que vous souhaitez générer. 
 
-Quelques idées des informations qu'on peut y inclure: texte écrit ou "_parlé_" (pour discours, formations, etc.), à destination d'une plateforme en particulier (tweet, publication Facebook, etc.), quantité à générer ("_3 courts paragraphes_", "_moins de 300 mots_"),  mentions d'éléments particuliers ("_punchlines claires_", slogans), ...
+Quelques idées des informations qu'on peut y inclure: texte écrit ou "*parlé*" (pour discours, formations, etc.), à destination d'une plateforme en particulier (tweet, publication Facebook, etc.), quantité à générer ("*3 courts paragraphes*", "*moins de 300 mots*"),  mentions d'éléments particuliers ("*punchlines claires*", slogans), ...
 
 À travers ce travail de préparation, vous avez déjà commencé à écrire une bonne partie du contenu du futur prompt. Maintenant, il faut lui choisir une forme!
 
@@ -505,11 +505,11 @@ Même technique, deux approches : il est possible de définir soit le rôle qui 
 
 Selon la complexité du prompt (sa longueur notamment), on va être plus ou moins formel dans l'utilisation de cette technique. Pour un prompt qui peut être énoncé en trois phrases simples, on peut juste écrire une phrase pour chaque aspect, comme par exemple :
 
->"_Tu es un militant communiste spécialisé dans la vulgarisation du marxisme et des enjeux sociaux contemporains.[Rôle] Propose une ébauche d'un appel à manifester contre la précarité étudiante en 2025.[Tâche] Ton texte doit utiliser un ton accessible mais radical, structuré en paragraphes courts avec des intertitres.[Format]_"
+>"*Tu es un militant communiste spécialisé dans la vulgarisation du marxisme et des enjeux sociaux contemporains.[Rôle] Propose une ébauche d'un appel à manifester contre la précarité étudiante en 2025.[Tâche] Ton texte doit utiliser un ton accessible mais radical, structuré en paragraphes courts avec des intertitres.[Format]*"
 >
-> _Réponse de Mistral Medium 3.1 et GPT-4o mini en annexes 3 et 4._
+> *Réponse de Mistral Medium 3.1 et GPT-4o mini en annexes 3 et 4.*
 
-Ici chaque phrase correspond à l'une des dimensions du prompt: la première assigne un rôle à "_jouer_" pour l'IA dans sa génération (militant communiste), la deuxième précise quelle est la tâche à accomplir (produire un appel à manifester), enfin la dernière ajoute des informations de format (ton, structure).
+Ici chaque phrase correspond à l'une des dimensions du prompt: la première assigne un rôle à "*jouer*" pour l'IA dans sa génération (militant communiste), la deuxième précise quelle est la tâche à accomplir (produire un appel à manifester), enfin la dernière ajoute des informations de format (ton, structure).
 
 Les indications entre crochets servent de repères à votre lecture, elles ne sont pas nécessaire pour un prompt aussi court et clair (chaque partie est déjà délimitée par une phrase). 
 
@@ -519,7 +519,7 @@ Les uns comme les autres seront non pas le fruit de réflexions politiques origi
 
 ### Chain Of Thought (COT) 
 
-La méthode Chain Of Thought, ou "_fil de pensée_" en français, propose comme son nom l'indique de guider l'IA vers une suite d'idées liées les unes aux autres. Concrètement, il s'agit de décomposer la génération de texte en plusieurs points d'étapes que l'on souhaite y retrouver, et de les incorporer directement au prompt. 
+La méthode Chain Of Thought, ou "*fil de pensée*" en français, propose comme son nom l'indique de guider l'IA vers une suite d'idées liées les unes aux autres. Concrètement, il s'agit de décomposer la génération de texte en plusieurs points d'étapes que l'on souhaite y retrouver, et de les incorporer directement au prompt. 
 
 **C'est une méthode bien adaptée aux tâches complexes**, comme le travail d'analyse qui peut passer par de nombreux chemins différents, elle permet de garder une certaine maîtrise sur ceux qui seront finalement empruntés. 
 
@@ -551,11 +551,11 @@ Il est également possible de combiner cette méthode à la précédente. En rep
 
 ### Few-Shot prompting
 
-Ou, dans une traduction approximative : prompt en quelques essais. L'idée de cette technique est de "_nourrir_" l'IA avec plusieurs exemples du type de résultats que vous souhaitez obtenir. 
+Ou, dans une traduction approximative : prompt en quelques essais. L'idée de cette technique est de "*nourrir*" l'IA avec plusieurs exemples du type de résultats que vous souhaitez obtenir. 
 
 Si vous êtes déjà habitué à écrire des textes, cela peut inclure des extraits pertinents de vos propres productions, avec comme instruction de reproduire le même style d'écriture, d'argumentation, ou le même format, sur un nouveau sujet.
 
-Quelques exemples d'utilisations possibles: apprendre à une IA -- _qui a accès à internet_ -- à reproduire le style d'une revue de presse particulière, adapter un nouveau texte au style éditorial d'une plateforme, etc. 
+Quelques exemples d'utilisations possibles: apprendre à une IA -- *qui a accès à internet* -- à reproduire le style d'une revue de presse particulière, adapter un nouveau texte au style éditorial d'une plateforme, etc. 
 
 ### Quand un seul prompt ne suffit pas
 
@@ -563,7 +563,7 @@ Parfois, la tâche est trop complexe pour pouvoir être abordée de façon satis
 
 #### Decomposed Prompting
 
-Si le problème abordé comprend de nombreuses dimensions, il peut être utile de tout simplement le diviser. C'est en un mot l'approche du _decomposed prompting_. 
+Si le problème abordé comprend de nombreuses dimensions, il peut être utile de tout simplement le diviser. C'est en un mot l'approche du *decomposed prompting*. 
 
 Par exemple, pour l'organisation d'une série de conférences marxistes sur un campus, comment diviser les problèmes d'organisation qui surviennent ?  On pourrait considérer les domaines suivants: 
 
@@ -573,14 +573,14 @@ Par exemple, pour l'organisation d'une série de conférences marxistes sur un c
 
 Vous pouvez détailler dans chacun de ces domaines les questions qui sont pour l'instant sans réponses et qui pourraient faire l'objet d'un prompt. 
 
-On aboutit au final à une sorte de plan d'organisation, dont chaque sous-partie comprend si nécessaire des prompts. Après avoir effectué et conservé les générations de textes pour chaque partie, l'idée est d'obtenir une somme "_d'expertises_" spécialisées, qui dépasserait les informations que l'on peut tirer à partir d'un seul prompt général.
+On aboutit au final à une sorte de plan d'organisation, dont chaque sous-partie comprend si nécessaire des prompts. Après avoir effectué et conservé les générations de textes pour chaque partie, l'idée est d'obtenir une somme "*d'expertises*" spécialisées, qui dépasserait les informations que l'on peut tirer à partir d'un seul prompt général.
 
 #### Self-Reflection prompt
 
-Ou prompt "_d'introspection_". Le principe est très simple: 
+Ou prompt "*d'introspection*". Le principe est très simple: 
 
 1. Commander à l'IA une première génération de texte liée à une tâche, en suivant la méthode qui vous convient.
-2. Demander à l'IA de produire une critique de son texte, qu'elle soit générale ou à partir d'un critère de votre choix. Par exemple, "_Produit une critique de ton texte, sur le critère de l'accessibilité à un public éloigné du militantisme._"
+2. Demander à l'IA de produire une critique de son texte, qu'elle soit générale ou à partir d'un critère de votre choix. Par exemple, "*Produit une critique de ton texte, sur le critère de l'accessibilité à un public éloigné du militantisme.*"
 3. Demander à l'IA de s'appuyer sur cette critique, pour générer une nouvelle version
 
 Cette méthode s'appuie sur la capacité de l'IA à traiter l'information des textes qu'elle a déjà produits (dans une conversation en cours), pour générer les suivants; elle permet de cette façon d'imiter un raisonnement critique.
@@ -616,7 +616,7 @@ Si une IA a accès à internet, il est possible de lui demander de lier ses affi
 
 **2. Tester les liens**
 
-Lorsqu'un lien est fourni en source, il arrive qu'il ne mène nulle part. Cela peut être un indice qu'il a été "_inventé_" et que le chiffre ou fait associé est peut-être faux. Ne prenez pas la présence de lien pour une garantie suffisante : _visitez-les_.
+Lorsqu'un lien est fourni en source, il arrive qu'il ne mène nulle part. Cela peut être un indice qu'il a été "*inventé*" et que le chiffre ou fait associé est peut-être faux. Ne prenez pas la présence de lien pour une garantie suffisante : *visitez-les*.
 
 **3. Parcourir les liens réels**
 
@@ -626,7 +626,7 @@ Lorsque le lien fonctionne, lire l'ensemble d'une page pour vérifier une inform
 
 Parfois, il n'est pas possible d'obtenir une preuve sous forme de lien. Par exemple, parce que l'IA a eu accès à des contenus protégés par le droit d'auteur et qu'une partie de son code la pousse à ne pas communiquer à ce sujet, ou tout simplement parce que vous utilisez un service qui ne peut pas accéder à internet.
 
-Dans ces cas là, vous pouvez poser des questions qui vous permettent de vous faire une meilleure idée, par exemple: _" Peut-on trouver des exemples concrets ou des cas pratiques qui illustrent cette affirmation ? "_, "_Existe-t-il des contradictions ou des débats autour de cette information ?_", "_Propose moi une façon de vérifier ton affirmation._"
+Dans ces cas là, vous pouvez poser des questions qui vous permettent de vous faire une meilleure idée, par exemple: *" Peut-on trouver des exemples concrets ou des cas pratiques qui illustrent cette affirmation ? "*, "*Existe-t-il des contradictions ou des débats autour de cette information ?*", "*Propose moi une façon de vérifier ton affirmation.*"
 
 **5. Croiser les sources**
 
@@ -642,7 +642,7 @@ Méfiez-vous particulièrement des tableaux qui récapitulent et mélangent les 
 
 - **La langue**
 
-Les grands modèles d'IA "_parlent_" très bien les principales langues internationales, dont le français. Ils sont cependant toujours conçus d'abord en majorité à partir de textes anglais, on peut donc être attentifs à quelques anglicismes inventés ou à la sur-représentation de tournures de phrases peu communes en français. Les erreurs sont cependant assez rares.
+Les grands modèles d'IA "*parlent*" très bien les principales langues internationales, dont le français. Ils sont cependant toujours conçus d'abord en majorité à partir de textes anglais, on peut donc être attentifs à quelques anglicismes inventés ou à la sur-représentation de tournures de phrases peu communes en français. Les erreurs sont cependant assez rares.
 
 Exemples rencontrés récemment avec GPT-5 :  *militance* au lieu de *militantisme*, à partir de l'anglais *militancy* ; *represser* au lieu de *réprimer*, à partir de l'anglais *repress*.
 
@@ -657,7 +657,7 @@ Parfois la simple mention du fait que le texte que vous utilisez dans le prompt 
 
 Lorsque vous souhaitez recevoir un avis plus nuancé, il faut donc influencer positivement la génération en ce sens, avec par exemple des formules comme : 
 
-"_Si tu relèves des erreurs (logiques, de compréhension) ou des fautes dans mon texte, mentionne-les et justifie ta sélection._"
+"*Si tu relèves des erreurs (logiques, de compréhension) ou des fautes dans mon texte, mentionne-les et justifie ta sélection.*"
 
 - **Au final c'est vous qui évaluez l'IA, pas l'inverse**
 
@@ -678,13 +678,13 @@ Pour l'heure, notre intention concernant la prochaine version du guide est de :
 - Donner des exemples concrets et des explications approfondies sur les outils d'IA "avancés" (agents, connecteurs, bibliothèques...).
 - Détailler d'autres outils ; pour le moment, nous nous sommes concentrés sur Mistral, même si beaucoup de nos conseils s'appliquent sans problème à d'autres IA.
 - Donner des conseils plus précis sur la synthèse de données par IA (résumer un texte de loi, etc.).
-- Donner des techniques de création graphique assistée par IA ; pas seulement écrire un _prompt_ trivial et s'émerveiller du résultat, mais articuler l'IA avec d'autres techniques pour créer une affiche, un sticker, un visuel Instagram, etc.
+- Donner des techniques de création graphique assistée par IA ; pas seulement écrire un *prompt* trivial et s'émerveiller du résultat, mais articuler l'IA avec d'autres techniques pour créer une affiche, un sticker, un visuel Instagram, etc.
 
-À plus long terme, nous aimerions expliquer (aussi clairement que possible) comment réentraîner un modèle d'IA chez soi pour changer son utilisation. Mais c'est un objectif plus _geek_, pour l'instant nous pensons qu'il y a d'autres urgences.
+À plus long terme, nous aimerions expliquer (aussi clairement que possible) comment réentraîner un modèle d'IA chez soi pour changer son utilisation. Mais c'est un objectif plus *geek*, pour l'instant nous pensons qu'il y a d'autres urgences.
 
 Si vous souhaitez commenter ces objectifs ou en proposer d'autres, vous avez notre adresse mail.
 
-_Arrivederci !_
+*Arrivederci !*
 
 # Annexes
 
