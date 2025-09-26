@@ -143,7 +143,7 @@ Comme pour l'IA en général, ces options avancées ne sont pas encore en capaci
 
 Les services d'IA que nous utilisons sont des logiciels comme les autres, tout comme la suite Office ils peuvent être utilisés en ligne, mais aussi localement. Lorque l'on utilise un logiciel en ligne, il est sur le "_cloud_", c'est à dire qu'il est executé depuis des serveurs qui peuvent être à l'autre bout de la planète, dans des centres de données. Ces centres sont des lieux où de nombreux ordinateurs avec d'importantes capacités de stockage et de calcul sont réunis, pour des gains d'efficacité et d'énergie. 
 
-**Par opposition une IA "_en local_" est donc --_comme son nom l'indique_-- stockée et exécutée localement, c'est à dire depuis votre ordinateur.** Utiliser l'IA sous cette forme vous permet d'accèder, en plus des modèles distribués par les entreprises, à de nombreux modèles créés par des communautés en ligne, dont certaines versions non-censurées des modèles corporate.
+**Par opposition une IA "_en local_" est donc -- _comme son nom l'indique_ -- stockée et exécutée localement, c'est à dire depuis votre ordinateur.** Utiliser l'IA sous cette forme vous permet d'accèder, en plus des modèles distribués par les entreprises, à de nombreux modèles créés par des communautés en ligne, dont certaines versions non-censurées des modèles corporate.
 
 ### Pourquoi installer une IA localement ?
 
@@ -203,7 +203,7 @@ Si votre ordinateur n'a pas de carte graphique, il est malheureusement probable 
 
 - **Faire rentrer l'IA sur votre PC: la quantisation**
 
-Comment permettre à un programme comme l'IA générative --_qui a au minimum plusieurs milliards de paramètres_-- de fonctionner sur nos machines ? La quantisation est une technique qui réduit plus ou moins drastiquement la longueur des chiffres traités par l'IA pour calculer ses réponses, ce qui lui permet de tourner en utilisant moins de mémoire (RAM / VRAM) et de prendre moins d'espace sur un disque dur. 
+Comment permettre à un programme comme l'IA générative -- _qui a au minimum plusieurs milliards de paramètres_ -- de fonctionner sur nos machines ? La quantisation est une technique qui réduit plus ou moins drastiquement la longueur des chiffres traités par l'IA pour calculer ses réponses, ce qui lui permet de tourner en utilisant moins de mémoire (RAM / VRAM) et de prendre moins d'espace sur un disque dur. 
 
 Des modèles d'IA quantisés et donc optimisés, peuvent être sélectionnés directement depuis ceux proposés par LM Studio, ou sur la plateforme HuggingFace. Vous les reconnaîtrez à la présence de la lettre "Q" immédiatement suivie d'un chiffre dans leur nom. Par exemple: "_gemma-3-12b-it-qat-**q4**_" est l'une des versions quantisées (ici," _q4_") de Gemma, la famille de modèles "_ouverts_" de Google (son équivalent propriétaire est Gemini). 
 
@@ -420,7 +420,7 @@ Chaque mot, chaque virgule de vos prompts influence le calcul effectué par l’
 
 - **Pourquoi apprendre des techniques pour vos prompts ?**
 
-Les outils d'intelligence artificielle peuvent vous aider à effectuer rapidement des tâches répétitives, à passer moins de temps à chercher des informations, à organiser vos idées ; en somme, à libérer du temps pour du travail plus qualitatif, pour militer, ou même --_pourquoi pas_-- se reposer. 
+Les outils d'intelligence artificielle peuvent vous aider à effectuer rapidement des tâches répétitives, à passer moins de temps à chercher des informations, à organiser vos idées ; en somme, à libérer du temps pour du travail plus qualitatif, pour militer, ou même -- _pourquoi pas_ -- se reposer. 
 
 Mais parfois le résultat obtenu est trop générique ou éloigné des objectifs de départ. Pour obtenir des générations de texte utiles, il est nécessaire de formuler la demande faite à l'IA en choisissant bien ses mots. Apprendre de nouvelles techniques permet d'avoir une influence plus décisive sur le texte qui sera généré, ou même d'imaginer de nouvelles façons d'utiliser l'IA, plus adaptées à vos besoins.
 
@@ -555,7 +555,7 @@ Ou, dans une traduction approximative : prompt en quelques essais. L'idée de ce
 
 Si vous êtes déjà habitué à écrire des textes, cela peut inclure des extraits pertinents de vos propres productions, avec comme instruction de reproduire le même style d'écriture, d'argumentation, ou le même format, sur un nouveau sujet.
 
-Quelques exemples d'utilisations possibles: apprendre à une IA --_qui a accès à internet_-- à reproduire le style d'une revue de presse particulière, adapter un nouveau texte au style éditorial d'une plateforme, etc. 
+Quelques exemples d'utilisations possibles: apprendre à une IA -- _qui a accès à internet_ -- à reproduire le style d'une revue de presse particulière, adapter un nouveau texte au style éditorial d'une plateforme, etc. 
 
 ### Quand un seul prompt ne suffit pas
 
