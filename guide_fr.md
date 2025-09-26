@@ -101,7 +101,7 @@ Vous pouvez ensuite demander à approfondir, reformuler, ou générer un texte p
 Une fois que vous êtes à l’aise :
 
 - Essayez de lui demander de résumer un texte long (un article, un rapport).
-- Utilisez-la pour traduire des documents militants (anglais → français, etc.).
+- Utilisez-la pour traduire des documents militants (anglais -> français, etc.).
 - Demandez-lui de générer des idées pour des slogans, des affiches, ou des stratégies d’action.
 
 Exemple : « *J’organise un atelier sur les féministes ouvrières des années 70. Propose-moi 3 activités pour animer la discussion.* »
