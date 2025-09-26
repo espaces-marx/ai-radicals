@@ -563,7 +563,7 @@ Quelques exemples d'utilisations possibles: apprendre à une IA -- *qui a accès
 
 Parfois, la tâche est trop complexe pour pouvoir être abordée de façon satisfaisante dans une seule génération de texte. Plusieurs méthodes peuvent alors être envisagées.
 
-- **Decomposed Prompting**
+> **Decomposed Prompting**
 
 Si le problème abordé comprend de nombreuses dimensions, il peut être utile de tout simplement le diviser. C'est en un mot l'approche du *decomposed prompting*. 
 
@@ -577,7 +577,7 @@ Vous pouvez détailler dans chacun de ces domaines les questions qui sont pour l
 
 On aboutit au final à une sorte de plan d'organisation, dont chaque sous-partie comprend si nécessaire des prompts. Après avoir effectué et conservé les générations de textes pour chaque partie, l'idée est d'obtenir une somme « *d'expertises* » spécialisées, qui dépasserait les informations que l'on peut tirer à partir d'un seul prompt général.
 
-- **Self-Reflection prompt**
+> **Self-Reflection prompt**
 
 Ou prompt « *d'introspection* ». Le principe est très simple: 
 
