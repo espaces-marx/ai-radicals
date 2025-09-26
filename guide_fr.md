@@ -1,5 +1,3 @@
----
-
 # Introduction
 
 ***Par Hugo Pompougnac***
@@ -22,6 +20,7 @@ C'est l'esprit de ce guide. Il est conçu pour que quiconque puisse entrer dedan
 La version que nous publions aujourd'hui est une version très préliminaire du guide. Beaucoup de choses sont imparfaites ou incomplètes. Notre intention est de l'améliorer au fur et à mesure que notre travail avance et que nos camarades nous font des retours. N'hésitez donc à partager avec nous vos remarques, critiques, propositions en vous adressant à contact@espaces-marx.eu !
 
 Et d'ici là... Bonne lecture !
+
 
 [^1]: Le terme d'IA, pour « Intelligence Artificielle », est clairement trompeur et appartient davantage au domaine de la science-fiction qu'à celui de la description technique. De fait, l'intelligence est un phénomène complexe, que ces logiciels sont très loin de parvenir à imiter. Cependant, il s'est imposé dans le débat public, et nous avons donc décidé de l'utiliser pour faciliter l'accès à ce guide, ou en tous cas, éviter d'ajouter des obstacles à la lecture en utilisant des formules moins répandues. Les logiciels que nous désignons lorsque nous parlons d'IA sont donc essentiellement des grands modèles de langage basés sur l'architecture Transformer que les utilisateurs manipulent au travers d'une interface de type 'chat'.
 
@@ -149,7 +148,8 @@ Comme pour l'IA en général, ces options avancées ne sont pas encore en capaci
 - Gardez le contrôle : l’IA est un coup de pouce, pas un chef.
 - Expérimentez sans pression : plus vous pratiquez, plus vous saurez quand et comment l’utiliser.
 
------
+---
+
 
 ## Utiliser l'IA en local
 
@@ -280,7 +280,6 @@ Vous pouvez par exemple explorer la plateforme HuggingFace, qui est à la fois l
 
 Il est aussi possible de nous contacter pour nous aider dans nos projets!
 
--------
 
 [^6]: Étude ADEME ARCEP 2025
 [^7]: IEA (2025), Energy and AI, IEA, Paris
