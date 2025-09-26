@@ -63,9 +63,9 @@ Rien de plus simple :
 
 L’IA fonctionne comme une conversation. Pour commencer, posez-lui une question claire et précise. Par exemple :
 
-- « Peux-tu m’expliquer simplement ce qu’est l’inflation ? »
-- « Aide-moi à rédiger un tract pour une manifestation contre les licenciements. »
-- « Quels sont les arguments contre la réforme des retraites ? »
+- « *Peux-tu m’expliquer simplement ce qu’est l’inflation ?* »
+- « *Aide-moi à rédiger un tract pour une manifestation contre les licenciements.* »
+- « *Quels sont les arguments contre la réforme des retraites ?* »
 
 Après avoir obtenu une réponse, vous pouvez réagir sur son contenu en répondant à votre tour : il s'agit d'un échange interactif.
 
@@ -77,8 +77,8 @@ Après avoir obtenu une réponse, vous pouvez réagir sur son contenu en répond
 
 ### Exemple d’échange :
 
-- **Vous** : « Je prépare une réunion sur le logement social. Peux-tu me lister 5 arguments contre la privatisation des HLM ? »
-- **L’IA** : « Voici 5 arguments clés : 1) Hausse des loyers, 2) Exclusion des ménages modestes, 3) Spéculation immobilière, 4) Perte de mixité sociale, 5) Désengagement de l’État. Veux-tu que je développe un point en particulier ? »
+- **Vous** : « *Je prépare une réunion sur le logement social. Peux-tu me lister 5 arguments contre la privatisation des HLM ?* »
+- **L’IA** : « *Voici 5 arguments clés : 1) Hausse des loyers, 2) Exclusion des ménages modestes, 3) Spéculation immobilière, 4) Perte de mixité sociale, 5) Désengagement de l’État. Veux-tu que je développe un point en particulier ?* »
 
 Vous pouvez ensuite demander à approfondir, reformuler, ou générer un texte plus long.
 
@@ -96,7 +96,7 @@ Une fois que vous êtes à l’aise :
 - Utilisez-la pour traduire des documents militants (anglais → français, etc.).
 - Demandez-lui de générer des idées pour des slogans, des affiches, ou des stratégies d’action.
 
-Exemple : « J’organise un atelier sur les féministes ouvrières des années 70. Propose-moi 3 activités pour animer la discussion. »
+Exemple : « *J’organise un atelier sur les féministes ouvrières des années 70. Propose-moi 3 activités pour animer la discussion.* »
 
 Le résultat ne sera pas satisfaisant tout de suite, mais il vous mettre peut-être sur la bonne piste.
 
@@ -295,7 +295,7 @@ Une manifestation ou une grève est prévue (ex. : contre la politique du gouver
 
 À partir de *tel communiqué* mis en pièce-jointe, demandez :
 
-« Rédige un tract avec un texte de 500 caractères, pour une manifestation contre la politique du gouvernement, en t’appuyant sur ce communiqué. Utilise un ton combatif, en résumant les 3 arguments clés du communiqué et l'appel à rejoindre la manif. Réutilise le titre du communiqué et ajoute un slogan accrocheur. »
+« *Rédige un tract avec un texte de 500 caractères, pour une manifestation contre la politique du gouvernement, en t’appuyant sur ce communiqué. Utilise un ton combatif, en résumant les 3 arguments clés du communiqué et l'appel à rejoindre la manif. Réutilise le titre du communiqué et ajoute un slogan accrocheur.* »
 
 ### Ce qu’il faut en plus de l’IA :
 
@@ -319,17 +319,17 @@ Votre collectif veut publier une vidéo sur les réseaux sociaux pour expliquer 
 
 ***Pourquoi utiliser l’IA ?***
 
-- Elle extrait les idées forces et les reformule pour l’oral.
-- Elle propose un découpage (introduction, développement, conclusion).
-- Elle ajuste le rythme pour une vidéo de 1 à 3 minutes.
+- Elle extrait les idées forces et les **reformule pour l’oral**.
+- Elle **propose un découpage** (introduction, développement, conclusion).
+- Elle **ajuste le rythme** pour une vidéo de 1 à 3 minutes.
 
 ### Comment faire ?
 
 Collez le lien de l'article et demandez :
 
-« Transforme cet article en script pour une vidéo face caméra de 2 minutes. Utilise un ton engagé, avec des phrases courtes et des silences pour respirer. »
+« *Transforme cet article en script pour une vidéo face caméra de 2 minutes. Utilise un ton engagé, avec des phrases courtes et des silences pour respirer.* »
 
-Précisez le style : « Parle directement à la caméra, comme si tu t’adressais à des camarades. »
+Précisez le style : « *Parle directement à la caméra, comme si tu t’adressais à des camarades.* »
 
 ### Ce qu’il faut en plus de l’IA :
 
@@ -380,8 +380,8 @@ Votre collectif veut former ses membres à une nouvelle compétence (ex. : organ
 ### Comment faire ?
 
 - **Donnez-lui une base** : collez des notes, un article, ou une liste d’idées.
-- **Précisez le public** : « Écris un tutoriel pour des militants débutants, avec des étapes simples et des exemples concrets. »
-- **Demandez un format adapté** : « Fais-moi une fiche de 2 pages, avec des encadrés pour les points clés. »
+- **Précisez le public** : « *Écris un tutoriel pour des militants débutants, avec des étapes simples et des exemples concrets.* »
+- **Demandez un format adapté** : « *Fais-moi une fiche de 2 pages, avec des encadrés pour les points clés.* »
 
 ### Ce qu’il faut en plus de l’IA :
 
