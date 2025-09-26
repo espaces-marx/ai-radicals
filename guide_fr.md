@@ -4,6 +4,7 @@
 
 ***Par Hugo Pompougnac***
 
+
 Pour le militant révolutionnaire, l'IA[^1] se présente d'abord comme un fait d'économie politique. L'officialité médiatique et politique qui chante ses louanges entend chanter, par là, celles du capitalisme néo-libéral, de l'entrepreunariat débridé qui règne dans la Silicon Valley, de l'industrie des données, de l'individualisation de la vie sociale, de la domination du travail par le capital, de la surexploitation des ressources[^2]. La parole militante se place donc spontanément sur le même plan : on dénonce la propagande de Sam Altman et de ses amis[^3], dont l'utopie techno-capitaliste est de moins en moins crédible. On s'indigne des souffrances que le patronat fait subir aux travailleuses et aux travailleurs au prétexte de l'innovation. On interroge l'impact des usages émergents sur notre commune humanité, par exemple en se demandant si demain, les gens sauront réfléchir par eux-mêmes.
 
 Il reste évidemment une dimension essentielle du problème à affronter. L'IA est une technologie de traitement de l'information[^4], d'usage général, comme peut l'être le livre imprimé, la photographie, le film. Or, l'activité militante, par définition, emploie largement ce genre de technologie. Par conséquent, les groupes militants s'en emparent, peut-être timidement, avec plus ou moins de recul, mais ils s'en emparent. Ici, en France, les réseaux sociaux ont par exemple vu défiler tout l'été des carictaures de François Bayrou (l'ancien premier ministre) générées par IA. Au-delà de l'image, il n'est pas rare de croiser un camarade qui se simplifie la lecture d'un rapport parlementaire ou la traduction d'un texte en s'appuyant sur une IA.
@@ -30,11 +31,15 @@ Et d'ici là... Bonne lecture !
 
 [^4]: Voir Fondation Copernic, *Que faire de l'IA ? Entre risque et opportunité pour la transformation sociale et écologique*, 2025*
 
+
+
 # Comment commencer à utiliser l'IA ?
+
 
 ## Par où commencer ? Choisir son outil
 
-***Par Anaïs Fley***
+***Par Anaïs Fley et Antoni Bourdel***
+
 
 Il existe des dizaines d’outils d’IA, mais tous ne se valent pas. Voici quelques options courantes :
 
@@ -50,6 +55,7 @@ Il existe des dizaines d’outils d’IA, mais tous ne se valent pas. Voici quel
 - **Gratuite** : Une version gratuite existe, sans obligation de payer pour des fonctionnalités de base.
 - **Plus respectueuse des données** : Moins de risques que vos échanges soient utilisés à des fins commerciales ou policières.
 
+
 ## Comment y accéder ?
 
 Rien de plus simple :
@@ -58,6 +64,7 @@ Rien de plus simple :
 - Allez sur lechat.mistral.ai.
 - Créez un compte (avec une adresse mail, pas besoin de numéro de téléphone).
 - Vous arrivez sur une page avec une zone de texte : c’est là que vous allez discuter avec l’IA.
+
 
 ## Première interaction : poser une question simple
 
@@ -69,11 +76,13 @@ L’IA fonctionne comme une conversation. Pour commencer, posez-lui une question
 
 Après avoir obtenu une réponse, vous pouvez réagir sur son contenu en répondant à votre tour : il s'agit d'un échange interactif.
 
+
 ### Quelques conseils :
 
 - **Soyez concret** : plus votre demande est précise, meilleure sera la réponse.
 - **Relisez toujours** : l’IA peut faire des erreurs ou oublier des nuances. Corrigiez, complétez, adaptez.
 - **Ne partagez pas d’infos sensibles** : évitez les noms, adresses, ou données personnelles.
+
 
 ### Exemple d’échange :
 
@@ -82,11 +91,13 @@ Après avoir obtenu une réponse, vous pouvez réagir sur son contenu en répond
 
 Vous pouvez ensuite demander à approfondir, reformuler, ou générer un texte plus long.
 
+
 ## À quoi s’attendre ?
 
 - **L’IA ne « comprend » pas vraiment** : elle assemble des informations pour vous répondre. Elle ne remplace pas une réflexion collective ou une analyse politique approfondie.
 - **Elle peut inventer des infos** (on appelle ça des « hallucinations »). Vérifiez toujours les faits importants avec des sources fiables (articles, rapports, camarades).
 - **Elle ne milite pas à votre place** : c’est un outil, pas un camarade. Utilisez-la pour vous aider, pas pour décider.
+
 
 ## Aller plus loin (sans se noyer)
 
@@ -99,6 +110,7 @@ Une fois que vous êtes à l’aise :
 Exemple : « *J’organise un atelier sur les féministes ouvrières des années 70. Propose-moi 3 activités pour animer la discussion.* »
 
 Le résultat ne sera pas satisfaisant tout de suite, mais il vous mettre peut-être sur la bonne piste.
+
 
 ## Explorer les options avancées
 
@@ -122,11 +134,13 @@ Comme pour l'IA en général, ces options avancées ne sont pas encore en capaci
 
 [^5]: Mistral utilise le mot « agent » pour ce type de fonctionnalité, mais en général, un *agent IA* désigne quelque chose de plus général : une IA qui interagit avec d'autres logiciels (éventuellement d'autres IA) pour accomplir des tâches de manière autonome ou semi-autonome, comme répondre aux mails.
 
+
 ## Précautions militantes
 
 - **Anonymat** : Ne donnez pas d’infos qui pourraient identifier des personnes ou des groupes.
 - **Critique** : L’IA peut reproduire des stéréotypes (sexistes, racistes, etc.). Signalez-les et corrigez-les.
 - **Alternatives** : Si un sujet est trop sensible, privilégiez les discussions entre humains ou les ressources militantes existantes (brochures, sites de collectifs, etc.).
+
 
 ## En résumé :
 
@@ -139,13 +153,12 @@ Comme pour l'IA en général, ces options avancées ne sont pas encore en capaci
 
 ## Utiliser l'IA en local
 
-***Par Antoni Bourdel***
-
 **Qu'est-ce qu'une IA locale ?**
 
 Les services d'IA que nous utilisons sont des logiciels comme les autres, tout comme la suite Office ils peuvent être utilisés en ligne, mais aussi localement. Lorque l'on utilise un logiciel en ligne, il est sur le « *cloud* », c'est à dire qu'il est executé depuis des serveurs qui peuvent être à l'autre bout de la planète, dans des centres de données. Ces centres sont des lieux où de nombreux ordinateurs avec d'importantes capacités de stockage et de calcul sont réunis, pour des gains d'efficacité et d'énergie. 
 
 **Par opposition une IA « *en local* » est donc -- *comme son nom l'indique* -- stockée et exécutée localement, c'est à dire depuis votre ordinateur.** Utiliser l'IA sous cette forme vous permet d'accèder, en plus des modèles distribués par les entreprises, à de nombreux modèles créés par des communautés en ligne, dont certaines versions non-censurées des modèles corporate.
+
 
 ### Pourquoi installer une IA localement ?
 
@@ -182,6 +195,7 @@ Utiliser votre propre ordinateur a l'avantage de sécuriser vos données, de lim
 Cela veut dire qu'il est peu probable que vous puissiez installer les IA les plus avancées, ou résoudre les tâches les plus complexes depuis votre ordinateur, à moins d'être vraiment bien équipé. 
 
 Pour autant, vus tous les avantages que l'on vient de lister, pourquoi ne pas essayer de trouver quelle part de vos utilisation de l'IA pourrait être faite en local ? 
+
 
 ### Quelques infos avant de commencer
 
@@ -224,6 +238,7 @@ Voilà une estimation très imparfaite (les paramètres sont nombreux et changea
 | **30B - 70B+**                | Station de travail professionnelle, GPU multiples, 128 Go RAM+                   | Modèles polyvalents pour des tâches professionnelles (traduction spécialisée, génération de rapports, analyse de données complexes), création de contenu multimédia (scripts, dialogues), recherche avancée |
 
 **NB** : Dans ce tableau, la mémoire est mentionnée sous le nom RAM. En réalité, le type de mémoire la plus efficace pour gérer les usages liés à l'IA est la VRAM (Virtual RAM), qui est la mémoire issue du GPU (carte / processeur graphique). Il est possible d'utiliser une IA en local avec peu ou pas de VRAM, mais les générations seront plus lentes.
+
 
 ### Comment installer et utiliser une IA en local ?
 
@@ -271,9 +286,11 @@ Il est aussi possible de nous contacter pour nous aider dans nos projets!
 [^7]: IEA (2025), Energy and AI, IEA, Paris
 
 
+
 # À quoi l'IA est-elle utile dans la vie militante ?
 
 ***Par Anaïs Fley***
+
 
 L’IA n’est pas là pour remplacer l’intelligence collective ou le travail militant, mais pour gagner du temps, simplifier des tâches techniques et amplifier la portée de nos actions. Voici trois situations concrètes où elle peut être un atout, avec des exemples tirés de l’actualité militante.
 
@@ -281,6 +298,7 @@ L’IA n’est pas là pour remplacer l’intelligence collective ou le travail 
 ## Rédiger un tract court et mobilisateur
 
 > *Voir l’exemple complet [en annexe](#exemple-de-tract).*
+
 
 ### Situation :
 
@@ -293,17 +311,20 @@ Une manifestation ou une grève est prévue (ex. : contre la politique du gouver
 - Elle propose des **formulations mobilisatrices** (slogans, appels à l’action).
 - Elle **adapte le ton** (urgent, combatif, pédagogique).
 
+
 ### Exemple concret :
 
 À partir de *tel communiqué* mis en pièce-jointe, demandez :
 
 « *Rédige un tract avec un texte de 500 caractères, pour une manifestation contre la politique du gouvernement, en t’appuyant sur ce communiqué. Utilise un ton combatif, en résumant les 3 arguments clés du communiqué et l'appel à rejoindre la manif. Réutilise le titre du communiqué et ajoute un slogan accrocheur.* »
 
+
 ### Ce qu’il faut en plus de l’IA :
 
 - **Un logiciel de mise en page** (Canva, LibreOffice) pour ajouter des couleurs, des logos, ou des images.
 - **Une relecture collective** pour s’assurer que le message correspond à la ligne politique du collectif.
 - **Le plus possible d'éléments de contenu élaborés collectivement** : les meilleurs slogans et mots d'ordre sont ceux que les militant·es inventent eux-même à partir de leur compréhension de l'état d'esprit de ceux à qui elles et ils s'adressent.
+
 
 ### Vigilance :
 
@@ -315,6 +336,7 @@ Une manifestation ou une grève est prévue (ex. : contre la politique du gouver
 
 > *Voir l’exemple complet [en annexe](#exemple-de-script).*
 
+
 ### Situation :
 
 Votre collectif veut publier une vidéo sur les réseaux sociaux pour expliquer un enjeu (ex. : pourquoi le 10 septembre est une date clé). Vous avez un article de référence, mais pas le temps de l’adapter pour l’oral.
@@ -325,6 +347,7 @@ Votre collectif veut publier une vidéo sur les réseaux sociaux pour expliquer 
 - Elle **propose un découpage** (introduction, développement, conclusion).
 - Elle **ajuste le rythme** pour une vidéo de 1 à 3 minutes.
 
+
 ### Comment faire ?
 
 Collez le lien de l'article et demandez :
@@ -333,11 +356,13 @@ Collez le lien de l'article et demandez :
 
 Précisez le style : « *Parle directement à la caméra, comme si tu t’adressais à des camarades.* »
 
+
 ### Ce qu’il faut en plus de l’IA :
 
 - **Un smartphone ou une caméra** (même basique).
 - **Un micro correct** (ou un endroit calme pour éviter les bruits parasites).
 - **Un logiciel de montage** (CapCut, OpenShot) pour ajouter des sous-titres ou des images d’archive.
+
 
 ### Vigilance :
 
@@ -369,6 +394,7 @@ Un tutoriel est un guide qui détaille étape par étape comment acquérir une n
 >
 > *Cet exemple sert à montrer que même si ça semble trop détaillé, chaque étape est importante à détailler : ce qui est évident pour les uns peut échapper aux autres et les bloquer dans leur compréhension !*
 
+
 ### Situation :
 
 Votre collectif veut former ses membres à une nouvelle compétence (ex. : organiser une assemblée générale, utiliser un outil de chiffrement, monter une action coup de poing). Rédiger un tutoriel clair et pédagogique prend du temps, surtout si le sujet est technique ou peu familier.
@@ -379,18 +405,21 @@ Votre collectif veut former ses membres à une nouvelle compétence (ex. : organ
 - Elle **adapte le langage** pour le rendre accessible à tous.
 - Elle **génère des exemples** ou des étapes détaillées.
 
+
 ### Comment faire ?
 
 - **Donnez-lui une base** : collez des notes, un article, ou une liste d’idées.
 - **Précisez le public** : « *Écris un tutoriel pour des militants débutants, avec des étapes simples et des exemples concrets.* »
 - **Demandez un format adapté** : « *Fais-moi une fiche de 2 pages, avec des encadrés pour les points clés.* »
 
+
 ### Ce qu’il faut en plus de l’IA :
 
 - **Relire et tester** le tutoriel avec des camarades pour vérifier qu’il est compréhensible, que ça fonctionne et que les informations données ne sont pas erronnées.
 - **Rédiger** ce qui peut l'être, ajouter des formules... bref : s'investir dans le texte et se l'approprier.
 - **Ajouter** des visuels (schémas, captures d’écran) si nécessaire.
-  
+
+
 ### Vigilance :
 
 L’IA peut omettre des détails importants ou proposer des méthodes inadaptées à votre contexte. **Adaptez toujours le résultat à votre réalité locale.**
@@ -410,9 +439,12 @@ En résumé :
 | **Script vidéo**  | Adapter à l'oral, rythmer | Matériel audio/vidéo, montage | Tester à voix haute |
 | **Tutoriel**      | Structurer, simplifier    | Relecture, visuels            | Adapter au contexte |
 
+
+
 # 'Prompter' comme un prompter
 
 ***Par Antoni Bourdel***
+
 
 - **Qu'est-ce qu'un prompt ?**
 
@@ -422,6 +454,7 @@ Même un message simple comme « *Bonjour!* » est un prompt. Sans que l'on ait 
 
 Chaque mot, chaque virgule de vos prompts influence le calcul effectué par l’IA et la réponse qu’elle générera en retour sera celle qu'elle estimera être la plus probable. Ces mots font partie des ingrédients qui détermineront la soupe qui vous sera servie; alors autant bien les choisir. C'est notamment l'objet du « *Prompt Engineering* » (ou ingénierie de prompt): la recherche sur les techniques qui améliorent l'efficacité des prompts. 
 
+
 - **Pourquoi apprendre des techniques pour vos prompts ?**
 
 Les outils d'intelligence artificielle peuvent vous aider à effectuer rapidement des tâches répétitives, à passer moins de temps à chercher des informations, à organiser vos idées ; en somme, à libérer du temps pour du travail plus qualitatif, pour militer, ou même -- *pourquoi pas* -- se reposer. 
@@ -429,6 +462,7 @@ Les outils d'intelligence artificielle peuvent vous aider à effectuer rapidemen
 Mais parfois le résultat obtenu est trop générique ou éloigné des objectifs de départ. Pour obtenir des générations de texte utiles, il est nécessaire de formuler la demande faite à l'IA en choisissant bien ses mots. Apprendre de nouvelles techniques permet d'avoir une influence plus décisive sur le texte qui sera généré, ou même d'imaginer de nouvelles façons d'utiliser l'IA, plus adaptées à vos besoins.
 
 **L'idée de ce texte est de rendre votre travail avec l'IA plus prévisible :** en déterminant quelles informations rassembler, quelles questions se poser en amont, quelle forme de prompt utiliser, pour quel objectif, et comment évaluer le résultat obtenu.
+
 
 ## Préparer le travail
 
@@ -487,6 +521,7 @@ Quelques idées des informations qu'on peut y inclure: texte écrit ou « *parl�
 
 À travers ce travail de préparation, vous avez déjà commencé à écrire une bonne partie du contenu du futur prompt. Maintenant, il faut lui choisir une forme!
 
+
 ## Techniques de prompt
 
 Les techniques ci-dessous ne sont que quelques-unes des nombreuses possibilités d'approches dans nos communications avec l'IA, accompagnées d'exemples de scénarios d'utilisation militante. 
@@ -521,6 +556,7 @@ Les indications entre crochets servent de repères à votre lecture, elles ne so
 
 Les uns comme les autres seront non pas le fruit de réflexions politiques originales de l'outil, mais de ce qu'il calcule comme étant l'imitation la plus proche de ce type de texte. C'est donc bien un éventuel point de départ sur la forme (si elle comprend des éléments pertinents, du point de vue de vos objectifs), mais jamais un texte fini qui sera généré de cette façon.
 
+
 ### Chain Of Thought (COT) 
 
 La méthode Chain Of Thought, ou « *fil de pensée* » en français, propose comme son nom l'indique de guider l'IA vers une suite d'idées liées les unes aux autres. Concrètement, il s'agit de décomposer la génération de texte en plusieurs points d'étapes que l'on souhaite y retrouver, et de les incorporer directement au prompt. 
@@ -553,6 +589,7 @@ Il est également possible de combiner cette méthode à la précédente. En rep
 >
 >***Format :*** *Ton texte doit utiliser un ton accessible mais radical, structuré en paragraphes courts avec des intertitres.*
 
+
 ### Few-Shot prompting
 
 Ou, dans une traduction approximative : prompt en quelques essais. L'idée de cette technique est de « *nourrir* » l'IA avec plusieurs exemples du type de résultats que vous souhaitez obtenir. 
@@ -560,6 +597,7 @@ Ou, dans une traduction approximative : prompt en quelques essais. L'idée de ce
 Si vous êtes déjà habitué à écrire des textes, cela peut inclure des extraits pertinents de vos propres productions, avec comme instruction de reproduire le même style d'écriture, d'argumentation, ou le même format, sur un nouveau sujet.
 
 Quelques exemples d'utilisations possibles: apprendre à une IA -- *qui a accès à internet* -- à reproduire le style d'une revue de presse particulière, adapter un nouveau texte au style éditorial d'une plateforme, etc. 
+
 
 ### Quand un seul prompt ne suffit pas
 
@@ -588,6 +626,7 @@ Ou prompt « *d'introspection* ». Le principe est très simple:
 3. Demander à l'IA de s'appuyer sur cette critique, pour générer une nouvelle version
 
 Cette méthode s'appuie sur la capacité de l'IA à traiter l'information des textes qu'elle a déjà produits (dans une conversation en cours), pour générer les suivants; elle permet de cette façon d'imiter un raisonnement critique.
+
 
 ## Et après ?
 
@@ -652,7 +691,6 @@ Exemples rencontrés récemment avec GPT-5 : *militance* au lieu de *militantism
 
 Sur Mistral-Medium 3.1 : *Dunkirk* pour *Dunkerque*.
 
-
 - **L'IA est parfois un collègue un poil trop sympa**
 
 Si vous sollicitez un avis de l'intelligence artificielle sur le ton de la conversation, les chances sont élevées que le résultat soit au moins partiellement positif. 
@@ -669,9 +707,12 @@ Peut-être que l'IA fait moins de fautes d'orthographe ou utilise des tournures 
 
 Vous êtes donc bien plus légitimes à juger son travail, que l'inverse. Il peut-être utile de demander des corrections, ou des versions modifiées d'un texte à l'IA, mais les décisions concernant l'organisation de votre travail et les validations finales devraient toujours rester les vôtres.
 
+
+
 # Conclusion
 
 ***Par Hugo Pompougnac***
+
 
 Vous arrivez à la fin de cette petite brochure (exception faite des annexes). Nous espérons que la lecture vous a plu, ou en tous cas, qu'elle vous a rendu service. Si c'est le cas, nous avons, nous aussi, un service à vous demander. Comme dit dans l'introduction, la version du guide que vous tenez entre les mains est très préliminaire. Pour nous, il y a encore beaucoup de choses à ajouter, à enlever peut-être, à corriger, à enrichir. Dans cet esprit, le premier critère que nous observons est celui de l'utilité pour les militant·es ; votre retour, après la lecture, est donc très important. Vous pouvez nous écrire à contact@espaces-marx.eu pour toute remarque, critique, proposition.
 
@@ -690,7 +731,10 @@ Si vous souhaitez commenter ces objectifs ou en proposer d'autres, vous avez not
 
 *Arrivederci !*
 
+
+
 # Annexes
+
 
 ## Exemple de tract
 
@@ -719,6 +763,7 @@ Si vous souhaitez commenter ces objectifs ou en proposer d'autres, vous avez not
 ---
 
 *[À personnaliser avec votre logo et vos contacts]*
+
 
 ## Exemple de script
 
@@ -750,8 +795,8 @@ Si vous souhaitez commenter ces objectifs ou en proposer d'autres, vous avez not
 
 *[À adapter avec des images de manifs, des sous-titres, et une musique engagée.]*
 
-## Exemple de RTF avec Mistral Medium 3.1
 
+## Exemple de RTF avec Mistral Medium 3.1
 
 **Appel à la mobilisation : Contre la précarité étudiante, luttons ensemble !**
 
