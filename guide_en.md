@@ -1,6 +1,6 @@
 # Introduction
 
-> ***by Hugo Pompougnac***
+***by Hugo Pompougnac***
 
 For the revolutionary activist, AI[^1] is primarily a matter of political economy.The media and political establishment that sings its praises thereby sings the praises of neoliberal capitalism, the unbridled entrepreneurship that reigns in Silicon Valley, the data industry, the individualization of social life, the domination of labor by capital, and the overexploitation of resources[^2]. Activist discourse therefore spontaneously takes the opposite stance: it denounces the propaganda of Sam Altman and his friends[^3], whose techno-capitalist utopia is becoming less and less credible. We are up in arms over the sufferings that corporations inflict on workers under the pretext of innovation. We question the impact of emerging practices on our common humanity, for instance by wondering whether people will still be able to think for themselves in the future.
 
