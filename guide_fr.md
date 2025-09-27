@@ -1,3 +1,11 @@
+---
+title: "Militer avec l'IA"
+author:
+  - "Antoni Bourdel, *Espaces Marx*"
+  - "Anaïs Fley, *Espaces Marx*"
+  - "Hugo Pompougnac, *Espaces Marx*"
+---
+
 # Introduction
 
 ***Par Hugo Pompougnac***

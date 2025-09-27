@@ -1,3 +1,11 @@
+---
+title: "AI for radicals"
+author:
+  - "Antoni Bourdel, *Espaces Marx*"
+  - "Anaïs Fley, *Espaces Marx*"
+  - "Hugo Pompougnac, *Espaces Marx*"
+---
+
 # Introduction
 
 ***by Hugo Pompougnac***
