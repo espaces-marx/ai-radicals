@@ -1,0 +1,44 @@
+name: Build PDFs
+
+on:
+  push:
+    branches: ["main"]
+    tags: ["**"]
+
+permissions:
+  contents: write
+    
+jobs:
+  pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pandoc + LaTeX + fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            pandoc texlive-xetex lmodern \
+            fonts-noto-core fonts-noto-mono texlive-fonts-recommended
+
+      - name: Build PDFs
+        run: make pdf
+
+      - name: Upload PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: pdf-guides
+          path: |
+            guide_fr.pdf
+            guide_en.pdf
+          retention-days: 30
+
+      - name: Publish GitHub Release (pour les tags)
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            guide_fr.pdf
+            guide_en.pdf
+          generate_release_notes: true
