@@ -8,7 +8,7 @@
 
 # Wrap-up
 
-> ***by Hugo Pompougnac***
+***by Hugo Pompougnac***
 
 You have reached the end of this short guide (excluding the annexes). We do hope you enjoyed reading it, or at least found it useful. If so, we have a favor to ask of you. As mentioned in the introduction, this version of the guide is still very much a work in progress. We believe there is plenty to add, perhaps remove, correct, and improve. With this in mind, our primary concern is its usefulness to activists, so your feedback after reading it is very important. Please email us at contact@espaces-marx.eu with any comments, criticism, or suggestions.
 
