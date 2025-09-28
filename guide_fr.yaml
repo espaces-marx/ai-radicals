@@ -11,7 +11,7 @@ header-includes: |
     \pagestyle{fancy}
     \fancypagestyle{plain}{\pagestyle{fancy}}
     \fancyhf{}
-    \fancyhead[L]{\includegraphics[height=0.5cm]{logo_em.png}}
+    \fancyhead[L]{\includegraphics[height=0.5cm]{assets/logo_em.png}}
     \fancyhead[R]{\href{https://www.espaces-marx.eu}{www.espaces-marx.eu}}
     \renewcommand{\headrulewidth}{0.4pt}
     \setlength{\headheight}{18pt}
