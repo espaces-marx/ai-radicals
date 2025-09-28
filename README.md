@@ -1,6 +1,6 @@
 # AI for radicals
 
-This short, evolving guide looks at AI as both a practical tool and a political issue. It offers simple ways for activists to get started -- choosing tools, drafting tracts, scripts, and tutorials -- while flagging risks like errors or data exposure. It shares basic prompting and fact-checking habits to keep outputs clear and responsible. Above all, it argues that collective, competent use of AI strengthens organizing power and credibility. This is a living, preliminary manual -- open to critique, contributions, and rapid improvement.
+This short, evolving guide looks at AI as both a practical tool and a political issue. It offers simple ways for activists to get started -- choosing tools, drafting tracts, scripts, and tutorials -- while flagging risks like *hallucinations* or data exposure. It shares basic prompting and fact-checking habits to keep outputs clear and responsible. Above all, it argues that collective, competent use of AI strengthens organizing power and credibility. This is a living, preliminary manual -- open to critique, contributions, and rapid improvement.
 
 This is an international project. Currently, there are two versions available: English and French. However, if you'd like to propose a translation of the guide in another language, don't hesitate to submit a Pull Request -- we'd be delighted to include it.
 
