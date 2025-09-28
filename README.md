@@ -4,6 +4,8 @@ This short, evolving guide looks at AI as both a practical tool and a political 
 
 This is an international project. Currently, there are two versions available: English and French. However, if you'd like to propose a translation of the guide in another language, don't hesitate to submit a Pull Request -- we'd be delighted to include it.
 
-The PDF versions of the guide are available here for [the French version](https://github.com/espaces-marx/ai-radicals/releases/latest/download/guide_fr.pdf) and there for [the English version](https://github.com/espaces-marx/ai-radicals/releases/latest/download/guide_en.pdf). They are also distributed on [the Espaces Marx website](https://www.espaces-marx.eu/). If you wish to generate them on your own machine, you'll need a Unix system (Mac or Linux) with the DejaVu fonts installed, as well as git, make, pandoc, and tex (mactex for MacOS, texlive-xetex for Ubuntu).
+The PDF versions of the guide are available here for [the French version](https://github.com/espaces-marx/ai-radicals/releases/latest/download/guide_fr.pdf) and there for [the English version](https://github.com/espaces-marx/ai-radicals/releases/latest/download/guide_en.pdf). They are also distributed on [the Espaces Marx website](https://www.espaces-marx.eu/).
 
-Once you've cloned this repository with git, simply run the `make` command at the root.
+If you wish to generate them on your own machine, you'll need a Unix system (Mac or Linux) with the DejaVu fonts installed, as well as git, make, pandoc, and tex (mactex for MacOS, texlive-xetex for Ubuntu). Once you've cloned this repository with git, simply run the `make` command at the root.
+
+Alternatively, a PR with a title containing `(create-pdf)` will trigger the GitHub Action that generates the PDFs and saves them as artifacts. This feature is useful when you need to preview the result of a commit before merging it into the main branch of the project (e.g. during a review).
