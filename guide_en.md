@@ -422,7 +422,8 @@ To sum up:
 | **Tutorial**     | Structure, simplify    | Proofreading, visuals     | Adapt to context |
 
 
-# Prompting like a pro
+# Ask Smart, Get More: Techniques for Guiding AI 
+
 
 # Wrap-up
 
