@@ -39,7 +39,7 @@ An *extreme* example of this type of instruction on Grok (Elon Musk's AI): *"Ign
 
 Even short of political manipulation of this kind, it is easy to imagine various decisions linked to the interests of large companies that could damage the tool's capabilities, for example through more or less disguised advertising. Many free and useful services such as Google have, after all, evolved over time in this direction.
 
-**Great! Why aren't we all already using local AI?**
+***Great! Why aren't we all already using local AI?***
 
 While using your own computer has the advantage of securing your data and limiting the impact of your usage, it has the disadvantage of making you dependent on its computing power alone. In a data center, computers pool their resources and are increasingly equipped with AI-dedicated hardware, which is not generally true for home computers. 
 
@@ -100,6 +100,7 @@ LM Studio is free software that allows you to download and use AI on your comput
 3. **Launch LM Studio**.
 
 **Step 2: Select and download an AI model**
+
 In LM Studio, you will see a list of models organized by size and purpose.
 
 - **To get started**, choose a lightweight model (less than 4 GB) to get an idea of your computer's performance on AI tasks. The first models offered to you are likely to be those that match your hardware capabilities, as LM Studio makes recommendations based on your equipment. 
@@ -118,7 +119,7 @@ A way to use artificial intelligence without having to depend on the whims of Am
 
 With improvements in hardware (computers, smartphones, and tablets) and the importance of open-source models in current AI development, this approach may become more widespread.
 
-**Why not take the initiative and learn how to use it?**
+***Why not take the initiative and learn how to use it?***
 
 You could, for example, explore the HuggingFace platform, which is both the reference library for all open-source AI models (currently, there are over 2 million) and a training space. 
 
