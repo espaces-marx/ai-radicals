@@ -87,7 +87,7 @@ Specify the style: *"Speak directly to the camera, as if addressing comrades."*
 
 ## Creating a Tutorial for Activists
 
-Un tutoriel est un guide qui détaille étape par étape comment acquérir une nouvelle compétence.
+A tutorial is a step-by-step guide that explains how to acquire a new skill.
 
 > *For example, a tutorial on how to use a kettle would detail all these steps:*
 >
