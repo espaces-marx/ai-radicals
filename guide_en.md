@@ -40,25 +40,25 @@ There are dozens of AI tools available, but not all are equal. Here are some com
 
 | Tool | Pros | Cons |
 | :---- | :-------- | :------------ |
-| **Mistral AI (Le Chat)** | Partially open source, subject to European law, which is more protective of personal data. | Less well-known than American giants, sometimes less intuitive interface. Capitalist company closely linked to the French government. |
+| **Mistral AI (Le Chat)** | Partially open source, subject to European law, which is more protective of personal data. | Not as widespread as American giants, sometimes less intuitive interface. Capitalist company closely linked to the French government. |
 | **ChatGPT (OpenAI)** | Very popular, simple interface. | Proprietary, controlled by Silicon Valley capitalists, massive data collection. |
 | **Deepseek** | Free, partially open source. | Data security and management still poorly documented, closely monitored by the Chinese government, sometimes slow due to server overloads. |
 
 ***Why do we recommend Mistral?***
 
-- **More reliable:e** Mistral is a European company, less tied to American giants like ChatGPT or Google.
+- **More reliable:** Mistral is a European company, less tied to American giants like ChatGPT or Google.
 - **Free:** A free version exists, with no obligation to pay for basic features.
-- **More respectful of data:** : Lower risk of your exchanges being used for commercial or policing purposes.
+- **More respectful of your data:** : Lower risk of your exchanges being used for commercial or policing purposes.
 
 
 ### How to Access It?
 
 It’s simple:
 
-- Open an internet browser (Firefox, Chrome, etc.).
-- Go to lechat.mistral.ai.
-- Create an account (with an email address; no phone number required).
-- ou’ll arrive at a page with a text box: this is where you’ll chat with the AI.
+- Open an internet browser (Firefox, Chrome, etc.);
+- Go to lechat.mistral.ai;
+- Create an account (with an email address; no phone number required);
+- You’ll arrive at a page with a text box: this is where you’ll chat with the AI.
 
 
 ### First Interaction: Ask a Simple Question
@@ -69,13 +69,15 @@ AI works like a conversation. To start, ask it a clear and precise question. For
 - *"Help me draft a leaflet for a protest against layoffs."*
 - *"What are the arguments against pension reform?"*
 
-After receiving a response, you can react to its content by replying —- it’s an interactive exchange.
+After receiving a response, you can react to its content by replying -- it’s an interactive exchange.
+
 
 #### A Few Tips:
 
 - **Be specific:** The clearer your request, the better the response.
 - **Always proofread:** AI can make mistakes or overlook nuances. Correct, supplement, and adapt as needed.
 - **Don’t share sensitive information:** Avoid names, addresses, or personal data.
+
 
 #### Example Exchange:
 
@@ -89,7 +91,7 @@ You can then ask to delve deeper, rephrase, or generate a longer text.
 
 - **AI doesn’t "understand" in the human sense:** It assembles information to respond. It doesn’t replace collective reflection or in-depth political analysis.
 - **It can fabricate information** (these are called "hallucinations"). Always verify important facts with reliable sources (articles, reports, comrades).
-- **It doesn’t do the activism in your place:** It’s a tool, not a comrade. Use it to assist you, not to make decisions.
+- **It won't do your campaigning for you:** It’s a tool, not a comrade. Use it to assist you, not to make decisions.
 
 
 ### Militant Precautions
@@ -99,18 +101,18 @@ You can then ask to delve deeper, rephrase, or generate a longer text.
 - **Alternatives:** For highly sensitive topics, prioritize human discussions or existing militant resources (brochures, collective websites, etc.).
 
 
-### Going Further (Without Getting Overwhelmed)
+### A Few Steps Further (Without Getting Overwhelmed)
 
 Once you’re comfortable:
 
-- Try asking it to summarize a long text (an article, a report).
-- Use it to translate militant documents (English → French, etc.).
+- Try asking it to summarize a long text (an article, a report);
+- Use it to translate militant documents (English -> French, etc.);
 - Ask it to generate ideas for slogans, posters, or action strategies.
 
-Example: *"I’m organizing a workshop on working-class feminists in the 1970s. Suggest 3 activities to facilitate the discussion."*
+Example: *"I’m organizing a workshop on working-class feminists in the 1970s. Suggest 3 activities to fuel the discussion."*
 
 
-The result might not be perfect right away, but it could point you in the right direction.
+The result may not be perfect from the outset, but it should put you on the right track.
 
 
 ## Exploring Advanced Options
@@ -119,7 +121,7 @@ These are found in the left column of Mistral’s interface.
 
 - **Projects:** : Organize and group your conversations, documents, and resources by theme or goal for structured and collaborative follow-up.
 
-*For example, you can create a dedicated space for preparing a campaign against student precarity, centralizing all leaflets, meeting minutes, useful links, and exchanges with collective members.*
+*For example, you can create a dedicated space for preparing a campaign against student poverty, centralizing all leaflets, meeting minutes, useful links, and exchanges with collective members.*
 
 - **Agents** : Easily design specialized assistants for specific tasks[^5] (research, analysis, writing).
 
@@ -131,7 +133,7 @@ These are found in the left column of Mistral’s interface.
 
 It may be tempting to share sensitive personal information: If you choose to do so, select it carefully.
 
-As with AI in general, these advanced options are not yet capable of meeting all demands and may yield unsatisfactory results. Again, try to see how these tools, in their current state, can help you work faster —- without expecting them to do everything for you.
+As with AI in general, these advanced options are not yet capable of meeting all demands and may yield unsatisfactory results. Again, try to see how these tools, in their current state, can help you work faster -- without expecting them to do everything for you.
 
 [^5]: Mistral uses the term "agent" for this functionality, but generally, an AI agent refers to something broader: an AI that interacts with other software (possibly other AIs) to autonomously or semi-autonomously perform tasks, such as responding to emails.
 
