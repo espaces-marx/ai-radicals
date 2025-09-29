@@ -1,5 +1,5 @@
-MAINFONT = DejaVu Sans
-MONOFONT = DejaVu Sans Mono
+MAINFONT = Noto Sans
+MONOFONT = Noto Sans Mono
 
 all: pdf
 

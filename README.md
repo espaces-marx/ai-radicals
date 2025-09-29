@@ -6,4 +6,4 @@ This is an international project. Currently, there are two versions available: E
 
 The PDF versions of the guide are available here for [the French version](https://github.com/espaces-marx/ai-radicals/releases/latest/download/guide_fr.pdf) and there for [the English version](https://github.com/espaces-marx/ai-radicals/releases/latest/download/guide_en.pdf). They are also distributed on [the Espaces Marx website](https://www.espaces-marx.eu/).
 
-If you wish to generate them on your own machine, you'll need a Unix system (Mac or Linux) with the DejaVu fonts installed, as well as git, make, pandoc, and tex (mactex for MacOS, texlive-xetex for Ubuntu). Once you've cloned this repository with git, simply run the `make` command at the root.
+If you wish to generate them on your own machine, you'll need a Unix system (Mac or Linux) with the Noto fonts installed, as well as git, make, pandoc, and tex (mactex for MacOS, texlive-xetex for Ubuntu). Once you've cloned this repository with git, simply run the `make` command at the root.
