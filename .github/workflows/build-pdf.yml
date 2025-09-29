@@ -12,7 +12,6 @@ permissions:
     
 jobs:
   pdf:
-    if: github.event_name != 'pull_request' || contains(github.event.pull_request.title, '(create-pdf)')
     runs-on: ubuntu-latest
     container: pandoc/latex:latest
 
