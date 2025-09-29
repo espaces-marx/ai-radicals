@@ -1,6 +1,35 @@
 # Introduction
 
+***by Hugo Pompougnac***
+
+For the revolutionary activist, AI[^1] is primarily a matter of political economy.The media and political establishment that sings its praises thereby sings the praises of neoliberal capitalism, the unbridled entrepreneurship that reigns in Silicon Valley, the data industry, the individualization of social life, the domination of labor by capital, and the overexploitation of resources[^2]. Activist discourse therefore spontaneously takes the opposite stance: it denounces the propaganda of Sam Altman and his friends[^3], whose techno-capitalist utopia is becoming less and less credible. We are up in arms over the sufferings that corporations inflict on workers under the pretext of innovation. We question the impact of emerging practices on our common humanity, for instance by wondering whether people will still be able to think for themselves in the future.
+
+There is, of course, one essential aspect of the problem that remains to be addressed. AI is a general-purpose information processing technology[^4], just like printed books, photography, and film. Therefore, activist groups are embracing it, perhaps tentatively, with varying degrees of perspective, but they are embracing it nonetheless. Here in France, for example, social media has been flooded all summer with AI-generated caricatures of François Bayrou (the former prime minister). Beyond images, it is not uncommon to come across a comrade who uses AI to simplify the reading of a parliamentary report or the translation of a text.
+
+However, these militant uses of AI have two limitations:
+
+1- They sometimes lack perspective. Using a generative AI chatbot effectively and reworking the results is difficult, but absolutely essential if we want to avoid inadvertently spreading misinformation or degrading political discourse. In fact, this type of software can be very useful, but at some point it will make mistakes, either because it "*hallucinates*" due to limitations in its design, or because it has been asked a question that is too vague. This can result in mixed information, invented sources, problematic symbolism, etc. This is not a problem as long as the user is careful and anticipates or corrects errors, but it can cause serious problems if care is not taken.
+2- They are not equally adopted across the population, with very different rates depending on class -- obviously -- but also on age and place of residence, as new technologies penetrate much more slowly in the suburbs and countryside than in city centers.
+
+And yet, we believe that the radical left must become collectively proficient in AI. The challenge is technical -- it's about working more efficiently -- but it's also political, in the sense of the actual struggle itself. The ease with which we use 21st-century tools will lend us credibility, give confidence to our supporters, and, at the same time, discourage our opponents: neo-liberals, the far right, etc. Indeed, it is never encouraging to feel outdated or archaic.
+
+That is the intention of this guide. It is designed so that anyone can dive right in, with or without prior computer knowledge, and make rapid progress. We wanted it to be useful for beginners and experienced users alike, with descriptions of advanced techniques for getting the most out of AI.
+
+The version we are publishing today is a very early release of the guide. Many aspects are imperfect or incomplete. We intend to improve it as our work progresses and as we receive feedback from comrades. Please feel free to share your comments, criticisms, and suggestions with us at contact@espaces-marx.eu!
+
+Until then... Happy reading!
+
+
+[^1]: The word AI, for "Artificial Intelligence," is clearly misleading and belongs more to the realm of science fiction than to technical description. In fact, intelligence is a complex phenomenon that this kind of software is still a long way from being able to simulate. However, the term has made its way into public discourse, so we've decided to use it to make this guide more accessible, or at least to avoid creating barriers to reading by using less common terms. The software we refer to when we talk about AI is therefore essentially large language models based on the Transformer architecture that users manipulate through a chat-type interface.
+
+[^2]: The Shift Project, "_Intelligence artificielle, données calcul : quelles infrastructures dans un monde décarboné?_", 2025
+
+[^3]: Sam Altmann, _The Intelligence Age_, 2024
+
+[^4]: Fondation Copernic, _Que faire de l'IA ? Entre risque et opportunité pour la transformation sociale et écologique_, 2025
+
 # How to use AI ?
+
 
 ## Using AI locally
 
@@ -128,10 +157,239 @@ You can also contact us to help us with our projects!
 [^6]: Étude ADEME ARCEP 2025
 [^7]: IEA (2025), Energy and AI, IEA, Paris
 
-# Is AI useful for activists ?
+
+# How Can AI Be Useful in Activist Life?
+
+***By Anaïs Fley***
+
+
+AI is not here to replace collective intelligence or militant work, but to save time, simplify technical tasks, and amplify the impact of our actions. Here are three concrete situations where it can be an asset, with examples drawn from militant current events.
+
+
+## Writing a Short, Mobilizing Leaflet
+
+> *See the full example [in the appendix](#example-leaflet).*
+
+
+### Situation:
+
+A demonstration or strike is planned (e.g., against government policy, a general mobilization day). You need a punchy leaflet, quick to distribute, that inspires action. A statement has already been published in response to government announcements.
+
+***Why use AI?***
+
+- It helps **skip the blank page stage**: you can build on initial elements obtained quickly.
+- It **summarizes key issues** from an article or statement.
+- It **suggests mobilizing phrasing** (slogans, calls to action).
+- It **adapts the tone** (urgent, combative, educational).
+
+
+### Concrete Example:
+
+Based on a *given statement* attached, ask:
+
+*"Write a 500-character leaflet for a demonstration against government policy, using this statement. Use a combative tone, summarizing the 3 key arguments from the statement and the call to join the demo. Reuse the statement’s title and add a catchy slogan."*
+
+
+### What You Need Beyond AI:
+
+- **Layout software** (Canva, LibreOffice) to produce the leaflet, add colors, logos, or images.
+- **Collective proofreading** to ensure the message aligns with the group’s political line.
+- **As many collectively developed content elements as possible:** : the best slogans and demands are those activists create themselves, based on their understanding of the audience’s mindset.
+
+
+### Caution:
+
+- **Verify** dates, locations, and demands: AI can invent or distort information.
+- **Personalize** with local details (meeting place, contacts).
+  
+
+## Turning an Article into a Short Video Script
+
+See the full example [in the appendix](#example-script).
+
+
+### Situation:
+
+Your collective wants to publish a video on social media to explain an issue (e.g., why September 10 is a key date). You have a reference article but no time to adapt it for oral delivery.
+
+*Why use AI?*
+
+- It extracts key ideas and **reformulates them for speech**.
+- It **suggests a structure** (introduction, development, conclusion).
+- It **adjusts the pace** for a 1- to 3-minute video.
+
+
+### How to Do It?
+
+Paste the article link and ask:
+
+*"Turn this article into a script for a 2-minute face-camera video. Use an engaged tone, with short sentences and pauses for breathing."*
+
+Specify the style: *"Speak directly to the camera, as if addressing comrades."*
+
+
+### What You Need Beyond AI:
+
+- **A smartphone or camera** (even a basic one).
+- **A decent microphone** (or a quiet place to avoid background noise).
+- **Editing software** (CapCut, OpenShot) (CapCut, OpenShot) to add subtitles or archive images.
+
+
+### Caution:
+
+- **Test** the script aloud: Some phrases may read well but sound awkward when spoken.
+- **Add** images or subtitles to make the video more dynamic.
+
+
+## Creating a Tutorial for Activists
+
+A tutorial is a step-by-step guide that explains how to acquire a new skill.
+
+> *For example, a tutorial on how to use a kettle would detail all these steps:*
+>
+> *1. First, plug it in.*
+>
+> *2. Add water (preferably filtered to avoid limescale buildup).*
+>
+> *3. Press the button to heat (for newer models, explain how to select the right temperature).*
+>
+> *4. Wait for the kettle to beep, indicating the water has reached the desired temperature (or 100°C by default).
+>
+> *5. Choose a suitable container for the amount of hot water needed (pot for pasta, cup for tea, etc.) and its heat resistance (avoid plastic cups).
+>
+> *6. Be careful not to burn yourself when pouring boiling water, handling the container, or drinking.
+>
+> *7. Ensure the kettle is turned off.
+>
+> *8. Regularly maintain the kettle (detail cleaning steps).
+>
+> This example shows that even if it seems overly detailed, each step is important: what’s obvious to some may not be to others and could block their understanding!
+
+
+### Situation:
+
+Your collective wants to train members in a new skill (e.g., organizing a general assembly, using encryption tools, planning a direct action). Writing a clear, educational tutorial takes time, especially if the topic is technical or unfamiliar.
+
+*Why use AI?*
+
+- It can **structure information** from existing notes or resources.
+- It **adapts language** to make it accessible to everyone.
+- It **generates examples** or detailed steps.
+
+
+### How to Do It?
+
+- **Provide a base:** paste notes, an article, or a list of ideas.
+- **Specify the audience:** "Write a tutorial for beginner activists, with simple steps and concrete examples."
+- **Request an adapted format:** “make me a 2-page handout, with boxes for key points.”
+
+
+### What You Need Beyond AI:
+
+- **Proofread and test** the tutorial with comrades to ensure clarity, functionality, and accuracy.
+- **Write** what you can, add phrases, and make the text your own.
+- **Add** visuals (diagrams, screenshots) if needed.
+
+
+### Caution:
+
+AI may omit important details or suggest methods unsuitable for your context. **Always adapt the result to your local reality.**
+
+
+## When Is AI Not Suitable?
+
+- **For complex political positions:** AI cannot replace collective debate.
+- **For highly technical or local topics:** it may lack precision.
+- **For sensitive content** (action strategies, confidential information).
+
+To sum up:
+
+| Task             | AI Usefulness          | What else you need        | Caution          |
+| :--------------- | :--------------------- | :------------------------ | :--------------- |
+| **Leaflet**      | Summarize, mobilize    | Layout, local info        | Fact-check       |
+| **Video Script** | Adapt for speech, pace | Audio/video gear, editing | Test aloud       |
+| **Tutorial**     | Structure, simplify    | Proofreading, visuals     | Adapt to context |
+
 
 # Prompting like a pro
 
 # Wrap-up
 
+***by Hugo Pompougnac***
+
+You have reached the end of this short guide (excluding the annexes). We do hope you enjoyed reading it, or at least found it useful. If so, we have a favor to ask of you. As mentioned in the introduction, this version of the guide is still very much a work in progress. We believe there is plenty to add, perhaps remove, correct, and improve. With this in mind, our primary concern is its usefulness to activists, so your feedback after reading it is very important. Please email us at contact@espaces-marx.eu with any comments, criticism, or suggestions.
+
+You can also write to us if you would like to actively contribute to the writing process. If you are comfortable with digital tools, we invite you to interact with us via GitHub, visit the guide repository (github.com/espaces-marx/ai-radicals), fork it, and send us a Pull Request. We welcome all contributions and would be happy to build a larger activist community, working together to develop skills so that the left can better master new technologies.
+
+For the moment, our intention for the next version of the guide is to:  
+
+- Provide concrete examples and in-depth explanations of "advanced" AI tools (agents, connectors, libraries, etc.).
+- Detail other tools; for now, we have focused on Mistral, although much of our advice applies equally well to other AIs.
+- Provide more specific advice on AI-assisted data synthesis (summarizing a legal text, etc.).
+- Teach AI-assisted graphic design techniques: not just by writing a trivial prompt and marveling at the result, but by combining AI with other techniques to create a poster, sticker, Instagram visual, etc.
+
+Looking ahead, we would like to explain (in the clearest way possible) how to retrain an AI model at home to transform its purpose. But that's a more geeky goal; for the time being, we believe there are more pressing matters.
+
+If you would like to comment on these objectives or suggest others, please contact us at our email address.
+
+*Arrivederci!*
+
 # Annexes
+
+## Example Leaflet
+
+*(Based on the press release)*
+
+---
+
+>**MACRON OUT, POWER TO THE PEOPLE!**
+>
+>***Why join the protest on September 10?*** The government wants us to pay for the crisis: delayed retirements, frozen wages, dismantled public services. But anger is rising, and this day could change everything.
+>
+>**3 reasons to take to the streets:**
+>
+>- Shift the balance of power: The Yellow Vests proved it—when we stand united, those in power back down.
+>
+>- Our lives matter more than their profits: Billionaires are feasting while our pensions vanish. Enough is enough!
+>
+>- Another society is possible: September 10 is our chance to show that social revolution is on the agenda.
+>
+>Meet up: **2 PM, Place de la République** (Paris)
+>
+>Protests across France (check locally for details)
+>
+>***“They have the billions, we are the millions. On September 10, let’s shake the system!”***
+
+---
+
+*[Customize with your logo, emojis and contact info]*
+
+## Example Script
+
+*(Based on the editorial “September 10: Revolution on the Agenda”)*
+
+---
+
+>**[Introduction – 0:00 to 0:20]**
+>
+>“September 10 isn’t just another protest. It’s a test: Do we accept defeat, or do we fight to win? I choose to fight. And you?”
+>
+>**[Development – 0:20 to 1:30]**
+>
+>“For years, they’ve been tightening the screws: retirement at 64, hospitals on their knees, skyrocketing rents. Meanwhile, shareholders are breaking profit records. We can’t take it anymore.
+>
+>On September 10, we show them we won’t back down. Just like in 2023, when strikes forced the government to retreat on pensions. Proof that when we stand together, we can win.
+>
+>But this time, it’s not just about stopping a reform. It’s about overturning the whole system. Because this system is rotten to the core.”
+>
+>**[Conclusion – 1:30 to 2:00]**
+>
+>“So be there on September 10. In the streets, with your friends, coworkers, and neighbors. Because revolution isn’t built alone—it’s built block by block, protest after protest.
+>
+>In Paris, Lyon, Marseille: we’ll be thousands strong. And this time, we won’t go home without victory.
+>
+>On September 10, revolution is on the agenda. And it starts with you.”
+
+---
+
+*[Adapt with protest footage, subtitles, and a powerful soundtrack.]*
