@@ -37,7 +37,7 @@ Et d'ici là... Bonne lecture !
 ***Par Anaïs Fley et Antoni Bourdel***
 
 
-## Par où commencer ? Choisir son outil
+## Par où commencer ?
 
 Il existe des dizaines d’outils d’IA, mais tous ne se valent pas. Voici quelques options courantes :
 
@@ -45,7 +45,7 @@ Il existe des dizaines d’outils d’IA, mais tous ne se valent pas. Voici quel
 | :---- | :-------- | :------------ |
 | **Mistral AI (Le Chat)** | Partiellement open source, soumis au droit européen qui est plus protecteur des données personnelles. | Moins connu que les géants américains, interface parfois moins intuitive. Entreprise capitaliste proche du gouvernement français. |
 | **ChatGPT (OpenAI)** | Très populaire, interface simple. | Propriétaire, contrôlé par les capitalistes de la Silicon Valley, collecte massive de données. |
-| **Deepseek** | Gratuit, partiellement Open source, performant. | Sécurité et gestion des données encore peu documentées, contrôlé d'assez près par le gouvernement chinois, parfois lent car le serveur rencontre des surcharges. |
+| **Deepseek** | Gratuit, partiellement open source. | Sécurité et gestion des données encore peu documentées, contrôlé d'assez près par le gouvernement chinois, parfois lent car le serveur rencontre des surcharges. |
 
 ***Pourquoi recommandons-nous Mistral ?***
 
@@ -54,7 +54,7 @@ Il existe des dizaines d’outils d’IA, mais tous ne se valent pas. Voici quel
 - **Plus respectueuse des données** : Moins de risques que vos échanges soient utilisés à des fins commerciales ou policières.
 
 
-## Comment y accéder ?
+### Comment y accéder ?
 
 Rien de plus simple :
 
@@ -64,7 +64,7 @@ Rien de plus simple :
 - Vous arrivez sur une page avec une zone de texte : c’est là que vous allez discuter avec l’IA.
 
 
-## Première interaction : poser une question simple
+### Première interaction : poser une question simple
 
 L’IA fonctionne comme une conversation. Pour commencer, posez-lui une question claire et précise. Par exemple :
 
@@ -74,15 +74,13 @@ L’IA fonctionne comme une conversation. Pour commencer, posez-lui une question
 
 Après avoir obtenu une réponse, vous pouvez réagir sur son contenu en répondant à votre tour : il s'agit d'un échange interactif.
 
-
-### Quelques conseils :
+#### Quelques conseils :
 
 - **Soyez concret** : plus votre demande est précise, meilleure sera la réponse.
 - **Relisez toujours** : l’IA peut faire des erreurs ou oublier des nuances. Corrigiez, complétez, adaptez.
 - **Ne partagez pas d’infos sensibles** : évitez les noms, adresses, ou données personnelles.
 
-
-### Exemple d’échange :
+#### Exemple d’échange :
 
 - **Vous** : « *Je prépare une réunion sur le logement social. Peux-tu me lister 5 arguments contre la privatisation des HLM ?* »
 - **L’IA** : « *Voici 5 arguments clés : 1) Hausse des loyers, 2) Exclusion des ménages modestes, 3) Spéculation immobilière, 4) Perte de mixité sociale, 5) Désengagement de l’État. Veux-tu que je développe un point en particulier ?* »
@@ -90,14 +88,21 @@ Après avoir obtenu une réponse, vous pouvez réagir sur son contenu en répond
 Vous pouvez ensuite demander à approfondir, reformuler, ou générer un texte plus long.
 
 
-## À quoi s’attendre ?
+### À quoi s’attendre ?
 
 - **L’IA ne « comprend » pas vraiment** : elle assemble des informations pour vous répondre. Elle ne remplace pas une réflexion collective ou une analyse politique approfondie.
 - **Elle peut inventer des infos** (on appelle ça des « hallucinations »). Vérifiez toujours les faits importants avec des sources fiables (articles, rapports, camarades).
 - **Elle ne milite pas à votre place** : c’est un outil, pas un camarade. Utilisez-la pour vous aider, pas pour décider.
 
 
-## Aller plus loin (sans se noyer)
+### Précautions militantes
+
+- **Anonymat** : Ne donnez pas d’infos qui pourraient identifier des personnes ou des groupes.
+- **Critique** : L’IA peut reproduire des stéréotypes (sexistes, racistes, etc.). Signalez-les et corrigez-les.
+- **Alternatives** : Si un sujet est trop sensible, privilégiez les discussions entre humains ou les ressources militantes existantes (brochures, sites de collectifs, etc.).
+
+
+### Aller plus loin (sans se noyer)
 
 Une fois que vous êtes à l’aise :
 
@@ -131,23 +136,6 @@ Il peut être tentant de transmettre des informations personnelles sensibles : s
 Comme pour l'IA en général, ces options avancées ne sont pas encore en capacité de répondre à toutes les demandes, et peuvent fournir des résultats insatisfaisants. Cette fois encore, essayez de voir de quelle manière ces outils, à leur état actuel d'avancement, peuvent vous aider à aller plus vite -- sans vous attendre à ce qu'ils fassent tout à votre place !
 
 [^5]: Mistral utilise le mot « agent » pour ce type de fonctionnalité, mais en général, un *agent IA* désigne quelque chose de plus général : une IA qui interagit avec d'autres logiciels (éventuellement d'autres IA) pour accomplir des tâches de manière autonome ou semi-autonome, comme répondre aux mails.
-
-
-## Précautions militantes
-
-- **Anonymat** : Ne donnez pas d’infos qui pourraient identifier des personnes ou des groupes.
-- **Critique** : L’IA peut reproduire des stéréotypes (sexistes, racistes, etc.). Signalez-les et corrigez-les.
-- **Alternatives** : Si un sujet est trop sensible, privilégiez les discussions entre humains ou les ressources militantes existantes (brochures, sites de collectifs, etc.).
-
-
-## En résumé :
-
-- Choisissez un outil (Mistral est un bon point de départ).
-- Posez des questions claires et relisez les réponses.
-- Gardez le contrôle : l’IA est un coup de pouce, pas un chef.
-- Expérimentez sans pression : plus vous pratiquez, plus vous saurez quand et comment l’utiliser.
-
----
 
 
 ## Utiliser l'IA en local
