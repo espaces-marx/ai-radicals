@@ -22,8 +22,7 @@ jobs:
         run: |
           if command -v apk >/dev/null 2>&1; then
             # Alpine
-            apk add --no-cache make fontconfig font-noto \
-            || { echo "apk install failed"; exit 1; }
+            apk add --no-cache make fontconfig font-noto
           elif command -v apt-get >/dev/null 2>&1; then
             # Debian/Ubuntu
             apt-get update
