@@ -426,8 +426,7 @@ En résumé :
 | **Tutoriel**      | Structurer, simplifier    | Relecture, visuels            | Adapter au contexte |
 
 
-
-# 'Prompter' comme un prompter
+# Bien demander, mieux générer : Techniques pour guider l’IA
 
 ***Par Antoni Bourdel***
 
