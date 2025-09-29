@@ -20,16 +20,7 @@ jobs:
 
       - name: Setup the container
         run: |
-          if command -v apk >/dev/null 2>&1; then
-            # Alpine
-            apk add --no-cache make fontconfig font-noto
-          elif command -v apt-get >/dev/null 2>&1; then
-            # Debian/Ubuntu
-            apt-get update
-            apt-get install -y --no-install-recommends make fonts-noto-core fonts-noto-mono
-          else
-            echo "Package manager not found"; exit 1
-          fi
+          apk add --no-cache make fontconfig font-noto ghostscript
         
       - name: Build PDFs
         run: make pdf
