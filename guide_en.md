@@ -174,11 +174,11 @@ To sum up:
 >
 >**3 reasons to take to the streets:**
 >
->Ø Shift the balance of power: The Yellow Vests proved it—when we stand united, those in power back down.
+>- Shift the balance of power: The Yellow Vests proved it—when we stand united, those in power back down.
 >
->Ø Our lives matter more than their profits: Billionaires are feasting while our pensions vanish. Enough is enough!
+>- Our lives matter more than their profits: Billionaires are feasting while our pensions vanish. Enough is enough!
 >
->Ø Another society is possible: September 10 is our chance to show that social revolution is on the agenda.
+>- Another society is possible: September 10 is our chance to show that social revolution is on the agenda.
 >
 >Meet up: **2 PM, Place de la République** (Paris)
 >
@@ -188,7 +188,7 @@ To sum up:
 
 ---
 
-*[Customize with your logo and contact info]*
+*[Customize with your logo, emojis and contact info]*
 
 ## Example Script
 
