@@ -734,11 +734,11 @@ Si vous souhaitez commenter ces objectifs ou en proposer d'autres, vous avez not
 >
 >**3 raisons d’être dans la rue :**
 >
->Ø Un rapport de force à inverser : les Gilets jaunes l'ont montré, le pouvoir recule quand on est unis.
+>- Un rapport de force à inverser : les Gilets jaunes l'ont montré, le pouvoir recule quand on est unis.
 >
->Ø Nos vies valent plus que leurs profits : Les milliardaires se gavant pendant que nos retraites fondent, ça suffit !
+>- Nos vies valent plus que leurs profits : Les milliardaires se gavant pendant que nos retraites fondent, ça suffit !
 >
->Ø Une autre société est possible : Le 10 septembre, c’est l’occasion de montrer que la révolution sociale est à l’ordre du jour.
+>- Une autre société est possible : Le 10 septembre, c’est l’occasion de montrer que la révolution sociale est à l’ordre du jour.
 >
 >Rendez-vous : **14h, Place de la République** (Paris)
 >
@@ -748,7 +748,7 @@ Si vous souhaitez commenter ces objectifs ou en proposer d'autres, vous avez not
 
 ---
 
-*[À personnaliser avec votre logo et vos contacts]*
+*[À personnaliser avec votre logo, des emojis et vos contacts]*
 
 
 ## Exemple de script
