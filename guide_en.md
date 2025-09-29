@@ -12,7 +12,7 @@ AI is not here to replace collective intelligence or militant work, but to save 
 
 ## Writing a Short, Mobilizing Leaflet
 
-> *See the full example [in the appendix](#leaflet-example).*
+> *See the full example [in the appendix](#example-leaflet).*
 
 
 ### Situation:
@@ -49,7 +49,7 @@ Based on a *given statement* attached, ask:
 
 ## Turning an Article into a Short Video Script
 
-See the full example [in the appendix](#script-example).
+See the full example [in the appendix](#example-script).
 
 
 ### Situation:
@@ -161,3 +161,61 @@ To sum up:
 # Wrap-up
 
 # Annexes
+
+## Example Leaflet
+
+*(Based on the press release)*
+
+---
+
+>**MACRON OUT, POWER TO THE PEOPLE!**
+>
+>***Why join the protest on September 10?*** The government wants us to pay for the crisis: delayed retirements, frozen wages, dismantled public services. But anger is rising, and this day could change everything.
+>
+>**3 reasons to take to the streets:**
+>
+>Ø Shift the balance of power: The Yellow Vests proved it—when we stand united, those in power back down.
+>
+>Ø Our lives matter more than their profits: Billionaires are feasting while our pensions vanish. Enough is enough!
+>
+>Ø Another society is possible: September 10 is our chance to show that social revolution is on the agenda.
+>
+>Meet up: **2 PM, Place de la République** (Paris)
+>
+>Protests across France (check locally for details)
+>
+>***“They have the billions, we are the millions. On September 10, let’s shake the system!”***
+
+---
+
+*[Customize with your logo and contact info]*
+
+## Example Script
+
+*(Based on the editorial “September 10: Revolution on the Agenda”)*
+
+---
+
+>**[Introduction – 0:00 to 0:20]**
+>
+>“September 10 isn’t just another protest. It’s a test: Do we accept defeat, or do we fight to win? I choose to fight. And you?”
+>
+>**[Development – 0:20 to 1:30]**
+>
+>“For years, they’ve been tightening the screws: retirement at 64, hospitals on their knees, skyrocketing rents. Meanwhile, shareholders are breaking profit records. We can’t take it anymore.
+>
+>On September 10, we show them we won’t back down. Just like in 2023, when strikes forced the government to retreat on pensions. Proof that when we stand together, we can win.
+>
+>But this time, it’s not just about stopping a reform. It’s about overturning the whole system. Because this system is rotten to the core.”
+>
+>**[Conclusion – 1:30 to 2:00]**
+>
+>“So be there on September 10. In the streets, with your friends, coworkers, and neighbors. Because revolution isn’t built alone—it’s built block by block, protest after protest.
+>
+>In Paris, Lyon, Marseille: we’ll be thousands strong. And this time, we won’t go home without victory.
+>
+>On September 10, revolution is on the agenda. And it starts with you.”
+
+---
+
+*[Adapt with protest footage, subtitles, and a powerful soundtrack.]*
