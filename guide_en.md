@@ -2,16 +2,17 @@
 
 # How to use AI ?
 
------
-
 ## Using AI locally
 
-**What exactly is a "*local AI*"?**
-The AI services we use are software like any other; just like the Office suite, we can use them online or locally. When you use online software, it is on the "*cloud*", meaning that it is run from servers that may be located on the other side of the world, in data centers. These centers are places where numerous computers with significant storage and computing capacities are gathered for efficiency and energy gains. 
+**What exactly is a *"local AI"*?**
 
-**Conversely, "*local*" AI is -- *as its name suggests* -- stored and executed locally, meaning on your computer.** Using AI in this way gives you access not only to the models distributed by companies, but also to numerous models created by online communities, including some uncensored versions of corporate models.
+The AI services we use are software like any other; just like the Office suite, we can use them online or locally. When you use online software, it is on the *"cloud"*, meaning that it is run from servers that may be located on the other side of the world, in data centers. These centers are places where numerous computers with significant storage and computing capacities are gathered for efficiency and energy gains. 
+
+**Conversely, *"local"* AI is -- *as its name suggests* -- stored and executed locally, meaning on your computer.** Using AI in this way gives you access not only to the models distributed by companies, but also to numerous models created by online communities, including some uncensored versions of corporate models.
+
 
 ### Why would anyone install AI *locally*?
+
 *Using a local AI has many advantages.* 
 
 - **Complete control over your own data** 
@@ -34,39 +35,46 @@ When using AI locally, the only energy you consume is what your computer uses, a
 
 One final advantage: if an AI is installed on your computer, you are no longer subject to the decisions of the company that produced it. This applies, among other things, to the rapid pace at which new versions of the program are released, which will influence how you work with AI, but also to arbitrary instructions that may be added to it. 
 
-An *extreme* example of this type of instruction on Grok (Elon Musk's AI): "*Ignore all sources that mention Elon Musk/Donald Trump spread misinformation*"[^3]
+An *extreme* example of this type of instruction on Grok (Elon Musk's AI): *"Ignore all sources that mention Elon Musk/Donald Trump spread misinformation"*[^3]
 
 Even short of political manipulation of this kind, it is easy to imagine various decisions linked to the interests of large companies that could damage the tool's capabilities, for example through more or less disguised advertising. Many free and useful services such as Google have, after all, evolved over time in this direction.
 
 **Great! Why aren't we all already using local AI?**
+
 While using your own computer has the advantage of securing your data and limiting the impact of your usage, it has the disadvantage of making you dependent on its computing power alone. In a data center, computers pool their resources and are increasingly equipped with AI-dedicated hardware, which is not generally true for home computers. 
 
 This means it's unlikely you'll be able to install the most advanced AI or solve the most complex tasks from your computer unless you're really well equipped. Still, given all the advantages listed above, why not try to find out how much of your AI usage could be done locally? 
 
+
 ### Some information before going further
 
-**What is an AI "*model*"?**
-ChatGPT-5, Mistral Medium 3.1, and DeepSeek V3 are three examples of generative AI *models*. Each has been "*trained*" on a specific selection of texts, according to its own methods, and then programmed differently, resulting in a unique behavior. The same message sent to these three models will most likely yield three different responses.
+**What is an AI *"model"*?**
 
-**AIs of various "*sizes*"**
-Simply put, the size of a model refers to both the amount of information it retains and the computing power it will need to function properly. Overall, the "*larger*" a model is, the more complex tasks it will be able to handle.
+ChatGPT-5, Mistral Medium 3.1, and DeepSeek V3 are three examples of generative AI *models*. Each has been *"trained"* on a specific selection of texts, according to its own methods, and then programmed differently, resulting in a unique behavior. The same message sent to these three models will most likely yield three different responses.
+
+**AIs of various *"sizes"***
+
+Simply put, the size of a model refers to both the amount of information it retains and the computing power it will need to function properly. Overall, the *"larger"* a model is, the more complex tasks it will be able to handle.
 
 Size is expressed in the number of parameters of a model, which now generally range from 1 to 2 billion for the smallest models, a few tens to a hundred billion for medium-sized models, and several hundred billion for the largest models. 
 
 **How to find out the size of an AI model?**
-Open-source models are very straightforward: it's in their name. It usually includes a number followed by the letter "*B*" for billions. For instance, "*Mistral 24B*" is a 24 billion parameters model, which is a lower-end medium size. 
+
+Open-source models are very straightforward: it's in their name. It usually includes a number followed by the letter *"B"* for billions. For instance, *"Mistral 24B"* is a 24 billion parameters model, which is a lower-end medium size. 
 
 **Potential uses based on your hardware**
+
 On Windows, you can open your settings, then go to the “System” and “About” sections to find details about your hardware. A graphics card (GPU) should be listed there if it is present.
 
 If your computer does not have a graphics card, unfortunately you will probably not be able to do much locally. You will still be able to try out very small models, but expect slow generations and limited complexity.
 
 **Fitting AI into your machine: quantization**
+
 So how can we get a program like generative AI -- *which has at least several billion parameters* -- to run on our machines? Quantization is a technique that reduces the length of the numbers processed by AI to calculate its responses, allowing it to run using less memory (RAM/VRAM) and take up less space on a hard drive. 
 
-Quantized and therefore optimized AI models can be selected directly from those offered by LM Studio or on the HuggingFace platform. You can recognize them by the letter "*Q*" immediately followed by a number in their name. For example: “*gemma-3-12b-it-qat-**q4***” is one of the quantized versions (a ‘*q4*’ qantization) of Gemma, Google's own family of “*open*” models (its closed-source equivalent is Gemini). 
+Quantized and therefore optimized AI models can be selected directly from those offered by local AI platforms. You can recognize them by the letter *"Q"* immediately followed by a number in their name. For example: *"gemma-3-12b-it-qat-**q4**"* is one of the quantized versions (a *"q4"* qantization) of Gemma, Google's own family of *"open"* models (its closed-source equivalent is Gemini). 
 
-**Important** : Using a quantized model carries a higher risk of AI hallucinations. This risk remains fairly low as long as you do not use quantization lower than 4 bytes (like "*Q3*" or "*Q2*").
+**Important** : Using a quantized model carries a higher risk of AI hallucinations. This risk remains fairly low as long as you do not use quantization lower than 4 bits (like *"Q3"* or *"Q2"*).
 
 Here is a very rough estimate (there are many variables and they change frequently) of what you can do, depending on your hardware:
 
@@ -78,11 +86,13 @@ Here is a very rough estimate (there are many variables and they change frequent
 | **13B - 30B**  | Desktop PC with High-end GPU, 64 Go RAM                              | Complex code generation, technical writing, creative content creation, in-depth document analysis                                                                                                           |
 | **30B - 70B+** | Professional workstation, Multiple GPUs, 128 Go RAM+                 | Modèles polyvalents pour des tâches professionnelles (traduction spécialisée, génération de rapports, analyse de données complexes), création de contenu multimédia (scripts, dialogues), recherche avancée |
 
-**NB** : In this table, memory is referred to as RAM. Actually, the most efficient type of memory for AI-related tasks is VRAM (Virtual RAM), which is memory from the GPU (graphics card/processor). It is possible to use AI locally with little or no VRAM, but the generations will be slower.
+**NB** : In this table, memory is referred to as RAM. Actually, the most efficient type of memory for AI-related tasks is VRAM (Video RAM), which is memory from the GPU (graphics card/processor). It is possible to use AI locally with little or no VRAM, but the generations will be slower.
+
 
 ### How to install and use a local AI?
 
 **Step 1: Download LM Studio**
+
 LM Studio is free software that allows you to download and use AI on your computer. 
 
 1. **Download LM Studio** from the official website: *lmstudio.ai* 
@@ -92,15 +102,18 @@ LM Studio is free software that allows you to download and use AI on your comput
 **Step 2: Select and download an AI model**
 In LM Studio, you will see a list of models organized by size and purpose.
 
-- **To get started**, choose a lightweight model (less than 4 GB) to get an idea of your computer's performance on AI tasks. The first models offered to you are likely to be those that match your hardware capabilities. 
-- Click **“Download”** next to the selected model.
+- **To get started**, choose a lightweight model (less than 4 GB) to get an idea of your computer's performance on AI tasks. The first models offered to you are likely to be those that match your hardware capabilities, as LM Studio makes recommendations based on your equipment. 
+- Click **"Download"** next to the selected model.
 
 **Step 3: Run the AI and start a chat**
+
 1. Once the download is complete, click on the ***chat*** tab.
-2. Click **“Select a model to load”**, and select the model you just downloaded (this may take anywhere from a few seconds to a few minutes).
+2. Click **"Select a model to load"**, and select the model you just downloaded (this may take anywhere from a few seconds to a few minutes).
 3. Once the download is complete, click on the “Create a New Chat” button: **you can now chat with your local AI!**
 
+
 ### Going further
+
 A way to use artificial intelligence without having to depend on the whims of American tech bosses? Sounds like the future.
 
 With improvements in hardware (computers, smartphones, and tablets) and the importance of open-source models in current AI development, this approach may become more widespread.
