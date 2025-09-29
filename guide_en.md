@@ -12,66 +12,6 @@
 
 ***All annexes were initially generated in French, then translated in English. You might not get the same result, even with the same prompt and AI model.***
 
-## Leaflet example 
-
-*(From the press release)*
-
----
-
-
->**MACRON OUT, POWER TO THE PEOPLE!**
->
->***Why march on September 10?*** The government wants us to pay for the crisis: delayed retirement, frozen wages, dismantled public services. But anger is mounting, and this day could change everything.
->
->**3 reasons to march:**
->
->- A power balance to be reversed: the Yellow Vests have shown that power retreats when we are united.
->
->- Our lives are worth more than their profits: Billionaires are getting rich while our pensions are shrinking. Enough is enough!
->
->- Another society is possible: September 10 is an opportunity to show that social revolution is on the agenda.
->
->Meeting point : **2p.m., Place de la République** (Paris)
->
->Demonstrations all over France (check locally for details)
->
->***« They have billions, we are millions. On September 10, let's shake up the system! »***
-
----
-
-*[Customize with your logo, emojis, and contacts]*
-
-
-## Video script example
-
-*(From the editorial "10 septembre : la révolution à l’ordre du jour")*
-
----
-
->**[Introduction – 0:00 to 0:20]**
->
->" September 10 isn't just another protest. It's a test: do we accept to suffer, or do we fight to win? I choose to fight. What about you? "
->
->**[Development – 0:20 to 1:30]**
->
->" For years, we've been feeling the squeeze: retirement at 64, hospitals on their knees, skyrocketing rents. Meanwhile, shareholders are breaking profit records. This can't go on.
->
->September 10 is an opportunity to show them that we won't give up. Just like in 2023, when strikes forced the government to back down on pensions. Proof that when we stand together, we can win.
->
->But this time, it's not just about delaying a reform. It's about overturning everything. Because this system is rotten to the core. "
->
->**[Conclusion – 1:30 to 2:00]**
->
->" So on September 10, be there. In the streets, with your friends, your coworkers, your neighbors. Because revolution doesn't happen on its own—it's built, block by block, protest by protest.
->
->In Paris, Lyon, Marseille: there will be thousands of us. And this time, we won't go home without victory.
->
->On September 10, revolution is on the agenda. And it starts with you. "
-
----
-
-*[To be adapted with images of protests, subtitles, and politically engaged music.]*
-
 
 ## Example of RTF generation with Mistral Medium 3.1
 
