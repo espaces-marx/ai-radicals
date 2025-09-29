@@ -18,7 +18,7 @@ tmp_guide_fr.pdf:  guide_fr.yaml guide_fr.md
 		--lua-filter=src/pagebreak.lua \
 		-V mainfont="$(MAINFONT)" -V monofont="$(MONOFONT)" -V lang=fr \
 		--toc --toc-depth=2 \
-		--pdf-engine=xelatex \
+		--pdf-engine=xelatex -V papersize=A4 \
 		--fail-if-warnings
 
 tmp_guide_en.pdf: guide_en.yaml guide_en.md
@@ -26,7 +26,7 @@ tmp_guide_en.pdf: guide_en.yaml guide_en.md
 		--lua-filter=src/pagebreak.lua \
 		-V mainfont="$(MAINFONT)" -V monofont="$(MONOFONT)" -V lang=en \
 		--toc --toc-depth=2 \
-		--pdf-engine=xelatex \
+		--pdf-engine=xelatex -V papersize=A4 \
 		--fail-if-warnings
 
 clean:
