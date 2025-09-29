@@ -45,7 +45,7 @@ Il existe des dizaines d’outils d’IA, mais tous ne se valent pas. Voici quel
 | :---- | :-------- | :------------ |
 | **Mistral AI (Le Chat)** | Partiellement open source, soumis au droit européen qui est plus protecteur des données personnelles. | Moins connu que les géants américains, interface parfois moins intuitive. Entreprise capitaliste proche du gouvernement français. |
 | **ChatGPT (OpenAI)** | Très populaire, interface simple. | Propriétaire, contrôlé par les capitalistes de la Silicon Valley, collecte massive de données. |
-| **Deepseek** | Gratuit, partiellement Open source, performant. | Sécurité et gestion des données encore peu documentées, contrôlé d'assez près par le gouvernement chinois, parfois lent car le serveur rencontre des surcharges. |
+| **Deepseek** | Gratuit, partiellement open source. | Sécurité et gestion des données encore peu documentées, contrôlé d'assez près par le gouvernement chinois, parfois lent car le serveur rencontre des surcharges. |
 
 ***Pourquoi recommandons-nous Mistral ?***
 
