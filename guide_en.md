@@ -50,7 +50,7 @@ Context can include, among other things: scale (national campaign, local action)
 
 Where possible, make sure you explain the context in a way that is accessible to an outside observer. For example, it is best to avoid using elements that are highly internal to an organization or too recent. On this last point, if the context under discussion is sufficiently well known and the AI used has access to the internet (which is often the case nowadays), it is possible to explicitly ask it to search for information online. 
 
-Ex: *"Following the installation of the Lecornu government (do some research on this), [...]"*
+Ex: *"Following the installation of the Lecornu government (**do some research on this**), discuss the possible options for bringing it down as quickly as possible."*
 
 If the subject is sensitive (for example, a blocking action), it is safer not to use artificial intelligence online. Various promises are made about data anonymity, but unless AI is used locally, no real guarantees are possible. Companies that distribute AI applications may be required by governments to share their data; even without this, they are run by capitalists, who themselves have political interests; and there may also simply be a data leak, as a result of hacking or an accident.
 
