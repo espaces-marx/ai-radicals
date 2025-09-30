@@ -26,7 +26,7 @@ Et d'ici là... Bonne lecture !
 
 [^2]: Voir The Shift Project, *Intelligence artificielle, données calcul : quelles infrastructures dans un monde décarboné ?*, 2025
 
-[^3]: Voir Sam Altmann, *The Intelligence Age*, 2024
+[^3]: Voir Sam Altman, *The Intelligence Age*, 2024
 
 [^4]: Voir Fondation Copernic, *Que faire de l'IA ? Entre risque et opportunité pour la transformation sociale et écologique*, 2025*
 
@@ -81,8 +81,8 @@ Après avoir obtenu une réponse, vous pouvez réagir sur son contenu en répond
 #### Quelques conseils :
 
 - **Soyez concret** : plus votre demande est précise, meilleure sera la réponse.
-- **Relisez toujours** : l’IA peut faire des erreurs ou oublier des nuances. Corrigiez, complétez, adaptez.
-- **Ne partagez pas d’infos sensibles** : évitez les noms, adresses, ou données personnelles.
+- **Relisez toujours** : l’IA peut faire des erreurs ou oublier des nuances. Corrigez, complétez, adaptez sa réponse.
+- **Ne partagez pas d’infos sensibles** : évitez les noms, adresses, ou données personnelles dans vos messages.
 
 #### Exemple d’échange :
 
@@ -134,8 +134,6 @@ Celles-ci se trouvent dans la colonne de gauche de l'interface de Mistral.
 - **Intelligence** : Alimente l'IA de données persistantes, que ce soit des souvenirs, des informations personnelles, des connecteurs vers d'autres plateformes (comme Gmail pour mes mails) ou des bibliothèses de documents, de manière à ce que le résultat bénéficie de ces informations supplémentaires.
 
 *Par exemple, il est possible de demander une analyse critique et synthétique des derniers discours gouvernementaux sur la réforme des retraites, avec des arguments clés pour alimenter un débat public ou un communiqué.*
-
-Il peut être tentant de transmettre des informations personnelles sensibles : si vous tenez à le faire, veillez à les sélectionner scrupuleusement.
 
 Comme pour l'IA en général, ces options avancées ne sont pas encore en capacité de répondre à toutes les demandes, et peuvent fournir des résultats insatisfaisants. Cette fois encore, essayez de voir de quelle manière ces outils, à leur état actuel d'avancement, peuvent vous aider à aller plus vite -- sans vous attendre à ce qu'ils fassent tout à votre place !
 
