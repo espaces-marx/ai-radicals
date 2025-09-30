@@ -1,0 +1,18 @@
+---
+title: "AI for radicals"
+author:
+  - "Antoni Bourdel, *Espaces Marx*"
+  - "Anaïs Fley, *Espaces Marx*"
+  - "Hugo Pompougnac, *Espaces Marx*"
+website: "https://espaces-marx.net"
+header-includes: |
+    \usepackage{graphicx}
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancypagestyle{plain}{\pagestyle{fancy}}
+    \fancyhf{}
+    \fancyhead[L]{\includegraphics[height=0.5cm]{assets/logo_em.png}}
+    \fancyhead[R]{\href{https://www.espaces-marx.eu}{www.espaces-marx.eu}}
+    \renewcommand{\headrulewidth}{0.4pt}
+    \setlength{\headheight}{18pt}
+---
