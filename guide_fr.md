@@ -475,9 +475,9 @@ Le contexte peut par exemple concerner l'échelle (campagne nationale, action lo
 
 Lorsque c'est possible, veillez à expliquer le contexte de façon accessible à un acteur extérieur. Il vaut mieux par exemple éviter l'utilisation d'éléments d'une nature très interne à une organisation, ou encore trop récents. Sur ce dernier point, si le contexte discuté est suffisamment connu, et que l'IA utilisée a accès a internet (c'est maintenant souvent le cas), il est possible de lui demander explicitement de chercher des informations en ligne. 
 
-Ex: « *Suite à la mise en place du gouvernement Lecornu (fais une recherche à ce sujet), [...]* »
+Ex: « *Suite à la mise en place du gouvernement Lecornu (fais une recherche à ce sujet), propose différents moyens d'action pour accélérer sa chute* »
 
-Si le sujet est sensible (par exemple, une action de blocage), il est plus prudent de ne pas utiliser l'intelligence artificielle en ligne. Diverses promesses sont faites sur l'anonymat des données, mais à partir du moment où l'on n'utilise pas une IA en local, aucune garantie réelle n'est possible. Les entreprises qui distribuent les applications d'IA peuvent être mises en demeure par les États de partager leurs données ; même sans cela, elles sont dirigées par des capitalistes, qui ont eux-mêmes des intérêts politiques ; et il peut aussi tout simplement y avoir une fuite de données, dans le cadre d'un piratage ou d'un accident.
+Si le sujet est sensible (par exemple, une action de blocage), il est plus prudent de ne pas utiliser l'intelligence artificielle en ligne. Diverses promesses sont faites sur l'anonymat des données, mais à partir du moment où l'on n'utilise pas une IA en local, aucune garantie réelle n'est possible. Les entreprises avec des services d’IA peuvent être contraintes par les États de partager leurs données, par ailleurs elles sont souvent dirigées par des capitalistes aux intérêts politiques. Enfin, leurs données restent vulnérables aux fuites, qu’elles soient dues à des piratages ou à des accidents.
 
 **3. À quel public le texte produit doit-il s'adresser; et quelle est la meilleure manière de l'atteindre ?**
 
@@ -488,7 +488,7 @@ Par exemple, si le seul terme utilisé est « *jeune* » l'IA peut parfois tombe
 
 Nous sommes tous définis par plus de dimensions que seulement celle de l'âge, il est donc utile d'en combiner plusieurs ou de cibler les plus pertinentes en lien avec le contenu de votre texte et le futur lieu de sa diffusion. Quelques exemples: « étudiants en école d'ingénieur à Lyon », « caristes dans un entrepôt Amazon à Montélimar », « jeunes parents urbains », « utilisateurs d'Instagram de 18 à 30 ans », « agents de production dans une usine Pasquier », « franciliens qui se rendent au travail en RER », etc. 
 
-Si le résultat tombe dans l'excès inverse et devient un peu trop spécifique, on peut retirer une partie des détails, ou les reformuler. Comme en cuisine, c'est un dosage subtil des ingrédients qu'il faut trouver.
+Si le résultat tombe dans l'excès inverse et devient un peu trop spécifique, on peut retirer une partie des détails ou les reformuler. Comme en cuisine, c'est un dosage subtil des ingrédients qu'il faut trouver.
 
 **4. Quel angle politique ?**
 
@@ -568,7 +568,7 @@ Il est également possible de combiner cette méthode à la précédente. En rep
 >
 >***Tâche :*** *Propose une ébauche d'un court appel à manifester contre la précarité étudiante en 2025. Ton texte doit comprendre :*
 >
->1. *Une explication simpledes causes structurelles de la précarité étudiante (ex de causes) ;*
+>1. *Une explication simple des causes structurelles de la précarité étudiante (ex de causes) ;*
 >
 >2. *Un rappel des mobilisations récentes sur ce sujet (ex d'événements) ;*
 >
