@@ -36,11 +36,11 @@ Until then... Happy reading!
 
 ## Where to Begin?
 
-There are dozens of AI tools available, but not all are equal. Here are some common options:
+There are dozens of AI tools available, but not all are equal. Here are some common free options:
 
 | Tool | Pros | Cons |
 | :---- | :-------- | :------------ |
-| **Mistral AI (Le Chat)** | Partially open source, subject to European law. | Not as widespread as American giants, sometimes less intuitive interface. Capitalist company closely linked to the French government. |
+| **Le Chat (Mistral AI)** | Partially open source, subject to European law. | Not as widespread as American giants, sometimes less intuitive interface. Capitalist company closely linked to the French government. |
 | **ChatGPT (OpenAI)** | Very popular, simple interface. | Proprietary, controlled by Silicon Valley capitalists, massive data collection. |
 | **Deepseek** | Partially open source. | Data security and management still poorly documented, closely monitored by the Chinese government, sometimes slow due to server overloads. |
 
