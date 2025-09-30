@@ -26,7 +26,7 @@ Et d'ici là... Bonne lecture !
 
 [^2]: Voir The Shift Project, *Intelligence artificielle, données calcul : quelles infrastructures dans un monde décarboné ?*, 2025
 
-[^3]: Voir Sam Altmann, *The Intelligence Age*, 2024
+[^3]: Voir Sam Altman, *The Intelligence Age*, 2024
 
 [^4]: Voir Fondation Copernic, *Que faire de l'IA ? Entre risque et opportunité pour la transformation sociale et écologique*, 2025*
 
