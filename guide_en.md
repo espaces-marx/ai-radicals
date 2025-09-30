@@ -75,8 +75,8 @@ After receiving a response, you can react to its content by replying -- it’s a
 #### A Few Tips:
 
 - **Be specific:** The clearer your request, the better the response.
-- **Always proofread:** AI can make mistakes or overlook nuances. Correct, supplement, and adapt as needed.
-- **Don’t share sensitive information:** Avoid names, addresses, or personal data.
+- **Always proofread:** AI can make mistakes or overlook nuances. Correct, supplement, and adapt as needed its generations.
+- **Don’t share sensitive information:** Avoid names, addresses, or personal data in your messages.
 
 
 #### Example Exchange:
@@ -130,8 +130,6 @@ These are found in the left column of Mistral’s interface.
 - **Intelligence** : Feed the AI persistent data, whether memories, personal information, connectors to other platforms (like Gmail for emails), or document libraries, so that the results benefit from this additional information.
 
 *For example, you can request a critical and synthetic analysis of the latest government speeches on pension reform, with key arguments to fuel a public debate or a press release.*
-
-It may be tempting to share sensitive personal information: If you choose to do so, select it carefully.
 
 As with AI in general, these advanced options are not yet capable of meeting all demands and may yield unsatisfactory results. Again, try to see how these tools, in their current state, can help you work faster -- without expecting them to do everything for you.
 
