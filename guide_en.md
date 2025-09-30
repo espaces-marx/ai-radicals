@@ -471,7 +471,7 @@ Where possible, make sure you explain the context in a way that is accessible to
 
 Ex: *"Following the installation of the Lecornu government (**do some research on this**), discuss the possible options for bringing it down as quickly as possible."*
 
-If the subject is sensitive (for example, a blocking action), it is safer not to use artificial intelligence online. Various promises are made about data anonymity, but unless AI is used locally, no real guarantees are possible. Companies that distribute AI applications may be required by governments to share their data; even without this, they are run by capitalists, who themselves have political interests; and there may also simply be a data leak, as a result of hacking or an accident.
+If the subject is sensitive (for example, a blocking action), it is safer not to use artificial intelligence online. Various promises are made about data anonymity, but unless AI is used locally, no real guarantees are possible. Companies that distribute AI applications may be required by governments to share their data; they are also run by capitalists, who themselves have political interests. Lastly, there may also simply be a data leak, as a result of hacking or an accident.
 
 **3. Who is the target audience of the text, and what is the best way to reach them?**
 
