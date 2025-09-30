@@ -10,7 +10,7 @@
 
 # Annexes
 
-***All annexes were initially generated in French, then translated in English. You might not get the same result, even with the same prompt and AI model.***
+***All annexes were initially generated in French, then translated in English for the purpose of this guide. You might not get the same result, even with the same prompt and AI model.***
 
 
 ## Example of RTF generation with Mistral Medium 3.1
