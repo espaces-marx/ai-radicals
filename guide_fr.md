@@ -54,8 +54,8 @@ Les principaux services d'IA en ligne ont un certain nombre d'inconvénients en 
 Malgré tout, parmi eux, **nous vous proposons d'utiliser Mistral**:
 
 - **Données personnelles** : Mistral est une entreprise européenne, soumis à des règles qui limitent en principe davantage l'utilisation de vos données personnelles, par rapport à ce qui est permis aux États-Unis ou en Chine.
-- **Open-source** : Après une certaine période, les programmes d'IA utilisés sur Le Chat (plateforme gratuite de Mistral), deviennent open-source. C'est à dire que les contenus de leur code sont connus, contrairement aux IA propriétaires dont on connait peu les détails internes. Cela nous offre une certaine sécurité supplémentaire. 
-- **Plus fiable** : Il nous parait que le contexte politique américain et la proximité des entreprises d'IA américaines avec leur gouvernement comprennent plus de dangers que la situation de Mistral en France. 
+- **Open-source** : Après une certaine période, les programmes d'IA utilisés sur Le Chat (plateforme gratuite de Mistral), deviennent partiellement open-source. C'est à dire que les contenus de leur code sont connus, contrairement aux IA propriétaires dont on connait peu les détails internes. Cela nous offre une certaine sécurité supplémentaire. 
+- **Plus fiable** : Il nous parait que le contexte politique américain dont dépendent la majorité des grands acteurs de l'IA comprend plus de dangers que la situation de Mistral en France. On peut penser par exemple à la proximité de certains de ces acteurs avec Trump, ou à l'importance des idées libertariennes dans la Silicon Valley.
 
 
 ### Comment y accéder ?

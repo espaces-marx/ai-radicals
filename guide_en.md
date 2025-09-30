@@ -40,15 +40,19 @@ There are dozens of AI tools available, but not all are equal. Here are some com
 
 | Tool | Pros | Cons |
 | :---- | :-------- | :------------ |
-| **Mistral AI (Le Chat)** | Partially open source, subject to European law, which is more protective of personal data. | Not as widespread as American giants, sometimes less intuitive interface. Capitalist company closely linked to the French government. |
+| **Mistral AI (Le Chat)** | Partially open source, subject to European law. | Not as widespread as American giants, sometimes less intuitive interface. Capitalist company closely linked to the French government. |
 | **ChatGPT (OpenAI)** | Very popular, simple interface. | Proprietary, controlled by Silicon Valley capitalists, massive data collection. |
-| **Deepseek** | Free, partially open source. | Data security and management still poorly documented, closely monitored by the Chinese government, sometimes slow due to server overloads. |
+| **Deepseek** | Partially open source. | Data security and management still poorly documented, closely monitored by the Chinese government, sometimes slow due to server overloads. |
 
-***Why do we recommend Mistral?***
+***Which AI service should you use?***
 
-- **More reliable:** Mistral is a European company, less tied to American giants like ChatGPT or Google.
-- **Free:** A free version exists, with no obligation to pay for basic features.
-- **More respectful of your data:** : Lower risk of your exchanges being used for commercial or policing purposes.
+The main online AI services share a number of drawbacks with most large, free, and popular web platforms. They are owned by capitalist companies and are dependent on the countries that host their servers, neither of which guarantee the security of your data. 
+
+Yet, among them, **we would recommend using Mistral**:
+
+- **Personal data**: Mistral is a European company, subject to rules that, in principle, place greater restrictions on the use of your personal data than those permitted in the United States or China.
+- **Open-source**: After a certain period of time, the AI programmes used on Le Chat (Mistral's free platform) become partially open-source. This means that the contents of their code are known, unlike proprietary AI, whose internal details are largely unknown. This offers us a certain degree of additional security. 
+- **More reliable**: We believe that the American political context, on which most of the major AI companies depend, is more dangerous than Mistral's situation in France. Examples include the proximity of some of these companies to Trump and the importance of libertarian ideas in Silicon Valley.
 
 
 ### How to Access It?
