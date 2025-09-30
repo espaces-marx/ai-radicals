@@ -148,7 +148,7 @@ As with AI in general, these advanced options are not yet capable of meeting all
 
 **What exactly is a *"local AI"*?**
 
-The AI services we use are software like any other; just like the Office suite, we can use them online or locally. When you use online software, it is on the *"cloud"*, meaning that it is run from servers that may be located on the other side of the world, in data centers. These centers are places where numerous computers with significant storage and computing capacities are gathered for efficiency and energy gains. 
+AI services work like any other software, such as the Office suite: they can be used online or locally. Online, they run on the *cloud* -- remote servers hosted in data centers. These facilities bring together powerful computers optimized for storage, processing, and energy efficiency.
 
 **Conversely, *"local"* AI is -- *as its name suggests* -- stored and executed locally, meaning on your computer.** Using AI in this way gives you access not only to the models distributed by companies, but also to numerous models created by online communities, including some uncensored versions of corporate models.
 

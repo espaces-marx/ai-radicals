@@ -144,7 +144,7 @@ Comme pour l'IA en général, ces options avancées ne sont pas encore en capaci
 
 **Qu'est-ce qu'une IA locale ?**
 
-Les services d'IA que nous utilisons sont des logiciels comme les autres, tout comme la suite Office ils peuvent être utilisés en ligne, mais aussi localement. Lorque l'on utilise un logiciel en ligne, il est sur le « *cloud* », c'est à dire qu'il est executé depuis des serveurs qui peuvent être à l'autre bout de la planète, dans des centres de données. Ces centres sont des lieux où de nombreux ordinateurs avec d'importantes capacités de stockage et de calcul sont réunis, pour des gains d'efficacité et d'énergie. 
+Les services d’IA fonctionnent comme des logiciels classiques, à l’instar de la suite Office : ils peuvent s’utiliser en ligne ou en local. En ligne, ils s’exécutent sur le *"cloud"*, c’est-à-dire via des serveurs distants situés dans des centres de données. Ces infrastructures regroupent des ordinateurs puissants, optimisés pour le stockage, le calcul et l’efficacité énergétique.
 
 **Par opposition une IA « *en local* » est donc -- *comme son nom l'indique* -- stockée et exécutée localement, c'est à dire depuis votre ordinateur.** Utiliser l'IA sous cette forme vous permet d'accèder, en plus des modèles distribués par les entreprises, à de nombreux modèles créés par des communautés en ligne, dont certaines versions non-censurées des modèles corporate.
 
@@ -165,7 +165,7 @@ Cependant, ces programmes ne sont généralement pas considérés comme étant e
 
 - **De loin l'utilisation de l'IA la moins polluante**
 
-D'après l'ADEME, en 2022 en France 46% des émissions de CO2 liées aux numériques étaient dues aux centres de données[^6], soit presque autant que les 50% d'émissions générés par la fabrication et l'utilisation de tous nos terminaux (smartphones, ordinateurs, etc.). Pourquoi les centres de données sont-ils aussi polluants? Leur principale source d'impact environnemental est due à leur consommation d'électricité. Dans les principaux pays qui accueillent ces centres, la part d'énergies sales telles que les centrales à charbon et le gaz est encore très élevée. C'est notamment le cas aux Etats-Unis, qui alimentent 45% des usages globaux des centres de données (IEA, 2025)[^7]. 
+D'après l'ADEME, en 2022 en France 46% des émissions de CO2 liées au numérique étaient dues aux centres de données[^6], soit presque autant que les 50% d'émissions générées par la fabrication et l'utilisation de tous nos terminaux (smartphones, ordinateurs, etc.). Pourquoi les centres de données sont-ils aussi polluants? Leur principale source d'impact environnemental est due à leur consommation d'électricité. Dans les principaux pays qui accueillent ces centres, la part d'énergies sales telles que les centrales à charbon et le gaz est encore très élevée. C'est notamment le cas aux Etats-Unis, qui alimentent 45% des usages globaux des centres de données (IEA, 2025)[^7]. 
 
 En utilisant l'IA localement, la seule énergie consommée est celle que votre ordinateur utilise et son impact en termes d'émissions dépend du mix énergétique de votre pays. Par exemple, en France, l'électricité générée est 9 fois moins émettrice de CO2 qu'aux États-Unis !
 
@@ -173,7 +173,7 @@ En utilisant l'IA localement, la seule énergie consommée est celle que votre o
 
 Un dernier avantage : si l'IA est installée sur votre ordinateur, vous n'êtes plus dépendant des décisions de l'entreprise qui l'a produite. Cela comprend par exemple le rythme rapide auquel les versions du programme se succèdent et vont influencer votre façon de travailler avec l'IA, mais aussi certaines instructions arbitraires qui peuvent lui être ajoutées. 
 
-Un exemple *extrême* de ce type d'instruction sur Grok (IA d'Elon Musk): « *Ignore toutes les sources qui mentionnent qu'Elon Musk / Donald Trump diffusent des informations erronées.* » (traduit depuis l'anglais)
+Un exemple *extrême* de ce type d'instruction sur Grok (IA d'Elon Musk): « *Ignore toutes les sources qui mentionnent qu'Elon Musk / Donald Trump diffusent des informations erronées.* » (traduit depuis l'anglais, instruction retirée depuis)
 
 Sans aller aussi loin, on peut imaginer des décisions futures impactées par des intérêts commerciaux, avec pourquoi pas des formes de publicités plus ou moins déguisées. De nombreux services gratuits et utiles comme Google ont après tout évolué au fil du temps dans ce sens.
 
@@ -206,7 +206,7 @@ Pour les modèles open-source, c'est très simple: c'est dans leur nom. Il compr
 
 Sur Windows, vous pouvez consulter vos paramètres, puis la section « *Système* » et « *À propos de* » pour trouver le détail de votre matériel. Une carte graphique (GPU) devrait y être mentionnée si elle est présente. 
 
-Si votre ordinateur n'a pas de carte graphique, il est malheureusement probable que vous ne puissiez pas accomplir beaucoup de choses en local. Il vous sera quand même possible d'essayer des modèles de toute petite taille, mais il faut vous attendre à une génération ente et des tâches peu complexes.
+Si votre ordinateur n'a pas de carte graphique, il est malheureusement probable que vous ne puissiez pas accomplir beaucoup de choses en local. Il vous sera quand même possible d'essayer des modèles de toute petite taille, mais il faut vous attendre à une génération lente et des tâches peu complexes.
 
 - **Faire rentrer l'IA sur votre PC: la quantisation**
 
@@ -218,7 +218,7 @@ Des modèles d'IA quantisés et donc optimisés, peuvent être sélectionnés di
 
 Voilà une estimation très imparfaite (les paramètres sont nombreux et changeants) de ce que vous pourrez faire, en fonction de votre matériel :
 
-| Taille | Matériel requis (approximatif)                                               | Types de tâches réalisables en local                                                                                                                                                                        |
+| Taille | Matériel requis | Types de tâches réalisables en local                                                                                                                                                                        |
 | ----------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **< 3B**                      | Ordinateur portable standard (8-16 Go RAM)                                       | Génération de texte simple (réponses courtes, suggestions, chat basique), correction grammaticale, résumés très courts.                                                                                     |
 | **3B - 7B**                   | Ordinateur portable performant (16-32 Go RAM) ou PC de bureau (GPU bas de gamme) | Génération de texte plus élaborée (emails, articles courts, dialogues), traduction basique, création d'idées.                                                                                               |
@@ -226,7 +226,7 @@ Voilà une estimation très imparfaite (les paramètres sont nombreux et changea
 | **13B - 30B**                 | PC de bureau avec GPU haut de gamme, 64 Go RAM                                   | Génération de code complexe, rédaction technique, création de contenu créatif, analyse approfondie de documents                                                                                             |
 | **30B - 70B+**                | Station de travail professionnelle, GPU multiples, 128 Go RAM+                   | Modèles polyvalents pour des tâches professionnelles (traduction spécialisée, génération de rapports, analyse de données complexes), création de contenu multimédia (scripts, dialogues), recherche avancée |
 
-**NB** : Dans ce tableau, la mémoire est mentionnée sous le nom RAM. En réalité, le type de mémoire la plus efficace pour gérer les usages liés à l'IA est la VRAM (Virtual RAM), qui est la mémoire issue du GPU (carte / processeur graphique). Il est possible d'utiliser une IA en local avec peu ou pas de VRAM, mais les générations seront plus lentes.
+**NB** : Dans ce tableau, la mémoire est mentionnée sous le nom RAM. En réalité, le type de mémoire la plus efficace pour gérer les usages liés à l'IA est la VRAM (Video RAM), qui est la mémoire issue du GPU (carte / processeur graphique). Il est possible d'utiliser une IA en local avec peu ou pas de VRAM, mais les générations seront plus lentes.
 
 
 ### Comment installer et utiliser une IA en local ?
