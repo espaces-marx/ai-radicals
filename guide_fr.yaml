@@ -15,4 +15,5 @@ header-includes: |
     \fancyhead[R]{\href{https://www.espaces-marx.eu}{www.espaces-marx.eu}}
     \renewcommand{\headrulewidth}{0.4pt}
     \setlength{\headheight}{18pt}
+    \cfoot{\thepage}
 ---
