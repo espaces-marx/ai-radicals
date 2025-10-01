@@ -141,10 +141,6 @@ As with AI in general, these advanced options are not yet capable of meeting all
 [^5]: Mistral uses the term "agent" for this functionality, but generally, an AI agent refers to something broader: an AI that interacts with other software (possibly other AIs) to autonomously or semi-autonomously perform tasks, such as responding to emails.
 
 
-## Use AI locally
-
-
-
 ## Using AI locally
 
 **What exactly is a *"local AI"*?**
