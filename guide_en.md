@@ -480,7 +480,7 @@ Are they activists, or a public far removed from political organizations? A grou
 
 At this stage, it is useful not to be too economical with words when defining the target audience, even if this means having to narrow it down later on. Why? For example, if the only term used is *"young"*, AI can sometimes fall into the same traps as any communication that specifically targets a young audience: awkward references to video games or YouTubers. 
 
-We are all defined by more than just our age, so it is useful to combine several dimensions or target the most relevant ones in relation to the content of your text and where it will be published. Some *-- mostly French --* examples: *"engineering students in Lyon"*, *"operators in an Amazon warehouse in Montélimar"*, *"young urban parents"*, *"Instagram users aged 18 to 30"*, "production workers in a Pasquier factory"*, *"people in the Paris region who commute to work by RER"*, etc.
+We are all defined by more than just our age, so it is useful to combine several dimensions or target the most relevant ones in relation to the content of your text and where it will be published. Some *-- mostly French --* examples: *"engineering students in Lyon"*, *"operators in an Amazon warehouse in Montélimar"*, *"young urban parents"*, *"Instagram users aged 18 to 30"*, *"production workers in a Pasquier factory"*, *"people in the Paris region who commute to work by RER"*, etc.
 
 If the result goes too far in the opposite direction and becomes a little too specific, some of the details can be removed or reworded. As in cooking, it is a matter of finding the right balance of ingredients.
 
@@ -496,7 +496,7 @@ Another problem that may arise when mentioning *"Communism"* or *"Marxism"* in t
 
 Based on the other elements (objectives, target audiences), you may already have a good idea of the format you want to generate. 
 
-Here are some ideas for the type of information that might be included: written or *"spoken"* text (for speeches, training sessions, etc.), intended for a specific platform (tweet, Facebook post, etc.), quantity to be generated (*"3 short paragraphs", *"less than 300 words"*), mentions of specific elements (*"clear punchlines"*, slogans), ...
+Here are some ideas for the type of information that might be included: written or *"spoken"* text (for speeches, training sessions, etc.), intended for a specific platform (tweet, Facebook post, etc.), quantity to be generated (*"3 short paragraphs"*, *"less than 300 words"*), mentions of specific elements (*"clear punchlines"*, slogans), ...
 
 Thanks to this preparation work, you have already started writing a large part of the content for the future prompt. Next, you need to decide on its structure!
 
@@ -664,7 +664,7 @@ Be especially careful with tables that summarize and mix figures from different 
 
 - **Language**
 
-The more widely a language is used internationally (especially online), the more likely it is that large AI models will represent it accurately in their text generation. However, these models are still primarily designed using English texts, so when generating non-English texts it is important to be aware of the occasional invented word or over-representation of unusual phrasing. That said, errors are becoming increasingly rare.
+The more widely a language is used internationally (especially online), the more likely it is that large AI models will represent it accurately in their text generation. However, these models are still primarily designed using English texts, so when generating non-English texts it is important to be aware of the occasional invented word or over-representation of unusual phrasing. That said, errors of this kind are becoming increasingly rare.
 
 - **AI can sometimes be a bit too friendly**
 
