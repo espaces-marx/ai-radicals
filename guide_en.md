@@ -207,7 +207,7 @@ Open-source models are very straightforward: it's in their name. It usually incl
 
 **Potential uses based on your hardware**
 
-On Windows, you can open your settings, then go to the “System” and “About” sections to find details about your hardware. A graphics card (GPU) should be listed there if it is present.
+On Windows, you can open your settings, then go to the *"System"* and *"About"* sections to find details about your hardware. A graphics card (GPU) should be listed there if it is present.
 
 If your computer does not have a graphics card, unfortunately you will probably not be able to do much locally. You will still be able to try out very small models, but expect slow generations and limited complexity.
 
@@ -223,11 +223,11 @@ Here is a very rough estimate (there are many variables and they change frequent
 
 | Size           | Hardware                                                             | Possible tasks                                                                                                                                                                                              |
 | -------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **< 3B**       | Standard PC (8-16 Go RAM)                                            | Génération de Simple text (short answers, suggestions, basic chat), grammar correction, very short summaries.                                                                                               |
+| **< 3B**       | Standard PC (8-16 Go RAM)                                            | Simple text (short answers, suggestions, basic chat), grammar correction, very short summaries.                                                                                               |
 | **3B - 7B**    | High-performance laptop (16-32 Go RAM) or desktop PC (lower-end GPU) | Better text generation (emails, short articles, dialogues), basic translation, idea generation.                                                                                                             |
 | **7B - 13B**   | Desktop PC with Mid-tier GPU, 32 Go RAM                              | Advanced text generation (long articles, simple code, scenarios), writing assistance, story generation, tabular data analysis                                                                               |
 | **13B - 30B**  | Desktop PC with High-end GPU, 64 Go RAM                              | Complex code generation, technical writing, creative content creation, in-depth document analysis                                                                                                           |
-| **30B - 70B+** | Professional workstation, Multiple GPUs, 128 Go RAM+                 | Modèles polyvalents pour des tâches professionnelles (traduction spécialisée, génération de rapports, analyse de données complexes), création de contenu multimédia (scripts, dialogues), recherche avancée |
+| **30B - 70B+** | Professional workstation, Multiple GPUs, 128 Go RAM+                 | Versatile models for professional tasks (specialized translation, report generation, complex data analysis), multimedia content creation (scripts, dialogues), advanced research |
 
 **NB** : In this table, memory is referred to as RAM. Actually, the most efficient type of memory for AI-related tasks is VRAM (Video RAM), which is memory from the GPU (graphics card/processor). It is possible to use AI locally with little or no VRAM, but the generations will be slower.
 
@@ -253,7 +253,7 @@ In LM Studio, you will see a list of models organized by size and purpose.
 
 1. Once the download is complete, click on the ***chat*** tab.
 2. Click **"Select a model to load"**, and select the model you just downloaded (this may take anywhere from a few seconds to a few minutes).
-3. Once the download is complete, click on the “Create a New Chat” button: **you can now chat with your local AI!**
+3. Once the download is complete, click on the *"Create a New Chat"* button: **you can now chat with your local AI!**
 
 
 ### Going further
