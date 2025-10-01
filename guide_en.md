@@ -394,8 +394,8 @@ Your collective wants to train members in a new skill (e.g., organizing a genera
 ### How to Do It?
 
 - **Provide a base:** paste notes, an article, or a list of ideas.
-- **Specify the audience:** "Write a tutorial for beginner activists, with simple steps and concrete examples."
-- **Request an adapted format:** “make me a 2-page handout, with boxes for key points.”
+- **Specify the audience:** *"Write a tutorial for beginner activists, with simple steps and concrete examples."*
+- **Request an adapted format:** *"make me a 2-page handout, with boxes for key points."*
 
 
 ### What You Need Beyond AI:
