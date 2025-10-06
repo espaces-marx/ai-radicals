@@ -13,7 +13,11 @@
 ## Issues
 
 **When to write one?** 
-- The change you propose (its implementation) is not clear enough to be the subject of a PR, because different paths are available and should be discussed.
+
+*The change you propose...*
+- Needs a clearer plan for implementation, before it can become a Pull Request. Different paths are available and should be discussed.
+- Is "_a problem for tomorrow_", more likely to be included in a new version of the guide.  
+
 **How to write it?**
 - Describe the feature you want to add, make propositions on how it could be implemented, explain why it is desirable.
 
