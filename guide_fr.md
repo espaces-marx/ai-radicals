@@ -5,7 +5,7 @@
 
 Pour le militant révolutionnaire, l'IA[^1] se présente d'abord comme un fait d'économie politique. L'officialité médiatique et politique qui chante ses louanges entend chanter, par là, celles du capitalisme néo-libéral, de l'entrepreunariat débridé qui règne dans la Silicon Valley, de l'industrie des données, de l'individualisation de la vie sociale, de la domination du travail par le capital, de la surexploitation des ressources[^2]. La parole militante se place donc spontanément sur le même plan : on dénonce la propagande de Sam Altman et de ses amis[^3], dont l'utopie techno-capitaliste est de moins en moins crédible. On s'indigne des souffrances que le patronat fait subir aux travailleuses et aux travailleurs au prétexte de l'innovation. On interroge l'impact des usages émergents sur notre commune humanité, par exemple en se demandant si demain, les gens sauront réfléchir par eux-mêmes.
 
-Il reste évidemment une dimension essentielle du problème à affronter. L'IA est une technologie de traitement de l'information[^4], d'usage général, comme peut l'être le livre imprimé, la photographie, le film. Or, l'activité militante, par définition, emploie largement ce genre de technologie. Par conséquent, les groupes militants s'en emparent, peut-être timidement, avec plus ou moins de recul, mais ils s'en emparent. Ici, en France, les réseaux sociaux ont par exemple vu défiler tout l'été des carictaures de François Bayrou (l'ancien premier ministre) générées par IA. Au-delà de l'image, il n'est pas rare de croiser un camarade qui se simplifie la lecture d'un rapport parlementaire ou la traduction d'un texte en s'appuyant sur une IA.
+Il reste évidemment une dimension essentielle du problème à affronter. L'IA est une technologie de traitement de l'information[^4], d'usage général, comme peut l'être le livre imprimé, la photographie, le film. Or, l'activité militante, par définition, emploie largement ce genre de technologie. Par conséquent, les groupes militants s'en emparent, peut-être timidement, avec plus ou moins de recul, mais ils s'en emparent. Ici, en France, les réseaux sociaux ont par exemple vu défiler tout l'été des caricatures de François Bayrou (l'ancien premier ministre) générées par IA. Au-delà de l'image, il n'est pas rare de croiser un camarade qui se simplifie la lecture d'un rapport parlementaire ou la traduction d'un texte en s'appuyant sur une IA.
 
 Ces usages militants de l'IA ont néanmoins deux limites :
 
@@ -146,14 +146,14 @@ Comme pour l'IA en général, ces options avancées ne sont pas encore en capaci
 
 Les services d’IA fonctionnent comme des logiciels classiques, à l’instar de la suite Office : ils peuvent s’utiliser en ligne ou en local. En ligne, ils s’exécutent sur le *"cloud"*, c’est-à-dire via des serveurs distants situés dans des centres de données. Ces infrastructures regroupent des ordinateurs puissants, optimisés pour le stockage, le calcul et l’efficacité énergétique.
 
-**Par opposition une IA « *en local* » est donc -- *comme son nom l'indique* -- stockée et exécutée localement, c'est à dire depuis votre ordinateur.** Utiliser l'IA sous cette forme vous permet d'accèder, en plus des modèles distribués par les entreprises, à de nombreux modèles créés par des communautés en ligne, dont certaines versions non-censurées des modèles corporate.
+**Par opposition une IA « *en local* » est donc -- *comme son nom l'indique* -- stockée et exécutée localement, c'est à dire depuis votre ordinateur.** Utiliser l'IA sous cette forme vous permet d'accéder, en plus des modèles distribués par les entreprises, à de nombreux modèles créés par des communautés en ligne, dont certaines versions non-censurées des modèles corporate.
 
 
 ### Pourquoi installer une IA localement ?
 
 *L'utilisation d'une IA locale a de nombreux avantages.*
 
-- **Restez maîtres de vos données** 
+- **Restez maître de vos données** 
 
 En dehors d'éventuelles recherches internet, tous vos messages et ceux générés par l'IA ne quittent pas votre ordinateur. Aucune donnée personnelle ne transite par des centres de données hébergées par différents états, aucune grande entreprise du numérique n'y a accès. 
 
@@ -183,7 +183,7 @@ Utiliser votre propre ordinateur a l'avantage de sécuriser vos données, de lim
 
 Cela veut dire qu'il est peu probable que vous puissiez installer les IA les plus avancées, ou résoudre les tâches les plus complexes depuis votre ordinateur, à moins d'être vraiment bien équipé. 
 
-Pour autant, vus tous les avantages que l'on vient de lister, pourquoi ne pas essayer de trouver quelle part de vos utilisation de l'IA pourrait être faite en local ? 
+Pour autant, vus tous les avantages que l'on vient de lister, pourquoi ne pas essayer de trouver quelle part de vos utilisations de l'IA pourrait être faite en local ? 
 
 
 ### Quelques infos avant de commencer
@@ -192,7 +192,7 @@ Pour autant, vus tous les avantages que l'on vient de lister, pourquoi ne pas es
 
 ChatGPT-5, Mistral Medium 3.1, DeepSeek V3, sont trois exemples de modèles d'IA générative. Chacun a été « *entraîné* » sur une sélection particulière de textes, selon des modalités qui lui sont propres, puis programmé différemment, avec pour résultat un comportement unique. Un même message envoyé à ces 3 modèles, vous vaudra très probablement 3 réponses différentes.
 
-- **Des IA de différentes « taille »**
+- **Des IA de différentes « tailles »**
 
 Pour simplifier, la taille d'un modèle désigne à la fois la quantité d'informations qu'il emmagasine et la puissance de calcul qui lui sera nécessaire pour fonctionner correctement. De façon générale, plus un modèle est « grand », plus il sera en mesure de gérer des tâches complexes (avec beaucoup d'éléments à considérer en même temps).
 
@@ -421,7 +421,7 @@ L’IA peut omettre des détails importants ou proposer des méthodes inadaptée
 
 En résumé :
 
-| Tâche             | Utilité de l'IA           | Ce qu'il faut en plus         | Vigilence           |
+| Tâche             | Utilité de l'IA           | Ce qu'il faut en plus         | Vigilance           |
 | :---------------- | :------------------------ | :---------------------------- | :------------------ |
 | **Tract**         | Résumer, mobiliser        | Mise en page, infos locales   | Vérifier les faits  |
 | **Script vidéo**  | Adapter à l'oral, rythmer | Matériel audio/vidéo, montage | Tester à voix haute |
