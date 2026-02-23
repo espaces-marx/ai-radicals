@@ -827,3 +827,7 @@ If you would like to comment on these objectives or suggest others, please conta
 >Let's not allow uncertainty to define our future. Let's fight for accessible, high-quality education, for a world where every student can thrive without fear. Change starts now, and it starts with us. Let's come together in large numbers and be determined!
 
 ---
+
+Mandatory information:
+
+*transform! europe is partially financed through a subsidy from the European Parliament. The sole liability rests with the author(s) and the European Parliament is not responsible for any use that may be made of the information contained in this publication.*
