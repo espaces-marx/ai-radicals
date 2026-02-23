@@ -1,6 +1,3 @@
-*transform! europe est partiellement financé par une subvention du Parlement européen.*
-*La responsabilité incombe exclusivement à l'auteur ou aux auteurs, et le Parlement européen n'est pas responsable de l'usage qui pourrait être fait des informations contenues dans cette publication.*
-
 # Introduction
 
 ***Par Hugo Pompougnac***
@@ -847,3 +844,7 @@ Si vous souhaitez commenter ces objectifs ou en proposer d'autres, vous avez not
 >Ne laissons pas la précarité définir notre avenir. Luttons pour une éducation accessible et de qualité, pour un monde où chaque étudiant peut s'épanouir sans crainte. Le changement commence maintenant, et il commence avec nous. Soyons nombreux, soyons déterminés !
 
 ---
+
+Mention obligatoire :
+
+*transform! europe est partiellement financé par une subvention du Parlement européen. La responsabilité incombe exclusivement à l'auteur ou aux auteurs, et le Parlement européen n'est pas responsable de l'usage qui pourrait être fait des informations contenues dans cette publication.*
