@@ -1,3 +1,6 @@
+*transform! europe est partiellement financé par une subvention du Parlement européen.*
+*La responsabilité incombe exclusivement à l'auteur ou aux auteurs, et le Parlement européen n'est pas responsable de l'usage qui pourrait être fait des informations contenues dans cette publication.*
+
 # Introduction
 
 ***Par Hugo Pompougnac***
