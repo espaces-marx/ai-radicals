@@ -1,3 +1,6 @@
+*transform! europe is partially financed through a subsidy from the European Parliament.*
+*The sole liability rests with the author(s) and the European Parliament is not responsible for any use that may be made of the information contained in this publication.*
+
 # Introduction
 
 ***by Hugo Pompougnac***
