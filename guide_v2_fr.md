@@ -69,11 +69,11 @@ Les générations effectuées par l'IA ne remplacent pas le travail humain par l
 
 Pour autant, ils peuvent être envisagés comme des *moyens de travail* que l'on peut employer à différents niveaux, notamment pour :
 
-- **Ouvrir de nouvelles pistes** -  L'interaction avec ces programmes pouvant prendre la forme d'une simple conversation, il est facile de partir d'un projet ou d'une idée existante pour en tirer plusieurs directions possibles. Comme dans une réunion de travail, vous pouvez par exemple les utiliser pour envisager les différents aspects d'un projet, développer un plan détaillé pour un document, un planing dans le temps, etc. Évidemment, ces différentes pistes pourraient également surgir dans le travail et la discussion collective. Cependant, il n'est pas possible à tout moment de se rassembler et de tenir une réunion. 
+- **Ouvrir de nouvelles pistes** :  L'interaction avec ces programmes pouvant prendre la forme d'une simple conversation, il est facile de partir d'un projet ou d'une idée existante pour en tirer plusieurs directions possibles. Comme dans une réunion de travail, vous pouvez par exemple les utiliser pour envisager les différents aspects d'un projet, développer un plan détaillé pour un document, un planing dans le temps, etc. Évidemment, ces différentes pistes pourraient également surgir dans le travail et la discussion collective. Cependant, il n'est pas possible à tout moment de se rassembler et de tenir une réunion. 
 
-- **Brasser l'information** - En synthétisant des textes denses,  des rapports institutionnels ou des articles de fond. C'est un travail exploratoire, qui doit faire l'objet de vérifications additionnelles avant de s'appuyer sérieusement sur quoi que ce soit, mais il permet une première approche de documents que vous n’auriez peut-être pas eu le temps de lire intégralement dans l'immédiat. Dans le travail de vérification, il est par exemple possible de confronter votre propre compréhension du document à celle de l'IA, de poser des questions de suivi, ou de vérifier que les extraits cités sont bien présents.
+- **Brasser l'information** : En synthétisant des textes denses,  des rapports institutionnels ou des articles de fond. C'est un travail exploratoire, qui doit faire l'objet de vérifications additionnelles avant de s'appuyer sérieusement sur quoi que ce soit, mais il permet une première approche de documents que vous n’auriez peut-être pas eu le temps de lire intégralement dans l'immédiat. Dans le travail de vérification, il est par exemple possible de confronter votre propre compréhension du document à celle de l'IA, de poser des questions de suivi, ou de vérifier que les extraits cités sont bien présents.
 
-- **Autonomiser le travail individuel -** En facilitant la réalisation du travail par chacun entre les réunions, l'IA permet également aux moments collectifs de se recentrer sur l'essentiel : le débat d'idées, les décisions stratégiques et politiques, le lien humain. Cette facilitation peut prendre la forme d'une première version d'un texte à utiliser comme matériau brut pour une nouvelle version, mais aussi comme proposé ci-dessus la vulgarisation d'informations ou de documents complexes, l'exploration de plusieurs chemins possibles pour le travail, etc.
+- **Autonomiser le travail individuel** : En facilitant la réalisation du travail par chacun entre les réunions, l'IA permet également aux moments collectifs de se recentrer sur l'essentiel : le débat d'idées, les décisions stratégiques et politiques, le lien humain. Cette facilitation peut prendre la forme d'une première version d'un texte à utiliser comme matériau brut pour une nouvelle version, mais aussi comme proposé ci-dessus la vulgarisation d'informations ou de documents complexes, l'exploration de plusieurs chemins possibles pour le travail, etc.
 
 ### La responsabilité du travail est toujours humaine
 
@@ -148,14 +148,14 @@ Vous pouvez ensuite demander à approfondir, reformuler, ou générer un texte p
 
 ## Le contexte : les mots sont importants
 
-Lorsque vous démarrez une discussion avec une IA, l'outil n'analyse pas vos demandes de manière isolée. Tout ce que vous écrivez (vos « prompts ») et tout ce que la machine vous répond reste stocké dans une mémoire à court terme, appelée la **fenêtre de contexte**, et ce, pendant toute la durée de la conversation.
+Lorsque vous démarrez une discussion avec une IA, l'outil n'analyse pas vos demandes de manière isolée. Tout ce que vous écrivez (vos « *prompts* ») et tout ce que la machine vous répond reste stocké dans une mémoire à court terme, appelée la **fenêtre de contexte**, et ce, pendant toute la durée de la conversation.
 
 Puisque l’IA fonctionne par calcul de probabilités à partir du langage, **chaque mot utilisé compte**. Un terme choisi au début d'une discussion va influencer, colorer et orienter toutes les réponses suivantes. Si vous commencez par un ton très institutionnel, l'IA aura tendance à le conserver pour la suite, même si vous lui demandez plus tard de rédiger un slogan percutant pour un dépliant.
 
 
 ### Attention au cloisonnement des données
 
-Sur certaines plateformes, les éditeurs activent par défaut des fonctionnalités de « mémoire à long terme » ou de contexte partagé entre toutes vos discussions.
+Sur certaines plateformes, les éditeurs activent par défaut des fonctionnalités de « *mémoire à long terme* » ou de contexte partagé entre toutes vos discussions.
 
 >**Exemple concret :** Si vous expliquez dans une discussion que vous êtes comptable pour résoudre un problème de tableur, et que trois jours plus tard, dans une *autre* discussion, vous lui demandez de rédiger un tract d'appel à la grève, l'IA risque de ressortir des arguments très axés sur les chiffres ou les bilans financiers. Ce n'est pas forcément l'angle politique que vous recherchiez pour un appel général.
 
@@ -163,7 +163,7 @@ Pour éviter ces interférences et garder la main sur vos contenus, deux bonnes 
 
 **Désactivez la mémoire globale** ou le partage de contexte inter-conversations dans les paramètres de l'outil si l'option est activée par défaut.
 
-**Cloisonnez vos espaces de travail** : Prenez le réflexe d'ouvrir **une nouvelle conversation pour chaque sujet, projet ou tâche distincte**. Dès qu'une tâche est finie ou que vous changez de posture, ouvrez un nouveau « chat » pour repartir sur une base neutre.
+**Cloisonnez vos espaces de travail** : Prenez le réflexe d'ouvrir **une nouvelle conversation pour chaque sujet, projet ou tâche distincte**. Dès qu'une tâche est finie ou que vous changez de posture, ouvrez un nouveau « *chat* » pour repartir sur une base neutre.
 
 ### Organiser des contextes partagés par projet
 
@@ -173,29 +173,29 @@ Pour cela, la plupart des outils professionnels proposent désormais des fonctio
 
 ### Contexte général
 
-Imaginez que chaque fois que vous discutez avec une IA, vous parlez à un secrétaire intérimaire. Si la mémoire globale est désactivée, il oublie tout dès que vous fermez le cahier (la discussion). Mais aujourd'hui, malgré l’absence de mémoire globale, il existe des outils pour que ce secrétaire se « souvienne » uniquement des éléments de contexte que vous souhaitez, d’une conversation à l’autre.
+Imaginez que chaque fois que vous discutez avec une IA, vous parlez à un secrétaire intérimaire. Si la mémoire globale est désactivée, il oublie tout dès que vous fermez le cahier (la discussion). Mais aujourd'hui, malgré l’absence de mémoire globale, il existe des outils pour que ce secrétaire se « *souvienne* » uniquement des éléments de contexte que vous souhaitez, d’une conversation à l’autre.
 
-#### Les « Instructions personnalisées »
+#### Les « *Instructions personnalisées* »
 
-C'est une sorte de fiche d'identité que vous remplissez une fois pour toutes (ex: « Je suis militant, j'aime le ton direct, pas trop bureaucratique »). L'IA lira cette fiche avant chaque nouvelle discussion.
+C'est une sorte de fiche d'identité que vous remplissez une fois pour toutes (ex: « *Je suis militant, j'aime le ton direct, pas trop bureaucratique* »). L'IA lira cette fiche avant chaque nouvelle discussion.
 
 #### La connexion à vos outils Google
 
-L’IA se connecter (si vous l'autorisez) à vos outils du quotidien : votre Drive ou vos e-mails. Son « contexte », devient votre espace de travail. Vous pouvez lui dire : « Reprends les notes du document de réunion d'hier pour m'en faire un résumé ».
+L’IA se connecter (si vous l'autorisez) à vos outils du quotidien : votre Drive ou vos e-mails. Son « *contexte* », devient votre espace de travail. Vous pouvez lui dire : « *Reprends les notes du document de réunion d'hier pour m'en faire un résumé* ».
 
-### Contexte par projet : créer des « dossiers de travail » fermés
+### Contexte par projet : créer des « *dossiers de travail* » fermés
 
-Parfois, vous ne voulez pas que l'IA mélange tout. Si vous préparez un journal de l'association d'un côté, et que vous répondez à un e-mail administratif de l'autre, vous avez besoin de séparer les dossiers. C'est le rôle des fonctionnalités « par projet ».
+Parfois, vous ne voulez pas que l'IA mélange tout. Si vous préparez un journal de l'association d'un côté, et que vous répondez à un e-mail administratif de l'autre, vous avez besoin de séparer les dossiers. C'est le rôle des fonctionnalités « *par projet* ».
 
-#### Les « Projets »
+#### Les « *Projets* »
 
-C'est comme créer un tiroir virtuel dans l'ordinateur, un espace clos où vous déposez vos textes et vos consignes pour travailler sur un sujet précis. Vous nommez votre projet (ex: « Campagne Retraites »), et vous glissez dedans vos documents de référence (vos tracts, vos chiffres). Toutes les discussions que vous ouvrirez à l'intérieur de ce projet connaîtront ces documents, sans polluer vos autres discussions.
+C'est comme créer un tiroir virtuel dans l'ordinateur, un espace clos où vous déposez vos textes et vos consignes pour travailler sur un sujet précis. Vous nommez votre projet (ex: « *Campagne Retraite*s »), et vous glissez dedans vos documents de référence (vos tracts, vos chiffres). Toutes les discussions que vous ouvrirez à l'intérieur de ce projet connaîtront ces documents, sans polluer vos autres discussions.
 
-#### Les « Assistants IA » 
+#### Les « *Assistants IA* » 
 
-Imaginez que vous créez votre propre petit robot spécialisé, appelé « Correcteur d'orthographe militant » ou « Rédacteur de tracts ». Il s’agira de petits assistants sur mesure que vous pouvez programmer pour une tâche répétitive, grâce à un Prompt pré-enregistré dans lequel vous spécifiez le contexte, le ton, les objectifs, etc. de toutes vos demandes ultérieures (par exemple : « Transforme ce long texte en 3 publications pour notre compte Instagram », avec un Prompt contenant plusieurs exemples de publications réussies, et des spécifications de ton et de contexte). Nous reviendrons plus loin dans le guide sur la création et l’utilisation des assistants IA.
+Imaginez que vous créez votre propre petit robot spécialisé, appelé « *Correcteur d'orthographe militant* » ou « *Rédacteur de tracts* ». Il s’agira de petits assistants sur mesure que vous pouvez programmer pour une tâche répétitive, grâce à un Prompt pré-enregistré dans lequel vous spécifiez le contexte, le ton, les objectifs, etc. de toutes vos demandes ultérieures (par exemple : « *Transforme ce long texte en 3 publications pour notre compte Instagram* », avec un Prompt contenant plusieurs exemples de publications réussies, et des spécifications de ton et de contexte). 
 
-#### Gemini : « NotebookLM »
+#### Gemini : « *NotebookLM* »
 
 C'est un outil utile pour les chercheurs ou les militants qui étudient un dossier complexe. Vous créez un grand cahier virtuel et vous y déposez des rapports (par exemple, un rapport de 200 pages sur la santé au travail). L'IA devient alors une experte de ce document précis. Elle ne répondra à vos questions qu'en utilisant ce qu'il y a dans votre cahier, sans rien inventer d'Internet, et adjoindra à chaque affirmation l’aperçu de la source utilisée.
 
@@ -206,7 +206,7 @@ Jusqu’ici, nous avons exploré le fonctionnement de l’IA de manière génér
 
 Une crainte légitime traverse souvent les milieux militants : celle d'être dépossédés de nos compétences, de lisser nos discours et de perdre notre propre intelligence critique au profit d'un automatisme technologique. Pourtant, bien maîtrisée, l’IA produit l’effet inverse. Elle ne nous remplace pas ; elle nous pousse à décortiquer notre propre démarche. Pour donner des ordres clairs à une machine, il faut d’abord savoir exactement ce que l’on veut obtenir, pourquoi on veut l’obtenir, et comment on souhaite le formuler. En ce sens, l'outil devient un miroir de notre propre processus créatif et intellectuel.
 
-Pour cesser de simplement « subir » les réponses de l’IA et en faire un véritable levier d'action, nous devons apprendre à la piloter avec précision. C’est tout l’enjeu de ce que l'on appelle le ***prompting*** : l’art de formuler ses consignes pour garder le contrôle total de bout en bout.
+Pour cesser de simplement « *subir* » les réponses de l’IA et en faire un véritable levier d'action, nous devons apprendre à la piloter avec précision. C’est tout l’enjeu de ce que l'on appelle le ***prompting*** : l’art de formuler ses consignes pour garder le contrôle total de bout en bout.
 
 Voyons maintenant les techniques concrètes pour construire des instructions efficaces et adaptées à nos combats.
 
@@ -292,11 +292,11 @@ Au delà des biais sexistes ou racistes, on peut tout simplement rencontrer pas 
 
 Comment éviter ce type d'écueils ? On appartient rarement à un seul groupe à la fois. Au lieu de cibler les « *jeunes* » en général, on peut ajouter plus de dimensions propres à l'utilisation que vous ferez de ce texte. Par exemple, s'il s'agit d'un tract faisant des constats et propositions concernant le logement étudiant public, qui sera diffusé en porte à porte à Lyon : « *à destination des étudiants vivant en cité universitaire à Lyon* ».
 
-Tout type de groupe peut faire l'objet d'une définition plus détaillée : « caristes dans un entrepôt Amazon à Montélimar », « jeunes parents urbains », « utilisateurs d'Instagram de 18 à 30 ans », « agents de production dans une usine Pasquier », « franciliens habitant en banlieue et qui se rendent au travail en RER », etc. 
+Tout type de groupe peut faire l'objet d'une définition plus détaillée : « *caristes dans un entrepôt Amazon à Montélimar* », « *jeunes parents urbains* », « *utilisateurs d'Instagram de 18 à 30 ans* », « *agents de production dans une usine Pasquier* », « *franciliens habitant en banlieue et qui se rendent au travail en RER* », etc. 
 
 Si le résultat tombe dans l'excès inverse et devient un peu trop spécifique, on peut retirer une partie des détails ou les reformuler. 
 
-Une définition trop précise peut également augmenter les risques d'hallucinations si elle comprend des éléments peu présents dans les données d'entraînement. Typiquement, le nom d'une petite ville peu connue pourrait-être remplacé par une description plus générale de sa situation : « ville de moins de 10000 habitants », « ville moyenne », « ville de la banlieue lyonnaise », etc.
+Une définition trop précise peut également augmenter les risques d'hallucinations si elle comprend des éléments peu présents dans les données d'entraînement. Typiquement, le nom d'une petite ville peu connue pourrait-être remplacé par une description plus générale de sa situation : « *ville de moins de 10000 habitants* », « *ville moyenne* », « *ville de la banlieue lyonnaise* », etc.
 
 #### Le cadre -- Quelles informations faut-il avoir pour comprendre cette tâche ?
 
@@ -318,7 +318,7 @@ De la même façon, on peut adapter le format d'un texte en fonction du contexte
 
 Au même titre qu'un modèle d'IA ne comprend pas vraiment ce qu'il génère, il n'a pas à proprement parler d'analyse politique. Cependant, comme décrit au début de ce guide, l'entreprise qui crée et entraîne une IA l'aligne également sur un équilibre politique particulier. 
 
-*NB : Il existe également des modèles « décensurés » que l'on peut exécuter localement avec un bon matériel, leur installation est couverte dans la partie « Usages avancés - IA locale » de ce guide.* 
+*NB : Il existe également des modèles « *décensurés* » que l'on peut exécuter localement avec un bon matériel, leur installation est couverte dans la partie « *Usages avancés - IA locale* » de ce guide.* 
 
 Pour que l'angle « *par défaut* » de l'IA soit moins influent dans les générations de texte obtenues, on peut explicitement définir l'approche politique ou philosophique que l'on souhaite. 
 
@@ -835,7 +835,7 @@ Vous êtes donc bien plus légitimes à juger son travail, que l'inverse. Il peu
 
 ## IA et connectivité 
 
-Par défaut, un modèle de langage classique est « hors ligne » : il ne connaît que les données sur lesquelles il a été entraîné par le passé. C'est ce qu'on appelle sa date de coupure des connaissances. Pour un usage militant ou professionnel, cette limite est vite bloquante lorsque l'on travaille sur une actualité immédiate ou que l'on veut croiser des sources en temps réel.
+Par défaut, un modèle de langage classique est « *hors ligne* » : il ne connaît que les données sur lesquelles il a été entraîné par le passé. C'est ce qu'on appelle sa date de coupure des connaissances. Pour un usage militant ou professionnel, cette limite est vite bloquante lorsque l'on travaille sur une actualité immédiate ou que l'on veut croiser des sources en temps réel.
 
 C'est là qu'interviennent les fonctionnalités de connectivité. Connecter une IA signifie lui donner un accès au reste du monde numérique, soit à travers des moteurs de recherche, soit via des applications tierces.
 
@@ -853,7 +853,7 @@ Au-delà de la simple recherche Google, l'IA peut être connectée directement �
 
 L'outil Claude (développé par l'entreprise Anthropic) a longtemps été connu pour être strictement déconnecté du web, privilégiant la pure qualité de réflexion et d'analyse sur les documents qu'on lui transmet directement.
 
-Cependant, la connectivité de Claude passe souvent par des outils intermédiaires ou des plateformes tierces. De nombreux logiciels professionnels permettent aujourd'hui de connecter « l'intelligence » de Claude à des outils d'automatisation (comme Make, Zapier ou des extensions de navigateur). Cela permet par exemple de créer des scripts automatiques : dès qu'un nouvel article de presse sur un sujet précis est publié, l'IA le lit, l'analyse et vous envoie un résumé sur le canal de discussion de votre organisation (Signal, Discord, Slack).
+Cependant, la connectivité de Claude passe souvent par des outils intermédiaires ou des plateformes tierces. De nombreux logiciels professionnels permettent aujourd'hui de connecter « *l'intelligence* » de Claude à des outils d'automatisation (comme Make, Zapier ou des extensions de navigateur). Cela permet par exemple de créer des scripts automatiques : dès qu'un nouvel article de presse sur un sujet précis est publié, l'IA le lit, l'analyse et vous envoie un résumé sur le canal de discussion de votre organisation (Signal, Discord, Slack).
 
 ### Pourquoi c'est important ?
 
@@ -916,9 +916,9 @@ Pour autant, vus tous les avantages que l'on vient de lister, pourquoi ne pas es
 
 ChatGPT-5, Mistral Medium 3.1, DeepSeek V3, sont trois exemples de modèles d'IA générative. Chacun a été « *entraîné* » sur une sélection particulière de textes, selon des modalités qui lui sont propres, puis programmé différemment, avec pour résultat un comportement unique. Un même message envoyé à ces 3 modèles, vous vaudra très probablement 3 réponses différentes.
 
-#### Des IA de différentes « tailles »
+#### Des IA de différentes « *tailles* »
 
-Pour simplifier, la taille d'un modèle désigne à la fois la quantité d'informations qu'il emmagasine et la puissance de calcul qui lui sera nécessaire pour fonctionner correctement. De façon générale, plus un modèle est « grand », plus il sera en mesure de gérer des tâches complexes (avec beaucoup d'éléments à considérer en même temps).
+Pour simplifier, la taille d'un modèle désigne à la fois la quantité d'informations qu'il emmagasine et la puissance de calcul qui lui sera nécessaire pour fonctionner correctement. De façon générale, plus un modèle est « *grand* », plus il sera en mesure de gérer des tâches complexes (avec beaucoup d'éléments à considérer en même temps).
 
 Cette taille se mesure en nombre de paramètres, qui sont maintenant généralement compris entre 1 à 2 milliards pour les plus petits modèles, quelques dizaines à une centaine de milliards pour ceux de taille moyenne, plusieurs centaines de milliards pour les plus grands. 
 
@@ -936,7 +936,7 @@ Si votre ordinateur n'a pas de carte graphique, il est malheureusement probable 
 
 Comment permettre à un programme comme l'IA générative -- *qui a au minimum plusieurs milliards de paramètres* -- de fonctionner sur nos machines ? La quantisation est une technique qui réduit plus ou moins drastiquement la longueur des chiffres traités par l'IA pour calculer ses réponses, ce qui lui permet de tourner en utilisant moins de mémoire (RAM / VRAM) et de prendre moins d'espace sur un disque dur. 
 
-Des modèles d'IA quantisés et donc optimisés, peuvent être sélectionnés directement depuis ceux proposés par LM Studio, ou sur la plateforme HuggingFace. Vous les reconnaîtrez à la présence de la lettre « Q » immédiatement suivie d'un chiffre dans leur nom. Par exemple: « *gemma-3-12b-it-qat-**q4** »* est l'une des versions quantisées (ici,« *q4* ») de Gemma, la famille de modèles « *ouverts* » de Google (son équivalent propriétaire est Gemini). 
+Des modèles d'IA quantisés et donc optimisés, peuvent être sélectionnés directement depuis ceux proposés par LM Studio, ou sur la plateforme HuggingFace. Vous les reconnaîtrez à la présence de la lettre « *Q* » immédiatement suivie d'un chiffre dans leur nom. Par exemple: « *gemma-3-12b-it-qat-**q4** »* est l'une des versions quantisées (ici,« *q4* ») de Gemma, la famille de modèles « *ouverts* » de Google (son équivalent propriétaire est Gemini). 
 
 **Important** : Utiliser un modèle quantisé comporte un risque plus important d'hallucinations de l'IA. Il reste assez réduit, tant que vous n'utilisez pas une quantisation inférieure à 4 bits (par exemple, « *Q3* » ou « *Q2* »). 
 
@@ -970,15 +970,15 @@ LM Studio est un logiciel gratuit qui permet de télécharger et d’utiliser de
 Dans LM Studio, vous verrez une liste de modèles classés par taille et par usage.
 
 - **Pour débuter**, choisissez un modèle léger (moins de 4 Go) pour avoir un aperçu des performances de votre ordinateur sur les tâches d'IA. Les premiers modèles qui vous sont proposés sont à priori ceux qui devraient correspondre aux capacités de votre matériel. 
-- Cliquez sur **« Download »** à côté du modèle choisi.
+- Cliquez sur **« *Download* »** à côté du modèle choisi.
 
 **Attention** : Certains modèles pèsent plusieurs gigaoctets. Vérifiez que vous avez assez d’espace sur votre disque dur !
 
 - **Étape 3 : Lancer l’IA et discuter avec elle**
 
 1. Une fois le téléchargement terminé, cliquez sur l'onglet ***chat***.
-2. Cliquez sur **« Select a model to load »**, et sélectionnez le modèle que vous venez de télécharger (cela peut prendre quelques dizaines de seconde à quelques minutes).
-3. Une fois le chargement fait, cliquez sur le bouton « Create a New Chat » : **vous pouvez maintenant discuter avec votre IA locale !**
+2. Cliquez sur **« *Select a model to load* »**, et sélectionnez le modèle que vous venez de télécharger (cela peut prendre quelques dizaines de seconde à quelques minutes).
+3. Une fois le chargement fait, cliquez sur le bouton « *Create a New Chat* » : **vous pouvez maintenant discuter avec votre IA locale !**
 
 ### Aller plus loin
 
@@ -1003,7 +1003,7 @@ La création visuelle est l'un des domaines où l'IA s'est développée le plus 
 
 ### La veille d’inspiration graphique : briser la page blanche
 
-Avant même de dessiner ou de concevoir un visuel, l'IA peut servir d'outil de brainstorming. Si vous manquez d'idées pour la mise en page d'un flyer ou pour l'ambiance visuelle d'un événement, vous pouvez utiliser des outils de génération d'images pour créer ce qu'on appelle un « moodboard » (un tableau d'inspiration).
+Avant même de dessiner ou de concevoir un visuel, l'IA peut servir d'outil de brainstorming. Si vous manquez d'idées pour la mise en page d'un flyer ou pour l'ambiance visuelle d'un événement, vous pouvez utiliser des outils de génération d'images pour créer ce qu'on appelle un « *moodboard* » (un tableau d'inspiration).
 
 En demandant par exemple à l'IA de mélanger des styles (« *Crée une composition inspirée des affiches constructivistes des années 1920 avec une esthétique moderne* »), vous obtenez des dizaines de pistes visuelles en quelques secondes. Cela ne donne pas un visuel fini, mais cela permet de choisir une direction, de tester des associations de couleurs et de nourrir votre propre créativité.
 
@@ -1032,16 +1032,7 @@ Vous arrivez à la fin de cette petite brochure (exception faite des annexes). N
 
 Vous pouvez aussi nous écrire si vous souhaitez directement contribuer à l'écriture. Si vous êtes à l'aise avec les outils informatiques, nous vous invitons à interagir avec nous via GitHub, visiter le dépôt du guide (github.com/espaces-marx/ai-radicals), le forker, et nous envoyer une Pull Request. Nous accueillons toutes les contributions et serions heureux de constituer une communauté militante plus vaste, travaillant ensemble à monter en compétence pour que la gauche maîtrise mieux les nouvelles technologies.
 
-Pour l'heure, notre intention concernant la prochaine version du guide est de :
-
-- Donner des exemples concrets et des explications approfondies sur les outils d'IA « avancés » (agents, connecteurs, bibliothèques...).
-- Détailler d'autres outils ; pour le moment, nous nous sommes concentrés sur Mistral, même si beaucoup de nos conseils s'appliquent sans problème à d'autres IA.
-- Donner des conseils plus précis sur la synthèse de données par IA (résumer un texte de loi, etc.).
-- Donner des techniques de création graphique assistée par IA ; pas seulement écrire un *prompt* trivial et s'émerveiller du résultat, mais articuler l'IA avec d'autres techniques pour créer une affiche, un sticker, un visuel Instagram, etc.
-
-À plus long terme, nous aimerions expliquer (aussi clairement que possible) comment réentraîner un modèle d'IA chez soi pour changer son utilisation. Mais c'est un objectif plus *geek*, pour l'instant nous pensons qu'il y a d'autres urgences.
-
-Si vous souhaitez commenter ces objectifs ou en proposer d'autres, vous avez notre adresse mail.
+Si vous souhaitez participer à ce travail, vous avez notre adresse mail.
 
 *Arrivederci !*
 
