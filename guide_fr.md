@@ -69,7 +69,7 @@ Les générations effectuées par l'IA ne remplacent pas le travail humain par l
 
 Les LLMs doivent avant tout être envisagés comme des *moyens de travail* que l'on peut employer à différents niveaux, notamment pour :
 
-- **Ouvrir de nouvelles pistes** : L'interaction avec ces programmes pouvant prendre la forme d'une simple conversation, il est facile de partir d'un projet ou d'une idée existante pour en tirer plusieurs directions possibles. Comme dans une réunion de travail, vous pouvez par exemple les utiliser pour envisager les différents aspects d'un projet, développer un plan détaillé pour un document, un planing dans le temps, etc. Évidemment, ces différentes pistes pourraient également surgir dans le travail et la discussion collective. Cependant, il n'est pas possible à tout moment de se rassembler et de tenir une réunion. 
+- **Ouvrir de nouvelles pistes** : L'interaction avec ces programmes pouvant prendre la forme d'une simple conversation, il est facile de partir d'un projet ou d'une idée existante pour en tirer plusieurs directions possibles. Comme dans une réunion de travail, vous pouvez par exemple les utiliser pour envisager les différents aspects d'un projet, développer un plan détaillé pour un document, un planning dans le temps, etc. Évidemment, ces différentes pistes pourraient également surgir dans le travail et la discussion collective. Cependant, il n'est pas possible à tout moment de se rassembler et de tenir une réunion. 
 
 - **Brasser l'information** : En synthétisant des textes denses,  des rapports institutionnels ou des articles de fond. C'est un travail exploratoire, qui doit faire l'objet de vérifications additionnelles avant de s'appuyer sérieusement sur quoi que ce soit, mais il permet une première approche de documents que vous n’auriez peut-être pas eu le temps de lire intégralement dans l'immédiat. Dans le travail de vérification, il est par exemple possible de confronter votre propre compréhension du document à celle de l'IA, de poser des questions de suivi, ou de vérifier que les extraits cités sont bien présents.
 
@@ -77,13 +77,13 @@ Les LLMs doivent avant tout être envisagés comme des *moyens de travail* que l
 
 ### La responsabilité du travail est toujours humaine
 
-En tant que moyens de travail, les programmes d'Intelligence Artificielle peuvent être des outils précieux. Ils comportent cependant par leur nature un certain nombre de biais et de limites, dont il faut surveiller l'influence dans tout travail qui s'appuie un texte généré par IA. Intégrer ces éléments dans le produit de votre travail revient après tout à en assumer également la responsabilité. 
+En tant que moyens de travail, les programmes d'Intelligence Artificielle peuvent être des outils précieux. Ils comportent cependant par leur nature un certain nombre de biais et de limites, dont il faut surveiller l'influence dans tout travail qui s'appuie sur un texte généré par IA. Intégrer ces éléments dans le produit de votre travail revient après tout à en assumer également la responsabilité. 
 
 *Quelles sont les limites des générations de ces programmes ?*
 
 **Elles sont d'abord une imitation du travail passé**. Si votre demande est de générer un texte politique avec une lecture marxiste d'un événement ou sujet particulier, l'angle développé dans le document produit ne sera pas le fruit d'une analyse politique originale. Le programme aura tendance à reproduire par défaut les associations de mots les plus représentées dans les textes qui ont servi à l'entraîner. Cela n'empêche pas que la génération produite puisse être un bon matériau pour un travail de réécriture : les textes servant à l'entraînement d'une IA ont eux été produits par des auteurs humains, avec une expérience du monde réel. Mais la cohérence de cet assemblage, la justesse des arguments avancés, leur actualité ne sont pas garantis.
 
-**Les  « *hallucinations* »**. De quoi s'agit-il ? En un mot, puisque la nature des programme d'IA est statistique, mais que leurs calculs portent sur le langage humain, de nombreuses erreurs sont possibles. En calculant la réponse la plus probable à un message, le résultat renvoyé peut être vraisemblable sans être vrai pour autant. La génération de fausses citations, ou de fausses références (faux titres de livres par exemple) relève notamment de ce problème. 
+**Les  « *hallucinations* »**. De quoi s'agit-il ? En un mot, puisque la nature des programmes d'IA est statistique, mais que leurs calculs portent sur le langage humain, de nombreuses erreurs sont possibles. En calculant la réponse la plus probable à un message, le résultat renvoyé peut être vraisemblable sans être vrai pour autant. La génération de fausses citations, ou de fausses références (faux titres de livres par exemple) relève notamment de ce problème. 
 
 **Un texte généré par IA peut reproduire les biais des données d'entraînement.** Puisque les modèles d'IA basent leur connaissance du langage sur de nombreux textes produits par de vraies personnes, ils en importent également certains biais. Cela peut vouloir dire de nombreuses choses : que ces données peuvent refléter les conditions sociales dans lesquelles elles ont été produites, que certains préjugés racistes ou sexistes peuvent y exercer une influence; ou encore qu'elles peuvent être colorées par l'idéologie dominante, une perspective centrée sur les pays du Nord, etc. 
 
@@ -123,7 +123,7 @@ Sur un ordinateur :
 
 Sur un téléphone ou une tablette :
 
-- Ouvrez votre bibliothèque d'applications (App Store, Google Apps).
+- Ouvrez votre bibliothèque d'applications (App Store, Google Play).
 - Tapez le nom de l'IA que vous souhaitez utiliser dans la barre de recherche, et téléchargez l'application correspondante.
 - Créez un compte (avec une adresse mail, pas besoin de numéro de téléphone).
 - Vous arriverez sur une interface avec une zone de texte : c'est là que vous allez discuter avec l'IA.
