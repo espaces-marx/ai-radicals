@@ -19,7 +19,7 @@ We believe that the radical left must collectively take command of AI. The stake
 
 That is the spirit of this guide. It is designed so that anyone can pick it up, with or without prior technical knowledge, and progress quickly. We wanted it to be useful for beginners and experienced users alike, including descriptions of advanced techniques to make the most of the advantages AI offers.
 
-The version we are publishing today is a very preliminary version of the guide. Many things are imperfect or incomplete. Our intention is to improve it as our work progresses and as comrades give us feedback.
+This second version of the guide we are publishing today is still imperfect and incomplete. Our intention is to improve it as our work progresses and as comrades give us feedback.
 
 We also invite you to continue your reading of this guide by listening to our show *Cyber révolutions* (in French). It aims to spread awareness of the wealth of work, debate, and proposals concerning the political and social impact of the digital revolution -- work that too often flies under the radar. You'll find rich elaborations there on the ideas sketched out in this guide. The show is available on [its YouTube channel](https://www.youtube.com/@cyber-revolution-podcast).
 
@@ -88,7 +88,7 @@ As working tools, Artificial Intelligence programs can be valuable. By their ver
 
 **AI-generated text can reproduce the biases present in its training data.** Since AI models base their knowledge of language on huge amounts of text produced by real people, they also import certain biases along with it. This can mean many things: that this data may reflect the social conditions under which it was produced, that racist or sexist prejudices may exert an influence within it, or that it may be colored by the dominant ideology, a perspective centered on wealthy countries, and so on.
 
-**AI models are produced by the large corporations and states that have the means to do so, and they partly reflect those actors' worldview.** Because it requires enormous amounts of labor, infrastructure, and energy, training and deploying a large AI model is within reach of very few organizations. The best-known models belong to, or are directly controlled by, superpowers and publicly traded companies. After the training phase, future AI models go through a so-called "*alignment*" phase, which corresponds both to removing certain biases present in the data and, just as clearly, to political arbitration. From one model to the next, the overall tone shifts in political coloring, following that of its owners.
+**AI models are produced by the large corporations and states that have the means to do so, and they partly reflect those actors' worldview.** Because it requires enormous amounts of labor, infrastructure, and energy, training and deploying a large AI model is within reach of very few organizations. The best-known models belong to, or are directly controlled by, the dominant companies in the digital sector. After the training phase, future AI models go through a so-called "*alignment*" phase, which corresponds both to removing certain biases present in the data and, just as clearly, to political arbitration. From one model to the next, the overall tone shifts in political coloring, following that of its owners.
 
 **The importance of your own messages.** Beyond the training data, AI programs give a great deal of weight, in their calculations, to the user's own words -- which therefore have considerable power over the final output generated. This can be exploited through various techniques we'll explore later in this guide, but it can also have unintended effects. For example, through certain phrasings, you can push the AI itself into treating false statements as true. Some AI models are, by default, fairly quick to fall in line with whatever the user says. A lengthy argument carried out over several messages can exert a strong influence on the program, even if that argument isn't actually valid.
 
@@ -151,7 +151,7 @@ You can then ask it to go deeper, rephrase, or generate a longer text.
 
 When you start a conversation with an AI, the tool doesn't analyze your requests in isolation. Everything you write (your "*prompts*") and everything the machine replies is kept in a short-term memory, called the **context window**, for the entire duration of the conversation.
 
-Since AI works by calculating probabilities based on language, **every word you use matters**. A term chosen at the start of a discussion will influence, color, and steer all subsequent responses. If you start with a very formal, institutional tone, the AI will tend to keep it going afterward, even if you later ask it to write a punchy slogan for a flyer.
+Since AI works by calculating probabilities based on language, **every word you use matters**. A term chosen at the start of a discussion will influence, color, and steer all subsequent responses. If you start with a very formal, institutional tone, the AI will tend to keep it going afterward, sometimes even if you later ask it to write a punchy slogan for a flyer.
 
 
 ### Beware of data bleeding across conversations
@@ -166,13 +166,10 @@ To avoid this kind of interference and keep control over your content, two good 
 
 **Compartmentalize your workspaces**: Get into the habit of opening **a new conversation for each distinct topic, project, or task**. As soon as a task is finished, or you switch to a different frame of mind, open a new "*chat*" to start again from a neutral baseline.
 
-### Organizing shared context by project
 
-Conversely, it's sometimes very useful for the AI to retain a specific set of information across several discussions related to the same project (for example: your outlet's editorial guidelines, the key talking points of a mobilization campaign, or the facts of a local case file).
 
-For this, most professional tools now offer dedicated features (often called "*Projects*," "*Custom GPTs*," or "*Workspaces*"). These let you upload your reference documents or style guidelines once and for all. The AI will then systematically draw on that shared foundation every time you open a conversation within that space, without you needing to re-explain everything each time.
 
-### General context
+### How to manage context
 
 Imagine that every time you talk with an AI, you're speaking to a temp secretary. If global memory is turned off, they forget everything the moment you close the notebook (the conversation). But today, despite the absence of global memory, there are tools that let this secretary "*remember*" only the pieces of context you want, from one conversation to the next.
 
@@ -182,7 +179,7 @@ This is a kind of profile sheet you fill out once (e.g., "*I'm an activist, I li
 
 #### Connecting to your Google tools
 
-The AI can connect (if you allow it) to the tools you use every day: your Drive or your email. Its "*context*" then becomes your own workspace. You can tell it: "*Pull up the notes from yesterday's meeting document and summarize them for me.*"
+The AI can connect (if you allow it) to the tools you use every day: for example your Drive or your email. Its "*context*" then becomes the elements you ask it to access within your own workspace. You can tell it: "*Pull up the notes from yesterday's meeting document and summarize them for me.*"
 
 ### Context by project: creating closed "*working folders*"
 
@@ -378,27 +375,27 @@ Let's continue with the same example. The previous output was disappointing, so 
 
 That's starting to add up to a fair amount of information! We'll need to give the prompt a bit more structure so our instructions stay clear and the whole thing remains easy for the program to interpret. Let's try to fit it all in:
 
->  "*Create a list of 5 historical examples of social movements that led to a wage increase.
+>  "Create a list of 5 historical examples of social movements that led to a wage increase.
 >
 >  These examples must fall between the 19th century and today; the social movements selected must include either a strike or another form of action that concretely threatened the profits of the capitalists tied to the company or industry involved.
 >
->  Present each example with at least the movement's start and end date, the company and industry, a short description, the form the mobilization took, and the wage increase obtained, when that information is known.*"
+>  Present each example with at least the movement's start and end date, the company and industry, a short description, the form the mobilization took, and the wage increase obtained, when that information is known."
 
 What structure is being used here? We could sum up the purpose of each paragraph like this:
 
->  "*General task instruction
+>  "General task instruction
 >
 >  Constraints on carrying out the task
 >
->  Output text format*"
+>  Output text format"
 
 We can be more explicit by directly adding the role of each part at the start of each paragraph:
 
->  "*Task: Create a list...
+>  "Task: Create a list...
 >
 >  Constraints: These examples must...
 >
->  Format: Present each example...*"
+>  Format: Present each example..."
 
 Large AI models are tested on instructions following this kind of format, which divides the prompt into a few sections. It's a common pattern, one the program has a good chance of correctly interpreting as long as it stays clear.
 
@@ -1094,7 +1091,7 @@ This is the simplest entry point. No setup required -- plain-language prompts ar
 
 #### Midjourney
 
-This is the reference point for aesthetic and artistic quality. Access is through an official Discord server: just create a free Discord account, join the Midjourney server, then type the /imagine command followed by your description in a dedicated channel. The Discord-based interface can be confusing at first, but once you understand the basic command, it's easy to use. This is the tool of choice for a poster or visual that needs strong aesthetic impact (event illustration, campaign visual). **Skill level required:** beginner to intermediate (the basic command is simple, but refining a result takes some practice). **Access:** paid only, between $10 and $60 a month depending on how many images you need -- a cost worth pooling across an organization rather than putting on one person.
+This is the reference point for aesthetic and artistic quality. Access is through an official Discord server: just create a free Discord account, join the Midjourney server, then type the /imagine command followed by your description in a dedicated channel. The Discord-based interface can be confusing at first, but once you understand the basic command, it's easy to use. This is the tool of choice for a poster or visual that needs strong aesthetic impact (event illustration, campaign visual). **Skill level required:** beginner to intermediate (the basic command is simple, but refining a result takes some practice). **Access:** paid only, between $10 and $60 a month depending on how many images you need.
 
 #### Stable Diffusion / Flux (open-source models)
 
@@ -1116,7 +1113,7 @@ For an activist organization on a limited budget, the most reasonable combinatio
 
 # Conclusion
 
-You've reached the end of this booklet. We hope you enjoyed reading it, or at least that it was useful to you. If so, we also have something to ask of you. As we said in the introduction, the version of the guide you're holding is very preliminary. In our view, there's still a lot to add, perhaps to remove, to correct, to enrich. With that in mind, the first criterion we care about is usefulness for activists; your feedback, after reading, is therefore very important. You can write to us at contact@espaces-marx.eu with any comments, criticism, or suggestions.
+You've reached the end of this booklet. We hope you enjoyed reading it, or at least that it was useful to you. If so, we also have something to ask of you. As we said in the introduction, the version of the guide you're holding is still a work in progress. In our view, there's a lot to add, perhaps to remove, to correct, to enrich. With that in mind, the first criterion we care about is usefulness for activists; your feedback, after reading, is therefore very important. You can write to us at contact@espaces-marx.eu with any comments, criticism, or suggestions.
 
 You can also write to us if you'd like to contribute directly to writing the guide. If you're comfortable with technical tools, we invite you to interact with us via GitHub: visit the guide's repository (github.com/espaces-marx/ai-radicals), fork it, and send us a Pull Request. We welcome all contributions and would be glad to build a broader activist community, working together to build the skills the left needs to better master new technologies.
 
