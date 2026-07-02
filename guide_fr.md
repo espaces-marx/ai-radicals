@@ -1129,8 +1129,6 @@ Si vous souhaitez participer à ce travail, vous avez notre adresse mail.
 
 *Arrivederci !*
 
----
-
 Mention obligatoire :
 
 *transform! europe est partiellement financé par une subvention du Parlement européen. La responsabilité incombe exclusivement à l'auteur ou aux auteurs, et le Parlement européen n'est pas responsable de l'usage qui pourrait être fait des informations contenues dans cette publication.*
