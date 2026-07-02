@@ -1130,8 +1130,6 @@ If you'd like to take part in this work, you have our email address.
 
 *Arrivederci!*
 
----
-
-Required disclosure:
-
-*transform! europe is partially funded by a grant from the European Parliament. Responsibility for the content lies solely with the author(s); the European Parliament is not responsible for any use that may be made of the information contained in this publication.*
+>Required disclosure:
+>
+>*transform! europe is partially funded by a grant from the European Parliament. Responsibility for the content lies solely with the author(s); the European Parliament is not responsible for any use that may be made of the information contained in this publication.*
