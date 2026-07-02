@@ -498,18 +498,16 @@ This kind of code reads like a book: as long as you haven't reached the next cha
 
 To experiment with subsections, you can use lower-level headings, like this:
 
-```
-# Instructions
-
-## Data selection
-
-Select ...
-
-
-## Data sorting
-
-Remove the formatting...
-```
+> `# Instructions`
+> 
+> `## Data selection`
+> 
+> Select ...
+> 
+> 
+> `## Data sorting`
+> 
+> Remove the formatting...
 
 For the most complex prompt structures, the first, XML-style format is probably still more reliable. It's also well represented in the system prompts of large models, which define a long list of instructions meant to organize interaction with users.
 
@@ -595,39 +593,39 @@ For example, suppose you're working on a new article and you've already thought 
 
 By describing your tone in the format (or "*tone*") section of your prompt, you get a result that only partly reflects what you had in mind -- the words of the prompt are too ambiguous. The simplest approach would be to show the AI your work directly rather than explain it. Here's how:
 
-```
-<examples>
 
+> `<examples>`
+> 
+> 
+> `<example_1>`
+> 
+> [Text of the first example]
+> 
+> `</example_1>`
+> 
+> 
+> `<example_2>`
+> 
+> [Text of the second example]
+> 
+> `</example_2>`
+> 
+> 
+> [etc.]
+> 
+> `</examples>`
+>
+> `<task>`
+> 
+> Write an article about [topic], approaching this theme from the particular angle of [angle].
+> 
+> 
+> Follow the format and writing style provided in the example texts, and follow the detailed outline below:
+> 
+> `[detailed outline]`
+> 
+> `</task>`
 
-<example_1>
-
-[Text of the first example]
-
-</example_1>
-
-
-<example_2>
-
-[Text of the second example]
-
-</example_2>
-
-
-[etc.]
-
-</examples>
-
-<task>
-
-Write an article about [topic], approaching this theme from the particular angle of [angle].
-
-
-Follow the format and writing style provided in the example texts, and follow the detailed outline below:
-
-[detailed outline]
-
-</task>
-```
 
 *Here, each bracketed element should be replaced with your own content.*
 
@@ -641,31 +639,29 @@ The more advanced AI uses developing today (such as agentic AI) rely notably on 
 
 Beyond sending past texts, you can also create your own examples and use them in the prompt. For example, by recreating an interaction with an AI:
 
-```
-<examples>
-
-<example_1>
-
-Prompt: [a user's prompt]
-
-Response: [the type of response expected]
-
-</example_1>
-
-
-<example_2>
-
-Prompt: [a user's prompt]
-
-Response: [the type of response expected]
-
-</example_2>
-
-
-[etc.]
-
-</examples>
-```
+> `<examples>`
+> 
+> `<example_1>`
+> 
+> Prompt: [a user's prompt]
+> 
+> Response: [the type of response expected]
+> 
+> `</example_1>`
+> 
+> 
+> `<example_2>`
+> 
+> Prompt: [a user's prompt]
+> 
+> Response: [the type of response expected]
+> 
+> `</example_2>`
+> 
+> 
+> [etc.]
+> 
+> `</examples>`
 
 This kind of example, built directly into the prompt, can be useful when you want to get a very specific, unusual format applied to a large volume of data. You just need to produce a few examples with all the expected characteristics.
 
@@ -678,44 +674,42 @@ What does this look like in practice? Imagine a campaign to make public transit 
 
 By listing these aspects and explicitly referencing the AI's reasoning process, you can create a prompt like this:
 
-```
-<task>
 
-You are writing an article arguing for free public transit in [city].
-
-First, structure your reasoning as follows:
-
-1. What is the current context?
-
-2. What false consensus are you trying to break down?
-
-3. What is your main argument, in 2-3 sentences?
-
-4. What are the 3-4 secondary arguments, with concrete examples?
-
-5. How do you anticipate and respond to counterarguments?
-
-6. What call to action or perspective do you propose at the end?
-
-7. What tone should you adopt? Why?
-
-
-Then write the article (800-1000 words).
-
-</task>
-```
+> `<task>`
+> 
+> You are writing an article arguing for free public transit in [city].
+> 
+> First, structure your reasoning as follows:
+> 
+> 1. What is the current context?
+> 
+> 2. What false consensus are you trying to break down?
+> 
+> 3. What is your main argument, in 2-3 sentences?
+> 
+> 4. What are the 3-4 secondary arguments, with concrete examples?
+> 
+> 5. How do you anticipate and respond to counterarguments?
+> 
+> 6. What call to action or perspective do you propose at the end?
+> 
+> 7. What tone should you adopt? Why?
+> 
+> 
+> Then write the article (800-1000 words).
+>
+> `</task>`
 
 Since it's far from certain that the AI will pull together the most relevant elements of the local debate (if it's poorly developed or received little coverage), or that it has a good grasp of your talking points, it's useful to combine this technique with context.
 
 Just above the task definition, you can include a `<context>` section gathering the most relevant documents (local texts on the issue, your own working notes, etc.).
 
-```
-<context>
 
-[subsections if useful, relevant texts]
-
-</context>
-```
+> `<context>`
+> 
+> [subsections if useful, relevant texts]
+> 
+> `</context>`
 
 #### How does this method work, concretely?
 
@@ -835,33 +829,32 @@ Now, rather than keeping this prompt somewhere and copy-pasting it every time yo
 
 Specifically, for this exact example, here's what such an assistant's prompt might look like:
 
-```
-<context>
+> `<context>`
+>
+> You are an experienced community manager, specialized in turning articles into accessible content for Instagram. Your audience is young, curious, and skims posts quickly, often between other tasks.
+> 
+> `</context>`
+> 
+> 
+> `<goal>`
+> 
+> Based on the article I send you (pasted text or a link), write a summary meant for an Instagram post. The summary must:
+> 
+> - Be a maximum of 80 words
+> - Start with an emoji related to the article's topic
+> - Cover the 2 or 3 most striking pieces of information from the article
+> - End with an open-ended question that invites comments
+> 
+> `</goal>`
+>
+>
+> `<tone>`
+>
+> Dynamic, accessible, no jargon. Consistently informal and direct. A few emojis scattered through the text to add rhythm, without overdoing it (3 maximum in total).
+> 
+> `</tone>`
+>
 
-You are an experienced community manager, specialized in turning articles into accessible content for Instagram. Your audience is young, curious, and skims posts quickly, often between other tasks.
-
-</context>
-
-
-<goal>
-
-Based on the article I send you (pasted text or a link), write a summary meant for an Instagram post. The summary must:
-
-- Be a maximum of 80 words
-- Start with an emoji related to the article's topic
-- Cover the 2 or 3 most striking pieces of information from the article
-- End with an open-ended question that invites comments
-
-</goal>
-
-
-<tone>
-
-Dynamic, accessible, no jargon. Consistently informal and direct. A few emojis scattered through the text to add rhythm, without overdoing it (3 maximum in total).
-
-</tone>
-
-```
 
 Once the prompt is saved, here's how you might interact with this assistant: "*Here's the link to the new article to summarize: [link]. Can you put together the Instagram post for me?*"
 
