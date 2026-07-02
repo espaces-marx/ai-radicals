@@ -376,27 +376,27 @@ Continuons avec le même exemple. La génération précédente était décevante
 
 Ça commence à faire pas mal d'informations ! Il va falloir donner un peu plus de structure au prompt pour que nos instructions soient claires et que l'ensemble reste facilement interprétable par le programme. Essayons de tout faire rentrer : 
 
->  « *Crée une liste de 5 exemples historiques de mouvements sociaux ayant mené à une augmentation des salaires. 
+>  « Crée une liste de 5 exemples historiques de mouvements sociaux ayant mené à une augmentation des salaires. 
 >  
 >  Ces exemples doivent être compris dans la période entre le XIXe siècle et aujourd'hui; les mouvements sociaux sélectionnés doivent inclure soit une grève, soit une autre modalité d'action ayant concrètement menacé les profits des capitalistes liés à l'entreprise ou au secteur d'activité concerné.
 >  
->  Présente chaque exemple avec au moins la date de début et de fin du mouvement, l'entreprise et le secteur d'activité, une courte description, la forme qu'a pris la mobilisation, et l'augmentation de salaire obtenue lorsque cette information est connue.* »
+>  Présente chaque exemple avec au moins la date de début et de fin du mouvement, l'entreprise et le secteur d'activité, une courte description, la forme qu'a pris la mobilisation, et l'augmentation de salaire obtenue lorsque cette information est connue. »
 
 Quelle est la structure utilisée ici ? On pourrait résumer l'objectif de chaque paragraphe de cette façon :
 
->  « *Instruction de la tâche générale
+>  « Instruction de la tâche générale
 >  
 >  Contraintes dans l’exécution de la tâche
 >  
->  Format du texte de sortie* »
+>  Format du texte de sortie »
 
 On peut être plus explicite en ajoutant directement le rôle de chaque partie, en début de paragraphe :
 
->  « *Tâche : Crée une liste...
+>  « Tâche : Crée une liste...
 >  
 >  Contraintes : Ces exemples doivent...
 >  
->  Format : Présente chaque exemple...* »
+>  Format : Présente chaque exemple... »
 
 Les grands modèles d'IA sont testés sur des instructions suivant ce type de format divisant le prompt en quelques sections. C'est un motif courant, qui a de bonnes chances d'être correctement interprété par le programme s'il reste clair. 
 
@@ -459,44 +459,41 @@ La syntaxe est très simple :
 
 NB : Si vous souhaitez créer des sous-sections bien définies au sein d'une même section (par exemple, celle des instructions) vous pouvez imbriquer les balises : 
 
-```
-<instructions> 
+> `<instructions>`
+> 
+> 
+> `<sélection_données>`
+> 
+> Sélectionne ...
+> 
+> `</sélection_données>`
+>
+>
+> `<tri_données>`
+> 
+> Retire le formatage...
+> 
+> `</tri_données>`
+>
+>
+> `</instructions>`
 
-
-<sélection_données>
-
-Sélectionne ...
-
-</sélection_données>
-
-
-<tri_données>
-
-Retire le formatage...
-
-</tri_données>
-
-
-</instructions>
-```
 
  Une alternative encore plus simple existe avec le langage de balisage léger Markdown :
 
-```
-# Tâche
-
-Crée une liste...
-
-
-# Contraintes
-
-Inclut dans ta liste uniquement...
-
-
-# Format
-
-Présente chaque élément de ta liste avec...
-```
+> `# Tâche`
+> 
+> Crée une liste...
+> 
+> 
+> `# Contraintes`
+>
+> Inclut dans ta liste uniquement...
+>
+>
+> `# Format`
+> 
+> Présente chaque élément de ta liste avec...
 
 Chaque hashtag `#` correspond ici à un titre. Dans ce langage un hashtag seul est le titre le plus important, deux hashtags `##` un sous-titre, `###` un sous-sous-titre.
 
@@ -504,18 +501,16 @@ Ce code se lit comme un livre : tant que vous n'avez pas atteint le titre du cha
 
 Pour expérimenter avec des sous-sections, on peut ici utiliser des titres de rang inférieur, comme ici :
 
-```
-# Instructions
-
-## Sélection des données
-
-Sélectionne ...
-
-
-## Tri des données
-
-Retire le formatage...
-```
+> `# Instructions`
+>
+> `## Sélection des données`
+>
+> `Sélectionne ...`
+>
+>
+> `## Tri des données`
+>
+> `Retire le formatage...`
 
 Pour  les structures de prompt les plus complexes, le premier format type XML reste probablement plus fiable. Il est d'ailleurs bien représenté dans les prompts-systèmes des grands modèles, qui définissent une longue liste d'instructions visant à organiser l'interaction avec les utilisateurs. 
 
@@ -601,39 +596,38 @@ Par exemple, admettons que vous travaillez sur un nouvel article et que vous ave
 
 En décrivant votre ton dans la partie format (ou « *ton* ») de votre prompt, vous arrivez à un résultat qui ne reflète que partiellement ce que vous aviez en tête, les mots du prompt sont trop ambigus. Le plus simple serait de montrer directement à l'IA votre travail plutôt que de de l'expliquer. Voilà comment le faire :
 
-```
-<exemples>
 
-
-<exemple_1>
-
-[Texte du premier exemple]
-
-</exemple_1>
-
-
-<exemple_2>
-
-[Texte du deuxième exemple]
-
-</exemple_2>
-
-
-[etc.]
-
-</exemples>
-
-<tâche> 
-
-Rédige un article au sujet de [sujet], abordant ce thème sous l'angle particulier de [angle]. 
-
-
-Adopte le format et style d'écriture fourni dans le texte des exemples, et suit le plan détaillé ci-dessous :
-
-[plan détaillé]
-
-</tâche>
-```
+>`<exemples>`
+>
+>
+>`<exemple_1>`
+>
+>[Texte du premier exemple]
+>
+>`</exemple_1>`
+>
+>
+>`<exemple_2>`
+>
+> [Texte du deuxième exemple]
+>
+> `</exemple_2>
+>
+>
+> [etc.]
+>
+> `</exemples>`
+>
+> `<tâche>`
+>
+> Rédige un article au sujet de [sujet], abordant ce thème sous l'angle particulier de [angle]. 
+>
+>
+> Adopte le format et style d'écriture fourni dans le texte des exemples, et suit le plan détaillé ci-dessous :
+> 
+> [plan détaillé]
+> 
+> `</tâche>`
 
 *Ici, chaque élément entre crochets est à remplacer par votre propre contenu.*
 
@@ -647,31 +641,30 @@ Les usages plus avancés de l'IA qui se développent aujourd'hui (comme l'IA age
 
 Au delà d'envoyer des textes passés, il est également possible de créer vos propres exemples et de les utiliser dans le prompt. Par exemple, en recréant une interaction avec une IA :
 
-```
-<exemples>
 
-<exemple_1>
-
-Prompt : [prompt d'un utilisateur]
-
-Réponse : [type de réponse attendu]
-
-</exemple_1>
-
-
-<exemple_2>
-
-Prompt : [prompt d'un utilisateur]
-
-Réponse : [type de réponse attendu]
-
-</exemple_2>
-
-
-[etc.]
-
-</exemples>
-```
+>`<exemples>`
+>
+>`<exemple_1>`
+>
+> Prompt : [prompt d'un utilisateur]
+>
+> Réponse : [type de réponse attendu]
+>
+> `</exemple_1>`
+>
+> 
+> `<exemple_2>`
+>
+> Prompt : [prompt d'un utilisateur]
+> 
+> Réponse : [type de réponse attendu]
+> 
+> `</exemple_2>`
+> 
+> 
+> [etc.]
+>
+> `</exemples>`
 
 Ce type d'exemples construits directement dans le prompt peut être utile lorsque l'on souhaite récupérer un format bien précis et inhabituel, appliqué à un volume important de données. Il suffit alors de produire quelques exemples avec toutes les caractéristiques attendues. 
 
@@ -684,44 +677,41 @@ La méthode *Chain of Thought*  (ou *fil de pensée* en français), consiste à 
 
 En listant ces aspects, et en faisant référence explicitement au raisonnement de l'IA, on peut créer ce type de prompt :
 
- ``` 
-<tâche>
 
-Tu écris un article pour défendre la gratuité des transports en commun à [ville].
-
-Structure d'abord ton raisonnement ainsi :
-
-1. Quel est le contexte actuel ?
-
-2. Quel est le faux consensus que l'on veut déconstruire ?
-
-3. Quel est ton argument principal en 2-3 phrases ?
-
-4. Quels sont les 3-4 arguments secondaires avec exemples concrets ?
-
-5. Comment anticiper et répondre aux contre-arguments ?
-
-6. Quel appel à l'action ou perspective tu proposes à la fin ?
-
-7. Quel ton adopter ? Pourquoi ?
-
-
-Rédige ensuite l'article (800-1000 mots).
-
-</tâche>
- ```
+>`<tâche>`
+>
+> Tu écris un article pour défendre la gratuité des transports en commun à [ville].
+>
+> Structure d'abord ton raisonnement ainsi :
+>
+> 1. Quel est le contexte actuel ?
+>
+> 2. Quel est le faux consensus que l'on veut déconstruire ?
+> 
+> 3. Quel est ton argument principal en 2-3 phrases ?
+> 
+> 4. Quels sont les 3-4 arguments secondaires avec exemples concrets ?
+> 
+> 5. Comment anticiper et répondre aux contre-arguments ?
+> 
+> 6. Quel appel à l'action ou perspective tu proposes à la fin ?
+> 
+> 7. Quel ton adopter ? Pourquoi ?
+> 
+> 
+> Rédige ensuite l'article (800-1000 mots).
+> 
+> `</tâche>`
 
 Comme il n'est pas évident que l'IA rassemble les éléments les plus pertinents sur le débat local (s'il est peu développé ou peu couvert), ni qu'elle ait une bonne connaissance de votre argumentaire, il est utile de combiner cette technique avec un contexte. 
 
 Juste au-dessus de la définition de la tâche, on peut inclure une section `<contexte>` rassemblant les documents les plus pertinents (textes locaux sur la question, vos documents de réflexion, etc.). 
 
-```
-<contexte>
-
-[sous-sections si utile, textes pertinents]
-
-</contexte>
-```
+> `<contexte>`
+> 
+> [sous-sections si utile, textes pertinents]
+> 
+> `</contexte>`
 
 #### Comment fonctionne cette méthode, concrètement ?
 
