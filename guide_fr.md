@@ -65,7 +65,7 @@ Pourtant, dans la gauche radicale, c'est un fait récurrent : énormément de t�
 
 ### Un moyen de travail, pas un substitut
 
-Les générations effectuées par l'IA ne remplacent pas le travail humain par la simple pression d'une touche de clavier. L'expérience militante, le rapport au monde réel, les relations sociales, le travail collectif, la sensibilité politique et bien d'autres choses sont autant d'éléments qui sont peu accessibles aux calculs des LLMs. 
+Les générations effectuées par l'IA ne remplacent pas le travail humain par la simple pression d'une touche de clavier. L'expérience militante, le rapport au monde réel, les relations sociales, le travail collectif, la sensibilité politique et bien d'autres choses sont irremplaçablement liés aux militants en chair et en os.
 
 Pour autant, ils peuvent être envisagés comme des *moyens de travail* que l'on peut employer à différents niveaux, notamment pour :
 
