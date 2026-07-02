@@ -830,7 +830,6 @@ The AI may make fewer spelling mistakes or use more elegant turns of phrase than
 
 You are therefore far more qualified to judge its work than the reverse. It can be useful to ask the AI for corrections, or for revised versions of a text, but decisions about how your work is organized, and the final say, should always remain yours.
 
----
 [^4]: Karl Marx, *Capital*, Volume I, Part III, Chapter 5 ("The Labour-Process and the Process of Producing Surplus-Value")
 
 
