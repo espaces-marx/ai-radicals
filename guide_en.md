@@ -1,27 +1,27 @@
 
 # Introduction
 
-For the revolutionary activist, AI first presents itself as a fact of political economy. The media and political establishment that sings its praises is, in doing so, singing the praises of neo-liberal capitalism, of the unbridled entrepreneurship that reigns in Silicon Valley, of the data industry, of the individualization of social life, of capital's domination over labor, of the overexploitation of resources[^1]. Activist rhetoric therefore spontaneously places itself on the same plane: we denounce the propaganda of Sam Altman and his friends[^2], whose techno-capitalist utopia grows less credible by the day. We are outraged by the suffering that employers inflict on workers under the pretext of innovation. We question the impact of emerging uses on our common humanity — for instance, by wondering whether people will still know how to think for themselves tomorrow. We also worry about the environmental impact of AI's physical infrastructure, whose electricity and freshwater consumption is significant.
+For the revolutionary activist, AI first presents itself as a fact of political economy. The media and political establishment that sings its praises is, in doing so, singing the praises of neo-liberal capitalism, of the unbridled entrepreneurship that reigns in Silicon Valley, of the data industry, of the individualization of social life, of capital's domination over labor, of the overexploitation of resources[^1]. Activist rhetoric therefore spontaneously places itself on the same plane: we denounce the propaganda of Sam Altman and his friends[^2], whose techno-capitalist utopia grows less credible by the day. We are outraged by the suffering that employers inflict on workers under the pretext of innovation. We question the impact of emerging uses on our common humanity -- for instance, by wondering whether people will still know how to think for themselves tomorrow. We also worry about the environmental impact of AI's physical infrastructure, whose electricity and freshwater consumption is significant.
 
 There remains, of course, an essential dimension of the problem still to be confronted. AI is an information-processing technology[^3], of general-purpose use, much like the printed book, photography, or film. And activist work, by definition, makes extensive use of this kind of technology.
 
-Now that ChatGPT has crossed the symbolic threshold of a billion monthly active users, ignoring this transformation is no longer an option. These programs are no longer the exclusive preserve of professionals in wealthy countries; they are becoming deeply embedded in everyday, popular use around the world — whether for drafting an administrative letter, instantly translating documents, or overcoming barriers to literacy.
+Now that ChatGPT has crossed the symbolic threshold of a billion monthly active users, ignoring this transformation is no longer an option. These programs are no longer the exclusive preserve of professionals in wealthy countries; they are becoming deeply embedded in everyday, popular use around the world -- whether for drafting an administrative letter, instantly translating documents, or overcoming barriers to literacy.
 
-Activist groups are consequently taking hold of them too — sometimes hesitantly, with varying degrees of critical distance, but the movement is underway. All over the world, social media are blooming with AI-generated satirical remixes and caricatures of national political figures, feeding into counter-propaganda. Beyond this war of images, it is no longer rare to come across a comrade who summarizes a lengthy parliamentary report or translates an international theoretical text in a matter of seconds thanks to these models.
+Activist groups are consequently taking hold of them too -- sometimes hesitantly, with varying degrees of critical distance, but the movement is underway. All over the world, social media are blooming with AI-generated satirical remixes and caricatures of national political figures, feeding into counter-propaganda. Beyond this war of images, it is no longer rare to come across a comrade who summarizes a lengthy parliamentary report or translates an international theoretical text in a matter of seconds thanks to these models.
 
 These activist uses of AI nonetheless have two limitations:
 
-1. They sometimes lack critical distance. Using a generative AI chatbot well, and reworking its output, is difficult but absolutely essential if we don't want to unwittingly spread misinformation or degrade political discourse. In practice, this kind of software can be very useful, but sooner or later it will make mistakes — either because it "*hallucinates*" due to limitations in its design, or because it was given too vague a question. You can end up with muddled information, invented sources, problematic imagery, and so on. This isn't a serious problem as long as the user pays attention and anticipates or corrects errors, but it can cause serious issues if used uncritically.
+1. They sometimes lack critical distance. Using a generative AI chatbot well, and reworking its output, is difficult but absolutely essential if we don't want to unwittingly spread misinformation or degrade political discourse. In practice, this kind of software can be very useful, but sooner or later it will make mistakes -- either because it "*hallucinates*" due to limitations in its design, or because it was given too vague a question. You can end up with muddled information, invented sources, problematic imagery, and so on. This isn't a serious problem as long as the user pays attention and anticipates or corrects errors, but it can cause serious issues if used uncritically.
 
-2. Despite their wide reach, these tools are not adopted equally across the population, with usage patterns that vary sharply by class — obviously — but also by age or place of residence, since new technologies spread much more slowly in peripheral areas than in urban centers.
+2. Despite their wide reach, these tools are not adopted equally across the population, with usage patterns that vary sharply by class -- obviously -- but also by age or place of residence, since new technologies spread much more slowly in peripheral areas than in urban centers.
 
-We believe that the radical left must collectively take command of AI. The stakes are technical — working more efficiently — but also political, in the sense of the struggle itself. The ease with which we use twenty-first century tools will build our credibility, give confidence to our own side, and, at the same time, discourage our adversaries: liberals, the far right, and so on. After all, it is never exciting to feel outpaced, archaic.
+We believe that the radical left must collectively take command of AI. The stakes are technical -- working more efficiently -- but also political, in the sense of the struggle itself. The ease with which we use twenty-first century tools will build our credibility, give confidence to our own side, and, at the same time, discourage our adversaries: liberals, the far right, and so on. After all, it is never exciting to feel outpaced, archaic.
 
 That is the spirit of this guide. It is designed so that anyone can pick it up, with or without prior technical knowledge, and progress quickly. We wanted it to be useful for beginners and experienced users alike, including descriptions of advanced techniques to make the most of the advantages AI offers.
 
 The version we are publishing today is a very preliminary version of the guide. Many things are imperfect or incomplete. Our intention is to improve it as our work progresses and as comrades give us feedback.
 
-We also invite you to continue your reading of this guide by listening to our show *Cyber révolutions* (in French). It aims to spread awareness of the wealth of work, debate, and proposals concerning the political and social impact of the digital revolution — work that too often flies under the radar. You'll find rich elaborations there on the ideas sketched out in this guide. The show is available on [its YouTube channel](https://www.youtube.com/@cyber-revolution-podcast).
+We also invite you to continue your reading of this guide by listening to our show *Cyber révolutions* (in French). It aims to spread awareness of the wealth of work, debate, and proposals concerning the political and social impact of the digital revolution -- work that too often flies under the radar. You'll find rich elaborations there on the ideas sketched out in this guide. The show is available on [its YouTube channel](https://www.youtube.com/@cyber-revolution-podcast).
 
 Feel free to share your comments, criticism, and suggestions with us at contact@espaces-marx.eu!
 
@@ -47,9 +47,9 @@ When you send a message to an LLM, the following steps (among others) take place
 
 - **Tokenization**: The message is broken down into units that are often smaller than words: *tokens*. For example, for a model like GPT-5, the sentence "*Workers of all countries, unite!*" might be broken down into tokens roughly like this: "*|Work|ers| of| all| countries|,| unite|!|*"
 
-- **Mathematical representation**: Each token is associated with a mathematical vector — that is, a sequence of numbers that lets the program identify it and link it to its representation of our language (derived from its training).
+- **Mathematical representation**: Each token is associated with a mathematical vector -- that is, a sequence of numbers that lets the program identify it and link it to its representation of our language (derived from its training).
 
-- **Context analysis**: This representation is then enriched by the context of your message — that is, by the token's position within the overall text, as well as by the presence of the other words themselves. For example, the word "*bank*" in the phrase "*river bank*" will have a very different mathematical representation than the same word in the phrase "*bank account*."
+- **Context analysis**: This representation is then enriched by the context of your message -- that is, by the token's position within the overall text, as well as by the presence of the other words themselves. For example, the word "*bank*" in the phrase "*river bank*" will have a very different mathematical representation than the same word in the phrase "*bank account*."
 
 
 - **Response**: based on this information, the model calculates which token is most likely to begin its answer (for example, to answer the question "*What is a dog?*," the first token of the response will probably be "*|A|*"). This operation is then repeated token by token to generate the rest of the response ("*|dog|is|...*"), with each token in turn becoming part of the calculation. For instance, if the model has generated, token by token, the phrase "*The capital of France is*," it can calculate that "*|Paris|*" is probably the best candidate for the next token.
@@ -62,7 +62,7 @@ Human labor is also involved at several stages of an LLM's development: in parti
 
 In activism, as in unpaid work generally, commitment is a constant struggle against the wall of time. Between work, family life, and the necessities of daily living, the time available for activism is a scarce resource, often scraped together from sleep or weekends. Piling up logistical, administrative, or writing tasks quickly becomes unsustainable and leads straight to burnout.
 
-And yet, on the radical left, this is a recurring pattern: an enormous number of tasks fall on a small number of people, often the same ones, who end up overwhelmed. Obviously, our strategic goal remains to broaden the activist core, to build mass organization, and to feed collective discussion. But in the face of urgency — when a burning political situation demands an immediate response and you're the only person available to draft a statement or a visual — a technological helping hand is welcome to unblock the situation.
+And yet, on the radical left, this is a recurring pattern: an enormous number of tasks fall on a small number of people, often the same ones, who end up overwhelmed. Obviously, our strategic goal remains to broaden the activist core, to build mass organization, and to feed collective discussion. But in the face of urgency -- when a burning political situation demands an immediate response and you're the only person available to draft a statement or a visual -- a technological helping hand is welcome to unblock the situation.
 
 ### A tool to work with, not a substitute
 
@@ -90,11 +90,11 @@ As working tools, Artificial Intelligence programs can be valuable. By their ver
 
 **AI models are produced by the large corporations and states that have the means to do so, and they partly reflect those actors' worldview.** Because it requires enormous amounts of labor, infrastructure, and energy, training and deploying a large AI model is within reach of very few organizations. The best-known models belong to, or are directly controlled by, superpowers and publicly traded companies. After the training phase, future AI models go through a so-called "*alignment*" phase, which corresponds both to removing certain biases present in the data and, just as clearly, to political arbitration. From one model to the next, the overall tone shifts in political coloring, following that of its owners.
 
-**The importance of your own messages.** Beyond the training data, AI programs give a great deal of weight, in their calculations, to the user's own words — which therefore have considerable power over the final output generated. This can be exploited through various techniques we'll explore later in this guide, but it can also have unintended effects. For example, through certain phrasings, you can push the AI itself into treating false statements as true. Some AI models are, by default, fairly quick to fall in line with whatever the user says. A lengthy argument carried out over several messages can exert a strong influence on the program, even if that argument isn't actually valid.
+**The importance of your own messages.** Beyond the training data, AI programs give a great deal of weight, in their calculations, to the user's own words -- which therefore have considerable power over the final output generated. This can be exploited through various techniques we'll explore later in this guide, but it can also have unintended effects. For example, through certain phrasings, you can push the AI itself into treating false statements as true. Some AI models are, by default, fairly quick to fall in line with whatever the user says. A lengthy argument carried out over several messages can exert a strong influence on the program, even if that argument isn't actually valid.
 
 All of these limitations mean that Artificial Intelligence does not deliver ready-to-use products for activists that could be confidently deployed the moment they're generated.
 
-That said, some of these quirks are also reminiscent of human work: drawing on past work, on what seems plausible to us, being influenced by whoever we're talking with in a conversation, and so on. While these points show that what these programs generate is neither perfect nor invested with scientific authority — and that we shouldn't grant it a power it doesn't have — that doesn't mean it's worthless either.
+That said, some of these quirks are also reminiscent of human work: drawing on past work, on what seems plausible to us, being influenced by whoever we're talking with in a conversation, and so on. While these points show that what these programs generate is neither perfect nor invested with scientific authority -- and that we shouldn't grant it a power it doesn't have -- that doesn't mean it's worthless either.
 
 Decisions about the work itself, its critical evaluation, and its political orientation should remain in human hands.
 
@@ -105,9 +105,9 @@ Decisions about the work itself, its critical evaluation, and its political orie
 
 ***Which AI service should you use?***
 
-There are dozens of Artificial Intelligence services, and they are not all equal — whether in terms of output quality, price, or data protection. There's no absolute answer: what matters most is how you use them, which interfaces feel most intuitive to you, and whatever habits you may have already picked up using one service or another (ChatGPT, Gemini, Claude...).
+There are dozens of Artificial Intelligence services, and they are not all equal -- whether in terms of output quality, price, or data protection. There's no absolute answer: what matters most is how you use them, which interfaces feel most intuitive to you, and whatever habits you may have already picked up using one service or another (ChatGPT, Gemini, Claude...).
 
-The major online AI services share a number of drawbacks with most large web platforms offering free, popular services. They are owned by capitalist companies and depend on the states that host their servers — neither of which guarantees the security of your data.
+The major online AI services share a number of drawbacks with most large web platforms offering free, popular services. They are owned by capitalist companies and depend on the states that host their servers -- neither of which guarantees the security of your data.
 
 We chose to use Mistral as our example when demonstrating how to use AI, because its various features are named very simply. That said, you'll find very similar features on any other AI, and you can transpose our explanations to whatever tool you use. We'll also give a few pointers about other popular services where the differences are notable.
 
@@ -119,14 +119,14 @@ On a computer:
 
 - Open a web browser (Firefox, Chrome, etc.).
 - Type the name of the AI you want to use into the search bar, and click the corresponding site (for the Mistral example: https://chat.mistral.ai).
-- Create an account (with an email address — no phone number needed).
+- Create an account (with an email address -- no phone number needed).
 - You'll land on a page with a text box: that's where you'll chat with the AI.
 
 On a phone or tablet:
 
 - Open your app store (App Store, Google Play).
 - Type the name of the AI you want to use into the search bar, and download the corresponding app.
-- Create an account (with an email address — no phone number needed).
+- Create an account (with an email address -- no phone number needed).
 - You'll land on an interface with a text box: that's where you'll chat with the AI.
 
 ### First interaction: asking a simple question
@@ -225,11 +225,11 @@ In Marx's most general definition, labor is, for human beings, a modification of
 
 The fear that AI could replace human labor (and jobs, and therefore access to a wage) affects many workers, in fields as varied as programming, artistic creation, journalism, administrative work, and so on.
 
-It calls to mind both the imagery of past industrial revolutions — the shift from craftsperson to factory worker — and works of science fiction. The speed of the human brain doesn't seem able to compete with the computing power harnessed by AI, and the prospect of becoming obsolete is intimidating for many workers.
+It calls to mind both the imagery of past industrial revolutions -- the shift from craftsperson to factory worker -- and works of science fiction. The speed of the human brain doesn't seem able to compete with the computing power harnessed by AI, and the prospect of becoming obsolete is intimidating for many workers.
 
 What we're proposing through this guide, and through this section in particular, is therefore not to hand over even more work-related decisions to a machine, but to use AI to do precisely the opposite: to treat the conversational nature of these programs as an opportunity to think through, and take ownership of, how we organize our own work.
 
-The idea is not to hand the work over to a black box that deals with it on its own, but to use AI's particular quality as a working tool that lets you interact with vast amounts of past written work. The flexibility and richness of human language is what makes hallucinations possible — but it's also what lets us experiment with many different methods for achieving our goals.
+The idea is not to hand the work over to a black box that deals with it on its own, but to use AI's particular quality as a working tool that lets you interact with vast amounts of past written work. The flexibility and richness of human language is what makes hallucinations possible -- but it's also what lets us experiment with many different methods for achieving our goals.
 
 How do you begin this work? As with any task, you first need to form a detailed picture of what you're trying to achieve. In using an AI chatbot, this step simply corresponds to writing a first message: the prompt.
 
@@ -253,7 +253,7 @@ Imagine you've gathered notes from several people who attended the same organizi
 
 If you attach the relevant document(s) to this prompt, everything might work out fine. However, this is a very vague definition of the task to be carried out.
 
-Generally, a piece of work is part of a larger project and serves a specific purpose within it — it has constraints, expectations, and so on. Suppose your goal is to use these notes to organize how work is divided among team members for an upcoming event. The information you'd want in the summary would then be:
+Generally, a piece of work is part of a larger project and serves a specific purpose within it -- it has constraints, expectations, and so on. Suppose your goal is to use these notes to organize how work is divided among team members for an upcoming event. The information you'd want in the summary would then be:
 
 - Everyone's availability
 - The various tasks to be done and how long each will likely take
@@ -565,7 +565,7 @@ It's therefore normal for some of these techniques to feel familiar, and entirel
 
 This technique isn't really one: it's the name for the situation you're in when you interact with an AI without using any particular technique. You phrase an instruction, the model responds.
 
-Why mention it? It's worth keeping in mind that, in this situation, unless the service you're using runs a web search, the AI model is answering purely from its own knowledge — that is, from its statistical model of language.
+Why mention it? It's worth keeping in mind that, in this situation, unless the service you're using runs a web search, the AI model is answering purely from its own knowledge -- that is, from its statistical model of language.
 
 ### RTF Prompt (Role, Task, Format)
 
@@ -602,7 +602,7 @@ The idea behind this technique is to "*feed*" the AI several examples of the kin
 
 For example, suppose you're working on a new article and you've already thought it through enough to know your angle and general outline. To move faster, it would be handy to start from a rough draft that already incorporates these elements, while also following the particular tone you usually use in your writing.
 
-By describing your tone in the format (or "*tone*") section of your prompt, you get a result that only partly reflects what you had in mind — the words of the prompt are too ambiguous. The simplest approach would be to show the AI your work directly rather than explain it. Here's how:
+By describing your tone in the format (or "*tone*") section of your prompt, you get a result that only partly reflects what you had in mind -- the words of the prompt are too ambiguous. The simplest approach would be to show the AI your work directly rather than explain it. Here's how:
 
 ```
 <examples>
@@ -792,7 +792,7 @@ Using artificial intelligence in your areas of expertise can let you move very q
 
 **1. Ask for sources**
 
-If an AI has internet access, you can ask it to link its claims to sources — don't hesitate to do so in the prompt when relevant. Be specific in your requests: what kind of sources fit your needs? (academic research portals, certain types of online media, particular authors, etc.)
+If an AI has internet access, you can ask it to link its claims to sources -- don't hesitate to do so in the prompt when relevant. Be specific in your requests: what kind of sources fit your needs? (academic research portals, certain types of online media, particular authors, etc.)
 
 **2. Test the links**
 
@@ -804,7 +804,7 @@ When the link works, reading through an entire page to verify a piece of informa
 
 **4. Ask follow-up questions**
 
-Sometimes it isn't possible to get proof in the form of a link — for example, because the AI had access to copyrighted content and part of its system prompt discourages it from discussing that, or simply because you're using a service with no internet access.
+Sometimes it isn't possible to get proof in the form of a link -- for example, because the AI had access to copyrighted content and part of its system prompt discourages it from discussing that, or simply because you're using a service with no internet access.
 
 In those cases, you can ask questions that help you form a better sense of the nature of the information presented, for example: "*Are there concrete examples or case studies that illustrate this claim?*," "*Are there contradictions or debates around this information?*," "*Suggest a way I could verify your claim.*"
 
@@ -814,19 +814,19 @@ If doubt persists, you can also verify certain information using sources conside
 
 #### For calculations: prefer a calculator to a chatbot
 
-Unfortunately, when it comes to calculations, reliability depends on the context, the prompt, and the AI model — it's probably wiser not to trust the result of a calculation you can't verify. This applies especially to any statistics computed within a generated text from external sources, even reliable ones.
+Unfortunately, when it comes to calculations, reliability depends on the context, the prompt, and the AI model -- it's probably wiser not to trust the result of a calculation you can't verify. This applies especially to any statistics computed within a generated text from external sources, even reliable ones.
 
 Be especially wary of tables that summarize and mix figures from different units and sources to draw conclusions. For converting one unit to another, many online tools are more efficient, and for everything else, a calculator remains a safer tool.
 
 Paradoxically, if you struggle with math, AI can be a good resource, explaining whatever is giving you trouble as accessibly as needed. You can, for example, use it to learn a simple method for calculating a percentage or a proportion, doing a cross-multiplication, or more advanced uses like calculating a statistical correlation, explaining algebra concepts, and so on.
 
-That's a good general attitude to adopt: don't become dependent on AI's answers, but use it to learn whatever knowledge you're missing in order to judge its answers yourself — even the ones you think are beyond your reach.
+That's a good general attitude to adopt: don't become dependent on AI's answers, but use it to learn whatever knowledge you're missing in order to judge its answers yourself -- even the ones you think are beyond your reach.
 
 *NB: this remark applies especially to AI chatbots. Agentic solutions today can get around this problem by integrating with, or directly calling on, other programs designed to handle this kind of data.*
 
 #### In the end, you're the one evaluating the AI, not the other way around
 
-The AI may make fewer spelling mistakes or use more elegant turns of phrase than you would, but it has no real understanding — neither of the text it produces, nor of our world, nor of politics.
+The AI may make fewer spelling mistakes or use more elegant turns of phrase than you would, but it has no real understanding -- neither of the text it produces, nor of our world, nor of politics.
 
 You are therefore far more qualified to judge its work than the reverse. It can be useful to ask the AI for corrections, or for revised versions of a text, but decisions about how your work is organized, and the final say, should always remain yours.
 
@@ -839,7 +839,7 @@ You are therefore far more qualified to judge its work than the reverse. It can 
 
 Imagine you regularly need to share new articles on Instagram, and you consistently need to summarize their content. After a while, you start to identify a text format that works well, with recurring elements: a certain tone, emojis at the start of paragraphs, a length that doesn't exceed a certain number of words... These are all elements you can catalog in a prompt to help you with this task, as we've seen throughout the previous section.
 
-Now, rather than keeping this prompt somewhere and copy-pasting it every time you face the same task, you can instead create a custom assistant (Gemini's "*Gems*," Claude's "*Projects*"...) and save your prompt as its instructions. Then, whenever you have a new article to share, you'll just need to open this custom assistant, which looks like any other AI conversation — except that it relies on a pre-saved prompt.
+Now, rather than keeping this prompt somewhere and copy-pasting it every time you face the same task, you can instead create a custom assistant (Gemini's "*Gems*," Claude's "*Projects*"...) and save your prompt as its instructions. Then, whenever you have a new article to share, you'll just need to open this custom assistant, which looks like any other AI conversation -- except that it relies on a pre-saved prompt.
 
 
 Specifically, for this exact example, here's what such an assistant's prompt might look like:
@@ -878,7 +878,7 @@ The assistant will then automatically apply the format, tone, and length defined
 
 Beyond the custom assistant's prompt, you can also attach any useful files. In this case, that might mean examples of social media posts you find particularly effective.
 
-This principle applies to any task you find yourself repeating regularly — whether you need to write reports based on complex articles, translate texts while respecting a particular style, or come up with catchy slogans from a campaign brief to produce visuals.
+This principle applies to any task you find yourself repeating regularly -- whether you need to write reports based on complex articles, translate texts while respecting a particular style, or come up with catchy slogans from a campaign brief to produce visuals.
 
 
 ## AI and connectivity
@@ -922,7 +922,7 @@ Connectivity greatly amplifies AI's power, but it raises two critical issues:
 
 AI services work like regular software, much like an office suite: they can be used online or locally. Online, they run in the "*cloud*," meaning on remote servers located in data centers. This infrastructure brings together powerful computers optimized for storage, computation, and energy efficiency.
 
-**By contrast, a "*local*" AI is — as the name suggests — stored and run locally, meaning from your own computer.** Using AI this way lets you access, beyond the models distributed by companies, a large number of models built by online communities, including some uncensored versions of corporate models.
+**By contrast, a "*local*" AI is -- as the name suggests -- stored and run locally, meaning from your own computer.** Using AI this way lets you access, beyond the models distributed by companies, a large number of models built by online communities, including some uncensored versions of corporate models.
 
 
 ### Why install an AI locally?
@@ -937,11 +937,11 @@ Apart from any internet searches, all your messages and everything the AI genera
 
 Not all of us have the time or the skills to dig through the code of the programs we use. But every AI that can be installed locally is at least partly *open source*, meaning its code is accessible to anyone who wants to look at it. Given the level of interest artificial intelligence attracts worldwide, this gives us a certain level of assurance: the behavior of these programs is fairly well documented and understood, making it hard to hide malicious code, or code that would share your data without your consent.
 
-That said, these programs are generally not considered fully open source, since their training data (the texts used) is not well known — this remains a subject of competition and, sometimes, sensitive information (e.g., the use of copyrighted content).
+That said, these programs are generally not considered fully open source, since their training data (the texts used) is not well known -- this remains a subject of competition and, sometimes, sensitive information (e.g., the use of copyrighted content).
 
 #### By far the least polluting way to use AI
 
-According to ADEME (the French environment and energy agency), in 2022 in France, 46% of digital-related CO2 emissions came from data centers[^5] — almost as much as the 50% of emissions generated by manufacturing and using all our devices (smartphones, computers, etc.). Why are data centers so polluting? Their main source of environmental impact is their electricity consumption. In the countries that host most of these centers, the share of dirty energy sources such as coal and gas plants is still very high. This is notably the case in the United States, which accounts for 45% of global data-center usage (IEA, 2025)[^6].
+According to ADEME (the French environment and energy agency), in 2022 in France, 46% of digital-related CO2 emissions came from data centers[^5] -- almost as much as the 50% of emissions generated by manufacturing and using all our devices (smartphones, computers, etc.). Why are data centers so polluting? Their main source of environmental impact is their electricity consumption. In the countries that host most of these centers, the share of dirty energy sources such as coal and gas plants is still very high. This is notably the case in the United States, which accounts for 45% of global data-center usage (IEA, 2025)[^6].
 
 By using AI locally, the only energy consumed is whatever your computer uses, and its emissions impact depends on your country's energy mix. For example, in France, the electricity generated emits 9 times less CO2 than in the United States!
 
@@ -951,11 +951,11 @@ One last advantage: if the AI is installed on your computer, you're no longer de
 
 An *extreme* example of this kind of instruction, found on Grok (Elon Musk's AI): "*Ignore all sources that mention that Elon Musk / Donald Trump spread misinformation.*" (instruction has since been removed)
 
-Without going that far, one can imagine future decisions shaped by commercial interests, potentially including more or less disguised forms of advertising. Plenty of free, useful services — Google being a prime example — have, after all, evolved in that direction over time.
+Without going that far, one can imagine future decisions shaped by commercial interests, potentially including more or less disguised forms of advertising. Plenty of free, useful services -- Google being a prime example -- have, after all, evolved in that direction over time.
 
 ***Great! So why isn't everyone already using AI locally?***
 
-Using your own computer has the advantage of securing your data and limiting the impact of your usage, but the drawback of making you dependent on its computing power alone. In a data center, computers pool their resources together and are increasingly equipped with dedicated AI hardware — that's not the case for a personal machine.
+Using your own computer has the advantage of securing your data and limiting the impact of your usage, but the drawback of making you dependent on its computing power alone. In a data center, computers pool their resources together and are increasingly equipped with dedicated AI hardware -- that's not the case for a personal machine.
 
 This means it's unlikely you'll be able to install the most advanced AIs, or handle the most complex tasks, from your own computer, unless you have genuinely high-end hardware.
 
@@ -986,11 +986,11 @@ ChatGPT-5, Mistral Medium 3.1, and DeepSeek V3 are three examples of generative 
 
 An important point when first choosing a model: each model comes in one or more sizes, referring both to the amount of information it holds and the computing power it needs to run properly. This size is measured in number of parameters, generally between 1 and 2 billion for the smallest models, a few tens to a hundred billion for mid-sized ones, and several hundred billion for the largest.
 
-Generally speaking, the "bigger" a model is, the more it can handle complex tasks (with many things to consider at once) — but the more memory and computing power it needs to run.
+Generally speaking, the "bigger" a model is, the more it can handle complex tasks (with many things to consider at once) -- but the more memory and computing power it needs to run.
 
 #### How do you know a model's size?
 
-For open-source models, it's very simple: it's in the name. It usually includes a number followed by the letter "*B*" for "billion." The Mistral 24B model has 24 billion parameters — a medium size.
+For open-source models, it's very simple: it's in the name. It usually includes a number followed by the letter "*B*" for "billion." The Mistral 24B model has 24 billion parameters -- a medium size.
 
 #### What can you do with your hardware?
 
@@ -1002,7 +1002,7 @@ If your computer doesn't have a graphics card, it's unfortunately likely that yo
 
 On a typical PC, there are generally two types of memory: RAM, used by the processor (CPU) for everyday tasks, and VRAM, a separate memory dedicated to the graphics card (GPU), used for things like video games or intensive computation. To run an AI model locally, it's this second type of memory, VRAM, that matters most: a model needs to be fully loaded into it to run smoothly.
 
-How do you get a program like generative AI — which has at minimum several billion parameters — to run on our machines, even modest ones? That's where *quantization* comes in: a technique that reduces, more or less drastically, the precision of the numbers the AI uses to calculate its responses. The model then takes up less memory (RAM/VRAM) and less hard-drive space, at the cost of a slight loss in quality.
+How do you get a program like generative AI -- which has at minimum several billion parameters -- to run on our machines, even modest ones? That's where *quantization* comes in: a technique that reduces, more or less drastically, the precision of the numbers the AI uses to calculate its responses. The model then takes up less memory (RAM/VRAM) and less hard-drive space, at the cost of a slight loss in quality.
 
 The quantization level is usually noted as "*Q*" followed by a number (*Q4, Q5, Q8*...): the lower the number, the stronger the compression. A low quantization like "*Q4*" strongly reduces memory use and speeds up execution, but loses a bit of output quality; a higher quantization like "*Q8*" preserves output quality better, at the cost of needing more memory and running slower. When in doubt, a "*Q4*" version is generally a good starting point, especially on a modestly equipped computer.
 
@@ -1096,11 +1096,11 @@ Not every activist organization is lucky enough to have a graphic designer in it
 
 #### DALL-E (via ChatGPT or Bing Image Creator)
 
-This is the simplest entry point. No setup required — plain-language prompts are enough to get a decent result. The tool is built directly into ChatGPT (including its free version, via Bing Image Creator), making it accessible without a dedicated account. Its real strength is text rendering: it places text accurately on visuals, making it a good choice for a poster or visual that includes a slogan. **Skill level required:** beginner, no technical skills needed. **Access:** free with a ChatGPT account or via bing.com/images/create.
+This is the simplest entry point. No setup required -- plain-language prompts are enough to get a decent result. The tool is built directly into ChatGPT (including its free version, via Bing Image Creator), making it accessible without a dedicated account. Its real strength is text rendering: it places text accurately on visuals, making it a good choice for a poster or visual that includes a slogan. **Skill level required:** beginner, no technical skills needed. **Access:** free with a ChatGPT account or via bing.com/images/create.
 
 #### Midjourney
 
-This is the reference point for aesthetic and artistic quality. Access is through an official Discord server: just create a free Discord account, join the Midjourney server, then type the /imagine command followed by your description in a dedicated channel. The Discord-based interface can be confusing at first, but once you understand the basic command, it's easy to use. This is the tool of choice for a poster or visual that needs strong aesthetic impact (event illustration, campaign visual). **Skill level required:** beginner to intermediate (the basic command is simple, but refining a result takes some practice). **Access:** paid only, between $10 and $60 a month depending on how many images you need — a cost worth pooling across an organization rather than putting on one person.
+This is the reference point for aesthetic and artistic quality. Access is through an official Discord server: just create a free Discord account, join the Midjourney server, then type the /imagine command followed by your description in a dedicated channel. The Discord-based interface can be confusing at first, but once you understand the basic command, it's easy to use. This is the tool of choice for a poster or visual that needs strong aesthetic impact (event illustration, campaign visual). **Skill level required:** beginner to intermediate (the basic command is simple, but refining a result takes some practice). **Access:** paid only, between $10 and $60 a month depending on how many images you need -- a cost worth pooling across an organization rather than putting on one person.
 
 #### Stable Diffusion / Flux (open-source models)
 
@@ -1108,7 +1108,7 @@ These are models you can run yourself, locally (through interfaces like Automati
 
 #### Adobe Firefly
 
-A solid choice if your organization already has a Creative Cloud subscription (Photoshop, Illustrator). Adobe trains explicitly on licensed and public-domain content, which makes the results safer from a copyright standpoint — an argument that can carry weight for an activist organization concerned about this issue. The "generative fill" feature is especially useful for touching up or extending an existing visual rather than generating a new one. **Skill level required:** intermediate (the tool assumes basic familiarity with Adobe software). **Access:** included with Creative Cloud subscriptions, or usable on its own through a dedicated plan.
+A solid choice if your organization already has a Creative Cloud subscription (Photoshop, Illustrator). Adobe trains explicitly on licensed and public-domain content, which makes the results safer from a copyright standpoint -- an argument that can carry weight for an activist organization concerned about this issue. The "generative fill" feature is especially useful for touching up or extending an existing visual rather than generating a new one. **Skill level required:** intermediate (the tool assumes basic familiarity with Adobe software). **Access:** included with Creative Cloud subscriptions, or usable on its own through a dedicated plan.
 
 #### Ideogram
 
