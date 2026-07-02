@@ -416,40 +416,39 @@ C'est le moment de se rapprocher de la syntaxe des langages de balisage. Ces lan
 
 Une première possibilité, s'inspirant des balises rencontrées en langage XML :
 
-```
-<tâche>
 
-Crée une liste de 5 exemples historiques de mouvements sociaux ayant mené à une augmentation des salaires.
-
-</tâche>
-
-
-<contraintes>
-
-Inclut dans ta liste uniquement les exemples qui correspondent à tous ces critères :
-
-- Date comprise entre le XIXe siècle et aujourd'hui
-- Mode d'action comprenant soit une grève, soit une autre action ayant menacé les profits des capitalistes concernés
-
-</contraintes>
-
-
-<format>
-
-Présente chaque élément de ta liste avec ces sections dans l'ordre :
-
-- Date de début et de fin du mouvement social
-- Nom de l'entreprise et secteur d'activité
-- Forme qu'a pris le mouvement social
-- Augmentation de salaire (si connue)
-- Courte description du mouvement
-  
-Sous la liste, ajoute un résumé portant sur les points communs à tes exemples.
-
-Dans ton message, renvoie seulement la liste elle-même et le résumé.
-
-</format>
-```
+> `<tâche>`
+>
+> Crée une liste de 5 exemples historiques de mouvements sociaux ayant mené à une augmentation des salaires.
+> 
+> `</tâche>`
+>
+>
+> `<contraintes>`
+> 
+> Inclut dans ta liste uniquement les exemples qui correspondent à tous ces critères :
+> 
+> - Date comprise entre le XIXe siècle et aujourd'hui
+> - Mode d'action comprenant soit une grève, soit une autre action ayant menacé les profits des capitalistes concernés
+> 
+> `</contraintes>`
+> 
+> 
+> `<format>`
+>
+> Présente chaque élément de ta liste avec ces sections dans l'ordre :
+> 
+> - Date de début et de fin du mouvement social
+> - Nom de l'entreprise et secteur d'activité
+> - Forme qu'a pris le mouvement social
+> - Augmentation de salaire (si connue)
+> - Courte description du mouvement
+>   
+> Sous la liste, ajoute un résumé portant sur les points communs à tes exemples.
+> 
+> Dans ton message, renvoie seulement la liste elle-même et le résumé.
+> 
+> `</format>`
 
 Le prompt intègre des sauts de ligne et des listes, mais les limites de chaque partie restent très claires grâce aux balises de début et de fin de section. 
 
