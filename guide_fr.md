@@ -19,7 +19,7 @@ Or, nous pensons que la gauche radicale doit entrer collectivement en maîtrise 
 
 C'est l'esprit de ce guide. Il est conçu pour que quiconque puisse entrer dedans, avec ou sans connaissances informatiques préalables, et puisse progresser rapidement. Nous l'avons voulu utile pour le débutant comme pour l'utilisateur expérimenté, avec la description de techniques avancées pour exploiter au maximum les avantages de l'IA.
 
-La version que nous publions aujourd'hui est une version très préliminaire du guide. Beaucoup de choses sont imparfaites ou incomplètes. Notre intention est de l'améliorer au fur et à mesure que notre travail avance et que nos camarades nous font des retours. 
+Cette seconde version du guide que nous publions aujourd'hui est encore imparfaite et incomplète. Notre intention est de l'améliorer au fur et à mesure que notre travail avance et que nos camarades nous font des retours. 
 
 Nous vous invitons par ailleurs à prolonger votre lecture de ce guide en écoutant notre émission *Cyber révolutions*. Elle vise à faire connaître et diffuser la grande masse de travaux, débats et propositions qui concernent l'impact politique et social de la révolution numérique... Et passent bien trop souvent sous les radars. Vous y trouverez de riches développements aux réflexions esquissées dans ce guide. Cette émission est disponible sur [sa chaîne Youtube](https://www.youtube.com/@cyber-revolution-podcast).
 
