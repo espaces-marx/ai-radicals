@@ -51,7 +51,7 @@ Lorsque l'on envoie un message à un LLM, il se passe (notamment) ces étapes :
 
 - **Analyse du contexte** : Cette représentation est ensuite enrichie par le contexte de votre message, c'est à dire par la position du mot dans l'ensemble du texte, ainsi que par la présence même des autres mots. Par exemple le mot « *banc* » dans l'expression « *banc de poisson* » aura une représentation mathématique très différente du même mot dans l'expression « *banc public* ».
 
-- **Réponse** : à partir de ces informations, le modèle calcule quel token est le plus probable pour démarrer sa réponse (par exemple, pour répondre à la question « *Qu'est ce qu'un chien* », le premier token de la réponse sera probablement « *|Un|* »). Cette opération se répète ensuite token par token pour générer la suite de la réponse (« *|chien|est|...* »), chaque token devenant lui-même un élément du calcul. Par exemple, si le modèle a généré token par token la phrase « *La capitale de la France est* », il pourra calculer que « *|Paris|* » est probablement le meilleur candidat pour le prochain token.
+- **Réponse** : à partir de ces informations, le modèle calcule quel token est le plus probable pour démarrer sa réponse (par exemple, pour répondre à la question « *Qu'est ce qu'un chien ?* », le premier token de la réponse sera probablement « *|Un|* »). Cette opération se répète ensuite token par token pour générer la suite de la réponse (« *|chien|est|...* »), chaque token devenant lui-même un élément du calcul. Par exemple, si le modèle a généré token par token la phrase « *La capitale de la France est* », il pourra calculer que « *|Paris|* » est probablement le meilleur candidat pour le prochain token.
 
 Par ces différents mécanismes (et d'autres), ces modèles imitent le travail humain qui produit des textes. Pour autant, cette production dépend grandement de textes eux-mêmes écrits par des êtres humains : les textes utilisés pour l'entraînement du programme, ou le texte de votre message envoyé à l'IA qui aura une place importante dans ses calculs.
 
@@ -327,66 +327,6 @@ Pour que l'angle « *par défaut* » de l'IA soit moins influent dans les gén
 Cette indication peut être explicite (par exemple en mentionnant « *à partir d'un point de vue marxiste* ») ou plus indirecte. Certains mots, ou expressions vont orienter la génération vers un angle particulier : « *planification de la production* », « *nationalisation* » ou « *collectivisation* », « *collectifs autogérés* » sont tous des exemples qui portent leur propre dimension politique, et vont pointer plus ou moins fortement la direction dans laquelle vous souhaitez aller. 
 
 Comme la qualification du public, c'est un domaine à manipuler avec précaution; sans quoi l'on risque de se retrouver avec un bingo de tous les mots-clés attendus du marxisme, sur tous les sujets. On peut contrer ce type de problème en donnant plus d'informations sur le ton souhaité (« *pour un public large* », « *accessible aux non-militants* », etc.).
-
-
-### Exemple de prompt
-
-Voici un exemple de prompt, construit à partir de la situation d'un syndicaliste hospitalier. Dans son service, les conditions de travail se dégradent (sous-effectif chronique, heures supplémentaires non payées, arrêts maladie qui s'accumulent sans remplacement), la direction refuse d'ouvrir des négociations, et une partie du personnel hésite à se mobiliser par peur des représailles ou par méconnaissance de leurs droits. L'enjeu immédiat n'est pas de dénoncer la situation en général, mais de rédiger un tract convoquant à une assemblée générale, en expliquant clairement la procédure (dans le secteur hospitalier, un préavis de grève est obligatoire) tout en donnant envie de participer.
-
-```
-<contexte>
-
-Tu m'aides à rédiger des supports de communication syndicale pour le personnel d'un hôpital public. Depuis plusieurs mois, les services de soins fonctionnent en sous-effectif chronique, les heures supplémentaires ne sont pas compensées, et la direction n'a proposé aucune réunion malgré nos demandes répétées. Un préavis de grève a été déposé pour le [date], conformément à l'obligation légale de préavis de 5 jours dans le secteur hospitalier. Le but immédiat est de réunir un maximum de collègues à une assemblée générale avant le début du mouvement, pour décider collectivement des modalités de la grève (reconduction, services assurés, revendications précises).
-
-</contexte>
-
-
-<objectif>
-
-Rédige un tract court annonçant l'assemblée générale. Le texte doit :
-
-- rappeler en une phrase la raison de la mobilisation (sous-effectif, heures non payées)
-- indiquer clairement la date, l'heure et le lieu de l'assemblée
-- expliquer en 2-3 lignes maximum ce qu'est un préavis de grève dans le secteur hospitalier, notamment le fait que cela n'oblige personne à se déclarer gréviste à l'avance et que la continuité des soins reste assurée
-- se terminer par un appel clair à venir, même sans être certain de faire grève
-
-</objectif>
-
-
-<ton>
-
-Direct et concret, pas de grands discours. On s'adresse à des collègues, pas à un public militant déjà convaincu. Le texte doit rassurer sur les aspects pratiques (droits, sécurité de l'emploi) autant qu'il mobilise. Éviter le ton accusateur envers la direction : privilégier les faits et les chiffres plutôt que les qualificatifs.
-
-</ton>
-
-
-<cible>
-
-Personnel soignant et non-soignant d'un service hospitalier (infirmier·es, aides-soignant·es, agent·es d'entretien), avec des statuts et anciennetés très variables, dont une partie n'a jamais fait grève et craint des conséquences sur son emploi ou son évaluation.
-
-</cible>
-
-
-<cadre>
-
-Le mouvement s'inscrit dans un contexte où plusieurs services de l'hôpital ont connu des arrêts maladie en cascade ces derniers mois faute de remplacement. Aucune réunion de concertation n'a eu lieu depuis six mois malgré nos courriers. Le droit de grève dans la fonction publique hospitalière impose un préavis mais garantit une protection contre le licenciement ou la sanction pour fait de grève ; ce point doit être rappelé car il revient souvent dans les inquiétudes exprimées par les collègues.
-
-</cadre>
-
-
-<format>
-
-Un tract recto simple, 150 mots maximum, pensé pour être affiché en salle de pause et distribué en main propre. Prévoir un titre court et percutant, et une structure en blocs courts plutôt qu'en paragraphes continus, pour une lecture rapide entre deux tâches.
-
-</format>
-
-
-<angle>
-
-Le texte doit rester syndical et revendicatif dans le fond, mais volontairement sobre dans la forme : on cherche à convaincre des collègues non-militants, pas à galvaniser un public déjà acquis. Éviter le vocabulaire trop connoté politiquement ; privilégier des formulations centrées sur les conditions de travail concrètes et les droits collectifs.
-
-</angle>
-```
 
 ### Et après ?
 
@@ -1020,7 +960,7 @@ Cela veut dire qu'il est peu probable que vous puissiez installer les IA les plu
 Pour autant, vus tous les avantages que l'on vient de lister, pourquoi ne pas essayer de trouver quelle part de vos utilisations de l'IA pourrait être faite en local ? 
 
 
-### LM Studio :  qu'est-ce que c'est et comment y accéder
+### LM Studio : qu'est-ce que c'est et comment y accéder
 
 Pour utiliser une IA en local sans avoir de compétences techniques particulières, l'outil le plus simple à prendre en main s'appelle LM Studio. Il s'agit d'une application de bureau gratuite, disponible sur Windows, Mac et Linux, qui permet de télécharger et de faire fonctionner des modèles de langage directement sur votre ordinateur via une interface graphique claire, sans avoir besoin de taper la moindre ligne de commande. Contrairement à d'autres solutions d'IA locale qui s'utilisent depuis un terminal, LM Studio ressemble à n'importe quel logiciel que vous auriez l'habitude d'installer : on clique, on télécharge, on discute.
 
@@ -1056,7 +996,7 @@ Sur Windows, vous pouvez consulter vos paramètres, puis la section « *Système
 
 Si votre ordinateur n'a pas de carte graphique, il est malheureusement probable que vous ne puissiez pas accomplir beaucoup de choses en local. Il vous sera quand même possible d'essayer des modèles de toute petite taille, mais il faut vous attendre à une génération lente et à des tâches peu complexes.
 
-#### Faire rentrer l'IA sur votre PC: la quantisation
+#### Faire rentrer l'IA sur votre PC : la quantisation
 
 Sur un PC classique, on distingue généralement deux types de mémoire : la RAM, utilisée par le processeur (CPU) pour les tâches courantes, et la VRAM, une mémoire séparée et dédiée à la carte graphique (GPU), utilisée par exemple pour les jeux vidéo ou le calcul intensif. Or pour faire tourner un modèle d'IA localement, c'est cette seconde mémoire, la VRAM, qui est la plus déterminante : un modèle qui doit y être chargé entièrement pour fonctionner de façon fluide.
 
@@ -1077,7 +1017,7 @@ Sur les Mac équipés de puces Apple Silicon (M1, M2, M3, M4...), la distinction
 
 - **Étape 1 : Télécharger LM Studio**
 
-LM Studio est un logiciel gratuit qui permet de télécharger et d’utiliser des IA sur votre ordinateur. 
+Comme évoqué précédemment, LM Studio est un logiciel gratuit qui permet de télécharger et d’utiliser des IA sur votre ordinateur. 
 
 **NB** : Malheureusement au moment de l'écriture de ce guide, le site, comme une partie des textes du logiciel sont uniquement disponibles en anglais. Une version française est en cours d'implémentation.
 
@@ -1182,7 +1122,7 @@ Pour une organisation militante avec un budget limité, la combinaison la plus r
 
 # Conclusion
 
-Vous arrivez à la fin de cette petite brochure. Nous espérons que la lecture vous a plu, ou en tous cas, qu'elle vous a rendu service. Si c'est le cas, nous avons, nous aussi, un service à vous demander. Comme dit dans l'introduction, la version du guide que vous tenez entre les mains est très préliminaire. Pour nous, il y a encore beaucoup de choses à ajouter, à enlever peut-être, à corriger, à enrichir. Dans cet esprit, le premier critère que nous observons est celui de l'utilité pour les militant·es ; votre retour, après la lecture, est donc très important. Vous pouvez nous écrire à contact@espaces-marx.eu pour toute remarque, critique, proposition.
+Vous arrivez à la fin de cette brochure. Nous espérons que la lecture vous a plu, ou en tous cas, qu'elle vous a rendu service. Si c'est le cas, nous avons, nous aussi, un service à vous demander. Comme dit dans l'introduction, la version du guide que vous tenez entre les mains est très préliminaire. Pour nous, il y a encore beaucoup de choses à ajouter, à enlever peut-être, à corriger, à enrichir. Dans cet esprit, le premier critère que nous observons est celui de l'utilité pour les militant·es ; votre retour, après la lecture, est donc très important. Vous pouvez nous écrire à contact@espaces-marx.eu pour toute remarque, critique, proposition.
 
 Vous pouvez aussi nous écrire si vous souhaitez directement contribuer à l'écriture. Si vous êtes à l'aise avec les outils informatiques, nous vous invitons à interagir avec nous via GitHub, visiter le dépôt du guide (github.com/espaces-marx/ai-radicals), le forker, et nous envoyer une Pull Request. Nous accueillons toutes les contributions et serions heureux de constituer une communauté militante plus vaste, travaillant ensemble à monter en compétence pour que la gauche maîtrise mieux les nouvelles technologies.
 
