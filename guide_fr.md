@@ -53,7 +53,7 @@ Lorsque l'on envoie un message à un LLM, il se passe (notamment) ces étapes :
 
 - **Réponse** : à partir de ces informations, le modèle calcule quel token est le plus probable pour démarrer sa réponse (par exemple, « *La* »). Cette opération se répète ensuite token par token pour générer la suite de la réponse, chaque token devenant lui-même un élément du calcul. Par exemple, si le modèle a généré token par token la phrase « *La capitale de la France est* », il pourra calculer que « *Paris* » est probablement le meilleur candidat pour le prochain token.
 
-Par ces différents mécanismes (et d'autres), ces modèles imitent le travail humain qui produit des textes. Pour autant, cette production dépend grandement de textes eux-mêmes écrits par des êtres humains : les textes utilisés pour l'entraînement du programme, ou le texte de votre message envoyé à l'IA qui aura une place importante dans ses calculs.
+Par ces différents mécanismes (et d'autres), ces modèles reproduisent le travail humain qui produit des textes. En effet, cette fonctionnalité dépend grandement de textes eux-mêmes écrits par des êtres humains : les textes utilisés pour l'entraînement du programme, ou le texte de votre message envoyé à l'IA qui aura une place importante dans ses calculs.
 
 Du travail humain intervient également à plusieurs étapes de la conception du LLM : notamment dans la sélection et l'étiquetage des nombreuses données qui serviront à l'entraîner, l'évaluation de la qualité des réponses d'un modèle, ou encore des tentatives de modération pour par exemple empêcher le modèle de générer des réponses aidant à réaliser des actions illégales. Tout ce travail, souvent très peu rémunéré, est essentiel à la production d'une IA.
 
