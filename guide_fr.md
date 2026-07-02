@@ -47,13 +47,13 @@ Lorsque l'on envoie un message à un LLM, il se passe (notamment) ces étapes :
 
 - **Découpage en tokens** : Le message est décomposé en unités souvent plus petites que les mots : les *tokens*. Par exemple pour le modèle GPT-5, la phrase suivante : « *Prolétaires de tous les pays, unissez-vous !* » fait 12 tokens, et est découpée de cette façon : « *|Pro|lé|taires| de| tous| les| pays|,| uni|ssez|-vous| !|* »
 
-- **Représentation mathématique** : Chaque token est associé à un vecteur mathématique, qui permet au programme de l'identifier et de l'associer à sa représentation de notre langue (celle issue de son entraînement).
+- **Représentation mathématique** : Chaque token est associé à un vecteur mathématique, c'est-à-dire une suite de nombres qui permet au programme de l'identifier et de l'associer à sa représentation de notre langue (celle issue de son entraînement).
 
 - **Analyse du contexte** : Cette représentation est ensuite enrichie par le contexte de votre message, c'est à dire par la position du mot dans l'ensemble du texte, ainsi que par la présence même des autres mots. Par exemple le mot « *banc* » dans l'expression « *banc de poisson* » aura une représentation mathématique très différente du même mot dans l'expression « *banc public* ».
 
-- **Réponse** : à partir de ces informations, le modèle calcule quel token est le plus probable pour démarrer sa réponse (par exemple, « *La* »). Cette opération se répète ensuite token par token pour générer la suite de la réponse, chaque token devenant lui-même un élément du calcul. Par exemple, si le modèle a généré token par token la phrase « *La capitale de la France est* », il pourra calculer que « *Paris* » est probablement le meilleur candidat pour le prochain token.
+- **Réponse** : à partir de ces informations, le modèle calcule quel token est le plus probable pour démarrer sa réponse (par exemple, pour répondre à la question « *Qu'est ce qu'un chien* », le premier token de la réponse sera probablement « *|Un|* »). Cette opération se répète ensuite token par token pour générer la suite de la réponse (« *|chien|est|...* »), chaque token devenant lui-même un élément du calcul. Par exemple, si le modèle a généré token par token la phrase « *La capitale de la France est* », il pourra calculer que « *|Paris|* » est probablement le meilleur candidat pour le prochain token.
 
-Par ces différents mécanismes (et d'autres), ces modèles reproduisent le travail humain qui produit des textes. En effet, cette fonctionnalité dépend grandement de textes eux-mêmes écrits par des êtres humains : les textes utilisés pour l'entraînement du programme, ou le texte de votre message envoyé à l'IA qui aura une place importante dans ses calculs.
+Par ces différents mécanismes (et d'autres), ces modèles imitent le travail humain qui produit des textes. Pour autant, cette production dépend grandement de textes eux-mêmes écrits par des êtres humains : les textes utilisés pour l'entraînement du programme, ou le texte de votre message envoyé à l'IA qui aura une place importante dans ses calculs.
 
 Du travail humain intervient également à plusieurs étapes de la conception du LLM : notamment dans la sélection et l'étiquetage des nombreuses données qui serviront à l'entraîner, l'évaluation de la qualité des réponses d'un modèle, ou encore des tentatives de modération pour par exemple empêcher le modèle de générer des réponses aidant à réaliser des actions illégales. Tout ce travail, souvent très peu rémunéré, est essentiel à la production d'une IA.
 
@@ -65,7 +65,7 @@ Pourtant, dans la gauche radicale, c'est un fait récurrent : énormément de t�
 
 ### Un moyen de travail, pas un substitut
 
-Les générations effectuées par l'IA ne remplacent pas le travail humain par la simple pression d'une touche de clavier. L'expérience militante, le rapport au monde réel, les relations sociales, le travail collectif, la sensibilité politique et bien d'autres choses sont irremplaçablement liés aux militants en chair et en os.
+Les générations effectuées par l'IA ne remplacent pas le travail humain par la simple pression d'une touche de clavier. L'expérience militante, le rapport au monde réel, les relations sociales, le travail collectif, la sensibilité politique et bien d'autres choses sont autant d'éléments qui sont peu accessibles aux calculs des LLMs. 
 
 Les LLMs doivent avant tout être envisagés comme des *moyens de travail* que l'on peut employer à différents niveaux, notamment pour :
 
@@ -77,15 +77,15 @@ Les LLMs doivent avant tout être envisagés comme des *moyens de travail* que l
 
 ### La responsabilité du travail est toujours humaine
 
-En tant que moyens de travail, les programmes d'Intelligence Artificielle peuvent être des outils précieux. Ils comportent cependant par leur nature un certain nombre de biais et de limites, dont il faut surveiller l'influence dans tout travail qui s'appuie sur leurs générations. Intégrer ces éléments dans le produit de votre travail revient après tout à en assumer également la responsabilité. 
+En tant que moyens de travail, les programmes d'Intelligence Artificielle peuvent être des outils précieux. Ils comportent cependant par leur nature un certain nombre de biais et de limites, dont il faut surveiller l'influence dans tout travail qui s'appuie un texte généré par IA. Intégrer ces éléments dans le produit de votre travail revient après tout à en assumer également la responsabilité. 
 
 *Quelles sont les limites des générations de ces programmes ?*
 
 **Elles sont d'abord une imitation du travail passé**. Si votre demande est de générer un texte politique avec une lecture marxiste d'un événement ou sujet particulier, l'angle développé dans le document produit ne sera pas le fruit d'une analyse politique originale. Le programme aura tendance à reproduire par défaut les associations de mots les plus représentées dans les textes qui ont servi à l'entraîner. Cela n'empêche pas que la génération produite puisse être un bon matériau pour un travail de réécriture : les textes servant à l'entraînement d'une IA ont eux été produits par des auteurs humains, avec une expérience du monde réel. Mais la cohérence de cet assemblage, la justesse des arguments avancés, leur actualité ne sont pas garantis.
 
-**Les  « *hallucinations* »**. D'où viennent-elles ? En un mot, puisque la nature des programme d'IA est statistique, mais que leurs calculs portent sur le langage humain, de nombreuses erreurs sont possibles. En calculant la réponse la plus probable à un message, le résultat renvoyé peut être vraisemblable sans être vrai pour autant. La génération de fausses citations, ou de fausses références (faux titres de livres par exemple) relève notamment de ce problème. 
+**Les  « *hallucinations* »**. De quoi s'agit-il ? En un mot, puisque la nature des programme d'IA est statistique, mais que leurs calculs portent sur le langage humain, de nombreuses erreurs sont possibles. En calculant la réponse la plus probable à un message, le résultat renvoyé peut être vraisemblable sans être vrai pour autant. La génération de fausses citations, ou de fausses références (faux titres de livres par exemple) relève notamment de ce problème. 
 
-**Les générations de textes peuvent reproduire les biais des données d'entraînement.** Puisque les modèles d'IA basent leur connaissance du langage sur de nombreux textes produits par de vraies personnes, ils en importent également certains biais. Cela peut vouloir dire de nombreuses choses : que ces données peuvent refléter les conditions sociales dans lesquelles elles ont été produites, que certains préjugés racistes ou sexistes peuvent y exercer une influence; ou encore qu'elles peuvent être colorées par l'idéologie dominante, une perspective centrée sur les pays du Nord, etc. 
+**Un texte généré par IA peut reproduire les biais des données d'entraînement.** Puisque les modèles d'IA basent leur connaissance du langage sur de nombreux textes produits par de vraies personnes, ils en importent également certains biais. Cela peut vouloir dire de nombreuses choses : que ces données peuvent refléter les conditions sociales dans lesquelles elles ont été produites, que certains préjugés racistes ou sexistes peuvent y exercer une influence; ou encore qu'elles peuvent être colorées par l'idéologie dominante, une perspective centrée sur les pays du Nord, etc. 
 
 **Les modèles d'IA sont produits par les grandes entreprises et les états qui en ont les moyens, et ils reflètent en partie leur vision du monde.** Parce que cela requiert du travail, des infrastructures et de l'énergie en quantité, entraîner et déployer un grand modèle d'IA est à la portée de peu d'organisations. Les modèles les plus connus appartiennent, ou dépendent directement, de superpuissances et d'entreprises côtées en bourse. Après la phase d'entraînement, les futurs modèles d'IA passent par une phase dite « *d'alignement* » qui correspond à la fois à la suppression de certains biais présents dans les données, mais est aussi évidemment un arbitrage politique. D'un modèle à l'autre, le ton général change alors de coloration politique, en suivant celle de ses propriétaires.
 
@@ -177,7 +177,7 @@ Imaginez que chaque fois que vous discutez avec une IA, vous parlez à un secré
 
 #### Les « *Instructions personnalisées* »
 
-C'est une sorte de fiche d'identité que vous remplissez une fois pour toutes (ex: « *Je suis militant, j'aime le ton direct, pas trop bureaucratique* »). L'IA lira cette fiche avant chaque nouvelle discussion.
+C'est une sorte de fiche d'identité que vous remplissez une fois pour toutes (ex: « *Je suis militant, j'aime le ton direct, pas trop bureaucratique* »), et qui se trouve dans les paramètres généraux des IA. Cette fiche sera prise en compte automatiquement à chaque nouvelle discussion.
 
 #### La connexion à vos outils Google
 
@@ -193,11 +193,13 @@ C'est comme créer un tiroir virtuel dans l'ordinateur, un espace clos où vous 
 
 #### Les « *Assistants IA* » 
 
-Imaginez que vous créez votre propre petit robot spécialisé, appelé « *Correcteur d'orthographe militant* » ou « *Rédacteur de tracts* ». Il s’agira de petits assistants sur mesure que vous pouvez programmer pour une tâche répétitive, grâce à un Prompt pré-enregistré dans lequel vous spécifiez le contexte, le ton, les objectifs, etc. de toutes vos demandes ultérieures (par exemple : « *Transforme ce long texte en 3 publications pour notre compte Instagram* », avec un Prompt contenant plusieurs exemples de publications réussies, et des spécifications de ton et de contexte). 
+Imaginez que vous créez votre propre petit robot spécialisé, appelé « *Correcteur d'orthographe militant* » ou « *Rédacteur de tracts* ». Il s’agira de petits assistants sur mesure que vous pouvez programmer pour une tâche répétitive, grâce à un « *Prompt* » pré-enregistré dans lequel vous spécifiez le contexte, le ton, les objectifs, etc. de toutes vos demandes ultérieures. Nous examinerons ce qu'est un Prompt dans la partie suivante du guide, et reviendrons plus en détails sur les Assistants IA dans la partie « *Usages avancés* ».
 
 #### Gemini : « *NotebookLM* »
 
-C'est un outil utile pour les chercheurs ou les militants qui étudient un dossier complexe. Vous créez un grand cahier virtuel et vous y déposez des rapports (par exemple, un rapport de 200 pages sur la santé au travail). L'IA devient alors une experte de ce document précis. Elle ne répondra à vos questions qu'en utilisant ce qu'il y a dans votre cahier, sans rien inventer d'Internet, et adjoindra à chaque affirmation l’aperçu de la source utilisée.
+C'est un outil utile pour les chercheurs ou les militants qui étudient un dossier complexe. Vous créez un grand cahier virtuel et vous y déposez des rapports (par exemple, un rapport de 200 pages sur la santé au travail). L'IA devient alors une experte de ce document précis. Elle ne répondra à vos questions qu'en utilisant ce qu'il y a dans votre cahier, sans rien tirer d'Internet, et adjoindra à chaque affirmation l’aperçu de la source utilisée.
+
+Il est accessible à l'adresse [https://notebooklm.google.com/](https://notebooklm.google.com/). 
 
 
 ## Prendre les commandes : de l'utilisation passive à la maîtrise technique
@@ -218,7 +220,7 @@ Voyons maintenant les techniques concrètes pour construire des instructions eff
 
 Chaque jour nous prenons des décisions sur la façon dont nous organisons au moins une partie de notre travail, que ce soit du travail salarié, des projets personnels, du militantisme ou du travail domestique. 
 
-Dans sa définition la plus générale chez Marx, le travail est pour l'homme une modification de la réalité pour y réaliser ses propres buts[^1]. Qui souhaiterait abandonner la direction de cette activité à un programme, même intelligent ?
+Dans sa définition la plus générale chez Marx, le travail est pour l'homme une modification de la réalité pour y réaliser ses propres buts[^4]. Qui souhaiterait abandonner la direction de cette activité à un programme, même intelligent ?
 
 La crainte que l'IA puisse remplacer le travail humain (et les emplois et donc l'accès au salaire) concerne de nombreux salariés, de métiers aussi divers que la programmation, la création artistique, le journalisme, le travail administratif, etc. 
 
@@ -258,7 +260,7 @@ Généralement, une tâche de travail s'inscrit dans le cadre d'un projet plus l
 
 Nous avons maintenant un peu plus d'informations sur la tâche, réécrivons le prompt :
 
-« *Produis un résumé du contenu de ces notes, qui doit comprendre toutes les informations portant sur l'organisation de [NomDeL'Événement], notamment les disponibilités de chaque participant, les tâches à effectuer et les dates mentionnées.* »
+>« *Produis un résumé du contenu de ces notes, qui doit comprendre toutes les informations portant sur l'organisation de [NomDeL'Événement], notamment les disponibilités de chaque participant, les tâches à effectuer et les dates mentionnées.* »
 
 En incluant des éléments pertinents sur l'objectif de cette tâche et son insertion dans le travail à venir, on augmente grandement les chances d'aboutir à une génération utile. 
 
@@ -326,7 +328,67 @@ Cette indication peut être explicite (par exemple en mentionnant « *à partir 
 
 Comme la qualification du public, c'est un domaine à manipuler avec précaution; sans quoi l'on risque de se retrouver avec un bingo de tous les mots-clés attendus du marxisme, sur tous les sujets. On peut contrer ce type de problème en donnant plus d'informations sur le ton souhaité (« *pour un public large* », « *accessible aux non-militants* », etc.).
 
-#### Et après ?
+
+### Exemple de prompt
+
+Voici un exemple de prompt, construit à partir de la situation d'un syndicaliste hospitalier. Dans son service, les conditions de travail se dégradent (sous-effectif chronique, heures supplémentaires non payées, arrêts maladie qui s'accumulent sans remplacement), la direction refuse d'ouvrir des négociations, et une partie du personnel hésite à se mobiliser par peur des représailles ou par méconnaissance de leurs droits. L'enjeu immédiat n'est pas de dénoncer la situation en général, mais de rédiger un tract convoquant à une assemblée générale, en expliquant clairement la procédure (dans le secteur hospitalier, un préavis de grève est obligatoire) tout en donnant envie de participer.
+
+```
+<contexte>
+
+Tu m'aides à rédiger des supports de communication syndicale pour le personnel d'un hôpital public. Depuis plusieurs mois, les services de soins fonctionnent en sous-effectif chronique, les heures supplémentaires ne sont pas compensées, et la direction n'a proposé aucune réunion malgré nos demandes répétées. Un préavis de grève a été déposé pour le [date], conformément à l'obligation légale de préavis de 5 jours dans le secteur hospitalier. Le but immédiat est de réunir un maximum de collègues à une assemblée générale avant le début du mouvement, pour décider collectivement des modalités de la grève (reconduction, services assurés, revendications précises).
+
+</contexte>
+
+
+<objectif>
+
+Rédige un tract court annonçant l'assemblée générale. Le texte doit :
+
+- rappeler en une phrase la raison de la mobilisation (sous-effectif, heures non payées)
+- indiquer clairement la date, l'heure et le lieu de l'assemblée
+- expliquer en 2-3 lignes maximum ce qu'est un préavis de grève dans le secteur hospitalier, notamment le fait que cela n'oblige personne à se déclarer gréviste à l'avance et que la continuité des soins reste assurée
+- se terminer par un appel clair à venir, même sans être certain de faire grève
+
+</objectif>
+
+
+<ton>
+
+Direct et concret, pas de grands discours. On s'adresse à des collègues, pas à un public militant déjà convaincu. Le texte doit rassurer sur les aspects pratiques (droits, sécurité de l'emploi) autant qu'il mobilise. Éviter le ton accusateur envers la direction : privilégier les faits et les chiffres plutôt que les qualificatifs.
+
+</ton>
+
+
+<cible>
+
+Personnel soignant et non-soignant d'un service hospitalier (infirmier·es, aides-soignant·es, agent·es d'entretien), avec des statuts et anciennetés très variables, dont une partie n'a jamais fait grève et craint des conséquences sur son emploi ou son évaluation.
+
+</cible>
+
+
+<cadre>
+
+Le mouvement s'inscrit dans un contexte où plusieurs services de l'hôpital ont connu des arrêts maladie en cascade ces derniers mois faute de remplacement. Aucune réunion de concertation n'a eu lieu depuis six mois malgré nos courriers. Le droit de grève dans la fonction publique hospitalière impose un préavis mais garantit une protection contre le licenciement ou la sanction pour fait de grève ; ce point doit être rappelé car il revient souvent dans les inquiétudes exprimées par les collègues.
+
+</cadre>
+
+
+<format>
+
+Un tract recto simple, 150 mots maximum, pensé pour être affiché en salle de pause et distribué en main propre. Prévoir un titre court et percutant, et une structure en blocs courts plutôt qu'en paragraphes continus, pour une lecture rapide entre deux tâches.
+
+</format>
+
+
+<angle>
+
+Le texte doit rester syndical et revendicatif dans le fond, mais volontairement sobre dans la forme : on cherche à convaincre des collègues non-militants, pas à galvaniser un public déjà acquis. Éviter le vocabulaire trop connoté politiquement ; privilégier des formulations centrées sur les conditions de travail concrètes et les droits collectifs.
+
+</angle>
+```
+
+### Et après ?
 
 Les frontières entre ces différents domaines sont évidemment poreuses. Il est possible d'influencer le ton en donnant des informations de format (par exemple, avec la mention « *dans un tweet* »). Le langage est flexible, les moyens pour arriver au bon résultat également.
 
@@ -827,15 +889,59 @@ Peut-être que l'IA fait moins de fautes d'orthographe ou utilise des tournures 
 Vous êtes donc bien plus légitimes à juger son travail, que l'inverse. Il peut-être utile de demander des corrections, ou des versions modifiées d'un texte à l'IA, mais les décisions concernant l'organisation de votre travail et les validations finales devraient toujours rester les vôtres.
 
 ---
-[^1]: Karl Marx, Le Capital, Livre I, Troisième section, Chapitre 5 (Le procès de travail et le procès de valorisation)
+[^4]: Karl Marx, Le Capital, Livre I, Troisième section, Chapitre 5 (Le procès de travail et le procès de valorisation)
 
 
 # Usages avancés
 
+## Assistants personnalisés
+
+Imaginons que vous devez régulièrement partager de nouveaux articles sur Instagram, et que vous devez systématiquement en résumer le contenu. Au bout d'un moment, vous commencez à identifier un format de texte qui marche bien, avec des éléments récurents : un certain ton, des emojis en début de paragraphes, une longueur qui n'excède pas tant de mots... Ce sont autant d'éléments que vous pouvez inventorier dans un Prompt qui vous aidera à faire ce travail, comme nous l'avons vu tout au long de la partie précédente. 
+
+Maintenant, plutôt que de conserver ce Prompt quelque part et de le copier-coller à chaque fois que vous êtes confronté à la même tâche, vous pouvez plutôt créer un assistant personnalisé (les « *Gems* » de Gemini, les « *Projets* » de Claude...) et enregistrer votre Prompt comme instruction. Ainsi, dès que vous aurez un nouvel article à partager, il vous suffira d'ouvrir cet assistant personnalisé, qui se présente comme n'importe quelle discussion IA -- à la différence que celle-ci s'appuie sur un Prompt pré-enregistré.
+
+Concrètement, pour cet exemple précis, voilà comment pourrait se présenter le Prompt d'un tel assistant :
+
+ ```
+<contexte>
+
+Tu es un community manager expérimenté, spécialisé dans la vulgarisation d'articles pour Instagram. Ton audience est jeune, curieuse, et consulte les publications rapidement, souvent entre deux tâches.
+
+</contexte>
+
+
+<objectif>
+
+À partir de l'article que je te transmets (texte collé ou lien), rédige un résumé destiné à une publication Instagram. Le résumé doit :
+
+- Faire 80 mots maximum
+- Commencer par un emoji en lien avec le sujet de l'article
+- Reprendre les 2 ou 3 informations les plus marquantes de l'article
+- Se terminer par une question ouverte qui donne envie de commenter
+
+</objectif>
+
+
+<ton>
+
+Dynamique, accessible, sans jargon. Tutoiement systématique. Quelques emojis en cours de texte pour rythmer la lecture, sans en abuser (3 maximum en tout).
+
+</ton>
+
+ ```
+
+Une fois le Prompt enregistré, voilà comment vous pourriez interagir avec cet assistant : « *Voici le lien du nouvel article à résumer : [lien]. Peux-tu me préparer le post Instagram ?* ». 
+
+L'assistant appliquera alors automatiquement le format, le ton et la longueur définis une fois pour toutes, sans que vous ayez besoin de les repréciser à chaque nouvelle demande. 
+
+En plus du Prompt de l'assistant personnalisé, pouvez également joindre n'importe quel fichier utile. En l'occurrence, il pourrait s'agir d'exemples de textes sur les réseaux sociaux que vous trouvez particulièrement réussis.
+
+Ce principe s'applique pour n'importe quelle tâche que vous êtes amené à répéter régulièrement : que vous deviez écrire des rapports en vous appuyant sur des articles complexes, traduire des textes en respectant une syntaxte particulière, ou encore imaginer des slogans accrocheurs à partir d'un dossier de campagne pour produire des visuels.
+
 
 ## IA et connectivité 
 
-Par défaut, un modèle de langage classique est « hors ligne » : il ne connaît que les données sur lesquelles il a été entraîné par le passé. C'est ce qu'on appelle sa date de coupure des connaissances. Pour un usage militant ou professionnel, cette limite est vite bloquante lorsque l'on travaille sur une actualité immédiate ou que l'on veut croiser des sources en temps réel.
+Par défaut, un modèle de langage classique est « *hors ligne* » : il ne connaît que les données sur lesquelles il a été entraîné par le passé. C'est ce qu'on appelle sa date de coupure des connaissances. Pour un usage militant ou professionnel, cette limite est vite bloquante lorsque l'on travaille sur une actualité immédiate ou que l'on veut croiser des sources en temps réel.
 
 C'est là qu'interviennent les fonctionnalités de connectivité. Connecter une IA signifie lui donner un accès au reste du monde numérique, soit à travers des moteurs de recherche, soit via des applications tierces.
 
@@ -845,15 +951,19 @@ Aujourd'hui, la plupart des grands outils (comme ChatGPT ou Gemini) intègrent u
 
 >**Exemple :** Vous devez réagir en urgence à un décret publié le matin même au Journal Officiel. Plutôt que de chercher la page exacte pendant des heures, vous pouvez demander à une IA connectée : « *Recherche sur le web le décret sorti ce matin concernant [Sujet] et fais-moi un résumé des trois points clés* ».
 
+
 ### Les applications connectées (Plugins et Extensions)
 
 Au-delà de la simple recherche Google, l'IA peut être connectée directement à vos propres outils de travail. C’est le cas de Gemini avec la suite Google Workspace (Docs, Drive, Gmail) ou de ChatGPT avec ses diverses extensions. L'IA peut ainsi chercher un e-mail précis pour vous, extraire les données d'un tableau de calcul partagé avec votre équipe, ou rédiger un brouillon de document directement dans votre espace de stockage cloud.
 
+
 ### Le cas de Claude (Anthropic) et des outils tiers
 
-L'outil Claude (développé par l'entreprise Anthropic) a longtemps été connu pour être strictement déconnecté du web, privilégiant la pure qualité de réflexion et d'analyse sur les documents qu'on lui transmet directement.
+L'outil Claude (développé par l'entreprise Anthropic) a longtemps été conçu comme un outil de réflexion et d'analyse « *fermé* », sans accès direct à internet : il ne pouvait travailler qu'à partir des documents et du texte qu'on lui transmettait directement dans la conversation. Cette limite a depuis évolué, puisque Claude dispose aujourd'hui d'une fonction de recherche web intégrée, activable directement dans l'interface, qui lui permet de consulter des sources récentes pour répondre à une question.
 
-Cependant, la connectivité de Claude passe souvent par des outils intermédiaires ou des plateformes tierces. De nombreux logiciels professionnels permettent aujourd'hui de connecter « *l'intelligence* » de Claude à des outils d'automatisation (comme Make, Zapier ou des extensions de navigateur). Cela permet par exemple de créer des scripts automatiques : dès qu'un nouvel article de presse sur un sujet précis est publié, l'IA le lit, l'analyse et vous envoie un résumé sur le canal de discussion de votre organisation (Signal, Discord, Slack).
+Au-delà de cette recherche ponctuelle, la connectivité de Claude passe également par des outils intermédiaires ou des plateformes tierces, qui permettent d'aller plus loin que la simple recherche à la demande. De nombreux logiciels professionnels permettent en effet de connecter « *l'intelligence* » de Claude à des outils d'automatisation (comme Make, Zapier, ou des extensions de navigateur), afin de créer des chaînes de traitement qui se déclenchent sans intervention humaine. On peut par exemple construire un scénario automatique où, dès qu'un nouvel article de presse sur un sujet précis est publié, un outil de veille détecte la publication, transmet le texte à Claude qui le lit et l'analyse, puis envoie automatiquement un résumé sur le canal de discussion de votre organisation (Signal, Discord, Slack).
+
+Cette distinction entre les deux niveaux de connectivité est utile à garder en tête : la recherche web native de Claude convient à un usage ponctuel, au fil d'une conversation, tandis que les outils d'automatisation tiers permettent de mettre en place une veille continue, qui fonctionne en arrière-plan sans que vous ayez à ouvrir l'outil vous-même.
 
 ### Pourquoi c'est important ?
 
@@ -889,7 +999,7 @@ Cependant, ces programmes ne sont généralement pas considérés comme étant e
 
 #### De loin l'utilisation de l'IA la moins polluante
 
-D'après l'ADEME, en 2022 en France 46% des émissions de CO2 liées au numérique étaient dues aux centres de données[^6], soit presque autant que les 50% d'émissions générées par la fabrication et l'utilisation de tous nos terminaux (smartphones, ordinateurs, etc.). Pourquoi les centres de données sont-ils aussi polluants? Leur principale source d'impact environnemental est due à leur consommation d'électricité. Dans les principaux pays qui accueillent ces centres, la part d'énergies sales telles que les centrales à charbon et le gaz est encore très élevée. C'est notamment le cas aux Etats-Unis, qui alimentent 45% des usages globaux des centres de données (IEA, 2025)[^7]. 
+D'après l'ADEME, en 2022 en France 46% des émissions de CO2 liées au numérique étaient dues aux centres de données[^5], soit presque autant que les 50% d'émissions générées par la fabrication et l'utilisation de tous nos terminaux (smartphones, ordinateurs, etc.). Pourquoi les centres de données sont-ils aussi polluants? Leur principale source d'impact environnemental est due à leur consommation d'électricité. Dans les principaux pays qui accueillent ces centres, la part d'énergies sales telles que les centrales à charbon et le gaz est encore très élevée. C'est notamment le cas aux Etats-Unis, qui alimentent 45% des usages globaux des centres de données (IEA, 2025)[^6]. 
 
 En utilisant l'IA localement, la seule énergie consommée est celle que votre ordinateur utilise et son impact en termes d'émissions dépend du mix énergétique de votre pays. Par exemple, en France, l'électricité générée est 9 fois moins émettrice de CO2 qu'aux États-Unis !
 
@@ -910,6 +1020,20 @@ Cela veut dire qu'il est peu probable que vous puissiez installer les IA les plu
 Pour autant, vus tous les avantages que l'on vient de lister, pourquoi ne pas essayer de trouver quelle part de vos utilisations de l'IA pourrait être faite en local ? 
 
 
+### LM Studio :  qu'est-ce que c'est et comment y accéder
+
+Pour utiliser une IA en local sans avoir de compétences techniques particulières, l'outil le plus simple à prendre en main s'appelle LM Studio. Il s'agit d'une application de bureau gratuite, disponible sur Windows, Mac et Linux, qui permet de télécharger et de faire fonctionner des modèles de langage directement sur votre ordinateur via une interface graphique claire, sans avoir besoin de taper la moindre ligne de commande. Contrairement à d'autres solutions d'IA locale qui s'utilisent depuis un terminal, LM Studio ressemble à n'importe quel logiciel que vous auriez l'habitude d'installer : on clique, on télécharge, on discute.
+
+Pour l'installer, il suffit de se rendre sur le site officiel (lmstudio.ai) et de télécharger la version correspondant à votre système d'exploitation, généralement détectée automatiquement par le site. Une fois l'application ouverte pour la première fois, il n'y a rien à configurer : vous arrivez directement sur une interface organisée autour de plusieurs onglets principaux :
+
+- **Discover** (ou l'icône en forme de loupe) : c'est le magasin de modèles. Cet onglet permet de rechercher et télécharger directement des modèles depuis Hugging Face, une plateforme communautaire qui héberge la grande majorité des modèles open source. On y trouve des versions de modèles connus comme Llama, Mistral ou Gemma, dans différentes tailles.
+- **Chat** : c'est l'espace de conversation à proprement parler, qui ressemble à l'interface de n'importe quelle IA. On y sélectionne le modèle préalablement téléchargé, puis on discute avec lui normalement.
+- **My Models** (Mes modèles) : la liste de tous les modèles déjà téléchargés sur votre machine, que vous pouvez charger, décharger ou supprimer selon l'espace disponible.
+- **Developer** (ou Local Server) : un onglet plus technique, qui permet de transformer votre modèle local en petit serveur, utilisable ensuite par d'autres logiciels. Il n'est pas utile pour une première prise en main.
+
+Une fois le modèle téléchargé, plus besoin de connexion internet pour l'utiliser : LM Studio fonctionne entièrement hors ligne pour discuter avec l'IA, interroger des documents ou utiliser l'API locale ; une connexion internet n'est nécessaire que pour télécharger de nouveaux modèles ou mettre à jour l'application.
+
+
 ### Quelques infos avant de commencer
 
 #### Qu'est-ce qu'un modèle d'IA ?
@@ -918,39 +1042,35 @@ ChatGPT-5, Mistral Medium 3.1, DeepSeek V3, sont trois exemples de modèles d'IA
 
 #### Des IA de différentes « *tailles* »
 
-Pour simplifier, la taille d'un modèle désigne à la fois la quantité d'informations qu'il emmagasine et la puissance de calcul qui lui sera nécessaire pour fonctionner correctement. De façon générale, plus un modèle est « *grand* », plus il sera en mesure de gérer des tâches complexes (avec beaucoup d'éléments à considérer en même temps).
+Un point important pour un premier choix de modèle : chaque modèle existe dans une ou plusieurs tailles, qui désignent à la fois la quantité d'informations qu'il emmagasine et la puissance de calcul qui lui sera nécessaire pour fonctionner correctement. Cette taille se mesure en nombre de paramètres, généralement compris entre 1 et 2 milliards pour les plus petits modèles, quelques dizaines à une centaine de milliards pour ceux de taille moyenne, et plusieurs centaines de milliards pour les plus grands.
 
-Cette taille se mesure en nombre de paramètres, qui sont maintenant généralement compris entre 1 à 2 milliards pour les plus petits modèles, quelques dizaines à une centaine de milliards pour ceux de taille moyenne, plusieurs centaines de milliards pour les plus grands. 
+De façon générale, plus un modèle est « grand », plus il sera en mesure de gérer des tâches complexes (avec beaucoup d'éléments à considérer en même temps) -- mais plus il demandera de mémoire et de puissance de calcul pour fonctionner.
 
 #### Comment connaître la taille d'un modèle ?
 
-Pour les modèles open-source, c'est très simple: c'est dans leur nom. Il comprend généralement un chiffre suivi de la lettre « *B* » pour « *billions* », milliards en anglais. Le modèle Mistral 24B, est un modèle à 24 milliards de paramètres, soit une taille moyenne. 
+Pour les modèles open-source, c'est très simple : c'est dans leur nom. Il comprend généralement un chiffre suivi de la lettre « *B* » pour « *billions* », milliards en anglais. Le modèle Mistral 24B, est un modèle à 24 milliards de paramètres, soit une taille moyenne. 
 
 #### Quels usages possibles selon votre équipement ?
 
-Sur Windows, vous pouvez consulter vos paramètres, puis la section « *Système* » et « *À propos de* » pour trouver le détail de votre matériel. Une carte graphique (GPU) devrait y être mentionnée si elle est présente. 
+Sur Windows, vous pouvez consulter vos paramètres, puis la section « *Système* » et « *À propos de* », pour trouver le détail de votre matériel. Une carte graphique (GPU) devrait y être mentionnée si elle est présente.
 
-Si votre ordinateur n'a pas de carte graphique, il est malheureusement probable que vous ne puissiez pas accomplir beaucoup de choses en local. Il vous sera quand même possible d'essayer des modèles de toute petite taille, mais il faut vous attendre à une génération lente et des tâches peu complexes.
+Si votre ordinateur n'a pas de carte graphique, il est malheureusement probable que vous ne puissiez pas accomplir beaucoup de choses en local. Il vous sera quand même possible d'essayer des modèles de toute petite taille, mais il faut vous attendre à une génération lente et à des tâches peu complexes.
 
 #### Faire rentrer l'IA sur votre PC: la quantisation
 
-Comment permettre à un programme comme l'IA générative -- *qui a au minimum plusieurs milliards de paramètres* -- de fonctionner sur nos machines ? La quantisation est une technique qui réduit plus ou moins drastiquement la longueur des chiffres traités par l'IA pour calculer ses réponses, ce qui lui permet de tourner en utilisant moins de mémoire (RAM / VRAM) et de prendre moins d'espace sur un disque dur. 
+Sur un PC classique, on distingue généralement deux types de mémoire : la RAM, utilisée par le processeur (CPU) pour les tâches courantes, et la VRAM, une mémoire séparée et dédiée à la carte graphique (GPU), utilisée par exemple pour les jeux vidéo ou le calcul intensif. Or pour faire tourner un modèle d'IA localement, c'est cette seconde mémoire, la VRAM, qui est la plus déterminante : un modèle qui doit y être chargé entièrement pour fonctionner de façon fluide.
 
-Des modèles d'IA quantisés et donc optimisés, peuvent être sélectionnés directement depuis ceux proposés par LM Studio, ou sur la plateforme HuggingFace. Vous les reconnaîtrez à la présence de la lettre « *Q* » immédiatement suivie d'un chiffre dans leur nom. Par exemple: « *gemma-3-12b-it-qat-**q4** »* est l'une des versions quantisées (ici,« *q4* ») de Gemma, la famille de modèles « *ouverts* » de Google (son équivalent propriétaire est Gemini). 
+Comment permettre à un programme comme l'IA générative -- qui a au minimum plusieurs milliards de paramètres -- de fonctionner sur nos machines, même modestes ? C'est là qu'intervient la *quantisation* : une technique qui réduit plus ou moins drastiquement la précision des chiffres utilisés par l'IA pour calculer ses réponses. Le modèle occupe alors moins de mémoire (RAM / VRAM) et moins d'espace sur le disque dur, au prix d'une légère perte de qualité.
 
-**Important** : Utiliser un modèle quantisé comporte un risque plus important d'hallucinations de l'IA. Il reste assez réduit, tant que vous n'utilisez pas une quantisation inférieure à 4 bits (par exemple, « *Q3* » ou « *Q2* »). 
+Le niveau de quantisation se note généralement sous la forme « *Q* » suivi d'un chiffre (*Q4, Q5, Q8*...) : plus ce chiffre est bas, plus la compression est forte. Une quantification faible comme « *Q4* » réduit fortement l'usage de mémoire et accélère l'exécution, mais fait perdre un peu en qualité ; une quantification plus élevée comme « *Q8* » préserve mieux la qualité de sortie, au prix de plus de mémoire nécessaire et de performances moindres. En cas de doute, une version « *Q4* » constitue en général un bon point de départ, notamment sur un ordinateur avec une configuration modeste.
 
-Voilà une estimation très imparfaite (les paramètres sont nombreux et changeants) de ce que vous pourrez faire, en fonction de votre matériel :
+Des modèles d'IA déjà quantisés, et donc optimisés pour tourner en local, peuvent être sélectionnés directement depuis ceux proposés par LM Studio, ou sur la plateforme Hugging Face. Vous les reconnaîtrez à la présence de la lettre « *Q* » immédiatement suivie d'un chiffre dans leur nom : par exemple, « *gemma-3-12b-it-qat-**q4*** » est l'une des versions quantisées (ici, « *q4* ») de Gemma, la famille de modèles « ouverts » de Google (son équivalent propriétaire est Gemini).
 
-| Taille | Matériel requis | Types de tâches réalisables en local                                                                                                                                                                        |
-| ----------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **< 3B**                      | Ordinateur portable standard (8-16 Go RAM)                                       | Génération de texte simple (réponses courtes, suggestions, chat basique), correction grammaticale, résumés très courts.                                                                                     |
-| **3B - 7B**                   | Ordinateur portable performant (16-32 Go RAM) ou PC de bureau (GPU bas de gamme) | Génération de texte plus élaborée (emails, articles courts, dialogues), traduction basique, création d'idées.                                                                                               |
-| **7B - 13B**                  | PC de bureau avec GPU milieu de gamme, 32 Go RAM                                 | Génération de texte avancée (articles longs, code simple, scénarios), assistance à la rédaction, génération d'histoires, analyse de données tabulaires                                                      |
-| **13B - 30B**                 | PC de bureau avec GPU haut de gamme, 64 Go RAM                                   | Génération de code complexe, rédaction technique, création de contenu créatif, analyse approfondie de documents                                                                                             |
-| **30B - 70B+**                | Station de travail professionnelle, GPU multiples, 128 Go RAM+                   | Modèles polyvalents pour des tâches professionnelles (traduction spécialisée, génération de rapports, analyse de données complexes), création de contenu multimédia (scripts, dialogues), recherche avancée |
+**Important** : Utiliser un modèle quantisé comporte un risque légèrement plus élevé d'hallucinations de la part de l'IA. Ce risque reste assez réduit tant que vous n'utilisez pas une quantisation inférieure à 4 bits (par exemple, « *Q3* » ou « *Q2* »). 
 
-**NB** : Dans ce tableau, la mémoire est mentionnée sous le nom RAM. En réalité, le type de mémoire la plus efficace pour gérer les usages liés à l'IA est la VRAM (Video RAM), qui est la mémoire issue du GPU (carte / processeur graphique). Il est possible d'utiliser une IA en local avec peu ou pas de VRAM, mais les générations seront plus lentes.
+#### Une précision pour les utilisateurs de Mac
+
+Sur les Mac équipés de puces Apple Silicon (M1, M2, M3, M4...), la distinction entre RAM et VRAM évoquée plus haut ne s'applique pas de la même façon. Ces machines utilisent en effet une architecture de « mémoire unifiée », où la RAM et la VRAM sont une seule et même mémoire, partagée entre le processeur (CPU) et le processeur graphique (GPU). Concrètement, cela signifie que toute la mémoire disponible sur votre Mac peut être mobilisée pour faire tourner un modèle d'IA, sans qu'il soit nécessaire de disposer d'une carte graphique séparée avec sa propre mémoire dédiée, comme c'est le cas sur PC. Un Mac avec 16 Go de mémoire unifiée pourra ainsi, à configuration égale, se montrer plus efficace pour l'IA locale qu'un PC équivalent sans GPU dédié, puisqu'il n'a pas besoin de faire circuler les données entre deux mémoires séparées.
 
 
 ### Comment installer et utiliser une IA en local ?
@@ -992,8 +1112,10 @@ Vous pouvez par exemple explorer la plateforme HuggingFace, qui est à la fois l
 
 Il est aussi possible de nous contacter pour nous aider dans nos projets !
 
-[^6]: Étude ADEME ARCEP 2025
-[^7]: IEA (2025), Energy and AI, IEA, Paris
+[^5]: Étude ADEME ARCEP 2025
+
+[^6]: IEA (2025), Energy and AI, IEA, Paris
+
 
 
 ## IA et assistance créative
@@ -1025,10 +1147,42 @@ La génération d'images par IA souffre de limites majeures qu'il faut absolumen
 - **Les stéréotypes et les biais visuels :** Tout comme pour le texte, les IA d'images ont été entraînées sur des banques d'images dominantes. Si vous demandez « *un ouvrier* », l'IA générera presque toujours un homme blanc avec un casque de chantier. Si vous demandez « *une réunion militante* », elle aura tendance à lisser la réalité. Il faut redoubler d'efforts dans la rédaction de vos consignes (prompts) pour éviter les clichés.
 - **La question du droit d'auteur et du vol artistique :** Les modèles d'images ont été construits en copiant le travail de milliers d'artistes et d'illustrateurs sans leur consentement. Utiliser massivement ces outils pose un problème éthique évident pour notre camp social. C'est pourquoi l'IA doit rester un outil de support et non un moyen de remplacer les créateurs.
 
+Voici une section supplémentaire à insérer, par exemple entre « La génération d'images et l'assemblage » et « Les limites de la génération de visuels » :
+
+
+### Quels outils utiliser si mon équipe de contient pas de graphiste ?
+
+Toutes les organisations militantes n'ont pas la chance de compter un·e graphiste dans leurs rangs, et c'est justement dans ce cas de figure que l'IA peut rendre le plus de services. Elle ne remplace pas les compétences d'un·e professionnel·le, mais elle permet de produire des visuels correctes en autonomie, sans avoir à mobiliser un budget conséquent ou à dépendre systématiquement d'une personne extérieure. Le paysage des générateurs d'images évolue vite, mais quelques outils se distinguent nettement en 2026, chacun avec ses forces, son niveau d'accessibilité et son public.
+
+#### DALL-E (via ChatGPT ou Bing Image Creator)
+
+C'est la porte d'entrée la plus simple. Zéro configuration, des prompts en langage naturel suffisent pour obtenir un résultat correct. L'outil est directement intégré à ChatGPT (y compris dans sa version gratuite via Bing Image Creator), ce qui le rend accessible sans création de compte spécifique. Sa vraie force est le rendu du texte : il place le texte avec précision sur les visuels, ce qui en fait un bon choix pour une affiche ou un visuel comportant un slogan. **Niveau requis :** débutant, aucune compétence technique. **Accès :** gratuit avec un compte ChatGPT ou via bing.com/images/create.
+
+#### Midjourney
+
+C'est la référence pour la qualité esthétique et artistique. L'accès se fait via un serveur Discord officiel : il suffit de créer un compte Discord gratuit, de rejoindre le serveur Midjourney, puis de taper la commande /imagine suivie de sa description dans un salon dédié. L'interface via Discord peut dérouter au premier abord, mais une fois la commande de base comprise, l'usage reste simple. C'est l'outil à privilégier pour une affiche ou un visuel devant avoir un impact esthétique fort (illustration d'événement, visuel de campagne). **Niveau requis :** débutant à intermédiaire (la commande de base est simple, mais affiner un résultat demande un peu de pratique). **Accès :** payant uniquement, entre 10 et 60 $ par mois selon le volume d'images souhaité — un coût à mutualiser au sein d'une organisation plutôt qu'à la charge d'une seule personne.
+
+#### Stable Diffusion / Flux (modèles open source)
+
+Ce sont des modèles que l'on peut faire tourner soi-même, localement (via des interfaces comme Automatic1111 ou ComfyUI) ou via des plateformes en ligne qui les hébergent (comme Leonardo.ai). L'avantage principal est le contrôle total et l'absence de coût récurrent une fois l'installation faite, ainsi qu'une meilleure garantie de confidentialité puisque rien ne transite par un service tiers. Il existe aussi des versions gratuites de bonne qualité comme FLUX.1-schnell ou SD 3.5 Medium, accessibles directement sur Hugging Face. **Niveau requis :** intermédiaire à avancé pour une installation locale (cela rejoint les mêmes logiques que LM Studio vues plus haut, avec des exigences similaires en carte graphique) ; débutant si l'on passe par une plateforme en ligne comme Leonardo.ai. **Accès :** gratuit en local (matériel suffisant requis) ou via des plateformes en ligne proposant des générations gratuites quotidiennes limitées.
+
+#### Adobe Firefly
+
+Un choix pertinent si votre organisation dispose déjà d'un abonnement Creative Cloud (Photoshop, Illustrator). Adobe s'entraîne explicitement sur du contenu sous licence et du domaine public, ce qui rend les résultats plus sûrs du point de vue du droit d'auteur — un argument qui peut peser pour une organisation militante soucieuse de cette question. La fonction de « remplissage génératif » est particulièrement utile pour retoucher ou compléter un visuel existant plutôt que d'en générer un nouveau. **Niveau requis :** intermédiaire (l'outil suppose une familiarité de base avec les logiciels Adobe). **Accès :** inclus dans les abonnements Creative Cloud, ou utilisable seul via une offre dédiée.
+
+#### Ideogram
+
+Une alternative intéressante spécifiquement quand le texte doit apparaître de façon lisible et précise dans l'image (logo, titre d'affiche, mise en avant d'un slogan). Pour les travaux axés sur la typographie, Ideogram est considéré comme inégalé par rapport aux autres outils. **Niveau requis :** débutant. **Accès :** gratuit avec un nombre de générations limité par jour, via ideogram.ai.
+
+#### Quoi privilégier ?
+
+Pour une organisation militante avec un budget limité, la combinaison la plus raisonnable est souvent : DALL-E ou Bing Image Creator pour les besoins ponctuels et le brainstorming (gratuit), Ideogram si un visuel nécessite du texte propre (gratuit), et éventuellement un abonnement Midjourney mutualisé au sein du collectif si des visuels réguliers et à fort impact esthétique sont nécessaires (affiches de campagne, visuels récurrents sur les réseaux sociaux).
+
+
 
 # Conclusion
 
-Vous arrivez à la fin de cette petite brochure (exception faite des annexes). Nous espérons que la lecture vous a plu, ou en tous cas, qu'elle vous a rendu service. Si c'est le cas, nous avons, nous aussi, un service à vous demander. Comme dit dans l'introduction, la version du guide que vous tenez entre les mains est très préliminaire. Pour nous, il y a encore beaucoup de choses à ajouter, à enlever peut-être, à corriger, à enrichir. Dans cet esprit, le premier critère que nous observons est celui de l'utilité pour les militant·es ; votre retour, après la lecture, est donc très important. Vous pouvez nous écrire à contact@espaces-marx.eu pour toute remarque, critique, proposition.
+Vous arrivez à la fin de cette petite brochure. Nous espérons que la lecture vous a plu, ou en tous cas, qu'elle vous a rendu service. Si c'est le cas, nous avons, nous aussi, un service à vous demander. Comme dit dans l'introduction, la version du guide que vous tenez entre les mains est très préliminaire. Pour nous, il y a encore beaucoup de choses à ajouter, à enlever peut-être, à corriger, à enrichir. Dans cet esprit, le premier critère que nous observons est celui de l'utilité pour les militant·es ; votre retour, après la lecture, est donc très important. Vous pouvez nous écrire à contact@espaces-marx.eu pour toute remarque, critique, proposition.
 
 Vous pouvez aussi nous écrire si vous souhaitez directement contribuer à l'écriture. Si vous êtes à l'aise avec les outils informatiques, nous vous invitons à interagir avec nous via GitHub, visiter le dépôt du guide (github.com/espaces-marx/ai-radicals), le forker, et nous envoyer une Pull Request. Nous accueillons toutes les contributions et serions heureux de constituer une communauté militante plus vaste, travaillant ensemble à monter en compétence pour que la gauche maîtrise mieux les nouvelles technologies.
 
