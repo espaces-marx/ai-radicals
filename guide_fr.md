@@ -67,7 +67,7 @@ Pourtant, dans la gauche radicale, c'est un fait récurrent : énormément de t�
 
 Les générations effectuées par l'IA ne remplacent pas le travail humain par la simple pression d'une touche de clavier. L'expérience militante, le rapport au monde réel, les relations sociales, le travail collectif, la sensibilité politique et bien d'autres choses sont irremplaçablement liés aux militants en chair et en os.
 
-Pour autant, ils peuvent être envisagés comme des *moyens de travail* que l'on peut employer à différents niveaux, notamment pour :
+Les LLMs doivent avant tout être envisagés comme des *moyens de travail* que l'on peut employer à différents niveaux, notamment pour :
 
 - **Ouvrir de nouvelles pistes** :  L'interaction avec ces programmes pouvant prendre la forme d'une simple conversation, il est facile de partir d'un projet ou d'une idée existante pour en tirer plusieurs directions possibles. Comme dans une réunion de travail, vous pouvez par exemple les utiliser pour envisager les différents aspects d'un projet, développer un plan détaillé pour un document, un planing dans le temps, etc. Évidemment, ces différentes pistes pourraient également surgir dans le travail et la discussion collective. Cependant, il n'est pas possible à tout moment de se rassembler et de tenir une réunion. 
 
@@ -81,19 +81,19 @@ En tant que moyens de travail, les programmes d'Intelligence Artificielle peuven
 
 *Quelles sont les limites des générations de ces programmes ?*
 
-**Elles sont d'abord une imitation du travail passé**. Si votre demande est de générer un texte politique avec une lecture marxiste d'un événement ou sujet particulier, l'angle développé dans le document produit ne sera pas le fruit d'une analyse politique originale. Le programme aura tendance à reproduire par défaut les associations de mots les plus représentées dans les textes qui ont servi à l'entraîner. Cela n'empêche pas que la génération produite puisse être un bon matériau pour un travail de réécriture : les textes servant à l'entraînement d'une IA ont eux été produits par des auteurs humains, avec une expérience du monde réel. Mais la cohérence de cet assemblage, la justesse des arguments avancés, leur actualité, sont autant d'exemples d'éléments auxquels il faut être attentif.
+**Elles sont d'abord une imitation du travail passé**. Si votre demande est de générer un texte politique avec une lecture marxiste d'un événement ou sujet particulier, l'angle développé dans le document produit ne sera pas le fruit d'une analyse politique originale. Le programme aura tendance à reproduire par défaut les associations de mots les plus représentées dans les textes qui ont servi à l'entraîner. Cela n'empêche pas que la génération produite puisse être un bon matériau pour un travail de réécriture : les textes servant à l'entraînement d'une IA ont eux été produits par des auteurs humains, avec une expérience du monde réel. Mais la cohérence de cet assemblage, la justesse des arguments avancés, leur actualité ne sont pas garantis.
 
 **Les  « *hallucinations* »**. D'où viennent-elles ? En un mot, puisque la nature des programme d'IA est statistique, mais que leurs calculs portent sur le langage humain, de nombreuses erreurs sont possibles. En calculant la réponse la plus probable à un message, le résultat renvoyé peut être vraisemblable sans être vrai pour autant. La génération de fausses citations, ou de fausses références (faux titres de livres par exemple) relève notamment de ce problème. 
 
 **Les générations de textes peuvent reproduire les biais des données d'entraînement.** Puisque les modèles d'IA basent leur connaissance du langage sur de nombreux textes produits par de vraies personnes, ils en importent également certains biais. Cela peut vouloir dire de nombreuses choses : que ces données peuvent refléter les conditions sociales dans lesquelles elles ont été produites, que certains préjugés racistes ou sexistes peuvent y exercer une influence; ou encore qu'elles peuvent être colorées par l'idéologie dominante, une perspective centrée sur les pays du Nord, etc. 
 
-**Les modèles d'IA sont produits par les grandes entreprises qui peuvent se le permettre, et ils reflètent en partie leur vision du monde.** Parce que cela requière du travail, des infrastructures et de l'énergie en quantité, entraîner un grand modèle d'IA est à la portée de peu d'entreprises. Les modèles les plus connus appartiennent, ou dépendent directement, des entreprises les plus cotées en bourse. Après la phase d'entraînement, les futurs modèles d'IA passent par une phase dite « *d'alignement* » qui correspond à la fois à la suppression de certains biais présents dans les données, mais est aussi évidemment un arbitrage politique. D'un modèle à l'autre, le ton général change alors de coloration politique, en suivant celle de ses propriétaires.
+**Les modèles d'IA sont produits par les grandes entreprises et les états qui en ont les moyens, et ils reflètent en partie leur vision du monde.** Parce que cela requiert du travail, des infrastructures et de l'énergie en quantité, entraîner et déployer un grand modèle d'IA est à la portée de peu d'organisations. Les modèles les plus connus appartiennent, ou dépendent directement, de superpuissances et d'entreprises côtées en bourse. Après la phase d'entraînement, les futurs modèles d'IA passent par une phase dite « *d'alignement* » qui correspond à la fois à la suppression de certains biais présents dans les données, mais est aussi évidemment un arbitrage politique. D'un modèle à l'autre, le ton général change alors de coloration politique, en suivant celle de ses propriétaires.
 
-**L'importance de vos propres messages.** En dehors des données d'entraînement, les programmes d'IA accordent beaucoup de poids dans leurs calculs aux mots de l'utilisateur, qui ont donc un grand pouvoir sur le résultat final qui sera généré. Cet aspect peut-être exploité à travers différentes techniques que l'on explorera plus loin dans ce guide, mais il peut aussi avoir des effets involontaires. Par exemple, vous pouvez par certaines formulations pousser vous-même l'IA à admettre de fausses déclarations comme des vérités. Certains modèles d'IA sont par défaut assez facilement disposés à se ranger à l'avis des utilisateurs. Une longue argumentation poursuivie sur plusieurs messages peut exercer une grande influence sur le programme, sans pour autant qu'elle soit valide. 
+**L'importance de vos propres messages.** En dehors des données d'entraînement, les programmes d'IA accordent beaucoup de poids dans leurs calculs aux mots de l'utilisateur, qui ont donc un grand pouvoir sur le résultat final qui sera généré. Cet aspect peut être exploité à travers différentes techniques que l'on explorera plus loin dans ce guide, mais il peut aussi avoir des effets involontaires. Par exemple, vous pouvez par certaines formulations pousser vous-même l'IA à admettre de fausses déclarations comme des vérités. Certains modèles d'IA sont par défaut assez facilement disposés à se ranger à l'avis des utilisateurs. Une longue argumentation poursuivie sur plusieurs messages peut exercer une grande influence sur le programme, sans pour autant qu'elle soit valide.
 
 Toutes ces limites font que l'Intelligence Artificielle ne délivre pas des produits prêts à l'emploi pour les militants, que l'on pourrait en toute confiance déployer dès la fin de la génération. 
 
-Pour autant, certaines de ces particularités rappellent également le travail humain : s'appuyer sur du travail passé, sur ce qui nous paraît probable, être influencé par notre interlocuteur dans une conversation, etc. Si ces éléments montrent que les générations de ces programmes ne sont pas parfaites ou investies d'une autorité scientifique, qu'ils ne faut pas leur prêter un pouvoir qu'elles n'ont pas, elles ne sont pas pour autant sans valeur. 
+Pour autant, certaines de ces particularités rappellent également le travail humain : s'appuyer sur du travail passé, sur ce qui nous paraît probable, être influencé par notre interlocuteur dans une conversation, etc. Si ces éléments montrent que les générations de ces programmes ne sont pas parfaites ou investies d'une autorité scientifique, qu'il ne faut pas leur prêter un pouvoir qu'elles n'ont pas, elles ne sont pas pour autant sans valeur.
 
 Les décisions sur le travail, son évaluation critique, les orientations politiques, devraient elles rester entre des mains humaines.
 
@@ -181,7 +181,7 @@ C'est une sorte de fiche d'identité que vous remplissez une fois pour toutes (e
 
 #### La connexion à vos outils Google
 
-L’IA se connecter (si vous l'autorisez) à vos outils du quotidien : votre Drive ou vos e-mails. Son « *contexte* », devient votre espace de travail. Vous pouvez lui dire : « *Reprends les notes du document de réunion d'hier pour m'en faire un résumé* ».
+L’IA peut se connecter (si vous l'autorisez) à vos outils du quotidien : votre Drive ou vos e-mails. Son « *contexte* », devient votre espace de travail. Vous pouvez lui dire : « *Reprends les notes du document de réunion d'hier pour m'en faire un résumé* ».
 
 ### Contexte par projet : créer des « *dossiers de travail* » fermés
 
@@ -258,7 +258,7 @@ Généralement, une tâche de travail s'inscrit dans le cadre d'un projet plus l
 
 Nous avons maintenant un peu plus d'informations sur la tâche, réécrivons le prompt :
 
->« *Produit un résumé du contenu de ces notes, qui doit comprendre toutes les informations portant sur l'organisation de [NomDeL'Événement], notamment les disponibilités de chaque participant, les tâches à effectuer et les dates mentionnées.* »
+« *Produis un résumé du contenu de ces notes, qui doit comprendre toutes les informations portant sur l'organisation de [NomDeL'Événement], notamment les disponibilités de chaque participant, les tâches à effectuer et les dates mentionnées.* »
 
 En incluant des éléments pertinents sur l'objectif de cette tâche et son insertion dans le travail à venir, on augmente grandement les chances d'aboutir à une génération utile. 
 
@@ -497,7 +497,7 @@ Inclut dans ta liste uniquement...
 Présente chaque élément de ta liste avec...
 ```
 
-Chaque hashtag `#` correspond ici à un titre. Dans ce langage un hashtag seul est le titre le plus important, deux hashtags `##` un titre de niveau 2, etc.
+Chaque hashtag `#` correspond ici à un titre. Dans ce langage un hashtag seul est le titre le plus important, deux hashtags `##` un sous-titre, `###` un sous-sous-titre.
 
 Ce code se lit comme un livre : tant que vous n'avez pas atteint le titre du chapitre suivant, vous savez que vous êtes toujours dans le même chapitre. Ici pas besoin de balise de fin, ni de tiret bas dans les titres composés. 
 
