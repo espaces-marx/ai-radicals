@@ -828,7 +828,6 @@ Peut-être que l'IA fait moins de fautes d'orthographe ou utilise des tournures 
 
 Vous êtes donc bien plus légitimes à juger son travail, que l'inverse. Il peut-être utile de demander des corrections, ou des versions modifiées d'un texte à l'IA, mais les décisions concernant l'organisation de votre travail et les validations finales devraient toujours rester les vôtres.
 
----
 [^4]: Karl Marx, Le Capital, Livre I, Troisième section, Chapitre 5 (Le procès de travail et le procès de valorisation)
 
 
