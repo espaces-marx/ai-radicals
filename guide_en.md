@@ -418,40 +418,38 @@ This is where it helps to move closer to the syntax of markup languages. These l
 
 One first option, inspired by the tags found in XML:
 
-```
-<task>
-
-Create a list of 5 historical examples of social movements that led to a wage increase.
-
-</task>
-
-
-<constraints>
-
-Only include examples in your list that meet all of these criteria:
-
-- Date between the 19th century and today
-- The form of action includes either a strike or another action that threatened the profits of the capitalists involved
-
-</constraints>
-
-
-<format>
-
-Present each item in your list with these sections, in this order:
-
-- Start and end date of the social movement
-- Company name and industry
-- The form the social movement took
-- Wage increase (if known)
-- Short description of the movement
-
-Below the list, add a summary covering what your examples have in common.
-
-In your message, return only the list itself and the summary.
-
-</format>
-```
+> `<task>`
+> 
+> Create a list of 5 historical examples of social movements that led to a wage increase.
+> 
+> `</task>`
+> 
+> 
+> `<constraints>`
+> 
+> Only include examples in your list that meet all of these criteria:
+> 
+> - Date between the 19th century and today
+> - The form of action includes either a strike or another action that threatened the profits of the capitalists involved
+> 
+> `</constraints>`
+> 
+> 
+> `<format>`
+> 
+> Present each item in your list with these sections, in this order:
+> 
+> - Start and end date of the social movement
+> - Company name and industry
+> - The form the social movement took
+> - Wage increase (if known)
+> - Short description of the movement
+> 
+> Below the list, add a summary covering what your examples have in common.
+> 
+> In your message, return only the list itself and the summary.
+> 
+> `</format>`
 
 The prompt includes line breaks and lists, but the boundaries of each part remain very clear thanks to the opening and closing tags for each section.
 
@@ -462,44 +460,40 @@ The syntax is very simple:
 
 NB: If you want to create clearly defined subsections within a single section (for example, within the instructions), you can nest tags:
 
-```
-<instructions>
-
-
-<data_selection>
-
-Select ...
-
-</data_selection>
-
-
-<data_sorting>
-
-Remove the formatting...
-
-</data_sorting>
-
-
-</instructions>
-```
+> `<instructions>`
+> 
+> 
+> `<data_selection>`
+> 
+> Select ...
+> 
+> `</data_selection>`
+> 
+> 
+> `<data_sorting>`
+> 
+> Remove the formatting...
+> 
+> `</data_sorting>`
+> 
+> 
+> `</instructions>`
 
 An even simpler alternative exists with the lightweight Markdown markup language:
 
-```
-# Task
-
-Create a list...
-
-
-# Constraints
-
-Only include...
-
-
-# Format
-
-Present each item in your list with...
-```
+> `# Task`
+> 
+> Create a list...
+> 
+> 
+> `# Constraints`
+> 
+> Only include...
+> 
+> 
+> `# Format`
+> 
+> Present each item in your list with...
 
 Here, each hashtag `#` corresponds to a heading. In this language, a single hashtag is the top-level heading, two hashtags `##` a subheading, `###` a sub-subheading.
 
