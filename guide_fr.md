@@ -87,7 +87,7 @@ En tant que moyens de travail, les programmes d'Intelligence Artificielle peuven
 
 **Un texte généré par IA peut reproduire les biais des données d'entraînement.** Puisque les modèles d'IA basent leur connaissance du langage sur de nombreux textes produits par de vraies personnes, ils en importent également certains biais. Cela peut vouloir dire de nombreuses choses : que ces données peuvent refléter les conditions sociales dans lesquelles elles ont été produites, que certains préjugés racistes ou sexistes peuvent y exercer une influence; ou encore qu'elles peuvent être colorées par l'idéologie dominante, une perspective centrée sur les pays du Nord, etc. 
 
-**Les modèles d'IA sont produits par les grandes entreprises et les états qui en ont les moyens, et ils reflètent en partie leur vision du monde.** Parce que cela requiert du travail, des infrastructures et de l'énergie en quantité, entraîner et déployer un grand modèle d'IA est à la portée de peu d'organisations. Les modèles les plus connus appartiennent, ou dépendent directement, de superpuissances et d'entreprises côtées en bourse. Après la phase d'entraînement, les futurs modèles d'IA passent par une phase dite « *d'alignement* » qui correspond à la fois à la suppression de certains biais présents dans les données, mais est aussi évidemment un arbitrage politique. D'un modèle à l'autre, le ton général change alors de coloration politique, en suivant celle de ses propriétaires.
+**Les modèles d'IA sont produits par les grandes entreprises et les états qui en ont les moyens, et ils reflètent en partie leur vision du monde.** Parce que cela requiert du travail, des infrastructures et de l'énergie en quantité, entraîner et déployer un grand modèle d'IA est à la portée de peu d'organisations. Les modèles les plus connus appartiennent, ou dépendent directement, de superpuissances et d'entreprises cotées en bourse. Après la phase d'entraînement, les futurs modèles d'IA passent par une phase dite « *d'alignement* » qui correspond à la fois à la suppression de certains biais présents dans les données, mais est aussi évidemment un arbitrage politique. D'un modèle à l'autre, le ton général change alors de coloration politique, en suivant celle de ses propriétaires.
 
 **L'importance de vos propres messages.** En dehors des données d'entraînement, les programmes d'IA accordent beaucoup de poids dans leurs calculs aux mots de l'utilisateur, qui ont donc un grand pouvoir sur le résultat final qui sera généré. Cet aspect peut être exploité à travers différentes techniques que l'on explorera plus loin dans ce guide, mais il peut aussi avoir des effets involontaires. Par exemple, vous pouvez par certaines formulations pousser vous-même l'IA à admettre de fausses déclarations comme des vérités. Certains modèles d'IA sont par défaut assez facilement disposés à se ranger à l'avis des utilisateurs. Une longue argumentation poursuivie sur plusieurs messages peut exercer une grande influence sur le programme, sans pour autant qu'elle soit valide.
 
@@ -824,39 +824,36 @@ Vous êtes donc bien plus légitimes à juger son travail, que l'inverse. Il peu
 
 ## Assistants personnalisés
 
-Imaginons que vous devez régulièrement partager de nouveaux articles sur Instagram, et que vous devez systématiquement en résumer le contenu. Au bout d'un moment, vous commencez à identifier un format de texte qui marche bien, avec des éléments récurents : un certain ton, des emojis en début de paragraphes, une longueur qui n'excède pas tant de mots... Ce sont autant d'éléments que vous pouvez inventorier dans un Prompt qui vous aidera à faire ce travail, comme nous l'avons vu tout au long de la partie précédente. 
+Imaginons que vous devez régulièrement partager de nouveaux articles sur Instagram, et que vous devez systématiquement en résumer le contenu. Au bout d'un moment, vous commencez à identifier un format de texte qui marche bien, avec des éléments récurrents : un certain ton, des emojis en début de paragraphes, une longueur qui n'excède pas tant de mots... Ce sont autant d'éléments que vous pouvez inventorier dans un Prompt qui vous aidera à faire ce travail, comme nous l'avons vu tout au long de la partie précédente. 
 
 Maintenant, plutôt que de conserver ce Prompt quelque part et de le copier-coller à chaque fois que vous êtes confronté à la même tâche, vous pouvez plutôt créer un assistant personnalisé (les « *Gems* » de Gemini, les « *Projets* » de Claude...) et enregistrer votre Prompt comme instruction. Ainsi, dès que vous aurez un nouvel article à partager, il vous suffira d'ouvrir cet assistant personnalisé, qui se présente comme n'importe quelle discussion IA -- à la différence que celle-ci s'appuie sur un Prompt pré-enregistré.
 
 Concrètement, pour cet exemple précis, voilà comment pourrait se présenter le Prompt d'un tel assistant :
 
- ```
-<contexte>
-
-Tu es un community manager expérimenté, spécialisé dans la vulgarisation d'articles pour Instagram. Ton audience est jeune, curieuse, et consulte les publications rapidement, souvent entre deux tâches.
-
-</contexte>
-
-
-<objectif>
-
-À partir de l'article que je te transmets (texte collé ou lien), rédige un résumé destiné à une publication Instagram. Le résumé doit :
-
-- Faire 80 mots maximum
-- Commencer par un emoji en lien avec le sujet de l'article
-- Reprendre les 2 ou 3 informations les plus marquantes de l'article
-- Se terminer par une question ouverte qui donne envie de commenter
-
-</objectif>
-
-
-<ton>
-
-Dynamique, accessible, sans jargon. Tutoiement systématique. Quelques emojis en cours de texte pour rythmer la lecture, sans en abuser (3 maximum en tout).
-
-</ton>
-
- ```
+> `<contexte>`
+> 
+> Tu es un community manager expérimenté, spécialisé dans la vulgarisation d'articles pour Instagram. Ton audience est jeune, curieuse, et consulte les publications rapidement, souvent entre deux tâches.
+> 
+> `</contexte>`
+> 
+> 
+> `<objectif>`
+> 
+> À partir de l'article que je te transmets (texte collé ou lien), rédige un résumé destiné à une publication Instagram. Le résumé doit :
+> 
+> - Faire 80 mots maximum
+> - Commencer par un emoji en lien avec le sujet de l'article
+> - Reprendre les 2 ou 3 informations les plus marquantes de l'article
+> - Se terminer par une question ouverte qui donne envie de commenter
+> 
+> `</objectif>`
+> 
+> 
+> `<ton>`
+> 
+> Dynamique, accessible, sans jargon. Tutoiement systématique. Quelques emojis en cours de texte pour rythmer la lecture, sans en abuser (3 maximum en tout).
+> 
+> `</ton>`
 
 Une fois le Prompt enregistré, voilà comment vous pourriez interagir avec cet assistant : « *Voici le lien du nouvel article à résumer : [lien]. Peux-tu me préparer le post Instagram ?* ». 
 
@@ -864,7 +861,7 @@ L'assistant appliquera alors automatiquement le format, le ton et la longueur d�
 
 En plus du Prompt de l'assistant personnalisé, pouvez également joindre n'importe quel fichier utile. En l'occurrence, il pourrait s'agir d'exemples de textes sur les réseaux sociaux que vous trouvez particulièrement réussis.
 
-Ce principe s'applique pour n'importe quelle tâche que vous êtes amené à répéter régulièrement : que vous deviez écrire des rapports en vous appuyant sur des articles complexes, traduire des textes en respectant une syntaxte particulière, ou encore imaginer des slogans accrocheurs à partir d'un dossier de campagne pour produire des visuels.
+Ce principe s'applique pour n'importe quelle tâche que vous êtes amené à répéter régulièrement : que vous deviez écrire des rapports en vous appuyant sur des articles complexes, traduire des textes en respectant une syntaxe particulière, ou encore imaginer des slogans accrocheurs à partir d'un dossier de campagne pour produire des visuels.
 
 
 ## IA et connectivité 
@@ -927,7 +924,7 @@ Cependant, ces programmes ne sont généralement pas considérés comme étant e
 
 #### De loin l'utilisation de l'IA la moins polluante
 
-D'après l'ADEME, en 2022 en France 46% des émissions de CO2 liées au numérique étaient dues aux centres de données[^5], soit presque autant que les 50% d'émissions générées par la fabrication et l'utilisation de tous nos terminaux (smartphones, ordinateurs, etc.). Pourquoi les centres de données sont-ils aussi polluants? Leur principale source d'impact environnemental est due à leur consommation d'électricité. Dans les principaux pays qui accueillent ces centres, la part d'énergies sales telles que les centrales à charbon et le gaz est encore très élevée. C'est notamment le cas aux Etats-Unis, qui alimentent 45% des usages globaux des centres de données (IEA, 2025)[^6]. 
+D'après l'ADEME, en 2022 en France 46% des émissions de CO2 liées au numérique étaient dues aux centres de données[^5], soit presque autant que les 50% d'émissions générées par la fabrication et l'utilisation de tous nos terminaux (smartphones, ordinateurs, etc.). Pourquoi les centres de données sont-ils aussi polluants? Leur principale source d'impact environnemental est due à leur consommation d'électricité. Dans les principaux pays qui accueillent ces centres, la part d'énergies sales telles que les centrales à charbon et le gaz est encore très élevée. C'est notamment le cas aux États-Unis, qui alimentent 45% des usages globaux des centres de données (IEA, 2025)[^6]. 
 
 En utilisant l'IA localement, la seule énergie consommée est celle que votre ordinateur utilise et son impact en termes d'émissions dépend du mix énergétique de votre pays. Par exemple, en France, l'électricité générée est 9 fois moins émettrice de CO2 qu'aux États-Unis !
 
