@@ -127,7 +127,7 @@ Voici cependant quelques idées de critères à explorer pour faire votre choix 
 
 - **Prix :** La plupart des plateformes d'IA populaires proposent des utilisations gratuites (très rarement illimitées), avec différents seuils qui viennent limiter l'utilisation quotidienne. Si vous comptez rester un utilisateur gratuit, il est utile de voir à quelle vitesse vous atteignez ces limites, ou tout simplement d'utiliser plusieurs services différents. 
 - **Données :** Pour comparer les politiques de gestion des données, on peut notamment chercher le pays où celles-ci sont stockées, la documentation officielle du service, et les paramètres disponibles pour ajuster l'accès aux données (notamment la possibilité d'activer / désactiver la collecte, la correction des données, leur suppression). Selon les plateformes, la confidentialité des données (ex: aucune utilisation pour entraîner de futurs modèles) peut n'être proposée que pour les utilisateurs payants. 
-- **Fonctionnalités :** Au-delà du simple tchat avec une IA, certains services développent des fonctionnalités originales pour se démarquer ; les plus importantes finissent souvent par se diffuser progressivement et se retrouver sous d'autres noms ailleurs, mais les implémentations peuvent être différentes.
+- **Fonctionnalités :** Au-delà du simple chat avec une IA, certains services développent des fonctionnalités originales pour se démarquer ; les plus importantes finissent souvent par se diffuser progressivement et se retrouver sous d'autres noms ailleurs, mais les implémentations peuvent être différentes.
 - **Qualité / Cas d'usage :** Selon le type de tâche demandée (rédaction, code, analyse de documents, connexion à des services en ligne, réalisation d'actions), la performance de chaque service varie. Dans ce domaine aussi les choses changent rapidement et il vaut mieux faire des expériences sur vos besoins, que se fier à un classement statique. 
 
 Quelques noms des services les plus populaires, par pays d'origine des entreprises :
@@ -247,7 +247,7 @@ Comment entamer ce travail ? De la même façon qu'avec n'importe quelle tâche,
 
 ### Définir une tâche
 
-Si l'interface de la plupart des grands services d'IA est un tchat, écrire un prompt est bien un travail de définition d'une tâche qui sera ensuite exécutée (si elle est à la portée du programme). 
+Si l'interface de la plupart des grands services d'IA est un chat, écrire un prompt est bien un travail de définition d'une tâche qui sera ensuite exécutée (si elle est à la portée du programme). 
 
 Cette définition peut impliquer différentes choses. Dans notre propre travail, nous nous reposons sur la connaissance de nombreuses informations et adoptons certaines stratégies pour effectuer une tâche. Lorsque l'on travaille avec de nouvelles personnes, il faut expliquer et transmettre ce savoir. C'est souvent l'occasion d'un moment de définition de notre travail, dont la forme ne nous est pas toujours apparente au quotidien. 
 
@@ -833,7 +833,7 @@ Vous êtes donc bien plus légitimes à juger son travail, que l'inverse. Il peu
 
 # Usages avancés
 
-Au-delà de la seule interface du tchat et de la génération de texte, les façons d'interagir avec un LLM sont nombreuses et de nouvelles se développent, mettant de plus en plus l'accent sur la réalisation d'actions plutôt que la seule génération de contenus. 
+Au-delà de la seule interface du chat et de la génération de texte, les façons d'interagir avec un LLM sont nombreuses et de nouvelles se développent, mettant de plus en plus l'accent sur la réalisation d'actions plutôt que la seule génération de contenus. 
 
 Pour autant, la plupart du temps la technologie elle-même ne change pas de base : il s'agit toujours de programmes qui reçoivent et produisent (au moins pour des étapes intermédiaires) du texte. Pour cette raison, les interfaces changent mais les techniques et conseils d'écriture évoqués précédemment s'appliquent aussi à ces nouveaux usages. 
 
@@ -945,7 +945,9 @@ L'aspect intéressant de cette fonctionnalité est qu'elle permet à l'IA d'acc�
 
 ## L'IA Agentique
 
-Dans l'actualité internationale en septembre 2026 des chefs d'entreprises de l'IA et (ex-)cadres de ces mêmes entreprises se sont alarmés des risques posés à l'humanité entière par le développement de l'Intelligence Artificielle. Un chercheur d'Anthropic (entreprise développant Claude) affirmant notamment qu'il y a plus de 10% de chances que l'IA tue tous les êtres humains dans la prochaine décennie[^5].
+L'IA peut maintenant guider les actions d'autres programmes, à partir du texte qu'elle génère. 
+
+Dans l'actualité internationale en septembre 2026 des chefs d'entreprises de l'IA et (ex-)cadres de ces mêmes entreprises se sont alarmés des risques posés par ce développement des capacités de l'Intelligence Artificielle à agir. Un chercheur d'Anthropic (entreprise développant Claude) affirmant notamment qu'il y a plus de 10% de chances que l'IA tue tous les êtres humains dans la prochaine décennie[^5].
 
 L'Intelligence Artificielle est toujours essentiellement le nom qui désigne un LLM ; soit un programme qui est capable de traiter et générer du texte qu'un être humain aurait pu écrire. En mettant en relation la menace annoncée et la seule capacité de générer du texte lisible, l'affirmation parait complètement absurde. 
 
