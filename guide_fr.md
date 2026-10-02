@@ -51,13 +51,22 @@ GPT-6, Mistral Medium 3.5, DeepSeek V3, sont trois exemples de modèles d'IA gé
 
 Lorsque l'on envoie un message à une IA, il se passe (notamment) ces étapes :
 
-- **Découpage en tokens** : Le message est décomposé en unités souvent plus petites que les mots : les *tokens*. Par exemple pour le modèle GPT-5, la phrase suivante : « *Prolétaires de tous les pays, unissez-vous !* » fait 12 tokens, et est découpée de cette façon : « *|Pro|lé|taires| de| tous| les| pays|,| uni|ssez|-vous| !|* »
+**1. Découpage en tokens** : Le message est décomposé en unités souvent plus petites que les mots : les *tokens*. Par exemple pour le modèle GPT-5, la phrase suivante : « *Prolétaires de tous les pays, unissez-vous !* » fait 12 tokens, et est découpée de cette façon : « *|Pro|lé|taires| de| tous| les| pays|,| uni|ssez|-vous| !|* »
 
-- **Représentation mathématique** : Chaque token est associé à un vecteur mathématique, c'est-à-dire une suite de nombres qui permet au programme de l'identifier et de l'associer à sa représentation de notre langue. Pour illustrer cette idée, on peut représenter le mot « *chat* », sur trois dimensions ou axes : objet / être-vivant ; petit / grand ; mâle / femelle. Le chat est un être-vivant, plutôt petit et c'est un mâle, chacune de ces informations peut être représentée sur un axe avec une valeur comprise entre -1 et +1, ce qui pourrait donner : `[0.9 ; -0.6 ; -0.8]`. Ici le mot « *chat* » est représenté très simplement, mais les représentations utilisées par les modèles comptent généralement plus d'un millier de dimensions, et un concept comme "être-vivant" n'y apparaît que comme un motif, à travers la combinaison de plusieurs d'entre elles.
+**2. Représentation mathématique** : Chaque token est associé à un vecteur mathématique, c'est-à-dire une suite de nombres qui permet au programme de l'identifier et de l'associer à sa représentation de notre langue. 
 
-- **Analyse du contexte** : Cette représentation est ensuite enrichie par le contexte de votre message, c'est à dire par la position du mot dans l'ensemble du texte, ainsi que par la présence même des autres mots. Par exemple le mot « *banc* » dans l'expression « *banc de poissons* » aura une représentation mathématique très différente du même mot dans l'expression « *banc public* ».
+Pour illustrer cette idée, on peut représenter le mot « *chat* », sur trois dimensions ou axes : 
+- Objet / Être vivant
+- Petit / Grand 
+- Mâle / Femelle 
 
-- **Réponse** : à partir de ces informations, le modèle calcule quel token est le plus probable pour démarrer sa réponse (par exemple, pour répondre à la question « *Qu'est-ce qu'un chien ?* », le premier token de la réponse sera probablement « *|Un|* »). Cette opération se répète ensuite token par token pour générer la suite de la réponse (« *...|chien|est|...* »), chaque token devenant lui-même un élément du calcul. Par exemple, si le modèle a généré token par token la phrase « *La capitale de la France est* », il pourra calculer que « *|Paris|* » est probablement le meilleur candidat pour le prochain token. Un paramètre appelé *température* permet d'ajuster la mesure dans laquelle l'IA reste proche ou s'éloigne des résultats les plus probables ; plus elle est élevée, plus le texte est varié, mais plus il risque aussi de perdre en cohérence. 
+Le chat est un être vivant, plutôt petit et c'est un mâle, chacune de ces informations peut être représentée sur un axe avec une valeur comprise entre -1 et +1, ce qui pourrait donner : `[0.9 ; -0.6 ; -0.8]`. Pourquoi pas simplement « *1* » pour indiquer que c'est un être vivant, et « *-1* » pour un mâle ? Parce que le langage est plus ambigu ; on peut imaginer que dans certains textes des animaux soient traités comme des objets ; et le mot « *chat* » désigne à la fois l'animal quel que soit son genre et spécifiquement les chats mâles. 
+
+Ici le mot « *chat* » est représenté très simplement, mais les représentations utilisées par les modèles comptent généralement plus d'un millier de dimensions, et un concept comme "être vivant" n'y apparaît que comme un motif, à travers la combinaison de plusieurs d'entre elles.
+
+**3. Analyse du contexte** : Cette représentation est ensuite enrichie par le contexte de votre message, c'est à dire par la position du mot dans l'ensemble du texte, ainsi que par la présence même des autres mots. Par exemple le mot « *banc* » dans l'expression « *banc de poissons* » aura une représentation mathématique très différente du même mot dans l'expression « *banc public* ».
+
+**4. Réponse du modèle** : à partir de ces informations, le modèle calcule quel token est le plus probable pour démarrer sa réponse (par exemple, pour répondre à la question « *Qu'est-ce qu'un chien ?* », le premier token de la réponse sera probablement « *|Un|* »). Cette opération se répète ensuite token par token pour générer la suite de la réponse (« *...|chien|est|...* »), chaque token devenant lui-même un élément du calcul. Par exemple, si le modèle a généré token par token la phrase « *La capitale de la France est* », il pourra calculer que « *|Paris|* » est probablement le meilleur candidat pour le prochain token. Un paramètre appelé *température* permet d'ajuster la mesure dans laquelle l'IA reste proche ou s'éloigne des résultats les plus probables ; plus elle est élevée, plus le texte est varié, mais plus il risque aussi de perdre en cohérence. 
 
 Par ces différents mécanismes (et d'autres), ces modèles imitent le travail humain qui produit des textes. Pour autant, cette production dépend grandement de textes eux-mêmes écrits par des êtres humains : les textes utilisés pour l'entraînement du programme ; mais aussi le message que vous envoyez lors d'une interaction avec l'IA, dont le contenu aura une grande influence sur le texte généré. 
 
@@ -101,7 +110,7 @@ Toutes ces limites font que l'Intelligence Artificielle ne délivre pas des prod
 
 Pour autant, certains de ces défauts rappellent également des dimensions qui peuvent exister dans le travail humain lui-même : s'appuyer sur du travail passé, sur ce qui nous paraît probable, être influencé par notre interlocuteur dans une conversation, etc. Si ces éléments montrent que les générations de ces programmes ne sont pas parfaites ou investies d'une autorité scientifique, qu'il ne faut pas leur prêter un pouvoir qu'elles n'ont pas, elles ne sont pas pour autant sans valeur.
 
-Les décisions sur le travail et son organisation, son évaluation critique, les orientations politiques, devraient elles rester entre nos mains.
+Les décisions sur le travail et son organisation, son évaluation critique, les orientations politiques, devraient quant à elles rester entre nos mains.
 
 
 ## Par où commencer ?
@@ -178,9 +187,11 @@ Sur certaines plateformes, des fonctionnalités de « *mémoire à long terme* �
 
 >**Exemple concret :** Si vous expliquez dans une discussion que vous êtes comptable pour résoudre un problème de tableur, et que trois jours plus tard, dans une *autre* discussion, vous demandez un brouillon de tract d'appel à la grève, l'IA risque de ressortir des arguments très axés sur les chiffres ou les bilans financiers. Ce n'est pas forcément l'angle politique que vous recherchiez pour un appel général.
 
-Pour éviter ces interférences et garder la main sur vos contenus, deux bonnes pratiques sont utiles :
+Pour éviter ces interférences et garder la main sur vos contenus, plusieurs options sont possibles :
 
 - **Désactiver la mémoire globale** ou le partage de contexte inter-conversations dans les paramètres de l'outil si l'option est activée par défaut.
+
+- **Modérer la mémoire globale** : Si vous préférez que le service conserve en mémoire des éléments provenant de toutes vos conversations avec l'IA, il est possible de seulement modérer les éléments qui posent problème. Par exemple sur Gemini on peut demander directement dans une conversation si des informations enregistrées ont été utilisées : « *As-tu utilisé des informations provenant de nos discussions précédentes ?* ». Si un élément d'information est incorrect, ou trop influent, on peut alors demander dans la conversation à le modifier ou à le retirer de la mémoire. 
 
 - **Cloisonner vos espaces de travail** : Prenez le réflexe d'ouvrir une nouvelle conversation pour chaque sujet, projet ou tâche distincte. Dès qu'une tâche est finie ou que vous souhaitez changer d'approche pour un travail, ouvrez un nouveau « *chat* » pour repartir sur une base neutre.
 
@@ -195,8 +206,6 @@ L'IA s'appuiera alors sur ce socle commun comme une mémoire partagée, à chaqu
 ### Autres formes de contexte
 
 Selon le service d'IA utilisé, de nombreuses options de gestion du contexte existent, et peuvent correspondre à différents cas d'usage. Quelques exemples :
-
-- **Mémoire partagée (Gemini) :** Par défaut Gemini utilise un contexte qui retient certaines informations de vos conversations avec l'IA. Si l'influence de certaines interactions passées vous impacte négativement, cette option peut être désactivée dans les paramètres. Il est aussi possible de supprimer les conversations concernées ou de demander directement à l'IA (dans le tchat) de corriger ses connaissances vous concernant. 
 
 - **Notebook (Gemini) :** L'utilisation d'un Notebook permet de créer un contexte isolé, avec uniquement des sources que vous avez sélectionnées. Ces sources peuvent être des PDFs, des vidéos, des images, des sites, des présentations, etc. L'IA s'appuiera ensuite uniquement sur ces sources pour vous répondre, en donnant à côté de chaque affirmation la référence des documents utilisés. C'est par exemple utile pour travailler à partir d'un nombre limité de références dont on maîtrise la qualité, pour interroger rapidement leur contenu, ou déterminer leurs divergences / convergences sur un sujet donné. La fenêtre de contexte est ici très grande, peut accepter de longs documents (jusqu'à environ 500 000 mots par document) et jusqu'à 50 sources différentes pour la version gratuite.
 
@@ -326,7 +335,7 @@ Pour que l'angle « *par défaut* » de l'IA soit moins influent dans les gén
 
 Cette indication peut être explicite (par exemple en mentionnant « *à partir d'un point de vue marxiste* ») ou plus indirecte. Certains mots, ou expressions vont orienter la génération vers un angle particulier : « *planification de la production* », « *nationalisation* » ou « *collectivisation* », « *collectifs autogérés* » sont tous des exemples qui portent leur propre dimension politique, et vont pointer plus ou moins fortement la direction dans laquelle vous souhaitez aller. 
 
-Comme la qualification du public, c'est un domaine à manipuler avec précaution; sans quoi l'on risque de se retrouver avec un bingo de tous les mots-clés attendus du marxisme, sur tous les sujets. On peut contrer ce type de problème en donnant plus d'informations sur le ton souhaité (« *pour un public large* », « *accessible aux non militants* », etc.).
+Comme la qualification du public, c'est un domaine à manipuler avec précaution; sans quoi l'on risque de se retrouver avec un bingo de tous les mots-clés attendus du marxisme, sur tous les sujets. On peut contrer ce type de problème en donnant plus d'informations sur le ton souhaité (« *pour un public large* », « *accessible aux non-militants* », etc.).
 
 ### Et après ?
 
@@ -875,7 +884,7 @@ Voilà un exemple simple que l'on pourrait utiliser, pour une tâche de communic
 > 
 > `</ton>`
 
-Une fois le Prompt enregistré et l'assistant créé, on peut interagir avec lui sans avoir besoin de rappeler le contexte ou les besoins spécifiques du format : « *Peux-tu me préparer un résumé du PDF joint ?* ». 
+Une fois le prompt enregistré et l'assistant créé, on peut interagir avec lui sans avoir besoin de rappeler le contexte ou les besoins spécifiques du format : « *Peux-tu me préparer un résumé du PDF joint ?* ». 
 
 C'est une bonne façon de commencer à expérimenter la formulation d'instructions, mais elle peut rapidement se montrer limitée car elle reste assez générale. Une tâche de travail réelle est souvent complexe, avec des attendus précis et fait appel à de multiples compétences.
 
@@ -883,9 +892,9 @@ Ce type de solution semble maintenant progressivement s'effacer, pour être remp
 
 ### Instructions de compétences (Skills)
 
-Le développement des capacités de l'IA à réaliser des actions en interagissant avec d'autres programmes a poussé ces dernières années à la création d'un nouveau format plus précis que les prompts d'assistants : les « *Skills* », ou compétences. 
+Les « *skills* » (ou compétences en français) sont des instructions réutilisables qui expliquent à une IA comment accomplir un type de tâche précis. Elles sont apparues avec les services d'IA capables d'interagir avec d'autres programmes : pour ce genre de tâches, un simple prompt de rôle général ne suffit plus à décrire de façon fiable et répétable ce qu'il faut faire, avec quels outils et dans quelles limites.
 
-Chaque compétence décrit généralement les conditions dans lesquelles elle devrait être utilisée, ses éventuelles étapes, peut faire appel à d'autres compétences, lister ses contraintes dans la réalisation de la tâche, etc. Elles peuvent être écrites par les utilisateurs eux-mêmes en suivant un format cohérent, ou être créées par une discussion avec l'IA, pour vous assister dans la création d'une compétence et respecter le format attendu (certaines disposent d'ailleurs d'une compétence dédiée à... la création de compétences).
+Concrètement, une compétence indique dans quelles conditions elle doit être utilisée, les étapes à suivre et les contraintes à respecter, ou encore mentionner d'autres compétences liées auxquelles elle peut faire appel. On peut l'écrire soi-même en suivant le format attendu, ou la créer en discutant avec l'IA, qui aide à respecter ce format (certaines disposent d'ailleurs d'une compétence dédiée à... la création de compétences).
 
 À quoi ressemble une « *Skill* » ? La complexité peut varier, mais pour s'en faire rapidement une idée on peut lire un extrait de la compétence `deep-research` (recherche approfondie) de Mistral :
 
@@ -902,7 +911,7 @@ Chaque compétence décrit généralement les conditions dans lesquelles elle de
 
 *texte traduit depuis l'anglais*
 
-Dans ce court extrait, beaucoup d'informations sont données pour guider et structurer la génération ou l'action qui sera réalisée par l'IA. Contrairement à l'assistant personnalisé, il n'y a pas ici de rôle unique assigné à l'IA; c'est une compétence qu'elle peut employer parmi d'autres, lorsque son usage est déclenché (par la présence de certains mots dans la conversation). Les informations sont organisées en paragraphes et sections, avec du Markdown. 
+Dans ce court extrait, beaucoup d'informations sont données pour guider et structurer la génération ou l'action qui sera réalisée par l'IA. Contrairement à l'assistant personnalisé, il n'y a pas ici de rôle unique assigné à l'IA; c'est une compétence qu'elle peut employer parmi d'autres, lorsque son usage est déclenché (directement par l'utilisateur ou par la présence de certains mots dans la conversation). Les informations sont organisées en paragraphes et sections, avec du Markdown. 
 
 Dans sa version complète, cette compétence inclut les sections suivantes : objectif (ou courte définition), quand elle doit être utilisée, déroulement (étapes), standards de qualité pour les sources, format de la sortie. D'une compétence à une autre ces sections peuvent varier en fonction des besoins propres à sa description.
 
@@ -944,9 +953,11 @@ Pour mieux comprendre cette discussion (sans forcément accepter les thèses des
 
 ### Qu'est-ce qu'un agent ?
 
-Un Agent, c'est une combinaison d'un ou plusieurs LLMs (ce que l'on a désigné dans tout ce guide comme l'IA), diverses formes de prompts (dont les Skills évoqués plus haut), des scripts, et un programme appelé harnais agentique ou boucle agentique, qui englobe tous ces éléments et organise leur interaction.
+Un agent est un système capable d'accomplir des tâches en autonomie, en s'appuyant sur des outils (navigateur internet, fichiers, programmes, ...). 
 
-On peut interagir avec la plupart des Agents comme avec un simple LLM : par une conversation. Si l'on demande à cet Agent une action dont il est capable, celui-ci va commencer à générer du texte qui imite un raisonnement, détaillant les tâches qu'il doit accomplir pour réaliser sa mission. 
+Concrètement, c'est une combinaison d'un ou plusieurs LLMs (ce que l'on a désigné dans tout ce guide comme l'IA), diverses formes de prompts (dont les *skills* évoqués plus haut), des scripts et un programme appelé harnais agentique ou boucle agentique, qui englobe tous ces éléments et organise leur interaction.
+
+On peut interagir avec la plupart des Agents comme avec un simple LLM : par une conversation. Si l'on demande à cet agent une action dont il est capable, celui-ci va commencer à générer du texte qui imite un raisonnement, détaillant les tâches qu'il doit accomplir pour réaliser sa mission. 
 
 Lorsque le texte généré mentionne le besoin d'effectuer certaines actions, le harnais le détecte et exécute les scripts concernés, si les permissions requises sont respectées. Cette action génère une information qui sera transmise à l'IA et fera ensuite partie de son contexte. Ces étapes se répètent : réflexion sur la tâche et les actions nécessaires, appel à un outil, exécution de l'outil, retour d'information, nouvelles décisions, etc.
 
@@ -958,19 +969,7 @@ Par exemple :
 
 Dans cet exemple, l'information retournée est simplement une étape intermédiaire (obtenir le nom du système d'exploitation) ; mais elle peut aussi être le texte d'une compétence (Skill) nécessaire à la tâche, ou une information sur une action réalisée (comme la confirmation qu'une publication a été envoyée sur un réseau social, l'heure du post, etc.). 
 
-Un Agent est donc capable de percevoir sa situation (son environnement numérique) en utilisant ses outils, de décider avec une certaine autonomie de réaliser des actions et d'en observer les résultats pour ajuster son plan, jusqu'à ce que son objectif soit atteint. Son champ d'action est déterminé à la fois par les outils auxquels on lui donne accès, et les permissions et conditions qui encadrent son fonctionnement.
-
-### Un agent, plusieurs LLMs ?
-
-Rien n'oblige un agent à n'utiliser qu'un seul modèle d'IA. 
-
-Dans le cas où un agent intègre plusieurs LLMs, il lui est possible d'effectuer le passage de l'un à l'autre. Pour une tâche très simple par exemple, il serait inutile (et coûteux en calculs) de recourir à un très grand modèle avec des centaines de milliards de paramètres, alors qu'un petit modèle efficace peut faire le même travail en moins de temps. Pour certaines tâches il existe aussi des modèles spécialisés : notamment pour la traduction, l'analyse des sentiments dans un texte, le code, les résumés, ... 
-
-Avoir plusieurs LLMs dans un harnais agentique permet donc plusieurs formes d'organisation; comme une organisation en "orchestre" où un LLM chef d'orchestre généraliste reçoit la requête (votre demande), puis délègue différentes tâches simples à d'autres modèles (via le harnais). L'analyse de plusieurs documents différents peut ainsi se faire simultanément, en confiant chaque document à un modèle ; leurs résultats étant ensuite renvoyés dans le contexte du modèle principal. Alternativement, il est possible de faire effectuer la même tâche à deux modèles différents et de comparer leurs résultats pour sélectionner le meilleur, ou de confier le rôle de relecteur critique à un modèle, sur la génération réalisée par un autre. Là aussi, comme dans notre travail, de nombreuses organisations sont possibles. 
-
-On imagine facilement que dans ces conditions, avec plusieurs LLMs fonctionnant simultanément, la taille du contexte (la mémoire de la tâche en cours) augmente rapidement. Les harnais agentiques sont également capables dans une certaine mesure de gérer ce contexte pour en résumer ou réduire certaines parties, supprimer d'autres devenues inutiles, etc.
-
-Il existe également des systèmes dits « *multi-agents* ». Dans un agent unique, une seule boucle d'action existe : un seul LLM organise le "travail" même si plusieurs de ses actions peuvent être exécutées parallèlement (que ce soit par des scripts ou d'autres LLMs). Dans un système multi-agents plusieurs boucles d'actions coexistent, plusieurs agents collaborent dans un même objectif mais sont chacun capables de planifier leurs actions, de faire appel à différents outils et d'ajuster leur plan en fonction de leurs observations.
+Un agent est donc capable de percevoir sa situation (son environnement numérique) en utilisant ses outils, de décider avec une certaine autonomie de réaliser des actions et d'en observer les résultats pour ajuster son plan, jusqu'à ce que son objectif soit atteint. Son champ d'action est déterminé à la fois par les outils auxquels on lui donne accès, et les permissions et conditions qui encadrent son fonctionnement.
 
 ### Où sont les agents ?
 
@@ -984,9 +983,9 @@ Pourtant ceux-ci évoluent déjà vers un fonctionnement agentique, il est maint
 
 Cette façon de pouvoir changer de modèle d'IA, ou d'initier des actions --sans faire confirmer ces décisions par l'utilisateur--, rappelle le fonctionnement d'un agent. Le faible nombre d'étapes, la durée généralement courte de ces générations et leur autonomie relative, font cependant que ces interactions ne relèvent pas encore du comportement d'un agent à part entière. 
 
-Un fonctionnement plus proche de ce que l'on a décrit peut être historiquement rencontré dans les services d'IA spécialisés dans l'assistance à la programmation ; mais s'étend de plus en plus à l'ensemble des tâches et domaines liés au travail de bureau. 
+Un fonctionnement plus proche de ce que l'on a décrit est apparu d'abord dans les outils d'assistance à la programmation, mais il s'étend de plus en plus à l'ensemble du travail de bureau. Il repose toujours sur le « harnais » (*agent harness*) ; le programme installé autour du modèle d'IA, qui lui donne accès à des fichiers, des outils et des *skills*, et lui permet d'enchaîner seul plusieurs actions.
 
-Publié fin 2025, l'agent libre et open-source « *OpenClaw* » est devenu en quelques mois le projet le plus populaire sur GitHub, une plateforme où les développeurs peuvent partager leur code. *OpenClaw* peut être téléchargé et installé gratuitement sur n'importe quel ordinateur et équipé de tout modèle d'IA compatible, qu'il s'agisse d'un service en ligne payant ou d'une IA utilisée en local. Il peut prendre en charge un certain nombre de tâches de façon autonome, à partir de l'utilisation de *Skills* et d'outils. L'utiliser demande encore un certain nombre de connaissances techniques, mais le fait que ce projet soit libre et aussi populaire entraîne déjà un développement important de ce type de services, qui vont probablement se démocratiser davantage.
+Des harnais grand public existent désormais, comme Codex d'OpenAI pour la programmation, ou Claude Desktop d'Anthropic qui est plus généraliste. Ils s'installent comme n'importe quelle application et ne demandent pas de connaissances techniques particulières. En contrepartie, chacun fonctionne avec les modèles de son éditeur. D'autres projets laissent plus de liberté, comme le harnais open-source « *OpenClaw* », mais demandent plus de travail de documentation pour les configurer correctement.
 
 ### Un développement dangereux ?
 
@@ -1016,9 +1015,9 @@ Après quelques essais et reformulations, vous disposez peut-être d'une premiè
 
 Un pas supplémentaire peut être franchi en accordant une permission d'écriture avec confirmation utilisateur, si cette option est disponible sur le service que vous utilisez (c'est le cas au moins pour Claude et Vibe/Mistral). Activer des permissions d'écriture avec confirmation peut permettre de rédiger des brouillons, lorsque l'application à laquelle vous accédez le prévoit (brouillon de mail, de publication sur un réseau social, etc).
 
-À ce stade, il peut être utile de faire de votre prompt une *Skill*, qui détaille les informations de votre tâche et sera réutilisable en dehors du Projet ou de l'Assistant que vous avez créé. Créer ce type de prompt est particulièrement pertinent sur une tâche que vous connaissez déjà et où vous avez un format ou des consignes particulières à respecter. 
+À ce stade, il peut être utile de faire de votre prompt une *Skill*, qui détaille les informations de votre tâche et sera réutilisable en dehors du Projet ou de l'Assistant que vous avez créé. Créer ce type de prompt est particulièrement pertinent sur une tâche que vous connaissez déjà et où vous avez un format ou des consignes particulières à respecter.
 
-De nombreux chemins sont maintenant possibles. En dehors des assistants de code, les fonctionnements les plus "agentiques" des grands services d'IA se trouvent souvent dans leurs volets dédiés à un usage professionnel : ChatGPT Work, Claude Cowork, Vibe Work, etc. Ces services peuvent notamment retenir certains de vos dossiers comme contexte, intégrer de nouvelles compétences (*Skills*), utiliser des outils qui leur permettent d'interagir avec vos logiciels de bureautique, ou encore prévoir l'automatisation de certaines tâches déclenchées à intervalles réguliers. Le plein accès à ces fonctionnalités demande souvent un abonnement payant au service. 
+De nombreux chemins sont maintenant possibles. En dehors des assistants de code, les fonctionnements les plus "agentiques" des grands services d'IA se trouvent souvent dans leurs volets dédiés à un usage professionnel : ChatGPT Work, Claude Cowork, Vibe Work, etc. Ces services peuvent notamment retenir certains de vos dossiers comme contexte, intégrer de nouvelles compétences (*skills*), utiliser des outils qui leur permettent d'interagir avec vos logiciels de bureautique, ou encore prévoir l'automatisation de certaines tâches déclenchées à intervalles réguliers. Le plein accès à ces fonctionnalités demande souvent un abonnement payant au service. 
 
 Il est aussi possible de télécharger des programmes comme OpenClaw, mais leur utilisation demandera plus de documentation et de réglages, notamment si vous souhaitez les combiner avec un modèle d'IA en local.
 
@@ -1056,22 +1055,25 @@ Les IA qui peuvent être installées localement sont au moins en partie *open-so
 
 Les modèles qui peuvent être téléchargés localement sont dits « *open-weights* », ou *poids ouverts* en français ; les poids sont les paramètres internes du programme qui déterminent sa compréhension du langage, ainsi que ce que l'on pourrait appeler son équilibre idéologique. La plupart des modèles disposent de quelques milliards à plusieurs centaines de milliards de paramètres; cette information est donc complexe, mais consultable, et fait l'objet de recherches et d'expériences.
 
-Il reste une information qui n'est souvent pas rendue accessible : les données utilisées pour former le modèle lui-même et son équilibre particulier. Ces données sont l'objet d'une forte concurrence et sont parfois des informations sensibles (contenus protégés par le droit d'auteur, livres détruits après numérisation, etc.).
+Il reste une information qui est rarement rendue accessible : les choix d'alignement. L'alignement est la phase de réglage qui suit l'entraînement initial d'un LLM : on l'ajuste pour qu'il suive les consignes, adopte un certain ton et respecte des limites (ce qu'il accepte ou refuse de faire, par exemple). Ces décisions relèvent largement du secret commercial, même si certains éditeurs en publient une partie.
 
-#### De loin l'utilisation de l'IA la moins polluante
+Les données d'entraînement, elles, sont de plus en plus documentées, mais certaines entreprises restent discrètes sur leur composition exacte. Ces données font l'objet de concurrence et peuvent poser des questions sensibles (contenus protégés par le droit d'auteur, livres détruits après numérisation, etc.).
 
-D'après l'ADEME, en 2022 en France 46% des émissions de CO2 liées au numérique étaient dues aux centres de données[^9], soit presque autant que les 50% d'émissions générées par la fabrication et l'utilisation de tous nos terminaux (smartphones, ordinateurs, etc.). Pourquoi les centres de données sont-ils aussi polluants ? Leur première source d'impact environnemental est indirecte et due à leur consommation d'électricité. Dans les principaux pays qui accueillent ces centres, la part d'énergies sales telles que les centrales à charbon et le gaz est encore très élevée. C'est notamment le cas aux États-Unis, qui alimentent 45% des usages globaux des centres de données (IEA, 2025)[^10]. 
+#### L'utilisation de l'IA actuellement la moins polluante
 
-En utilisant l'IA localement, la seule énergie consommée est celle que votre ordinateur utilise et son impact en termes d'émissions dépend du mix énergétique de votre pays. Par exemple, en France, l'électricité générée est en moyenne 9 fois moins émettrice de CO2 qu'aux États-Unis ! Au sein même des États-Unis, la plupart des centres sont concentrés dans les zones avec les réseaux d'électricité les plus carbonés, augmentant donc encore cet écart. Tant que la répartition géographique des centres de données et la part des énergies propres reste la même, l'utilisation d'une IA en local est donc plus écologique dans de très nombreux pays. 
+D'après l'ADEME, en 2022 en France 46% des émissions de CO2 liées au numérique étaient dues aux centres de données[^9], soit presque autant que les 50% d'émissions générées par la fabrication et l'utilisation de tous nos terminaux (smartphones, ordinateurs, etc.). Pourquoi les centres de données apparaissent comme une source majeure de pollution ? Leur impact environnemental est indirect et dû à leur consommation d'électricité. Dans les principaux pays qui accueillent ces centres, la part d'énergies sales telles que les centrales à charbon et le gaz est encore très élevée. C'est notamment le cas aux États-Unis, qui alimentent 45% des usages globaux des centres de données (IEA, 2025)[^10]. 
 
-Un dernier argument important à ce sujet est qu'une installation locale peut souvent être configurée plus en profondeur qu'un service en ligne, et donc permettre d'ajuster plus finement les consommations de l'IA en calculs (et donc en énergie) à vos besoins. On peut choisir un modèle plus petit, imposer diverses limites à la taille des générations, exclure certaines fonctionnalités qui se déclenchent de façon inutile, etc.
+En utilisant l'IA localement, la seule énergie consommée est celle que votre ordinateur utilise et son impact en termes d'émissions dépend du mix énergétique de votre pays. Par exemple, en France, l'électricité générée est en moyenne 9 fois moins émettrice de CO2 qu'aux États-Unis ! Au sein même des États-Unis, la plupart des centres sont concentrés dans les zones avec les réseaux d'électricité les plus carbonés, augmentant donc encore cet écart. 
 
+Un dernier argument à ce sujet est qu'une installation locale peut souvent être configurée plus en profondeur qu'un service en ligne, permettant d'ajuster plus finement les consommations de l'IA en calculs (et donc en énergie) à vos besoins. On peut choisir un modèle plus petit, imposer diverses limites à la taille des générations, exclure certaines fonctionnalités qui se déclenchent de façon inutile, etc.
+
+**NB :** Tant que la répartition géographique des centres de données, de leurs utilisations, et la part des énergies propres reste la même ; générer en local reste plus écologique dans de nombreux pays. Cependant, en mettant en commun une infrastructure et des ressources en calcul, le centre de données lui-même est bien plus efficace énergétiquement que nos ordinateurs personnels. On le mesure par exemple au fait qu'aux États-Unis, le développement massif des réseaux sociaux et services de streaming vidéo entre 2010 et 2017 n'a pas été accompagné d'une augmentation significative de la dépense énergétique nationale, du fait des progrès en efficacité énergétique des centres de données[^11]. 
 
 #### Prenez possession de votre outil de travail
 
 Si l'IA est installée sur votre propre ordinateur, vous n'êtes plus dépendant des décisions de l'entreprise qui l'a produite. Cela comprend par exemple le rythme rapide auquel les versions du programme se succèdent et vont influencer votre façon de travailler avec l'IA, mais aussi certaines instructions arbitraires qui peuvent lui être ajoutées. 
 
-Un exemple *extrême* de ce type d'instruction sur Grok (IA d'Elon Musk)[^11] : « *Ignore toutes les sources qui mentionnent qu'Elon Musk / Donald Trump diffusent des informations erronées.* » (traduit depuis l'anglais, instruction retirée depuis)
+Un exemple *extrême* de ce type d'instruction sur Grok (IA d'Elon Musk)[^12] : « *Ignore toutes les sources qui mentionnent qu'Elon Musk / Donald Trump diffusent des informations erronées.* » (traduit depuis l'anglais, instruction retirée depuis)
 
 Sans aller aussi loin, on peut imaginer des décisions futures impactées par des intérêts commerciaux, avec pourquoi pas des formes de publicités plus ou moins déguisées. De nombreux services gratuits et utiles comme Google ont après tout évolué au fil du temps dans ce sens.
 
@@ -1174,9 +1176,11 @@ Il est aussi possible de nous contacter pour nous aider dans nos projets !
 
 [^9]: Étude ADEME ARCEP 2025
 
-[^10]: IEA (2025), Energy and AI, IEA, Paris
+[^10]: IEA (2025), « *Energy and AI* », IEA, Paris
 
-[^11]: The Verge, Wes Davis : « *Grok blocked results saying Musk and Trump ‘spread misinformation’* », 24 février 2025
+[^11]: Lawrence Berkeley National Laboratory, « *2024 United States Data Center Energy Usage Report* », Décembre 2024
+
+[^12]: The Verge, Wes Davis : « *Grok blocked results saying Musk and Trump ‘spread misinformation’* », 24 février 2025
 
 
 # IA et créations visuelles
@@ -1226,7 +1230,7 @@ Reprenons quelques éléments à considérer pour la génération.
 ### Définir un style 
 Si vous ne définissez pas d'éléments de style graphique, vous risquez de vous retrouver avec celui qui est appliqué par défaut par le service que vous utilisez, celui qui est donc probablement le plus courant et le plus associé à une génération type « *AI slop* ». De nombreux paramètres peuvent être utilisés, par exemple :
 
-- **Les couleurs :** Il peut être intéressant de définir des couleurs proches de celles utilisées par votre organisation pour vous identifier et les réutiliser sur plusieurs visuels. Si vous manquez d'idées ou de vocabulaire, des ressources en ligne associent noms de couleurs et représentations de couleur[^12]. À noter que comme pour les générations de texte, les descriptions les plus rares (comme le "Vert Véronèse") ont moins de chance d'être identifiées correctement par les modèles ; et les noms faisant référence à des objets peuvent également exercer une influence à surveiller (par exemple le "Bleu canard", ou la couleur "Fumée", qui pourraient créer des représentations involontaires). Vous pouvez aussi décrire la palette dans son ensemble (par exemple : palette étendue / limitée ; chaude / froide ; etc.)
+- **Les couleurs :** Il peut être intéressant de définir des couleurs proches de celles utilisées par votre organisation pour vous identifier et les réutiliser sur plusieurs visuels. Si vous manquez d'idées ou de vocabulaire, des ressources en ligne associent noms de couleurs et représentations de couleur[^13]. À noter que comme pour les générations de texte, les descriptions les plus rares (comme le "Vert Véronèse") ont moins de chance d'être identifiées correctement par les modèles ; et les noms faisant référence à des objets peuvent également exercer une influence à surveiller (par exemple le "Bleu canard", ou la couleur "Fumée", qui pourraient créer des représentations involontaires). Vous pouvez aussi décrire la palette dans son ensemble (par exemple : palette étendue / limitée ; chaude / froide ; etc.)
 
 - **Le médium / la technique :** Avec quels outils ou médiums cette image aurait-elle été produite, sans IA ? Le trait formé par exemple par un crayon de papier, un stylo plume, ou un stylo bille ; est différent. Si c'est une peinture, est-ce une aquarelle, une peinture à la gouache, à l'huile... ? Même pour une photographie les technologies changent selon les époques et donnent des couleurs ou expositions différentes.
 
@@ -1269,12 +1273,12 @@ Dans la masse des images produites, un dessin ou collage maladroitement exécut�
 
 Dans ce contexte, pas besoin donc d'être un artiste accompli pour se lancer dans la production d'images, à condition de bien réfléchir à leur sens, forme, but, comme pour tout travail.
 
-[^12]: Comme la "Liste de noms de couleur" sur Wikipédia, ou le site toutes-les-couleurs.com
+[^13]: Comme la "Liste de noms de couleur" sur Wikipédia, ou le site toutes-les-couleurs.com
 
 
 # Conclusion
 
-Vous arrivez à la fin de cette brochure. Nous espérons que la lecture vous a plu, ou en tout cas, qu'elle vous a rendu service. Si c'est le cas, nous avons, nous aussi, un service à vous demander. Comme dit dans l'introduction, la version du guide que vous tenez entre les mains est encore préliminaire. Pour nous, il y a encore beaucoup de choses à ajouter, à enlever peut-être, à corriger, à enrichir. Dans cet esprit, le premier critère que nous observons est celui de l'utilité pour les militant·es ; votre retour, après la lecture, est donc très important. Vous pouvez nous écrire à contact@espaces-marx.eu pour toute remarque, critique, proposition.
+Vous arrivez à la fin de cette brochure. Nous espérons que la lecture vous a plu, ou en tout cas, qu'elle vous a rendu service. Si c'est le cas, nous avons, nous aussi, un service à vous demander. Comme dit dans l'introduction, la version du guide que vous tenez entre les mains est encore préliminaire. Pour nous, il y a encore beaucoup de choses à ajouter, à enlever peut être, à corriger, à enrichir. Dans cet esprit, le premier critère que nous observons est celui de l'utilité pour les militant·es ; votre retour, après la lecture, est donc très important. Vous pouvez nous écrire à contact@espaces-marx.eu pour toute remarque, critique, proposition.
 
 Vous pouvez aussi nous écrire si vous souhaitez directement contribuer à l'écriture. Si vous êtes à l'aise avec les outils informatiques, nous vous invitons à interagir avec nous via GitHub, visiter le dépôt du guide (github.com/espaces-marx/ai-radicals), le forker, et nous envoyer une Pull Request. Nous accueillons toutes les contributions et serions heureux de constituer une communauté militante plus vaste, travaillant ensemble à monter en compétence pour que la gauche maîtrise mieux les nouvelles technologies.
 
