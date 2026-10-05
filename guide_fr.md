@@ -945,31 +945,35 @@ L'aspect intéressant de cette fonctionnalité est qu'elle permet à l'IA d'acc�
 
 ## L'IA Agentique
 
-L'IA peut maintenant guider les actions d'autres programmes, à partir du texte qu'elle génère. 
+L'IA peut maintenant guider les actions d'autres programmes. Si elle peut planifier ses actions et ajuster son plan en fonction des résultats qu'elle obtient, on parle de fonctionnement agentique. 
 
-Dans l'actualité internationale en septembre 2026 des chefs d'entreprises de l'IA et (ex-)cadres de ces mêmes entreprises se sont alarmés des risques posés par ce développement des capacités de l'Intelligence Artificielle à agir. Un chercheur d'Anthropic (entreprise développant Claude) affirmant notamment qu'il y a plus de 10% de chances que l'IA tue tous les êtres humains dans la prochaine décennie[^5].
+Ce fonctionnement est au cœur des discours sur la trop grande vitesse du développement de l'IA et des projections dans un futur dystopique. Un chercheur d'Anthropic (entreprise développant Claude) affirmant par exemple en septembre 2026 qu'il y a plus de 10% de chances que l'IA tue tous les êtres humains dans la prochaine décennie[^5]. 
 
-L'Intelligence Artificielle est toujours essentiellement le nom qui désigne un LLM ; soit un programme qui est capable de traiter et générer du texte qu'un être humain aurait pu écrire. En mettant en relation la menace annoncée et la seule capacité de générer du texte lisible, l'affirmation parait complètement absurde. 
+Pourtant, l'IA repose toujours sur un LLM, un programme capable de traiter et générer du texte qu'un être humain aurait pu écrire. En mettant en relation l'apocalypse annoncée et la capacité à générer du texte lisible, l'affirmation parait au moins un peu exagérée. 
 
-Pour mieux comprendre cette discussion (sans forcément accepter les thèses des patrons du secteur), il faut comprendre ce qu'est l'IA Agentique. 
+Pour séparer les discours de science-fiction et ce que permettent aujourd'hui de faire ces programmes, il faut comprendre leur fonctionnement, et ce qu'ils nous permettent de faire.
 
 ### Qu'est-ce qu'un agent ?
 
 Un agent est un système capable d'accomplir des tâches en autonomie, en s'appuyant sur des outils (navigateur internet, fichiers, programmes, ...). 
 
-Concrètement, c'est une combinaison d'un ou plusieurs LLMs (ce que l'on a désigné dans tout ce guide comme l'IA), diverses formes de prompts (dont les *skills* évoqués plus haut), des scripts et un programme appelé harnais agentique ou boucle agentique, qui englobe tous ces éléments et organise leur interaction.
+Concrètement, un agent réunit :
+- Un ou plusieurs LLMs 
+- Des prompts (dont les *skills* évoqués plus haut)
+- Des outils (des actions que le LLM peut demander, comme faire une recherche en ligne)
+- Un harnais agentique, le programme qui englobe tous les éléments précédents et organise leur interaction
 
-On peut interagir avec la plupart des Agents comme avec un simple LLM : par une conversation. Si l'on demande à cet agent une action dont il est capable, celui-ci va commencer à générer du texte qui imite un raisonnement, détaillant les tâches qu'il doit accomplir pour réaliser sa mission. 
+On peut accéder à un agent comme on accède à un chatbot, par une conversation. Si l'on confie à cet agent une mission, celui-ci va commencer à générer du texte qui imite un raisonnement, détaillant les tâches qu'il doit accomplir. 
 
-Lorsque le texte généré mentionne le besoin d'effectuer certaines actions, le harnais le détecte et exécute les scripts concernés, si les permissions requises sont respectées. Cette action génère une information qui sera transmise à l'IA et fera ensuite partie de son contexte. Ces étapes se répètent : réflexion sur la tâche et les actions nécessaires, appel à un outil, exécution de l'outil, retour d'information, nouvelles décisions, etc.
+**Exemple :**
+1. Vous confiez une mission à l'IA (« *Rassemble toutes mes factures dans le dossier "Factures"* »)
+2. Le LLM génère un texte planifiant les tâches à effectuer pour remplir la mission, il "*réalise*" dans son texte qu'il a besoin de savoir si vous êtes sur Windows ou Mac, car l'organisation des dossiers y est différente
+3. Le LLM rédige un appel à un outil qui lui permettra d'avoir cette information
+4. Le harnais détecte l'appel dans le texte généré, si l'outil est autorisé il fait exécuter l'action associée
+5. Le harnais retourne l'information retournée par l'action, au LLM, elle fait maintenant partie de son contexte
+6. L'interaction entre l'IA, le harnais, les outils, continue jusqu'à ce que le contexte de l'IA lui permette de déterminer que la mission est accomplie, ou qu'elle ne peut pas être réalisée dans des conditions satisfaisantes (de temps, de dépense en calculs, de conflit de permissions, ...).
 
-Par exemple :
-1. Le LLM (l'IA) génère un texte, affirmant que pour réaliser une tâche il doit d'abord s'assurer qu'il connaît bien le système d'exploitation dans lequel il est employé
-2. Le harnais détecte dans le texte généré la demande d'utiliser un script retournant cette information; si c'est une action autorisée il exécute ce script
-3. L'information du système d'exploitation est retournée à l'IA et fait désormais partie de son contexte
-4. L'interaction entre l'IA, le harnais, les scripts, continue jusqu'à ce que le contexte de l'IA lui permette de déterminer que la mission est accomplie, ou qu'elle ne peut pas être réalisée dans des conditions satisfaisantes (de temps, de dépense en calculs, de conflit de permissions, ...).
-
-Dans cet exemple, l'information retournée est simplement une étape intermédiaire (obtenir le nom du système d'exploitation) ; mais elle peut aussi être le texte d'une compétence (Skill) nécessaire à la tâche, ou une information sur une action réalisée (comme la confirmation qu'une publication a été envoyée sur un réseau social, l'heure du post, etc.). 
+Dans cet exemple, l'information retournée est simplement une étape intermédiaire (obtenir le nom du système d'exploitation) ; mais elle peut aussi être le texte d'une compétence (*skill*) nécessaire à la tâche, ou une information sur une action réalisée (comme la confirmation qu'une publication a été envoyée sur un réseau social). 
 
 Un agent est donc capable de percevoir sa situation (son environnement numérique) en utilisant ses outils, de décider avec une certaine autonomie de réaliser des actions et d'en observer les résultats pour ajuster son plan, jusqu'à ce que son objectif soit atteint. Son champ d'action est déterminé à la fois par les outils auxquels on lui donne accès, et les permissions et conditions qui encadrent son fonctionnement.
 
@@ -991,7 +995,7 @@ Des harnais grand public existent désormais, comme Codex d'OpenAI pour la progr
 
 ### Un développement dangereux ?
 
-Quelques mois avant la multiplication des appels à ralentir le développement de l'IA (évoqués en introduction de cette partie), un incident impliquant des agents d'OpenAI a entraîné une cyber-attaque sur la plateforme HuggingFace durant l'été 2026[^6].
+Quelques mois avant la multiplication des appels à ralentir le développement de l'IA, un incident impliquant des agents d'OpenAI a entraîné une cyber-attaque sur la plateforme HuggingFace durant l'été 2026[^6].
 
 Ces agents étaient évalués sur leur capacité en cyber-attaques, dans des environnements supposés fermés. Pour que les agents puissent mener à bien leurs missions une grande liberté leur a été accordée : pas de prompt-système (le prompt général qui encadre le comportement du modèle), de protections contre certains usages cyber, ou de systèmes d'auto-évaluation. Le LLM principalement impliqué dans l'incident est également entraîné à la collaboration multi-agent, ainsi qu'à être très persévérant et assidu dans sa tâche[^7].
 
@@ -1053,13 +1057,11 @@ En dehors d'éventuelles recherches en ligne, tous vos messages et ceux génér�
 
 #### Des programmes plus libres et ouverts
 
-Les IA qui peuvent être installées localement sont au moins en partie *open-source*, c'est à dire que leur code est accessible à toute personne qui souhaite le consulter. Étant donné l'intérêt suscité par l'intelligence artificielle, cette particularité nous donne certains avantages : le comportement de ces programmes est connu, discuté, des versions modifiées sont proposées, etc. 
+Les IA qui peuvent être installées localement sont au moins en partie plus transparentes que les modèles privés, au sens où leur contenu et code peut être étudié. Étant donné l'intérêt suscité par l'intelligence artificielle, cette particularité nous donne certains avantages : le comportement de ces programmes est discuté, il peut faire l'objet d'expériences, des versions modifiées sont proposées, etc. Ce ne sont pas cependant à proprement parler des programmes *open-source*, c'est à dire des programmes développés collaborativement, où l'ensemble du code mais aussi du processus de création est connu.
 
-Les modèles qui peuvent être téléchargés localement sont dits « *open-weights* », ou *poids ouverts* en français ; les poids sont les paramètres internes du programme qui déterminent sa compréhension du langage, ainsi que ce que l'on pourrait appeler son équilibre idéologique. La plupart des modèles disposent de quelques milliards à plusieurs centaines de milliards de paramètres; cette information est donc complexe, mais consultable, et fait l'objet de recherches et d'expériences.
+Lorsque l'on télécharge un modèle en local, certaines informations restent souvent inconnues : les données qui ont servi à leur entraînement et surtout les choix d'alignement. L'alignement est la phase de réglage qui suit l'entraînement initial d'un LLM : on l'ajuste pour qu'il suive les consignes, adopte un certain ton et respecte des limites (ce qu'il accepte ou refuse de faire, par exemple). Ces décisions relèvent largement du secret commercial, même si certains éditeurs en publient une partie.
 
-Il reste une information qui est rarement rendue accessible : les choix d'alignement. L'alignement est la phase de réglage qui suit l'entraînement initial d'un LLM : on l'ajuste pour qu'il suive les consignes, adopte un certain ton et respecte des limites (ce qu'il accepte ou refuse de faire, par exemple). Ces décisions relèvent largement du secret commercial, même si certains éditeurs en publient une partie.
-
-Les données d'entraînement, elles, sont de plus en plus documentées, mais certaines entreprises restent discrètes sur leur composition exacte. Ces données font l'objet de concurrence et peuvent poser des questions sensibles (contenus protégés par le droit d'auteur, livres détruits après numérisation, etc.).
+Pour les modèles qui ne disposent pas d'une documentation complète, on parle la plupart du temps d'« *open-weights* », ou *poids ouverts* en français. Les poids sont les paramètres internes du programme qui déterminent sa compréhension du langage, ainsi que ce que l'on pourrait appeler son équilibre idéologique. Cette information est particulièrement complexe, la plupart des modèles disposant de quelques milliards à plusieurs centaines de milliards de paramètres. Elle est donc accessible (puisque les poids sont téléchargés), mais sans documentation suffisante sur l'entraînement et l'alignement, on ne peut pas considérer qu'elle soit facilement compréhensible et modifiable.
 
 #### L'utilisation de l'IA actuellement la moins polluante
 
@@ -1189,11 +1191,9 @@ Il est aussi possible de nous contacter pour nous aider dans nos projets !
 
 Chacun peut l'observer dans les affiches présentes dans sa ville, les flyers d'associations ou de petits commerces, les visuels sur les réseaux sociaux : la création d'images par IA s'est développée très vite, et son usage est très largement répandu. La plupart de ces images reprennent souvent le même style disponible par défaut, ou ont des éléments qui paraissent clairement non intentionnels comme un bout de texte qui n'a pas de sens ou d'utilité évidente, des symboles provenant d'autres contextes, etc.
 
-Il faut reconnaître que ces images entraînent souvent des réactions de fort rejet : elles sont rapidement identifiées comme du « *AI slop* », des "déchets" visuels produits par l'IA. Ce rejet n'est pas toujours qu'une prise de position politique contre l'IA, mais peut refléter notre propre rapport au travail et à ses produits. Peut-on accorder la même valeur à une image vaguement liée à une intention humaine, générée en quelques secondes ou minutes, et au travail de plusieurs heures d'un·e artiste qui concentre toute son attention dans sa tâche ? 
+Il faut reconnaître que ces images entraînent souvent des réactions de fort rejet : elles sont rapidement identifiées comme du « *AI slop* », des "déchets" visuels produits par l'IA. Ce rejet n'est pas toujours qu'une prise de position politique contre l'IA, mais peut exprimer notre propre rapport au travail et à ses produits. Peut-on accorder la même valeur à une image vaguement liée à une intention humaine, générée en quelques secondes ou minutes, et au travail de plusieurs heures d'un·e artiste qui concentre toute son attention dans sa tâche ?
 
-Marx fait du temps de travail (socialement nécessaire pour un produit) la base de la valeur ; cette loi semble bien s'appliquer aujourd'hui aux images dans le cadre de l'essor des modèles d'IA de diffusion. Une fois que le style produit par un outil s'est suffisamment imposé pour être facilement identifiable comme création par IA, la valeur des images produites semble s'effondrer. Le temps nécessaire à leur production s'est effectivement effondré, par exemple entre la création des dessins originaux du studio d'animation *Ghibli*, et la génération par IA d'images copiant ce style. Collectivement, nous avons appris à identifier les images visiblement générées par IA comme une absence de travail, d'intention humaine, de message réel.
-
-Que faire alors quand on ne dispose pas d'un·e artiste militant·e ; ou que l'on n'a pas suffisamment de temps pour pouvoir soi-même produire des images, essentielles à la communication politique ?
+Pour autant, tous les collectifs ne disposent pas d'un·e artiste militant·e, ou des moyens de payer ce travail. Que faire quand on n'a pas suffisamment de temps pour pouvoir soi-même produire des images, essentielles à la communication politique ?
 
 ## Guider la génération d'images
 
@@ -1201,7 +1201,7 @@ Dans le cas où vous souhaitez quand même tenter la génération d'une image co
 
 L'idée n'est pas de dissimuler que l'image créée a été produite avec l'IA, mais de montrer qu'elle n'est pas du *spam*, que c'est une communication qui a fait l'objet d'une réflexion et exprime une intention particulière.
 
-Si vous n'avez pas la possibilité de modifier vous-même l'image par la suite (en utilisant un logiciel d'édition d'image), le mieux est d'opter pour un service qui permet d'itérer sur la même image et de demander des modifications (sans générer quelque chose de complètement différent) ; heureusement cette fonctionnalité se diffuse et est disponible sur la plupart des grandes plateformes. 
+Si vous n'avez pas la possibilité de modifier vous-même l'image par la suite (en utilisant un logiciel d'édition d'image), le mieux est d'opter pour un service qui permet d'itérer sur la même image et de demander des modifications (sans générer quelque chose de complètement différent) ; heureusement cette fonctionnalité se diffuse et est disponible sur la plupart des grandes plateformes : notamment ChatGPT, Gemini et Qwen. Si vous utilisez déjà ces services, le plus simple est de commencer à expérimenter la génération d'images dans leurs interfaces. 
 
 Reprenons quelques éléments à considérer pour la génération.
 
@@ -1256,14 +1256,13 @@ Quand on est habitués à créer des visuels, on peut se demander quels sont les
 
 Voilà quelques idées d'organisation du travail qui évitent cette dépossession :
 
-- **Définition du projet :** Avant de réaliser un visuel, dans l'étape de réflexion il est possible d'utiliser un service générant uniquement du texte, pour explorer différentes pistes (de sens, d'association d'images et de symboles, etc.) si vous manquez d'idées, ou d'approfondir un premier projet encore confus. En restant seulement sur des textes vous avez vous-même une forte influence sur la direction de la conversation, tout en construisant librement votre propre représentation du travail à venir sans être influencé·e par des images. 
+- **Définition du projet :** Avant de réaliser un visuel, dans l'étape de réflexion il est possible d'utiliser un service générant uniquement du texte, pour explorer différentes pistes (de sens, d'association d'images et de symboles, etc.) si vous manquez d'idées, ou d'approfondir un premier projet encore confus. En restant seulement sur des textes vous avez vous-même une forte influence sur la direction de la conversation, tout en construisant librement votre propre représentation du travail à venir sans être influencé·e par des images. **Outils & plateformes** identifiés sur cette fonction : n'importe quel générateur de texte (Claude, DeepSeek, ChatGPT, Qwen, ...).
 
-- **Déléguer le travail annexe :** Il est possible de faire générer les parties les plus périphériques du point de vue de votre cas d'usage, comme des fonds, des motifs, des textures, des objets en transparence à rajouter à l'image, etc. Dans ces cas, il reste quand même utile de réfléchir au prompt et au sens que prennent ces éléments dans l'ensemble du travail, pour ne pas aboutir à un résultat trop générique ou qu'ils soient mal intégrés. Après la génération, le fait de pouvoir déplacer ces éléments dans un logiciel d'édition d'images, les avancer ou reculer dans un système de calques, éventuellement les re-modifier par votre travail, permet également de garder un certain contrôle sur le rendu final.
+- **Déléguer le travail annexe :** Il est possible de faire générer les parties les plus périphériques du point de vue de votre cas d'usage, comme des fonds, des motifs, des textures, des objets en transparence à rajouter à l'image, etc. Dans ces cas, il reste quand même utile de réfléchir au prompt et au sens que prennent ces éléments dans l'ensemble du travail, pour ne pas aboutir à un résultat trop générique ou qu'ils soient mal intégrés. Après la génération, le fait de pouvoir déplacer ces éléments dans un logiciel d'édition d'images, les avancer ou reculer dans un système de calques, éventuellement les re-modifier par votre travail, permet également de garder un certain contrôle sur le rendu final. **Outils & plateformes** identifiés sur cette fonction : ChatGPT, Ideogram
 
-- **Utiliser des outils "IA" sans génération :** Sur les principaux logiciels d'édition d'image (suite Adobe, ou Affinity qui est gratuit), des outils très courants ont déjà recours depuis longtemps à l'IA (non-générative) pour automatiser le détourage, la sélection des objets, retirer le bruit, vectoriser, etc. L'opération du détourage prend par exemple maintenant un temps considérablement réduit (avec des résultats satisfaisants), en comparaison avec ce qu'il était il y a encore quelques années quand il fallait le faire quasiment à la main avec l'outil plume. 
+- **Utiliser des outils "IA" sans génération :** Sur les principaux logiciels d'édition d'image, des outils très courants ont déjà recours depuis longtemps à l'IA (non-générative) pour automatiser le détourage, la sélection des objets, retirer le bruit, vectoriser, etc. L'opération du détourage prend par exemple maintenant un temps considérablement réduit (avec des résultats satisfaisants), en comparaison avec ce qu'il était il y a encore quelques années quand il fallait le faire quasiment à la main avec l'outil plume. **Outils & plateformes** identifiés sur cette fonction : Suite Adobe, Affinity
 
-- **Faire des modifications locales :** De plus en plus de services de génération d'image permettent de réaliser des modifications locales des images, ne concernant qu'une zone plutôt que l'image dans son ensemble. En réalité du fait du fonctionnement de l'IA générative, l'ensemble de l'image est bien recalculé (généré à nouveau), mais elle est comparée à l'image d'origine pour rester aussi proche que possible de l'original en dehors de la zone ciblée. La nouvelle image peut être légèrement plus floue, claire, sombre, ou décaler certains éléments ; ses pixels sont altérés d'une façon discrète mais visible. Si vous savez utiliser un logiciel d'édition d'image, il est alors possible d'associer chaque image à un calque (image originale, image modifiée), pour ne garder que les zones pertinentes et ajuster l'intégration de la modification. Vous préservez ainsi une version intacte de votre image d'origine, hors zone modifiée.
-
+- **Faire des modifications locales :** De plus en plus de services de génération d'image permettent de réaliser des modifications locales des images, ne concernant qu'une zone plutôt que l'image dans son ensemble. En réalité du fait du fonctionnement de l'IA générative, l'ensemble de l'image est bien recalculé (généré à nouveau), mais elle est comparée à l'image d'origine pour rester aussi proche que possible de l'original en dehors de la zone ciblée. La nouvelle image peut être légèrement plus floue, claire, sombre, ou décaler certains éléments ; ses pixels sont altérés d'une façon discrète mais visible. Si vous savez utiliser un logiciel d'édition d'image, il est alors possible d'associer chaque image à un calque (image originale, image modifiée), pour ne garder que les zones pertinentes et ajuster l'intégration de la modification. Vous préservez ainsi une version intacte de votre image d'origine, hors zone modifiée. **Outils & plateformes** identifiés sur cette fonction : Ideogram, Gemini, Suite Adobe
 
 ## Se lancer dans la création d'images sans IA
 
