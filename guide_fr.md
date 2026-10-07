@@ -947,9 +947,9 @@ L'aspect intéressant de cette fonctionnalité est qu'elle permet à l'IA d'acc�
 
 L'IA peut maintenant guider les actions d'autres programmes. Si elle peut planifier ses actions et ajuster son plan en fonction des résultats qu'elle obtient, on parle de fonctionnement agentique. 
 
-Ce fonctionnement est au cœur des discours sur la trop grande vitesse du développement de l'IA et des projections dans un futur dystopique. Un chercheur d'Anthropic (entreprise développant Claude) affirmant par exemple en septembre 2026 qu'il y a plus de 10% de chances que l'IA tue tous les êtres humains dans la prochaine décennie[^5]. 
+Ce fonctionnement est au cœur des discours sur la trop grande vitesse du développement de l'IA et des projections dans un futur dystopique. Un chercheur d'Anthropic (entreprise développant Claude) affirmant par exemple en septembre 2026 (sur X/Twitter) qu'il y a plus de 10% de chances que l'IA tue tous les êtres humains dans la prochaine décennie[^5]. Nous reviendrons plus tard sur ce genre de prophétie.
 
-Pourtant, l'IA repose toujours sur un LLM, un programme capable de traiter et générer du texte qu'un être humain aurait pu écrire. En mettant en relation l'apocalypse annoncée et la capacité à générer du texte lisible, l'affirmation parait au moins un peu exagérée. 
+En tout état de cause, l'IA repose toujours sur un LLM, un programme capable de traiter et générer du texte qu'un être humain aurait pu écrire. En mettant en relation l'apocalypse annoncée et la capacité à générer du texte lisible, l'affirmation parait au moins un peu exagérée. 
 
 Pour séparer les discours de science-fiction et ce que permettent aujourd'hui de faire ces programmes, il faut comprendre leur fonctionnement, et ce qu'ils nous permettent de faire.
 
