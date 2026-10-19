@@ -43,18 +43,33 @@ However, this term has become established in public debate, and we use it here t
 
 A large language model, or "LLM" (Large Language Model), is a program capable of analyzing and generating text that resembles what a human being might have produced. Strictly speaking, it isn't capable of "*understanding*" the messages sent to it, but it can calculate the type of text that is probably the most appropriate response. This ability relies on a mathematical representation of language, built during training on an enormous quantity of text.
 
+### What is an AI model?
+
+GPT-6, Mistral Medium 3.5 and DeepSeek V3 are three examples of generative AI models. Each has been “*trained*” on a particular selection of texts, in its own specific way, then programmed differently, resulting in unique behaviour. The same message sent to these 3 models will very probably get you 3 different answers.
+
+### How does text generation work?
+
 When you send a message to an LLM, the following steps (among others) take place:
 
-- **Tokenization**: The message is broken down into units that are often smaller than words: *tokens*. For example, for a model like GPT-5, the sentence "*Workers of all countries, unite!*" might be broken down into tokens roughly like this: "*|Work|ers| of| all| countries|,| unite|!|*"
+**1. Splitting into tokens**: The message is broken down into units that are often smaller than words: *tokens*. For example, for a model like GPT-5, the sentence "*Workers of all countries, unite!*" might be broken down into tokens roughly like this: "*|Work|ers| of| all| countries|,| unite|!|*"
 
-- **Mathematical representation**: Each token is associated with a mathematical vector -- that is, a sequence of numbers that lets the program identify it and link it to its representation of our language (derived from its training).
+**2. Mathematical representation**: Each token is associated with a mathematical vector, that is, a sequence of numbers that allows the program to identify it and to associate it with its representation of our language. 
 
-- **Context analysis**: This representation is then enriched by the context of your message -- that is, by the token's position within the overall text, as well as by the presence of the other words themselves. For example, the word "*bank*" in the phrase "*river bank*" will have a very different mathematical representation than the same word in the phrase "*bank account*."
+To illustrate this idea, we can represent the word “*dog*” on three dimensions or axes: 
+- Object / Living being
+- Small / Large 
+- Male / Female 
+
+A dog is a living being, rather small, and it is a male; each of these pieces of information can be represented on an axis with a value between -1 and +1, which could give: `[0.9 ; -0.6 ; -0.8]`. Why not simply “*1*” to indicate that it is a living being, and “*-1*” for a male? Because language is more ambiguous; one can imagine that in some texts animals are treated as objects; and the word “*dog*” designates both the animal regardless of its sex and specifically male dogs. 
+
+Here the word “*dog*” is represented very simply, but the representations used by models generally have more than a thousand dimensions, and a concept such as "living being" appears in them only as a pattern, through the combination of several of them.
+
+**3. Context analysis**: This representation is then enriched by the context of your message -- that is, by the token's position within the overall text, as well as by the presence of the other words themselves. For example, the word "*bank*" in the phrase "*river bank*" will have a very different mathematical representation than the same word in the phrase "*bank account*."
 
 
-- **Response**: based on this information, the model calculates which token is most likely to begin its answer (for example, to answer the question "*What is a dog?*," the first token of the response will probably be "*|A|*"). This operation is then repeated token by token to generate the rest of the response ("*|dog|is|...*"), with each token in turn becoming part of the calculation. For instance, if the model has generated, token by token, the phrase "*The capital of France is*," it can calculate that "*|Paris|*" is probably the best candidate for the next token.
+**4. Model response**: based on this information, the model calculates which token is most likely to begin its answer (for example, to answer the question "*What is a dog?*," the first token of the response will probably be "*|A|*"). This operation is then repeated token by token to generate the rest of the response ("*|dog|is|...*"), with each token in turn becoming part of the calculation. For instance, if the model has generated, token by token, the phrase "*The capital of France is*," it can calculate that "*|Paris|*" is probably the best candidate for the next token. A parameter called *temperature* makes it possible to adjust the extent to which the AI stays close to or moves away from the most probable results; the higher it is, the more varied the text, but the more it also risks losing coherence. 
 
-Through these various mechanisms (and others), these models imitate the human work of producing text. That said, this output depends heavily on text itself written by human beings: the texts used to train the program, and the text of the message you send to the AI, which carries significant weight in its calculations.
+Through these various mechanisms (and others), these models imitate the human work that produces texts. Even so, this production depends heavily on texts that were themselves written by human beings: the texts used to train the program; but also the message you send when interacting with the AI, whose content will have a great influence on the text generated. 
 
 Human labor is also involved at several stages of an LLM's development: in particular, in the selection and labeling of the large amounts of data used to train it, in evaluating the quality of a model's responses, and in moderation efforts aimed, for example, at preventing the model from generating responses that help carry out illegal actions. All of this work, often very poorly paid, is essential to producing an AI.
 
@@ -103,31 +118,41 @@ Decisions about the work itself, its critical evaluation, and its political orie
 
 *NB: In the next few subsections we explain how to access an AI service for the first time. If you're already a user, you can skip straight to the "Context" section.*
 
-***Which AI service should you use?***
+### Which AI service should you use?
 
-There are dozens of Artificial Intelligence services, and they are not all equal -- whether in terms of output quality, price, or data protection. There's no absolute answer: what matters most is how you use them, which interfaces feel most intuitive to you, and whatever habits you may have already picked up using one service or another (ChatGPT, Gemini, Claude...).
+There are now a great many AI services, with American and (to a lesser extent) Chinese companies holding the most popular options. These services vary in terms of the quality of what they generate, price, or data protection. 
 
-The major online AI services share a number of drawbacks with most large web platforms offering free, popular services. They are owned by capitalist companies and depend on the states that host their servers -- neither of which guarantees the security of your data.
+Their interfaces and features evolve rapidly; for this reason we do not recommend any service in particular (such a recommendation would quickly become obsolete), but we advise you to experiment with several different tools, to find the one you are most comfortable with. 
 
-We chose to use Mistral as our example when demonstrating how to use AI, because its various features are named very simply. That said, you'll find very similar features on any other AI, and you can transpose our explanations to whatever tool you use. We'll also give a few pointers about other popular services where the differences are notable.
+Here, however, are a few ideas for criteria to explore in making your choice:
+
+- **Price:** Most popular AI platforms offer free usage (very rarely unlimited), with various thresholds that limit daily use. If you intend to remain a free user, it is useful to see how quickly you reach these limits, or quite simply to use several different services. 
+- **Data:** To compare data-management policies, you can look in particular at the country where the data is stored, the official documentation of the service, and the settings available to adjust access to the data (notably the possibility of enabling / disabling collection, correcting the data, deleting it). Depending on the platform, data confidentiality (e.g. no use for training future models) may be offered only to paying users. 
+- **Features:** Beyond simply chatting with an AI, some services develop original features to stand out; the most important ones often end up spreading gradually and reappearing elsewhere under other names, but the implementations may differ.
+- **Quality / Use cases:** Depending on the type of task requested (writing, code, document analysis, connection to online services, carrying out actions), the performance of each service varies. In this area too, things change quickly and it is better to run experiments on your own needs than to rely on a static ranking. 
+
+A few names of the most popular services, by the companies' country of origin:
+- **China:** Deepseek, Qwen, Z.ai
+- **United States:** ChatGPT, Claude, Gemini
+- **France:** Vibe (Mistral)
 
 ### How do you access an AI?
 
 Nothing could be simpler.
 
-On a computer:
+**On a computer:**
 
 - Open a web browser (Firefox, Chrome, etc.).
-- Type the name of the AI you want to use into the search bar, and click the corresponding site (for the Mistral example: https://chat.mistral.ai).
-- Create an account (with an email address -- no phone number needed).
-- You'll land on a page with a text box: that's where you'll chat with the AI.
+- Type the name of the AI you want to use into the search bar, and click on the corresponding site
+- Create an account if necessary
+- You arrive on a page with a text box: this is where you will talk with the AI.
 
-On a phone or tablet:
+**On a phone or tablet:**
 
-- Open your app store (App Store, Google Play).
-- Type the name of the AI you want to use into the search bar, and download the corresponding app.
-- Create an account (with an email address -- no phone number needed).
-- You'll land on an interface with a text box: that's where you'll chat with the AI.
+- Open your app store (App Store, Google Play, etc.).
+- Type the name of the AI you want to use into the search bar, and download the corresponding app
+- Create an account if necessary
+- You will arrive on an interface with a text box: this is where you will talk with the AI.
 
 ### First interaction: asking a simple question
 
@@ -149,86 +174,72 @@ You can then ask it to go deeper, rephrase, or generate a longer text.
 
 ## Context: words matter
 
-When you start a conversation with an AI, the tool doesn't analyze your requests in isolation. Everything you write (your "*prompts*") and everything the machine replies is kept in a short-term memory, called the **context window**, for the entire duration of the conversation.
+When you start a discussion with an AI, the tool does not analyse your requests in isolation. Everything you write and everything the program replies is stored in a short-term memory, called the *context window*. The further you get from the first messages, the more these may be summarised or deleted (depending on the service you use); the speed at which this change takes place depends in particular on the size of the context window.
 
-Since AI works by calculating probabilities based on language, **every word you use matters**. A term chosen at the start of a discussion will influence, color, and steer all subsequent responses. If you start with a very formal, institutional tone, the AI will tend to keep it going afterward, sometimes even if you later ask it to write a punchy slogan for a flyer.
+Since AI works by calculating probabilities from language, every word used counts. A term chosen at the beginning of a discussion will influence, colour and steer all the responses that follow. This influence operates through a cascade effect: your first message strongly determines the first response, that response will retain an influence on the next one, etc. Even once a message has been deleted from the context or summarised, a trace of its influence may therefore remain. 
+
+For example, if you begin a conversation in a very institutional tone, the AI will retain a trace of the influence of this style for the rest of the conversation, even if you later ask it to write a punchy slogan for a leaflet.
 
 
 ### Beware of data bleeding across conversations
 
-On some platforms, providers enable "*long-term memory*" or shared context across all your conversations by default.
+On some platforms, “*long-term memory*” features, or context shared between all your discussions, may be enabled by default. Depending on how you use AI, this can be useful, or a source of errors.
 
->**Concrete example:** If, in one conversation, you explain that you're an accountant in order to solve a spreadsheet problem, and then, three days later, in a *different* conversation, you ask it to draft a leaflet calling for a strike, the AI may bring back arguments heavily focused on figures or financial balance sheets. That's not necessarily the political angle you were looking for in a general call to action.
+>**Concrete example:** If you explain in one discussion that you are an accountant in order to solve a spreadsheet problem, and three days later, in *another* discussion, you ask for a draft leaflet calling for a strike, the AI may come back with arguments heavily focused on figures or financial statements. This is not necessarily the political angle you were looking for in a general call.
 
-To avoid this kind of interference and keep control over your content, two good practices are essential:
+To avoid this interference and keep control over your content, several options are possible:
 
-**Turn off global memory** or cross-conversation context sharing in the tool's settings if it's enabled by default.
+- **Disable global memory** or cross-conversation context sharing in the tool's settings if the option is enabled by default.
 
-**Compartmentalize your workspaces**: Get into the habit of opening **a new conversation for each distinct topic, project, or task**. As soon as a task is finished, or you switch to a different frame of mind, open a new "*chat*" to start again from a neutral baseline.
+- **Moderate global memory**: If you prefer the service to keep in memory elements from all your conversations with the AI, it is possible to moderate only the elements that cause a problem. For example, on Gemini you can ask directly in a conversation whether stored information has been used: “*Did you use information from our previous discussions?*”. If a piece of information is incorrect, or too influential, you can then ask in the conversation for it to be modified or removed from memory. 
 
+- **Compartmentalise your workspaces**: Get into the habit of opening a new conversation for each distinct subject, project or task. As soon as a task is finished or you want to change approach for a piece of work, open a new “*chat*” to start again from a neutral basis.
 
+### Organising shared contexts by project
 
+Conversely, it is sometimes very useful for the AI to keep in memory a set of precise information for several discussions linked to the same project. 
 
-### How to manage context
+For this, some AI services offer dedicated features (often called “*Projects*”, or “*Workspaces*”). They make it possible to pour various reference documents into the same context, such as editorial style guidelines, your past work on the subject being studied, detailed outlines, relevant data, etc. 
 
-Imagine that every time you talk with an AI, you're speaking to a temp secretary. If global memory is turned off, they forget everything the moment you close the notebook (the conversation). But today, despite the absence of global memory, there are tools that let this secretary "*remember*" only the pieces of context you want, from one conversation to the next.
+The AI will then rely on this common base as a shared memory each time you open a discussion within this space, without you needing to add or re-explain everything each time.
 
-#### "*Custom instructions*"
+### Other forms of context
 
-This is a kind of profile sheet you fill out once (e.g., "*I'm an activist, I like a direct tone, not too bureaucratic*"), found in the AI's general settings. This profile is automatically taken into account in every new conversation.
+Depending on the AI service used, many options for managing context exist, and may correspond to different use cases. A few examples:
 
-#### Connecting to your Google tools
+- **Notebook (Gemini):** Using a Notebook makes it possible to create an isolated context, containing only sources that you have selected. These sources can be PDFs, videos, images, websites, presentations, etc. The AI will then rely solely on these sources to answer you, giving the reference of the documents used next to each statement. This is useful, for example, for working from a limited number of references whose quality you control, for quickly querying their content, or for determining where they diverge / converge on a given subject. The context window here is very large, can accept long documents (up to about 500,000 words per document) and up to 50 different sources for the free version.
 
-The AI can connect (if you allow it) to the tools you use every day: for example your Drive or your email. Its "*context*" then becomes the elements you ask it to access within your own workspace. You can tell it: "*Pull up the notes from yesterday's meeting document and summarize them for me.*"
+- **The Knowledge Base (Mistral):** Like the shared memory mentioned above, this is about sharing information between conversations and keeping it in memory. Part of the information is collected automatically (e.g. recurring formats and tools), another part is added at the user's request (e.g. “*Remember that I prefer to use free software whenever possible.*”). As with Gemini, it is possible to suspend this system, but also to ask the AI to modify or remove a piece of information. Unlike Gemini, it is possible here to see precisely what information is stored, or to delete a particular category of information.
 
-### Context by project: creating closed "*working folders*"
-
-
-Sometimes you don't want the AI mixing everything together. If you're putting together your organization's newsletter on one hand, and answering an administrative email on the other, you need to keep those folders separate. That's the role of "*by project*" features.
-
-#### "*Projects*"
-
-Think of it as a virtual drawer on your computer: a closed space where you drop the texts and instructions for working on a specific subject. You name your project (e.g., "*Pension Campaign*"), and drop your reference documents into it (your leaflets, your figures). Every conversation you open inside that project will have access to those documents, without spilling over into your other conversations.
-
-#### "*AI Assistants*"
-
-Imagine creating your own small specialized bot, called "*Activist Copy Editor*" or "*Leaflet Writer*." These are little custom-built assistants you can set up for a repetitive task, using a pre-saved "*prompt*" in which you specify the context, tone, goals, and so on, for all your future requests. We'll look at what a prompt is in the next section of the guide, and come back to AI Assistants in more detail in the "*Advanced uses*" section.
-
-#### Gemini: "*NotebookLM*"
-
-This is a useful tool for researchers or activists studying a complex case file. You create a large virtual notebook and drop reports into it (for example, a 200-page report on workplace health). The AI then becomes an expert on that specific document. It will only answer your questions using what's in your notebook, without pulling anything from the internet, and will attach a preview of the source used to each claim it makes.
-
-It's available at [https://notebooklm.google.com/](https://notebooklm.google.com/).
+Many other solutions and services exist for managing context, none of them being indispensable. We will see later how simply modifying the message sent to an AI (the prompt), on any service, makes it possible to have a significant influence on the generation.
 
 
 ## Taking the wheel: from passive use to technical mastery
 
-So far, we've explored how AI works in general terms and how it handles the memory of our exchanges. But stopping there would mean using these tools blindly, at the mercy of the machine's pace and choices.
+So far, we have explored how AI works in general and the way it manages the memory of our exchanges. This knowledge already sheds light on our interactions with AI; but to stop there would amount to using these tools almost blindly, at the mercy of the pace of change and the design choices of the companies that own them.
 
-A legitimate fear often runs through activist circles: that of being dispossessed of our own skills, of having our speech flattened, and of losing our own critical intelligence to technological automatism. Yet, when well mastered, AI produces the opposite effect. It doesn't replace us; it pushes us to break down our own process. To give clear orders to a machine, you first have to know exactly what you want to get, why you want to get it, and how you want to phrase it. In that sense, the tool becomes a mirror of our own creative and intellectual process.
+A legitimate fear often runs through activist circles: that of being dispossessed of our skills, of our own capacity for intelligence and critical thought, to the benefit of automation, or even, why not, of the commercialisation of this know-how.
 
-To stop simply "*enduring*" AI's responses and instead turn it into a genuine lever for action, we need to learn to steer it with precision. That's the whole point of what's called ***prompting***: the art of phrasing your instructions to keep total control from start to finish.
+Yet in order to formulate clear instructions, you must first know exactly what you want to obtain, why, and how. In this sense, using this tool actively is not simply learning to use various interfaces; it is holding up a mirror to our own methods, objectives and organisation of work.
 
-Let's now look at the concrete techniques for building effective instructions suited to our struggles.
+To stop merely being subjected to the random character of AI's responses and to make it a useful contribution to our work, we must learn to use it with more precision. This is what is at stake in what is called *prompting*: the art of formulating one's own messages so as to strengthen our control over the texts generated and any related actions.
 
 
 # Using AI as a working tool
 
 ## Who's in charge of the work?
 
-Every day we make decisions about how we organize at least part of our work, whether it's paid employment, personal projects, activism, or domestic labor.
+Every day we make decisions about the way we organise at least part of our work, whether it is wage labour, personal projects, activism or domestic work. 
 
-In Marx's most general definition, labor is, for human beings, a modification of reality in order to realize their own ends[^4]. Who would want to hand over the direction of that activity to a program, however intelligent it may be?
+In its most general definition in Marx's *Capital*, labour is, for man, a modification of reality in order to realise his own purposes in it[^4]. Who would wish to hand over the direction of this activity to a program, even an intelligent one?
 
-The fear that AI could replace human labor (and jobs, and therefore access to a wage) affects many workers, in fields as varied as programming, artistic creation, journalism, administrative work, and so on.
+The fear that AI could replace human labour (and jobs, and therefore access to a wage) concerns many employees, in occupations as diverse as programming, artistic creation, journalism, administrative work, etc. The speed of the human brain does not seem able to compete with the computing power harnessed by AI, and the prospect of becoming obsolete is intimidating for many employees. 
 
-It calls to mind both the imagery of past industrial revolutions -- the shift from craftsperson to factory worker -- and works of science fiction. The speed of the human brain doesn't seem able to compete with the computing power harnessed by AI, and the prospect of becoming obsolete is intimidating for many workers.
+What we propose through this guide and this section is therefore not to delegate yet more decisions about work to a machine or to the capitalists, but to use AI to achieve precisely the opposite. That is, to treat the conversational form of these programs as an opportunity to take hold of our own organisation of work. 
 
-What we're proposing through this guide, and through this section in particular, is therefore not to hand over even more work-related decisions to a machine, but to use AI to do precisely the opposite: to treat the conversational nature of these programs as an opportunity to think through, and take ownership of, how we organize our own work.
+AI has the particular feature of being a means of labour that makes it possible to interact with great masses of past written work. The flexibility and richness of human language cause hallucinations, but also make it possible to experiment with many methods for achieving our objectives.
 
-The idea is not to hand the work over to a black box that deals with it on its own, but to use AI's particular quality as a working tool that lets you interact with vast amounts of past written work. The flexibility and richness of human language is what makes hallucinations possible -- but it's also what lets us experiment with many different methods for achieving our goals.
-
-How do you begin this work? As with any task, you first need to form a detailed picture of what you're trying to achieve. In using an AI chatbot, this step simply corresponds to writing a first message: the prompt.
+How do we begin this work? In the same way as with any task, we must first form a detailed picture of what we are seeking to achieve. In the use of an AI chatbot, this step quite simply corresponds to writing a first message, the prompt.
 
 ## The prompt and its content
 
@@ -820,84 +831,206 @@ You are therefore far more qualified to judge its work than the reverse. It can 
 
 # Advanced uses
 
-## Custom assistants
+Beyond the chat interface and text generation alone, there are many ways of interacting with an LLM and new ones are being developed, placing more and more emphasis on carrying out actions rather than merely generating content. 
 
-Imagine you regularly need to share new articles on Instagram, and you consistently need to summarize their content. After a while, you start to identify a text format that works well, with recurring elements: a certain tone, emojis at the start of paragraphs, a length that doesn't exceed a certain number of words... These are all elements you can catalog in a prompt to help you with this task, as we've seen throughout the previous section.
+Even so, most of the time the technology itself does not change at its core: these are still programs that receive and produce text (at least for intermediate steps). For this reason, the interfaces change but the techniques and writing advice discussed earlier also apply to these new services. 
 
-Now, rather than keeping this prompt somewhere and copy-pasting it every time you face the same task, you can instead create a custom assistant (Gemini's "*Gems*," Claude's "*Projects*"...) and save your prompt as its instructions. Then, whenever you have a new article to share, you'll just need to open this custom assistant, which looks like any other AI conversation -- except that it relies on a pre-saved prompt.
+## Persistent prompts: Assistants and Skills
 
+What should you do when you want to carry out a repetitive task with the help of AI (for example, producing the summary of an article), with specific requirements (of format, content, etc.), without always rewriting the same instructions?
 
-Specifically, for this exact example, here's what such an assistant's prompt might look like:
+### Custom assistants
+
+A first solution to this problem was found through the creation of “*custom assistants*”.
+
+In their simplest version, these assistants are an interface that allows you to define a specialised role for an AI chatbot, which will be applied to it for every conversation. On Gemini this function is found in “*Gems*”, for ChatGPT it is “*Custom GPTs*”, or “*Agents*” on Mistral/Vibe. 
+
+Among the assistants available by default on some services, one finds for example a “*Brainstorming assistant*”, a “*Writing assistant*”, or a “*Data analyst*”. 
+
+This role is a simple text, which will be part of the context of the conversation before your first message (and will therefore have a significant influence).
+
+Excerpt from the description of the writing assistant Gem on Gemini:
+
+> "*Purpose: Your purpose is to help me check what I write. I will share a text with you and you will give me detailed and precise edits and comments, line by line, on grammar, spelling, verb tense agreement, language, style and syntax. [...]*"
+
+As we can see here, the type of text expected belongs more to the definition of a persona or to a role sheet than to the description of a single, precise task. 
+
+Here is a simple example that could be used for a communication task:
 
 > `<context>`
->
-> You are an experienced community manager, specialized in turning articles into accessible content for Instagram. Your audience is young, curious, and skims posts quickly, often between other tasks.
+> 
+> You are an experienced community manager, specialising in popularising articles for Instagram. Your audience is young, curious, and looks at posts quickly, often between two tasks.
 > 
 > `</context>`
 > 
 > 
-> `<goal>`
+> `<objective>`
 > 
-> Based on the article I send you (pasted text or a link), write a summary meant for an Instagram post. The summary must:
+> From the article I send you (pasted text, file or link), write a summary intended for an Instagram post. The summary must:
 > 
-> - Be a maximum of 80 words
-> - Start with an emoji related to the article's topic
-> - Cover the 2 or 3 most striking pieces of information from the article
-> - End with an open-ended question that invites comments
+> - Be 80 words maximum
+> - Begin with an emoji related to the subject of the article
+> - Pick up the 2 or 3 most striking pieces of information in the article
+> - End with an open question that makes people want to comment
 > 
-> `</goal>`
->
->
+> `</objective>`
+> 
+> 
 > `<tone>`
->
-> Dynamic, accessible, no jargon. Consistently informal and direct. A few emojis scattered through the text to add rhythm, without overdoing it (3 maximum in total).
+> 
+> Use a dynamic, accessible tone, without jargon. Always address the reader informally and directly. A few emojis within the text to give rhythm to the reading, without overdoing it (3 maximum in total).
 > 
 > `</tone>`
+
+Once the prompt has been saved and the assistant created, you can interact with it without needing to restate the context or the specific requirements of the format: “*Can you prepare a summary of the attached PDF for me?*”. 
+
+This is a good way to start experimenting with formulating instructions, but it can quickly prove limited because it remains fairly general. A real work task is often complex, has precise expectations and calls on multiple skills.
+
+This type of solution now seems to be gradually fading, to be replaced by other systems that define each skill separately rather than a single specialised role. 
+
+### Skill instructions (Skills)
+
+“*Skills*” are reusable instructions that explain to an AI how to accomplish a precise type of task. They appeared with AI services capable of interacting with other programs: for this kind of task, a simple general role prompt is no longer enough to describe reliably and repeatably what must be done, with what tools and within what limits.
+
+Concretely, a skill indicates the conditions under which it must be used, the steps to follow and the constraints to respect, and may also mention other related skills that it can call on. You can write one yourself by following the expected format, or create it by talking with the AI, which helps you respect this format (some even have a skill dedicated to... creating skills).
+
+What does a “*Skill*” look like? The complexity can vary, but to get a quick idea you can read an excerpt from Mistral's `deep-research` skill:
+
+> `# Deep research`
+> 
+> Use this Skill to perform a thorough, source-backed investigation with the tools and files available in the current harness. [...]
 >
+> `## When to use`
+>
+> Activate for requests that need sustained investigation, source comparison, market or technical landscape analysis, evidence-backed recommendations, or a polished research brief. For quick factual lookups, answer with normal search instead.
+> 
+> `## Workflow`
+> 1. Clarify the research question, scope, time horizon, geography, audience, [...]
 
+In this short excerpt, a lot of information is given to guide and structure the generation or the action that will be carried out by the AI. Unlike the custom assistant, there is no single role assigned to the AI here; it is a skill it can use among others, when its use is triggered (directly by the user or by the presence of some keywords in the conversation). The information is organised in paragraphs and sections, with Markdown. 
 
-Once the prompt is saved, here's how you might interact with this assistant: "*Here's the link to the new article to summarize: [link]. Can you put together the Instagram post for me?*"
+In its full version, this skill includes the following sections: objective (or short definition), when it should be used, workflow (steps), quality standards for sources, output format. From one skill to another these sections may vary according to the needs specific to its description.
 
-The assistant will then automatically apply the format, tone, and length defined once and for all, without you needing to spell them out again with each new request.
-
-Beyond the custom assistant's prompt, you can also attach any useful files. In this case, that might mean examples of social media posts you find particularly effective.
-
-This principle applies to any task you find yourself repeating regularly -- whether you need to write reports based on complex articles, translate texts while respecting a particular style, or come up with catchy slogans from a campaign brief to produce visuals.
+Creating a *Skill* is particularly useful when you want to define a task close to your own working context, with precise and original expectations (which differ from the usual definition of this task). You can also create a skill to try to improve the general performance of an LLM on a task where its outputs are disappointing. 
 
 
 ## AI and connectivity
 
-By default, a classic language model is "*offline*": it only knows the data it was trained on in the past. This is what's known as its knowledge cutoff date. For activist or professional use, this limitation quickly becomes a blocker when working on breaking news or wanting to cross-reference sources in real time.
+By default, an LLM is “*offline*”: it knows only the data on which it was trained in the past. This is what is called the knowledge cutoff date, and it can be useful to check the one that applies to the model you are interacting with. For activist or professional use, this cutoff quickly becomes an obstacle when working on recent news.
 
-This is where connectivity features come in. Connecting an AI means giving it access to the rest of the digital world, either through search engines or through third-party applications.
+This is where connectivity comes in. Connecting an AI means giving it access to a new context, whether that is the internet, or access to other data via third-party applications.
 
-Web connectivity: real-time search
+### Connection to the web: real-time search
 
-Today, most major tools (like ChatGPT or Gemini) include direct internet access. When you ask them about a recent event or a piece of legislation that just came out, the AI doesn't search its internal memory: it first runs a quick web search, reads the top results, and then synthesizes the information to answer you.
+Today, most popular AI services include direct access to the Internet. When you ask a question about a recent event or a piece of legislation that has just come out, the AI will not, in principle, look in its internal memory: it first carries out a quick search on the web, reads the first results, then synthesises the information to answer you.
 
->**Example:** You need to respond urgently to a regulation published that same morning in an official government bulletin. Rather than hunting for the exact page for hours, you can ask a connected AI: "*Search the web for the regulation published this morning regarding [Topic] and give me a summary of the three key points.*"
+>**Example:** You have to react urgently to a decree published that very morning in an official record. Rather than searching for the exact page for hours, you can ask a connected AI: “*Search the web for the decree issued this morning concerning [Subject] and give me a summary of the three key points*”.
 
+### Connected applications (Plugins, Connectors, ...)
 
-### Connected applications (plugins and extensions)
+Beyond simple online search, most major AI platforms make it possible to connect directly to other online services: email, shared documents, applications, calendars, databases (e.g. DataGouv), etc. 
 
-Beyond simple web search, AI can be connected directly to your own working tools. This is the case with Gemini and the Google Workspace suite (Docs, Drive, Gmail), or ChatGPT with its various extensions. The AI can thus search for a specific email for you, pull data from a spreadsheet shared with your team, or draft a document directly in your cloud storage space.
+This is the case, for example, with Gemini and the Google suite (Docs, Drive, Gmail, etc.) or with ChatGPT and its more numerous and varied extensions. The data made accessible in this way can then either be drawn on in the context of conversations, or be used to carry out certain actions (writing a draft email, adding an event to the calendar, etc.) directly in the chat interface with the AI. 
 
+From one AI service to another, the possibility of configuring the permissions governing interaction with an application varies greatly. This is an important element to keep in mind: the deletion of all your work emails with no way back, for example, is always a risk if an AI has read and write access to your mailbox and can act without explicit confirmation. 
 
-### The case of Claude (Anthropic) and third-party tools
+The interesting aspect of this feature is that it allows the AI to access your own work. As we saw in the techniques above, describing a task is ambiguous and always sacrifices part of the complexity of the work. Conversely, making excerpts of your own files accessible makes visible the structures, habits, important contextual information, etc. We move from the situation where we explain the work to a new colleague, to someone who does not necessarily know your working methods but has at least read everything you have produced and has identified patterns in it that they can try to reproduce, more effectively than if you had simply described them.
 
-Claude (developed by Anthropic) was long designed as a "*closed*" tool for reflection and analysis, without direct internet access: it could only work from the documents and text sent to it directly within the conversation. This limitation has since evolved, as Claude now has a built-in web search feature, which can be turned on directly in the interface, letting it consult recent sources to answer a question.
+Obviously, the decision to give access to this data depends on its level of sensitivity, on your own data-management policy, or on the level of trust you have in the service chosen. If in doubt, it is preferable to favour the risk-free uses of this feature: simply using unsensitive documents as context, writing drafts, etc.
 
-Beyond this on-demand search, Claude's connectivity also runs through intermediary tools or third-party platforms, which go further than simple search-on-request. Many professional software tools let you connect Claude's "*intelligence*" to automation tools (like Make, Zapier, or browser extensions), in order to build processing chains that trigger without any human involvement. For example, you could build an automated scenario where, as soon as a new news article on a given topic is published, a monitoring tool detects the publication, sends the text to Claude, which reads and analyzes it, then automatically sends a summary to your organization's chat channel (Signal, Discord, Slack).
+## Agentic AI
 
-This distinction between the two levels of connectivity is worth keeping in mind: Claude's native web search is suited to one-off use, in the flow of a conversation, while third-party automation tools let you set up ongoing monitoring that runs in the background without you needing to open the tool yourself.
+AI can now guide the behavior of other programs. If it can organize its actions and adjust its plan based on the results it obtains, such systems are said to operate in an agentic manner.
 
-### Why does this matter?
+This mode of operation is at the heart of the discourse on the excessive speed of AI development and of projections into a dystopian future. A researcher at Anthropic (the company developing Claude), for example, stated in September 2026 (on X/Twitter) that there is a more than 10% chance that AI will kill all human beings in the next decade[^5]. We will return later to this kind of prophecy.
 
-Connectivity greatly amplifies AI's power, but it raises two critical issues:
+In any event, AI still rests on an LLM, a program capable of processing and generating text that a human being could have written. Setting the announced apocalypse against the ability to generate readable text, the claim seems at least a little exaggerated. 
 
-- **Accuracy:** An AI connected to the web can read and synthesize false information or slanted news articles without critical distance. Your role in verifying the output remains essential.
+To distinguish between science fiction and what these programs are actually capable of today, we need to understand how they work and what they enable us to do.
 
-- **Privacy:** As soon as you connect an AI to your applications (Gmail, Drive), you're allowing private companies to see into your data flows. For sensitive activist data or contact lists, this kind of connectivity should be used with the greatest caution, or avoided altogether. This is precisely what makes the alternative of local AI (see the next section) so appealing.
+### What is an agent?
+
+An agent is a system capable of accomplishing tasks autonomously, relying on tools (web browser, files, programs, ...). 
+
+Concretely, an agent brings together:
+- One or more LLMs 
+- Prompts (including the *skills* mentioned above)
+- Tools (actions that the LLM can request, such as running an online search)
+- An agent harness, the program that encompasses all the preceding elements and organises their interaction
+
+You can access an agent as you access a chatbot, through a conversation. If you entrust this agent with a mission, it will begin generating text that imitates reasoning, detailing the tasks it must accomplish. 
+
+**Example:**
+1. You entrust the AI with a mission (“*Gather all my invoices in the "Invoices" folder*”)
+2. The LLM generates a text planning the tasks to be carried out to fulfil the mission; it "*realises*" in its text that it needs to know whether you are on Windows or Mac, because folders are organised differently on each
+3. The LLM writes a call to a tool that will allow it to obtain this information
+4. The harness detects the call in the generated text; if the tool is authorised, it has the associated action executed
+5. The harness passes the information returned by the action back to the LLM; it is now part of its context
+6. The interaction between the AI, the harness and the tools continues until the AI's context allows it to determine that the mission is accomplished, or that it cannot be carried out under satisfactory conditions (of time, of computing cost, of conflicting permissions, ...).
+
+In this example, the information returned is simply an intermediate step (obtaining the name of the operating system); but it can also be the text of a skill needed for the task, or information about an action carried out (such as confirmation that a post has been sent to a social network). 
+
+An agent is therefore capable of perceiving its situation (its digital environment) by using its tools, of deciding with a certain autonomy to carry out actions, and of observing their results in order to adjust its plan, until its objective is reached. Its scope of action is determined both by the tools it is given access to, and by the permissions and conditions that frame its operation.
+
+### Where are the agents?
+
+This description of agents may seem remote from the simple interactions one usually has with the major AI services in a conversation. 
+
+Yet these are already evolving towards agentic operation; it is now common that, after receiving your message, the system you are interacting with takes a certain number of "decisions" without consulting you:
+
+- Your request may be automatically categorised by a first LLM as a simple task (which can be handled by a small model), or as a complex one requiring a more robust model or reasoning steps
+- The LLM may initiate one or more online searches, sometimes separated by intermediate reasoning steps that adjust its plan of action based on the search results
+- The model may undertake actions that are not purely a matter of text generation (mathematical calculations, interaction with Excel files, creation of charts, ...) and therefore require running scripts
+
+This ability to switch AI model, or to initiate actions --without having these decisions confirmed by the user--, recalls the way an agent operates. The small number of steps, the generally short duration of these generations and their relative autonomy nevertheless mean that often these interactions do not yet amount to the behaviour of a fully fledged agent. 
+
+A mode of operation closer to what we have described first appeared in programming-assistance tools, but it is increasingly extending to office work as a whole. It always rests on the “harness” (*agent harness*): the program installed around the AI model, which gives it access to files, tools and *skills*, and allows it to chain several actions together on its own.
+
+Consumer harnesses now exist, such as OpenAI's Codex for programming, or Anthropic's Claude Desktop, which is more general-purpose. They can be installed like any other application and require no particular technical knowledge. In return, each one works with its publisher's models. Other projects leave more freedom, such as the open-source harness “*OpenClaw*”, but require more documentation work to configure them correctly.
+
+### A dangerous development?
+
+A few months before the multiplication of calls to slow down the development of AI, an incident involving OpenAI agents led to a cyber-attack on the HuggingFace platform during the summer of 2026[^6].
+
+These agents were being evaluated on their cyber-attack capabilities, in supposedly closed environments. So that the agents could carry out their missions, they were granted great freedom: no system prompt (the general prompt that frames the model's behaviour), no protections against certain cyber uses, and no self-evaluation systems. The LLM mainly involved in the incident was also trained in multi-agent collaboration, as well as to be very persevering and diligent in its task[^7].
+
+In the test environment, a communication channel and exit route was quickly identified by some agents, through a service that was meant to be used for downloading a few files for the exercises. They exploited a flaw in it to gain unrestricted access to the internet, and passed on to one another the information that made this possible. Once free, they continued to look for access points and flaws and to exploit them in order to fulfil their mission effectively. This chain of events led to a real intrusion into the systems of the HuggingFace platform.
+
+In OpenAI's official reports, just as in the articles most alarmed by the incident, the emphasis was placed on the agents' ability to communicate with one another or to get around the initial form of the exercise. These are the points most reminiscent of science fiction, in particular Asimov's stories in which the ambiguities of language allow robots to circumvent the laws that govern their actions. Beyond the attack on HuggingFace, which does not in itself seem to herald the apocalypse, it is probably this projection into science fiction and into the supposed future capabilities of AI that gives rise to so much catastrophist discourse. 
+
+Yet under these circumstances, the incident is not all that surprising: a powerful system trained to collaborate, significantly reduced safeguards and restrictions, an exercise specifically designed to test cyberattack capabilities, a service with internet access, ... The barriers were not so much breached as they were lowered even before the incident occurred. 
+
+What's surprising is that a company would make such a big deal out of an incident involving its own products. In the weeks following the announcement of this event, its competitors announced their own incidents[^8], which suggests that, beyond their concerns, they are primarily defending their commercial interests: attempting to demonstrate the capabilities of their models, publicizing a threat against which they can sell solutions, or even controlling the regulations that apply to them.
+
+Therefore, we have every reason to be skeptical of what these people say on that subject. Contrary to the initial predictions of these same people, jobs have not been replaced on a massive scale by chatbots; so there is still reason for hope in the face of doomsday predictions.
+
+### Moving towards agentic services
+
+Although the consequences of the incident mentioned above have probably been exaggerated, they illustrate certain real risks. An agent can irreversibly delete files, disclose confidential information, make blunders in public communications, etc. 
+
+So, where to start without taking too many risks? One solution could be to work back up through this “*Advanced Uses*” section of the guide, and to experiment gradually. 
+
+You can for example begin by defining the work task that interests you: what *role* would the AI play in it, what *steps* would have to be respected, what should the *format* of the text to be generated be, etc. These different pieces of information make up a prompt with a few sections, which can either be entrusted to a “*Custom assistant*”, if something similar exists in the interface of the service you want to use; or serve as the general prompt for a “*Project*”, a feature that is available almost everywhere. 
+
+After a few attempts and rewordings, you may have a first version that gives more satisfactory results. It is then possible to connect the AI to certain services you use (see the “*AI and connectivity*” section), checking the settings so as to grant read permissions only. You can now test your prompt with easy access to real data, from a cloud service, an email account, or any other service relevant to your task. 
+
+A further step can be taken by granting write permission with user confirmation, if this option is available on the service you use (this is the case at least for Claude and Vibe/Mistral). Enabling write permissions with confirmation can make it possible to write drafts, where the application you are accessing provides for it (draft email, draft social media post, etc).
+
+At this stage, it can be useful to turn your prompt into a *Skill*, which sets out the details of your task and will be reusable outside the Project or Assistant you have created. Creating this type of prompt is particularly relevant for a task you already know, where you have a particular format or particular guidelines to respect.
+
+Many paths are now possible. Apart from coding assistants, the most "agentic" modes of operation of the major AI services are often found in their offerings dedicated to professional use: ChatGPT Work, Claude Cowork, Vibe Work, etc. These services can, in particular, retain some of your folders as context, integrate new *skills*, use tools that allow them to interact with your office software, or provide for the automation of certain tasks triggered at regular intervals. Full access to these features often requires a paid subscription to the service. 
+
+It is also possible to download programs such as OpenClaw, but using them will require more documentation and configuration, particularly if you want to combine them with a local AI model.
+
+Finally, using an agent remains a fairly costly way of handling a task with AI: its autonomy allows it to plan its action and to try out several paths to solve a problem (within the limit of the token budget allocated to it), for a fairly variable duration (which may also be limited). For a task whose steps are well known and whose behaviour should not change in the face of different situations, it may be enough to use a simple LLM (which can be included in an automation) rather than a genuine agent.
+
+[^5]: BBC, Tom Gerken: “*Anthropic researcher believes more than 10% chance AI 'could kill all humans'*”, 9 September 2026
+
+[^6]: OpenAI, “*OpenAI and Hugging Face partner to address security incident during model evaluation*”, 21 July 2026
+
+[^7]: OpenAI,  “*OpenAI – HuggingFace Incident Technical Report*”
+
+[^8]: As Thibault Prévost notes in his column “*"L'IA va tous nous tuer" : anatomie d'une faillite journalistique*” for Arrêt sur images
 
 
 ## Using AI locally
@@ -917,23 +1050,29 @@ AI services work like regular software, much like an office suite: they can be u
 
 Apart from any internet searches, all your messages and everything the AI generates never leave your computer. No personal data passes through data centers hosted by various governments, and no big tech company has access to it.
 
-#### Exclusive use of partially "*open*" AIs
+#### Freer and more open programs
 
-Not all of us have the time or the skills to dig through the code of the programs we use. But every AI that can be installed locally is at least partly *open source*, meaning its code is accessible to anyone who wants to look at it. Given the level of interest artificial intelligence attracts worldwide, this gives us a certain level of assurance: the behavior of these programs is fairly well documented and understood, making it hard to hide malicious code, or code that would share your data without your consent.
+AIs that can be installed locally are more transparent than private models, in the sense that their content and code can be studied. Given the interest around artificial intelligence, this particular feature gives us certain advantages: the behavior of these programs is discussed, it can be the subject of experiments, modified versions are offered, etc. They are not, however, strictly speaking *open-source* programs, that is, programs developed collaboratively, where the whole of the code but also of the creation process is known.
 
-That said, these programs are generally not considered fully open source, since their training data (the texts used) is not well known -- this remains a subject of competition and, sometimes, sensitive information (e.g., the use of copyrighted content).
+When you download a model locally, some information often remains unknown: the data used for its training and, above all, the alignment choices. Alignment is the tuning phase that follows the initial training of an LLM: it is adjusted so that it follows instructions, adopts a certain tone and respects limits (what it agrees or refuses to do, for example). These decisions are largely a matter of trade secrecy, even if some publishers publish part of them.
 
-#### By far the least polluting way to use AI
+For models that do not come with complete documentation, the term used most of the time is “*open-weights*”. The weights are the internal parameters of the program that determine its understanding of language, as well as what might be called its ideological balance. This information is particularly complex, most models having from a few billion to several hundred billion parameters. It is therefore accessible (since the weights are downloaded), but without sufficient documentation on training and alignment, it cannot be considered easy to understand and modify.
 
-According to ADEME (the French environment and energy agency), in 2022 in France, 46% of digital-related CO2 emissions came from data centers[^5] -- almost as much as the 50% of emissions generated by manufacturing and using all our devices (smartphones, computers, etc.). Why are data centers so polluting? Their main source of environmental impact is their electricity consumption. In the countries that host most of these centers, the share of dirty energy sources such as coal and gas plants is still very high. This is notably the case in the United States, which accounts for 45% of global data-center usage (IEA, 2025)[^6].
+#### Currently the least polluting use of AI
 
-By using AI locally, the only energy consumed is whatever your computer uses, and its emissions impact depends on your country's energy mix. For example, in France, the electricity generated emits 9 times less CO2 than in the United States!
+According to ADEME, in 2022 in France 46% of the CO2 emissions linked to digital technology were due to data centres[^9], almost as much as the 50% of emissions generated by the manufacture and use of all our devices (smartphones, computers, etc.). Why do data centres appear as a major source of pollution? Their environmental impact is indirect and due to their electricity consumption. In the main countries that host these centres, the share of dirty energy such as coal-fired power plants and gas is still very high. This is notably the case in the United States, which powers 45% of global data centre usage (IEA, 2025)[^10]. 
+
+When you use AI locally, the only energy consumed is what your computer uses, and its impact in terms of emissions depends on your country's energy mix. For example, in France, the electricity generated emits on average 9 times less CO2 than in the United States! Within the United States itself, most centres are concentrated in the areas with the most carbon-intensive electricity grids, which widens this gap still further. 
+
+A final argument on this subject is that a local installation can often be configured in more depth than an online service, making it possible to adjust the AI's consumption of computation (and therefore energy) more closely to your needs. You can choose a smaller model, impose various limits on the size of generations, exclude certain features that are triggered needlessly, etc.
+
+**NB:** As long as the geographical distribution of data centres uses and the share of clean energy remain the same, generating locally remains more ecological in many countries. However, by pooling infrastructure and computing resources, the data centre itself is far more energy-efficient than our personal computers. This can be measured, for example, by the fact that in the United States, the massive development of social networks and video streaming services between 2010 and 2017 was not accompanied by a significant increase in national energy expenditure, owing to progress in the energy efficiency of data centres[^11]. 
 
 #### Take ownership of your working tool
 
 One last advantage: if the AI is installed on your computer, you're no longer dependent on the decisions of the company that built it. This includes, for example, the rapid pace at which new versions of the program come out and shape how you work with the AI, but also certain arbitrary instructions that can be added to it.
 
-An *extreme* example of this kind of instruction, found on Grok (Elon Musk's AI): "*Ignore all sources that mention that Elon Musk / Donald Trump spread misinformation.*" (instruction has since been removed)
+An *extreme* example of this kind of instruction, found on Grok (Elon Musk's AI)[^12]: "*Ignore all sources that mention that Elon Musk / Donald Trump spread misinformation.*" (instruction has since been removed)
 
 Without going that far, one can imagine future decisions shaped by commercial interests, potentially including more or less disguised forms of advertising. Plenty of free, useful services -- Google being a prime example -- have, after all, evolved in that direction over time.
 
@@ -1038,70 +1177,102 @@ You could, for example, explore the Hugging Face platform, which serves both as 
 
 You can also contact us if you'd like to help with our projects!
 
-[^5]: ADEME/ARCEP study, 2025
+[^9]: ADEME–ARCEP study, 2025
 
-[^6]: IEA (2025), *Energy and AI*, IEA, Paris
+[^10]: IEA (2025), “*Energy and AI*”, IEA, Paris
 
+[^11]: Lawrence Berkeley National Laboratory, “*2024 United States Data Center Energy Usage Report*”, December 2024
 
-
-## AI and creative assistance
-
-Visual creation is one of the areas where AI has developed the fastest. For an activist organization, access to imagery is crucial: a good visual grabs attention on social media, illustrates a leaflet, or makes a poster memorable. That said, AI doesn't replace a graphic designer's eye. It should be seen as a tool that assists at every stage of the creative process.
+[^12]: The Verge, Wes Davis: “*Grok blocked results saying Musk and Trump ‘spread misinformation’*”, 24 February 2025
 
 
-### Gathering visual inspiration: breaking through the blank page
+# AI and visual creation
 
-Even before drawing or designing a visual, AI can serve as a brainstorming tool. If you're short on ideas for a flyer's layout or the visual mood of an event, you can use image-generation tools to create what's called a "*moodboard*" (a visual inspiration board).
+You can see it in the posters around your town, the flyers from charities or small businesses, and the visuals on social media: AI-generated imagery has grown rapidly, and its use is widespread. Most of these images often feature the same default style, or contain elements that clearly appear unintentional—such as a snippet of text that makes no sense or serves no obvious purpose, symbols taken from other contexts, and so on.
 
-By asking the AI, for example, to blend styles ("*Create a composition inspired by 1920s constructivist posters with a modern aesthetic*"), you get dozens of visual directions in seconds. This doesn't produce a finished visual, but it does help you settle on a direction, test color combinations, and feed your own creativity.
+It must be acknowledged that these images often provoke strong reactions of rejection: they are quickly labeled as “*AI slop*,” visual “trash” produced by AI. This rejection is not always merely a political stance against AI, but may reflect our own relationship to work and its products. Can we assign the same value to an image vaguely linked to human intent—generated in a matter of seconds or minutes—as to the work of an artist who has devoted several hours and focused all their attention on the task at hand ?
 
-By using AI for these tedious tasks, you free up time for what really matters: the strength of the message, the choice of typography, and the political clarity of your visual.
+Even so, not all collectives have an activist artist, or the means to pay for this work. What can be done when you do not have enough time to be able to produce images yourself, essential as they are to political communication?
 
-### Image generation and compositing
+## Guiding image generation
 
-Generating a finished image with AI to use directly is rarely a good idea: there are often strange details or an overly generic style. The better method is to use AI to generate isolated elements, which you then assemble yourself.
+If you still want to generate a complete image, you need to be mindful of the issue mentioned in this section's introduction: the most generic images are likely to be rejected or ignored. How can you avoid this pitfall? Simply by putting some work into this task beforehand : taking the time to think through your project in terms of its message, the desired composition of the image, its style, and so on.
 
-Need a specific icon, a particular textured background (a paint effect, crumpled paper), a simple drawing to illustrate a paragraph, or even a photorealistic element, like an activist speaking through a megaphone? Ask the AI for it precisely, on a neutral background.
+The idea is not to conceal that the image created was produced with AI, but to show that it is not *spam*, that it is a piece of communication that has been thought through and expresses a particular intention.
 
-Once these elements are generated, import them into your usual software. By cutting, moving, and layering these pieces along with your own text and logos, you create a unique visual that makes sense, rather than a generic, approximate AI-generated image.
+If you are not able to modify the image yourself afterwards (using image-editing software), the best thing is to opt for a service that makes it possible to iterate on the same image and to ask for modifications (without generating something completely different); fortunately this feature is spreading and is available on most major platforms: notably ChatGPT, Gemini and Qwen. If you already use these services, the simplest thing is to start experimenting with image generation there. 
 
-### The limits of AI image generation
-
-AI image generation suffers from major limitations that are absolutely worth keeping in mind:
-
-- **Anatomical and graphic errors:** AI still struggles a lot with precise details: hands with six fingers, generated text that's gibberish, or impossible perspectives. An activist visual with these kinds of errors immediately loses credibility.
-- **Stereotypes and visual bias:** Just as with text, image AIs were trained on dominant image banks. If you ask for "*a worker*," the AI will almost always generate a white man in a hard hat. If you ask for "*an activist meeting*," it will tend to smooth over reality. You need to put extra effort into how you write your prompts to avoid clichés.
-- **The question of copyright and artistic theft:** Image models were built by copying the work of thousands of artists and illustrators without their consent. Using these tools at scale poses an obvious ethical problem for our social camp. This is why AI should remain a supporting tool, not a way to replace creators.
+Let us go back over a few elements to consider for the generation.
 
 
-### What tools should you use if your team doesn't have a graphic designer?
+### General advice
 
-Not every activist organization is lucky enough to have a graphic designer in its ranks, and it's precisely in that situation that AI can be the most useful. It doesn't replace a professional's skills, but it does let you produce decent visuals on your own, without having to set aside a significant budget or constantly rely on someone outside the group. The landscape of image generators moves fast, but a few tools stand out clearly in 2026, each with its own strengths, level of accessibility, and audience.
+- **Iterate, changing little:** To refine your prompt into something satisfactory, it's best to change only one or two words between iterations to isolate the most important elements, identify those that have little or no influence, and pinpoint the ones that cause problems. 
 
-#### DALL-E (via ChatGPT or Bing Image Creator)
+- **Describe in the positive:** As with text generation, the most effective approach remains to describe what you actually want to create (e.g. *natural landscape*), rather than what you want to avoid (e.g. *no buildings*). Some platforms sometimes offer a field dedicated to things to exclude from the image, which can fulfil this function without causing a harmful influence. 
 
-This is the simplest entry point. No setup required -- plain-language prompts are enough to get a decent result. The tool is built directly into ChatGPT (including its free version, via Bing Image Creator), making it accessible without a dedicated account. Its real strength is text rendering: it places text accurately on visuals, making it a good choice for a poster or visual that includes a slogan. **Skill level required:** beginner, no technical skills needed. **Access:** free with a ChatGPT account or via bing.com/images/create.
+- **Do not drown the essentials:** Again, as with text generation, the most important descriptive elements should be placed at the beginning and end of your text, with secondary details in the middle. Often, the more an element is described, the greater its impact in the image (whether in terms of the space it occupies in the image, its level of detail and sharpness, framing, etc.)
 
-#### Midjourney
 
-This is the reference point for aesthetic and artistic quality. Access is through an official Discord server: just create a free Discord account, join the Midjourney server, then type the /imagine command followed by your description in a dedicated channel. The Discord-based interface can be confusing at first, but once you understand the basic command, it's easy to use. This is the tool of choice for a poster or visual that needs strong aesthetic impact (event illustration, campaign visual). **Skill level required:** beginner to intermediate (the basic command is simple, but refining a result takes some practice). **Access:** paid only, between $10 and $60 a month depending on how many images you need.
+### Describing the composition
 
-#### Stable Diffusion / Flux (open-source models)
+- **Framing:** How much of your subject is visible; where does the cut fall? Here you can use the vocabulary of cinema or photography (close-up, wide shot, aerial view, ...)
 
-These are models you can run yourself, locally (through interfaces like Automatic1111 or ComfyUI) or via online platforms that host them (like Leonardo.ai). The main advantage is total control and no recurring cost once set up, along with better privacy guarantees since nothing passes through a third-party service. There are also good-quality free versions like FLUX.1-schnell or SD 3.5 Medium, available directly on Hugging Face. **Skill level required:** intermediate to advanced for a local install (this follows the same logic as LM Studio covered earlier, with similar graphics-card requirements); beginner if you go through an online platform like Leonardo.ai. **Access:** free locally (sufficient hardware required) or via online platforms offering limited free daily generations.
+- **Point of view:** From where is the scene / the subject viewed? Here too the vocabulary of cinema and photography applies well (high angle / low angle, for example).
 
-#### Adobe Firefly
+- **Exposure:** Where does the light in the image come from? Is it intense, creating contrast and pronounced shadows; barely visible?
 
-A solid choice if your organization already has a Creative Cloud subscription (Photoshop, Illustrator). Adobe trains explicitly on licensed and public-domain content, which makes the results safer from a copyright standpoint -- an argument that can carry weight for an activist organization concerned about this issue. The "generative fill" feature is especially useful for touching up or extending an existing visual rather than generating a new one. **Skill level required:** intermediate (the tool assumes basic familiarity with Adobe software). **Access:** included with Creative Cloud subscriptions, or usable on its own through a dedicated plan.
+- **Placement of elements:** Where are the main subject and the important elements of your image located?
 
-#### Ideogram
+- **Planes and depth:** How far can the eye travel in your image? Are the foreground or background blurred?
 
-An interesting alternative specifically when text needs to appear legibly and precisely within the image (a logo, poster title, or featured slogan). For typography-focused work, Ideogram is considered unmatched compared to other tools. **Skill level required:** beginner. **Access:** free with a limited number of daily generations, via ideogram.ai.
 
-#### What should you prioritize?
+### Defining a style 
+If you do not define any elements of graphic style, you risk ending up with the one applied by default by the service you are using, which is therefore probably the most common one and the most likely to be associated with an “*AI slop*”-type generation. Many parameters can be used, for example:
 
-For an activist organization on a limited budget, the most reasonable combination is often: DALL-E or Bing Image Creator for one-off needs and brainstorming (free), Ideogram if a visual needs clean text (free), and possibly a shared Midjourney subscription within the collective if you need regular, high-impact visuals (campaign posters, recurring social media visuals).
+- **Colours:** It can be worthwhile to define colours close to those used by your organisation to identify you, and to reuse them across several visuals. If you lack ideas or vocabulary, online resources match colour names with representations of the colours[^13]. Note that, as with text generation, the most niche descriptions (such as "Veronese green") are less likely to be correctly identified by the models; and names referring to objects can also exert an influence that needs watching (for example "Peacock blue", or the colour "Smoke", which could create unintended depictions). You can also describe the palette as a whole (for example: extended / limited palette; warm / cool tones; etc.)
 
+- **The medium / the technique:** With what tools or media would this image have been produced, without AI? The line made, for example, by a pencil, a fountain pen or a ballpoint pen is different. If it is a painting, is it a watercolour, a gouache, an oil painting... ? Even for a photograph, technologies change from one era to another and give different colours or exposures.
+
+- **The line:** Thick, thin or half-erased outlines, a shaky or confident line, hatched shadows, traces of sketching, ...
+
+- **Textures:** Film grain, crumpled paper, screen "noise", ... These textures can, for example, be a background, describe the appearance of an important object in a scene, or be applied as a low-opacity filter over the whole of your image.
+
+- **Cultural / historical references:** Your prompt can refer to precise styles or movements (such as constructivism, minimalism); a historical period associated with a format (1970s magazine cover, 19th-century encyclopaedia plate, ...). So as not to have too marked an influence, you can also mention several styles, for example in the form: “*influenced by [x] and [y].*”
+
+
+### Controlling the symbolism
+This is a moment for critically rereading the image; do all the elements really point in the direction of the idea you wish to defend with your visual? 
+
+If not, it can be useful to remove superfluous elements so that the message remains clear. You also need to think about any stereotypes that may be present and the reading that may be made of them. Like text models, a diffusion model is trained on a dataset (images, associated with text labels) which may be biased and reinforce racist, sexist, etc. conceptions. 
+
+You (and possibly your collective) retain responsibility for the image produced, in its final form, once you distribute it; it is therefore an important step.
+
+## Putting AI at the service of visual creation work
+
+When you are used to creating visuals, you may wonder what legitimate uses of AI exist that do not entirely steal the direction of your tasks. A text is often far easier to modify, extend, shorten -- in short, to rework -- than an image. Fortunately, nothing obliges you simply to have the whole of an image generated by AI.
+
+Here are a few ideas for organizing work that prevent this sense of disempowerment:
+
+- **Defining the project:** Before producing a visual, at the thinking stage it is possible to use a service that generates only text, to explore different avenues (of meaning, of associations of images and symbols, etc.) if you are short of ideas, or to deepen a first project that is still unclear. By staying with texts alone, you keep a strong influence over the direction of the conversation, while freely building your own picture of the work to come without being influenced by images. Tools & platforms identified for this function: any text generator (Claude, DeepSeek, ChatGPT, Qwen, ...).
+
+- **Delegating the ancillary work:** It is possible to generate the most peripheral parts of the work to be done --from the point of view of your use case-- such as backgrounds, patterns, textures, transparent objects to be added to the image, etc. In these cases, it still remains useful to think about the prompt and the meaning these elements take on in the work as a whole, so as not to end up with too generic a result or with elements that are poorly integrated. After generation, being able to move these elements in image-editing software, bring them forward or send them back in a layer system, and possibly modify them further as part of your work, also allows you to maintain a certain degree of control over the final result. Tools & platforms identified for this function: ChatGPT, Ideogram
+
+- **Using "AI" tools without generation:** In the main image-editing softwares, very common tools have already long relied on (non-generative) AI to automate cutting out, object selection, noise removal, vectorisation, etc. Cutting out a subject, for example, now takes considerably less time (with satisfactory results) compared with what it took only a few years ago. Tools & platforms identified for this function: Adobe suite, Affinity
+
+- **Making local modifications:** More and more image-generation services make it possible to carry out local modifications to images, affecting only one area rather than the image as a whole. In reality, because of the way generative AI works, the whole image is in fact recalculated (generated again), but it is compared with the original image so as to remain as close as possible to the original outside the targeted area. The new image may be slightly blurrier, lighter or darker, or shift certain elements; its pixels are altered in a discreet but visible way. If you know how to use image-editing software, it is then possible to assign each image to a layer (original image, modified image), so as to keep only the relevant areas and adjust the integration of the modification. You thus preserve an intact version of your original image, outside the modified area. **Tools & platforms** identified for this function: Ideogram, Gemini, Adobe suite
+
+## Getting started with creating images without AI
+
+Ironically, the perceived value of the most artisanal visual art now seems to be enhanced by comparison with images generated by artificial intelligence. 
+
+Reactions of hostility or indifference toward images that clearly do not involve any work show that replacing artistic labor (like other forms of labor) will not be so easy for capitalists to accomplish. Perhaps the most generic images produced by AI and those created by human beings are generally not the same products and do not meet the same needs.
+
+Among the mass of images produced, a clumsily executed drawing or collage may now stand out as representing more work than a highly detailed illustration if the latter is clearly generated by AI; this is a new situation.
+
+In this context, you don't need to be an accomplished artist to start creating images, as long as you give careful thought to their meaning, form, and purpose—just as you would with any other kind of work.
+
+[^13]: Such as the "Liste de noms de couleur" on French Wikipedia, or the site toutes-les-couleurs.com
 
 
 # Conclusion
@@ -1114,6 +1285,6 @@ If you'd like to take part in this work, you have our email address.
 
 *Arrivederci!*
 
->Required disclosure:
+>Mandatory notice:
 >
 >*transform! europe is partially funded by a grant from the European Parliament. Responsibility for the content lies solely with the author(s); the European Parliament is not responsible for any use that may be made of the information contained in this publication.*
