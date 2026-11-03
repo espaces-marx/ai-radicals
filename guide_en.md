@@ -27,7 +27,7 @@ Feel free to share your comments, criticism, and suggestions with us at contact@
 
 And until then... happy reading!
 
-[^1]: See The Shift Project, *Intelligence artificielle, données calcul : quelles infrastructures dans un monde décarboné ?*, 2025
+[^1]: See The Shift Project, *Intelligence artificielle, données, calculs : quelles infrastructures dans un monde décarboné ?*, 2025
 
 [^2]: See Sam Altman, *The Intelligence Age*, 2024
 
