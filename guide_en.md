@@ -942,7 +942,7 @@ Obviously, the decision to give access to this data depends on its level of sens
 
 AI can now guide the behavior of other programs. If it can organize its actions and adjust its plan based on the results it obtains, such systems are said to operate in an agentic manner.
 
-This mode of operation is at the heart of the discourse on the excessive speed of AI development and of projections into a dystopian future. A researcher at Anthropic (the company developing Claude), for example, stated in September 2026 (on X/Twitter) that there is a more than 10% chance that AI will kill all human beings in the next decade[^5]. We will return later to this kind of prophecy.
+This mode of operation is at the heart of the discourse on the excessive speed of AI development and of projections into a dystopian future. A researcher at Anthropic (the company developing Claude), for example, stated in September 2026 (on X/Twitter), as a personal estimate, that there is a more than 10% chance that AI could kill all human beings in the next decade[^5]. We will return later to this kind of prophecy.
 
 In any event, AI still rests on an LLM, a program capable of processing and generating text that a human being could have written. Setting the announced apocalypse against the ability to generate readable text, the claim seems at least a little exaggerated. 
 
