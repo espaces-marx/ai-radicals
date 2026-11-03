@@ -1028,7 +1028,7 @@ Finally, using an agent remains a fairly costly way of handling a task with AI: 
 
 [^6]: OpenAI, “*OpenAI and Hugging Face partner to address security incident during model evaluation*”, 21 July 2026
 
-[^7]: OpenAI,  “*OpenAI – HuggingFace Incident Technical Report*”
+[^7]: OpenAI,  “*OpenAI – HuggingFace Incident Technical Report*”, 26 August 2026
 
 [^8]: As Thibault Prévost notes in his column “*"L'IA va tous nous tuer" : anatomie d'une faillite journalistique*” for Arrêt sur images
 
