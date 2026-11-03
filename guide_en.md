@@ -1091,7 +1091,7 @@ To use AI locally without needing any particular technical skills, the simplest 
 
 To install it, just go to the official site (lmstudio.ai) and download the version for your operating system, which the site usually detects automatically. Once you open the app for the first time, there's nothing to configure: you land directly on an interface organized around a few main tabs:
 
-- **Discover** (or the magnifying-glass icon): this is the model store. This tab lets you search for and download models directly from Hugging Face, a community platform that hosts the vast majority of open-source models. You'll find versions of well-known models like Llama, Mistral, or Gemma, in various sizes.
+- **Discover** (or the magnifying-glass icon): this is the model store. This tab lets you search for and download models directly from Hugging Face, a community platform that hosts the vast majority of open-weights models. You'll find versions of well-known models like Llama, Mistral, or Gemma, in various sizes.
 - **Chat**: this is the actual conversation space, which looks like the interface of any AI. You select a model you've already downloaded, then chat with it normally.
 - **My Models**: the list of all models already downloaded onto your machine, which you can load, unload, or delete depending on available space.
 - **Developer** (or Local Server): a more technical tab that lets you turn your local model into a small server, usable by other software. Not needed for getting started.
@@ -1113,7 +1113,7 @@ Generally speaking, the "bigger" a model is, the more it can handle complex task
 
 #### How do you know a model's size?
 
-For open-source models, it's very simple: it's in the name. It usually includes a number followed by the letter "*B*" for "billion." The Mistral 24B model has 24 billion parameters -- a medium size.
+For open-weights models, it's very simple: it's in the name. It usually includes a number followed by the letter "*B*" for "billion." The Mistral 24B model has 24 billion parameters -- a medium size.
 
 #### What can you do with your hardware?
 
@@ -1169,11 +1169,11 @@ In LM Studio, you'll see a list of models sorted by size and use case.
 
 A tool that lets us use artificial intelligence without depending on the whims of American tech bosses? That sounds like the future.
 
-As hardware improves (computers, but also smartphones and tablets) and open-source models play an increasingly important role in AI development today, this approach may well become more widespread.
+As hardware improves (computers, but also smartphones and tablets) and open-weights models play an increasingly important role in AI development today, this approach may well become more widespread.
 
 ***Why not get ahead of the curve and learn how to use it?***
 
-You could, for example, explore the Hugging Face platform, which serves both as the go-to library for all open-source AI models (currently more than 2 million of them) and as a learning resource.
+You could, for example, explore the Hugging Face platform, which serves both as the go-to library for all open-weights AI models (currently more than 2 million of them) and as a learning resource.
 
 You can also contact us if you'd like to help with our projects!
 
